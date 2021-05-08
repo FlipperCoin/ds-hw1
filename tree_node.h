@@ -22,26 +22,31 @@ struct TreeNode {
 
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
-             SharedPointer<TreeNode<DataType>> big) : Small(small), Big(big), Sons(2) {
-        Indices[0] = big;
+             SharedPointer<TreeNode<DataType>> big,
+             DataType key) : Small(small), Big(big), Sons(2) {
+        Indices[0] = key;
     }
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> middle,
-             SharedPointer<TreeNode<DataType>> big) : Small(small), MiddleOne(middle), Big(big), Sons(3) {
-        Indices[0] = middle;
-        Indices[1] = big
+             SharedPointer<TreeNode<DataType>> big,
+             DataType key1,
+             DataType key2) : Small(small), MiddleOne(middle), Big(big), Sons(3) {
+        Indices[0] = key1;
+        Indices[1] = key2;
     }
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> middleOne,
              SharedPointer<TreeNode<DataType>> middleTwo,
-             SharedPointer<TreeNode<DataType>> big) : Small(small), MiddleOne(middleOne), MiddleTwo(middleTwo),
+             SharedPointer<TreeNode<DataType>> big,
+             DataType key1,
+             DataType key2,
+             DataType key3) : Small(small), MiddleOne(middleOne), MiddleTwo(middleTwo),
              Big(big), Sons(4) {
-        Indices[0] = middleOne;
-        Indices[1] = middleTwo;
-        Indices[2] = Big;
+        Indices[0] = key1;
+        Indices[1] = key2;
+        Indices[2] = key3;
     }
-    TreeNode(DataType value) : Value(value), Sons(0) {
-        Small = SharedPointer<TreeNode<DataType>>();
+    TreeNode(DataType value) : Value(value), Small(SharedPointer<TreeNode<DataType>>()), Sons(0) {
     }
 };
 

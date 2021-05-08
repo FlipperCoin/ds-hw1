@@ -21,10 +21,20 @@ TEST_F(Tests, btreeInsertEmpty) {
 
 }
 TEST_F(Tests, btreeInsert2To3) {
-    SharedPointer<TreeNode<int>> root(new TreeNode<int>);
-    root->Indices.add(2);
-    root->Small = SharedPointer<TreeNode<int>>(new TreeNode<int>{});
+    SharedPointer<TreeNode<int>> root(
+            new TreeNode<int>(
+                SharedPointer<TreeNode<int>>(
+                            new TreeNode<int>(4)
+                        ),
+                SharedPointer<TreeNode<int>>(
+                            new TreeNode<int>(7)
+                        ),
+                7
+            )
+    );
     BTree23<int>* t1 = new BTree23<int>(root);
+
+    t1->printTree();
 }
 TEST_F(Tests, btreeInsert3To4Once) {
 

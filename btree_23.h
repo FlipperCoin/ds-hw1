@@ -27,7 +27,7 @@ public:
     SharedPointer<TreeNode<DataType>> find(DataType value,
                                            SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>());
     void inOrder(void (*action)(DataType), int limit = -1);
-    void printTree(SharedPointer<TreeNode<DataType>> node = nullptr, bool is_right_most = true, const string& prefix = "") const;
+    void printTree(SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>(), bool is_right_most = true, const string& prefix = "") const;
     bool isLeaf(SharedPointer<TreeNode<DataType>> node);
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
 };
