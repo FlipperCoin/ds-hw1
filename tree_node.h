@@ -15,17 +15,16 @@ struct TreeNode {
 
     DataType Value;
 
-    SharedPointer<TreeNode> Parent = nullptr;
+    SharedPointer<TreeNode> Parent = SharedPointer<TreeNode<DataType>>();
 
-    Vector<SharedPointer<TreeNode<DataType>>> Children=Vector<SharedPointer<TreeNode<DataType>>>(4);
+    Vector<SharedPointer<TreeNode<DataType>>> Children = Vector<SharedPointer<TreeNode<DataType>>>(4);
 
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> big,
-             DataType key) : Sons(2) {
+             DataType key,
+             SharedPointer<TreeNode<DataType>> parent) : Sons(2), Parent(parent) {
         Indices[0] = key;
-        small->Parent = this;
-        big->Parent = this;
         Children[0] = small;
         Children[1] = big;
     }
@@ -33,12 +32,10 @@ struct TreeNode {
              SharedPointer<TreeNode<DataType>> middle,
              SharedPointer<TreeNode<DataType>> big,
              DataType key1,
-             DataType key2) : Sons(3) {
+             DataType key2,
+             SharedPointer<TreeNode<DataType>> parent) : Sons(3), Parent(parent) {
         Indices[0] = key1;
         Indices[1] = key2;
-        small->Parent = this;
-        middle->Parent = this;
-        big->Parent = this;
         Children[0] = small;
         Children[1] = middle;
         Children[2] = big;
@@ -49,14 +46,11 @@ struct TreeNode {
              SharedPointer<TreeNode<DataType>> big,
              DataType key1,
              DataType key2,
-             DataType key3) : Sons(4) {
+             DataType key3,
+             SharedPointer<TreeNode<DataType>> parent) : Sons(4), Parent(parent) {
         Indices[0] = key1;
         Indices[1] = key2;
         Indices[2] = key3;
-        small->Parent = this;
-        middleOne->Parent = this;
-        middleTwo->Parent = this;
-        big->Parent = this;
         Children[0] = small;
         Children[1] = middleOne;
         Children[2] = middleTwo;

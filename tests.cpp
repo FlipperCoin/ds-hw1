@@ -42,20 +42,20 @@ TEST_F(Tests, btreeInsertEmpty) {
 
 }
 TEST_F(Tests, btreeInsert2To3) {
-    SharedPointer<TreeNode<Int>> root(
-            new TreeNode<Int>(
-                SharedPointer<TreeNode<Int>>(
-                            new TreeNode<Int>(4)
-                        ),
-                SharedPointer<TreeNode<Int>>(
-                            new TreeNode<Int>(7)
-                        ),
-                7
-            )
-    );
-    BTree23<Int>* t1 = new BTree23<Int>(root);
-
-    t1->printTree();
+//    SharedPointer<TreeNode<Int>> root(
+//            new TreeNode<Int>(
+//                SharedPointer<TreeNode<Int>>(
+//                            new TreeNode<Int>(4)
+//                        ),
+//                SharedPointer<TreeNode<Int>>(
+//                            new TreeNode<Int>(7)
+//                        ),
+//                7
+//            )
+//    );
+//    BTree23<Int>* t1 = new BTree23<Int>(root);
+//
+//    t1->printTree();
 }
 TEST_F(Tests, btreeInsert3To4Once) {
 
