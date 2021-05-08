@@ -47,6 +47,10 @@ public:
         return *this;
     }
 
+    bool operator==(const T* other) {
+        return this->pointer == other;
+    }
+
     T& operator*() {
         return *pointer;
     }

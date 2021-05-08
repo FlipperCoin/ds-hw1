@@ -9,7 +9,6 @@ add_executable(ds_ex1 main.cpp
         btree_23.h
         car_node.h
         grade_node.h
-        list_node.h
         model_data.h
         model_node.h
         shared_pointer.h

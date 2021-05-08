@@ -8,6 +8,11 @@
 #include "shared_pointer.h"
 #include "model_node.h"
 
+#include <string>
+#include <sstream>
+
+using std::string;
+
 struct GradeNode {
     int Grade;
     int TypeID;
@@ -15,6 +20,7 @@ struct GradeNode {
 public:
     bool operator<(const GradeNode& other) const;
     bool operator>=(const GradeNode& other) const;
+    string str() const;
 };
 
 bool GradeNode::operator<(const GradeNode &other) const {
@@ -29,6 +35,12 @@ bool GradeNode::operator<(const GradeNode &other) const {
 
 bool GradeNode::operator>=(const GradeNode &other) const {
     return !(*this < other);
+}
+
+string GradeNode::str() const {
+    std::ostringstream string_stream;
+    string_stream << "(" << Grade << "," << TypeID << "," << ModelID << ")";
+    return string_stream.str();
 }
 
 #endif //DS_EX1_GRADENODE_H

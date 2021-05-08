@@ -3,12 +3,14 @@
 //
 
 #include "gtest/gtest.h"
+#include "btree_23.h"
 
 class Tests : public ::testing::Test {
 
 protected:
 
     void SetUp() override {
+
     }
 
     void TearDown() override {
@@ -19,7 +21,10 @@ TEST_F(Tests, btreeInsertEmpty) {
 
 }
 TEST_F(Tests, btreeInsert2To3) {
-
+    SharedPointer<TreeNode<int>> root(new TreeNode<int>);
+    root->Indices.add(2);
+    root->Small = SharedPointer<TreeNode<int>>(new TreeNode<int>{});
+    BTree23<int>* t1 = new BTree23<int>(root);
 }
 TEST_F(Tests, btreeInsert3To4Once) {
 

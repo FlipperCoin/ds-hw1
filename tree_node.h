@@ -10,14 +10,35 @@
 
 template <typename DataType>
 struct TreeNode {
-    Vector<DataType> Indices;
+    Vector<DataType> Indices=Vector<DataType>(3);
+    int Sons;
 
     DataType Value;
 
-    SharedPointer<TreeNode> Left;
-    SharedPointer<TreeNode> Middle;
-    SharedPointer<TreeNode> Right;
-    SharedPointer<TreeNode> Extra;
+    SharedPointer<TreeNode> Small;
+    SharedPointer<TreeNode> MiddleOne;
+    SharedPointer<TreeNode> MiddleTwo;
+    SharedPointer<TreeNode> Big;
+
+
+    TreeNode(SharedPointer<TreeNode<DataType>> small,
+             SharedPointer<TreeNode<DataType>> big) : Small(small), Big(big), Sons(2) {
+        Indices[0] = big;
+    }
+    TreeNode(SharedPointer<TreeNode<DataType>> small,
+             SharedPointer<TreeNode<DataType>> middle,
+             SharedPointer<TreeNode<DataType>> big) : Small(small), MiddleOne(middle), Big(big), Sons(3) {
+        Indices[0] = middle;
+        Indices[1] = big
+    }
+    TreeNode(SharedPointer<TreeNode<DataType>> small,
+             SharedPointer<TreeNode<DataType>> middleOne,
+             SharedPointer<TreeNode<DataType>> middleTwo,
+             SharedPointer<TreeNode<DataType>> big) : Small(small), MiddleOne(middleOne), MiddleTwo(middleTwo),
+             Big(big), Sons(4) {}
+    TreeNode(DataType value) : Value(value), Sons(0) {
+        Small = SharedPointer<TreeNode<DataType>>();
+    }
 };
 
 

@@ -9,6 +9,12 @@
 #include "shared_pointer.h"
 #include "model_data.h"
 
+#include <string>
+#include <sstream>
+
+using std::string;
+using std::ostringstream;
+
 struct CarNode {
     int TypeID;
     int BestSellingModel;
@@ -16,6 +22,7 @@ struct CarNode {
 public:
     bool operator<(const GradeNode& other) const;
     bool operator>=(const GradeNode& other) const;
+    string str() const;
 };
 
 bool CarNode::operator<(const GradeNode &other) const {
@@ -24,6 +31,12 @@ bool CarNode::operator<(const GradeNode &other) const {
 
 bool CarNode::operator>=(const GradeNode &other) const {
     return TypeID >= other.TypeID;
+}
+
+string CarNode::str() const {
+    std::ostringstream string_stream;
+    string_stream << "(" << TypeID << "," << BestSellingModel << "," << Models.getCount() << ")";
+    return string_stream.str();
 }
 
 
