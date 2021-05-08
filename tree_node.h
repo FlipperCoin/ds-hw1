@@ -29,7 +29,7 @@ struct TreeNode {
              SharedPointer<TreeNode<DataType>> middle,
              SharedPointer<TreeNode<DataType>> big) : Small(small), MiddleOne(middle), Big(big), Sons(3) {
         Indices[0] = middle;
-        Indices[1] = big
+        Indices[1] = big;
     }
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> middleOne,

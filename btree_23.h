@@ -30,10 +30,31 @@ public:
     void printTree(SharedPointer<TreeNode<DataType>> node = nullptr, bool is_right_most = true, const string& prefix = "") const;
     bool isLeaf(SharedPointer<TreeNode<DataType>> node);
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
+    void fix(SharedPointer<TreeNode<DataType>> node);
 };
 
 template<typename DataType>
 void BTree23<DataType>::insert(DataType value) {
+    if (!root) {
+        root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value)); // add new tree node
+        return;
+    }
+    SharedPointer<TreeNode<DataType>> place = find(value, root); // return the
+    if (place.isleaf()) return; // value is already in tree!
+    // else - insert new node in father
+    place.InsertNode(value);
+    if(sons == 3) return; //great! no need for fixing!
+    fix(place);
+    return;
+}
+
+template<typename DataType>
+void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
+    TreeNode<DataType> second = new TreeNode<DataType>(value);
+    if (node == root){
+        TreeNode<DataType> small = new TreeNode<DataType>(value)
+        root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value));
+    }
 
 }
 
