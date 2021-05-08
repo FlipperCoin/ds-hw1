@@ -17,14 +17,45 @@ protected:
     }
 };
 
+#include "string"
+#include "sstream"
+using std::string;
+using std::ostringstream;
+struct Int {
+    int n;
+    Int(){}
+    Int(int n) : n(n){}
+    string str() const {
+        ostringstream stream;
+        stream << n;
+        return stream.str();
+    }
+    bool operator<(const Int& other) const{
+        return n < other.n;
+    };
+    bool operator>=(const Int& other) const{
+        return n >= other.n;
+    }
+};
+
 TEST_F(Tests, btreeInsertEmpty) {
 
 }
 TEST_F(Tests, btreeInsert2To3) {
-    SharedPointer<TreeNode<int>> root(new TreeNode<int>);
-    root->Indices.add(2);
-    root->Small = SharedPointer<TreeNode<int>>(new TreeNode<int>{});
-    BTree23<int>* t1 = new BTree23<int>(root);
+    SharedPointer<TreeNode<Int>> root(
+            new TreeNode<Int>(
+                SharedPointer<TreeNode<Int>>(
+                            new TreeNode<Int>(4)
+                        ),
+                SharedPointer<TreeNode<Int>>(
+                            new TreeNode<Int>(7)
+                        ),
+                7
+            )
+    );
+    BTree23<Int>* t1 = new BTree23<Int>(root);
+
+    t1->printTree();
 }
 TEST_F(Tests, btreeInsert3To4Once) {
 
