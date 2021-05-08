@@ -15,24 +15,32 @@ struct TreeNode {
 
     DataType Value;
 
-    SharedPointer<TreeNode> Small;
-    SharedPointer<TreeNode> MiddleOne;
-    SharedPointer<TreeNode> MiddleTwo;
-    SharedPointer<TreeNode> Big;
+    SharedPointer<TreeNode> Parent = nullptr;
 
+    Vector<SharedPointer<TreeNode<DataType>>> Children=Vector<SharedPointer<TreeNode<DataType>>>(4);
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> big,
-             DataType key) : Small(small), Big(big), Sons(2) {
+             DataType key) : Sons(2) {
         Indices[0] = key;
+        small->Parent = this;
+        big->Parent = this;
+        Children[0] = small;
+        Children[1] = big;
     }
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> middle,
              SharedPointer<TreeNode<DataType>> big,
              DataType key1,
-             DataType key2) : Small(small), MiddleOne(middle), Big(big), Sons(3) {
+             DataType key2) : Sons(3) {
         Indices[0] = key1;
         Indices[1] = key2;
+        small->Parent = this;
+        middle->Parent = this;
+        big->Parent = this;
+        Children[0] = small;
+        Children[1] = middle;
+        Children[2] = big;
     }
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> middleOne,
@@ -40,13 +48,41 @@ struct TreeNode {
              SharedPointer<TreeNode<DataType>> big,
              DataType key1,
              DataType key2,
-             DataType key3) : Small(small), MiddleOne(middleOne), MiddleTwo(middleTwo),
-             Big(big), Sons(4) {
+             DataType key3) : Sons(4) {
         Indices[0] = key1;
         Indices[1] = key2;
         Indices[2] = key3;
+        small->Parent = this;
+        middleOne->Parent = this;
+        middleTwo->Parent = this;
+        big->Parent = this;
+        Children[0] = small;
+        Children[1] = middleOne;
+        Children[2] = middleTwo;
+        Children[3] = big;
     }
-    TreeNode(DataType value) : Value(value), Small(SharedPointer<TreeNode<DataType>>()), Sons(0) {
+    TreeNode(DataType value) : Value(value), Sons(0) {
+    }
+
+    void Swap(SharedPointer<TreeNode<DataType>> firstHalf,
+               SharedPointer<TreeNode<DataType>> secondHalf,
+               DataType key) {
+        firstHalf->Parent = this;
+        secondHalf->Parent = this;
+        Vector<SharedPointer<TreeNode<DataType>>> tmpVec;
+        for (int i = 0; i < Sons; i++) {
+            if (key < Indices[i]) {
+                DataType tmpPrev = key;
+                for (; i < Sons; i++) {
+                    DataType tmp = Indices[i];
+                    Indices[i] = tmpPrev;
+                    tmpPrev = tmp;
+                }
+                Indices[i+Sons] = tmpPrev;
+            }
+        }
+        Sons++;
+
     }
 };
 
