@@ -7,13 +7,28 @@
 
 #include "shared_pointer.h"
 #include "model_node.h"
-#include "list_node.h"
 
 struct GradeNode {
     int Grade;
-    SharedPointer<ListNode<ModelNode>> Models;
+    int TypeID;
+    int ModelID;
 public:
-    int Value() {return Grade;}
+    bool operator<(const GradeNode& other) const;
+    bool operator>=(const GradeNode& other) const;
 };
+
+bool GradeNode::operator<(const GradeNode &other) const {
+    if (Grade < other.Grade) return true;
+    if (Grade > other.Grade) return false;
+    if (TypeID < other.TypeID) return true;
+    if (TypeID > other.TypeID) return false;
+    if (ModelID < other.ModelID) return true;
+
+    return false;
+}
+
+bool GradeNode::operator>=(const GradeNode &other) const {
+    return !(*this < other);
+}
 
 #endif //DS_EX1_GRADENODE_H

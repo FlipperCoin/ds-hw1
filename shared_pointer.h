@@ -60,6 +60,9 @@ public:
         return pointer;
     }
 
+    bool isEmpty() const {
+        return pointer == nullptr;
+    }
 private:
     T* pointer;
     int* ref_count;

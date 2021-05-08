@@ -5,11 +5,11 @@
 #ifndef DS_EX1_MODELDATA_H
 #define DS_EX1_MODELDATA_H
 
-#include "list_node.h"
 #include "tree_node.h"
+#include "model_node.h"
+#include "grade_node.h"
 
 struct ModelData {
-    SharedPointer<ListNode<ModelNode>> Model;
     SharedPointer<TreeNode<GradeNode>> Grade;
     int Sells;
 };

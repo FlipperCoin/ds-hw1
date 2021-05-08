@@ -6,6 +6,7 @@
 #include "model_data.h"
 #include "list_node.h"
 #include "tree_node.h"
+#include "library.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;

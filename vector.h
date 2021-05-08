@@ -1,6 +1,10 @@
 #ifndef _VECTOR_H
 #define _VECTOR_H
 
+#include <cstdio>
+
+using std::size_t;
+
 template<typename T>
 class Vector {
 public:

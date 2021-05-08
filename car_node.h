@@ -14,8 +14,17 @@ struct CarNode {
     int BestSellingModel;
     Vector<SharedPointer<ModelData>> Models;
 public:
-    int Value() {return TypeID;}
+    bool operator<(const GradeNode& other) const;
+    bool operator>=(const GradeNode& other) const;
 };
+
+bool CarNode::operator<(const GradeNode &other) const {
+    return TypeID < other.TypeID;
+}
+
+bool CarNode::operator>=(const GradeNode &other) const {
+    return TypeID >= other.TypeID;
+}
 
 
 #endif //DS_EX1_CARNODE_H
