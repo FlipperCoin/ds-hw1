@@ -28,7 +28,7 @@ public:
                                            SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>());
     void inOrder(void (*action)(DataType), int limit = -1);
     void printTree(SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>(), bool is_right_most = true, const string& prefix = "") const;
-    bool isLeaf(SharedPointer<TreeNode<DataType>> node);
+    bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
 };
 
@@ -88,9 +88,9 @@ void BTree23<DataType>::printTree(SharedPointer<TreeNode<DataType>> node, bool i
 template<typename DataType>
 void BTree23<DataType>::printMidNode(const SharedPointer<TreeNode<DataType>> &node) const {
     cout << "[";
-    for (int i = 0; i < node->Indices.GetCount(); i++) {
+    for (int i = 0; i < node->Indices.getCount(); i++) {
         cout << node->Indices[i].str();
-        if (i != node->Indices.GetCount()) {
+        if (i != node->Indices.getCount()) {
             cout << ",";
         }
     }
@@ -98,8 +98,8 @@ void BTree23<DataType>::printMidNode(const SharedPointer<TreeNode<DataType>> &no
 }
 
 template<typename DataType>
-bool BTree23<DataType>::isLeaf(SharedPointer<TreeNode<DataType>> node) {
-    return node->Left.isEmpty();
+bool BTree23<DataType>::isLeaf(SharedPointer<TreeNode<DataType>> node) const {
+    return node->Small.isEmpty();
 }
 
 template<typename DataType>
