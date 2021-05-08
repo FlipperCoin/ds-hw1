@@ -55,7 +55,7 @@ struct TreeNode {
         Children[2] = middleTwo;
         Children[3] = big;
     }
-    TreeNode(DataType value) : Value(value), Sons(0) {
+    TreeNode(DataType value, SharedPointer<TreeNode<DataType>> parent) : Value(value), Sons(0), Parent(parent) {
     }
 
     void Swap(SharedPointer<TreeNode<DataType>> firstHalf,

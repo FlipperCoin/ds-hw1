@@ -26,8 +26,8 @@ public:
     SharedPointer<TreeNode<DataType>> remove(DataType value);
     SharedPointer<TreeNode<DataType>> find(DataType value,
                                            SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>());
-    void inOrder(void (*action)(DataType), int limit = -1);
-    void printTree(SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>(), bool is_right_most = true, const string& prefix = "") const;
+    void printTree() const;
+    void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
 };
@@ -61,38 +61,37 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value, Shared
     //if (value >=)
 }
 
+
 template<typename DataType>
-void BTree23<DataType>::inOrder(void (*action)(DataType), int limit) {
-
+void BTree23<DataType>::printTree() const {
+    printTree(root);
 }
-
 template<typename DataType>
 void BTree23<DataType>::printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most, const string& prefix) const {
-    if (node.isEmpty()) node = root;
-
     if (isLeaf(node)) {
         cout << node->Value.str() << endl;
         return;
     }
 
-    if (!is_right_most) cout << prefix;
     printMidNode(node);
     cout << "-";
-    if (!node->Big.isEmpty()) {
-        printTree(node->Big, true, prefix + "| ");
-        cout << prefix << "|-";
+    string padding = "";
+    for (int i = 0; i < ((node->Sons-1)*2); i++) padding += " ";
+    printTree(node->Children[node->Sons-1], true, prefix + padding + "| ");
+    for (int i = node->Sons-2; i > 0; i--) {
+        cout << prefix << padding << "|-";
+        printTree(node->Children[i], false, prefix + padding + "| ");
     }
-    printTree(node->MiddleOne, node->Big.isEmpty(), prefix + "| ");
-    cout << prefix << "\\-";
-    printTree(node->Small, false, prefix + "  ");
+    cout << prefix << padding << "\\-";
+    printTree(node->Children[0], false, prefix + padding + "  ");
 }
 
 template<typename DataType>
 void BTree23<DataType>::printMidNode(const SharedPointer<TreeNode<DataType>> &node) const {
     cout << "[";
-    for (int i = 0; i < node->Sons; i++) {
+    for (int i = 0; i < node->Sons-1; i++) {
         cout << node->Indices[i].str();
-        if (i != node->Sons) {
+        if (i != node->Sons-2) {
             cout << ",";
         }
     }
@@ -106,6 +105,5 @@ bool BTree23<DataType>::isLeaf(SharedPointer<TreeNode<DataType>> node) const {
 
 template<typename DataType>
 BTree23<DataType>::BTree23(SharedPointer<TreeNode<DataType>> root) : root(root) { }
-
 
 #endif //DS_EX1_TREE23_H

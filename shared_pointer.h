@@ -19,7 +19,7 @@ private:
 public:
     explicit SharedPointer(T* pointer) : pointer(pointer), ref_count(new int(1)) {};
 
-    SharedPointer() : pointer(nullptr), ref_count(new int(0)) {};
+    SharedPointer() : pointer(nullptr), ref_count(new int(1)) {};
 
     ~SharedPointer() {
         dispose();
