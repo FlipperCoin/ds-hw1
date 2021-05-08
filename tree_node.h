@@ -61,22 +61,24 @@ struct TreeNode {
     void Swap(SharedPointer<TreeNode<DataType>> firstHalf,
                SharedPointer<TreeNode<DataType>> secondHalf,
                DataType key) {
-        firstHalf->Parent = this;
-        secondHalf->Parent = this;
-        Vector<SharedPointer<TreeNode<DataType>>> tmpVec;
         for (int i = 0; i < Sons; i++) {
             if (key < Indices[i]) {
                 DataType tmpPrev = key;
+                Children[i] = firstHalf;
+                SharedPointer<TreeNode<DataType>> childTmpPrev = secondHalf;
                 for (; i < Sons; i++) {
                     DataType tmp = Indices[i];
                     Indices[i] = tmpPrev;
+                    SharedPointer<TreeNode<DataType>> childTmp = Children[i+1];
+                    Children[i+1] = childTmpPrev;
+                    childTmpPrev = childTmp;
                     tmpPrev = tmp;
                 }
-                Indices[i+Sons] = tmpPrev;
+                Indices[i] = tmpPrev;
+                Children[i+1] = childTmpPrev;
             }
         }
         Sons++;
-
     }
 };
 
