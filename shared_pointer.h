@@ -4,66 +4,65 @@
 
 #ifndef _SHAREDPOINTER_H
 #define _SHAREDPOINTER_H
-namespace ds {
-    template<typename T>
-    class SharedPointer
-    {
-    private:
-        void dispose() {
-            if ((*ref_count)-- <= 1) {
-                if (pointer != nullptr) {
-                    delete pointer;
-                }
-                delete ref_count;
+template<typename T>
+class SharedPointer
+{
+private:
+    void dispose() {
+        if ((*ref_count)-- <= 1) {
+            if (pointer != nullptr) {
+                delete pointer;
             }
+            delete ref_count;
         }
-    public:
-        explicit SharedPointer(T* pointer) : pointer(pointer), ref_count(new int(1)) {};
+    }
+public:
+    explicit SharedPointer(T* pointer) : pointer(pointer), ref_count(new int(1)) {};
 
-        SharedPointer() : pointer(nullptr), ref_count(new int(0)) {};
+    SharedPointer() : pointer(nullptr), ref_count(new int(0)) {};
 
-        ~SharedPointer() {
-            dispose();
-        }
+    ~SharedPointer() {
+        dispose();
+    }
 
-        SharedPointer(const SharedPointer& other) {
-            ref_count = other.ref_count;
-            pointer = other.pointer;
+    SharedPointer(const SharedPointer& other) {
+        ref_count = other.ref_count;
+        pointer = other.pointer;
 
-            (*ref_count)++;
-        }
+        (*ref_count)++;
+    }
 
-        SharedPointer& operator=(const SharedPointer& other) {
-            if (&other == this) {
-                return *this;
-            }
-
-            dispose();
-
-            ref_count = other.ref_count;
-            pointer = other.pointer;
-
-            (*ref_count)++;
-
+    SharedPointer& operator=(const SharedPointer& other) {
+        if (&other == this) {
             return *this;
         }
 
-        T& operator*() {
-            return *pointer;
-        }
-        const T& operator*() const{
-            return *pointer;
-        }
-        T* operator->() {
-            return pointer;
-        }
-        const T* operator->() const {
-            return pointer;
-        }
+        dispose();
 
-    private:
-        T* pointer;
-        int* ref_count;
-    };
-}
+        ref_count = other.ref_count;
+        pointer = other.pointer;
+
+        (*ref_count)++;
+
+        return *this;
+    }
+
+    T& operator*() {
+        return *pointer;
+    }
+    const T& operator*() const{
+        return *pointer;
+    }
+    T* operator->() {
+        return pointer;
+    }
+    const T* operator->() const {
+        return pointer;
+    }
+
+private:
+    T* pointer;
+    int* ref_count;
+};
+
 #endif
