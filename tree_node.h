@@ -21,6 +21,7 @@ struct TreeNode {
     SharedPointer<TreeNode> Big;
 
 
+
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> big,
              DataType key) : Small(small), Big(big), Sons(2) {
@@ -47,6 +48,12 @@ struct TreeNode {
         Indices[2] = key3;
     }
     TreeNode(DataType value) : Value(value), Small(SharedPointer<TreeNode<DataType>>()), Sons(0) {
+    }
+
+    void insertValue(DataType value){
+        for (int i = 0; i < sons; ++i) {
+
+        }
     }
 };
 

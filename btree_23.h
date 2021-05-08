@@ -50,12 +50,14 @@ void BTree23<DataType>::insert(DataType value) {
 
 template<typename DataType>
 void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
-    TreeNode<DataType> second = new TreeNode<DataType>(value);
-    if (node == root){
-        TreeNode<DataType> small = new TreeNode<DataType>(value)
-        root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value));
+    SharedPointer<TreeNode<DataType>> first_half = new TreeNode<DataType>(node->children[0], node->children[1], node->Indices[0]);
+    SharedPointer<TreeNode<DataType>> second_half = new TreeNode<DataType>(node->children[2], node->children[3], node->Indices[2]);
+    if (node->parent == nullptr){
+        root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(first_half, second_half,node->Indices[1]));
     }
-
+    else node->parent.swap(first_half, second_half,node->Indices[1]);
+    if (node->parent->sons ==4)
+        fix(parent);
 }
 
 template<typename DataType>
