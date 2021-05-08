@@ -13,6 +13,8 @@ struct CarNode {
     int TypeID;
     int BestSellingModel;
     Vector<SharedPointer<ModelData>> Models;
+public:
+    int Value() {return TypeID;}
 };
 
 

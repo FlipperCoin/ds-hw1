@@ -12,6 +12,8 @@
 struct GradeNode {
     int Grade;
     SharedPointer<ListNode<ModelNode>> Models;
+public:
+    int Value() {return Grade;}
 };
 
 #endif //DS_EX1_GRADENODE_H

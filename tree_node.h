@@ -9,7 +9,7 @@ template <typename DataType>
 struct TreeNode {
     Vector<int> Indices;
 
-    SharedPointer<DataType> Value;
+    DataType Value;
 
     SharedPointer<TreeNode> Left;
     SharedPointer<TreeNode> Middle;
