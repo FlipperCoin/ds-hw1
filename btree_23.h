@@ -22,7 +22,7 @@ private:
 public:
     BTree23() = default;
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
-    void insert(DataType value);
+    SharedPointer<TreeNode<DataType>> insert(DataType value);
     SharedPointer<TreeNode<DataType>> remove(DataType value);
     SharedPointer<TreeNode<DataType>> find(DataType value,
                                            SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>());
@@ -50,6 +50,7 @@ void BTree23<DataType>::insert(DataType value) {
     fix(place);
     return;
 }
+SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
 
 template<typename DataType>
 void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {

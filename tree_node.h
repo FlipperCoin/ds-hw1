@@ -62,12 +62,13 @@ struct TreeNode {
     void Swap(SharedPointer<TreeNode<DataType>> firstHalf,
                SharedPointer<TreeNode<DataType>> secondHalf,
                DataType key) {
-        for (int i = 0; i < Sons; i++) {
+        for (int i = 0; i < Sons-1; i++) {
+            // if key should insert between i-1 & i
             if (key < Indices[i]) {
                 DataType tmpPrev = key;
                 Children[i] = firstHalf;
                 SharedPointer<TreeNode<DataType>> childTmpPrev = secondHalf;
-                for (; i < Sons; i++) {
+                for (; i < Sons-1; i++) {
                     DataType tmp = Indices[i];
                     Indices[i] = tmpPrev;
                     SharedPointer<TreeNode<DataType>> childTmp = Children[i+1];
@@ -77,6 +78,12 @@ struct TreeNode {
                 }
                 Indices[i] = tmpPrev;
                 Children[i+1] = childTmpPrev;
+            }
+            // If reached end of indices and key still bigger, insert in the end
+            if (i == Sons-2 && key > Indices[i]) {
+                Indices[i+1] = key;
+                Children[i+1] = firstHalf;
+                Children[i+2] = secondHalf;
             }
         }
         Sons++;

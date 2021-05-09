@@ -41,14 +41,31 @@ struct Int {
     }
 };
 
-TEST_F(Tests, btreeInsertEmpty) {
-
-}
 void link(SharedPointer<TreeNode<Int>> node) {
     for (int i = 0; i < node->Sons; i++) {
         node->Children[i]->Parent = node;
         link(node->Children[i]);
     }
+}
+
+TEST_F(Tests, btreeInsertEmpty) {
+    auto* t1 = new BTree23<Int>();
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(1));
+
+    t1->insert(1);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
+}
+TEST_F(Tests, btreeInsert1to2) {
+    auto* t1 = new BTree23<Int>();
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5));
+
+    t1->insert(5);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
 }
 
 TEST_F(Tests, btreeInsert2To3Small) {
@@ -254,23 +271,137 @@ TEST_F(Tests, btreeInsert3To4TwiceRootThirdCh) {
 }
 //TODO: if there's time, add "insert3to4twice" tests (not root)
 
-TEST_F(Tests, btreeRemove3To2) {
+TEST_F(Tests, btreeRemove3To2Small) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),4,6));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),6));
 
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(2);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
 }
-TEST_F(Tests, btreeRemove2To1Borrow) {
+TEST_F(Tests, btreeRemove3To2Mid) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),4,6));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),6));
 
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(4);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
+}
+TEST_F(Tests, btreeRemove3To2Big) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),4,6));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),4));
+
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(6);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
+}
+TEST_F(Tests, btreeRemove2To1BorrowSmall) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(8)),8)),7));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(8)),8)),6));
+
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(7);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
+}
+TEST_F(Tests, btreeRemove2To1BorrowMid) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(1)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(8)),7,8)),3,6));
+    SharedPointer<TreeNode<Int>> expected =SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(1)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),6)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(8)),8)),5,7));
+
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(3);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
+}
+TEST_F(Tests, btreeRemove2To1BorrowBig) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(8)),7,8)),6));
+    SharedPointer<TreeNode<Int>> expected =SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(8)),8)),7));
+
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(5);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
+}
+TEST_F(Tests, btreeRemove2To1UnionSmall) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(9)),9)),7));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),5,7));
+
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(9);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
+}
+TEST_F(Tests, btreeRemove2To1UnionMid) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(9)),9)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(11)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(13)),13)),7,11));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(9)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(11)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(13)),11,13)),9));
+
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(7);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
+}
+TEST_F(Tests, btreeRemove2To1UnionBig) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(9)),9)),7));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(9)),7,9));
+
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
+
+    t1->remove(5);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
 }
 TEST_F(Tests, btreeRemove2To1Root) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5));
+    SharedPointer<TreeNode<Int>> expected =SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3));
 
-}
-TEST_F(Tests, btreeRemove2To1UnionOnce) {
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
 
+    t1->remove(5);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
 }
 TEST_F(Tests, btreeRemove2To1UnionTwice) {
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(9)),9)),7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(11)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(13)),13)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(15)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(17)),17)),15)),11));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(7)),5,7)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(11)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(13)),13)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(15)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(17)),17)),11,15));
 
-}
-TEST_F(Tests, btreeRemove2To1UnionRoot) {
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
 
+    t1->remove(9);
+
+    auto* t_exp = new BTree23<Int>(expected);
+    ASSERT_TRUE(t1 == t_exp);
 }
 
 int main(int argc, char **argv) {
