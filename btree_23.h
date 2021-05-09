@@ -21,7 +21,7 @@ private:
     SharedPointer<TreeNode<DataType>> root;
 public:
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
-    void insert(DataType value);
+    SharedPointer<TreeNode<DataType>> insert(DataType value);
     SharedPointer<TreeNode<DataType>> remove(DataType value);
     SharedPointer<TreeNode<DataType>> find(DataType value,
                                            SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>());
@@ -34,7 +34,7 @@ public:
 };
 
 template<typename DataType>
-void BTree23<DataType>::insert(DataType value) {
+SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
 
 }
 
