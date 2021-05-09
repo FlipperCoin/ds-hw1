@@ -53,55 +53,13 @@ void foo(SharedPointer<TreeNode<Int>> ptr) {
 }
 
 TEST_F(Tests, btreeInsert2To3) {
-    SharedPointer<TreeNode<Int>> root(
-            new TreeNode<Int>(
-                SharedPointer<TreeNode<Int>>(
-                            new TreeNode<Int>(
-                                    SharedPointer<TreeNode<Int>>(
-                                        new TreeNode<Int>(1,SharedPointer<TreeNode<Int>>())
-                                    ),
-                                    SharedPointer<TreeNode<Int>>(
-                                        new TreeNode<Int>(2,SharedPointer<TreeNode<Int>>())
-                                    ),
-                                    2,
-                                    SharedPointer<TreeNode<Int>>())
-                        ),
-                SharedPointer<TreeNode<Int>>(
-                            new TreeNode<Int>(
-                                    SharedPointer<TreeNode<Int>>(
-                                            new TreeNode<Int>(3,SharedPointer<TreeNode<Int>>())
-                                    ),
-                                    SharedPointer<TreeNode<Int>>(
-                                            new TreeNode<Int>(4,SharedPointer<TreeNode<Int>>())
-                                    ),
-                                    SharedPointer<TreeNode<Int>>(
-                                            new TreeNode<Int>(5,SharedPointer<TreeNode<Int>>())
-                                    ),
-                                    4,
-                                    5,
-                                    SharedPointer<TreeNode<Int>>())
-                        ),
-                SharedPointer<TreeNode<Int>>(
-                        new TreeNode<Int>(
-                                SharedPointer<TreeNode<Int>>(
-                                        new TreeNode<Int>(6,SharedPointer<TreeNode<Int>>())
-                                ),
-                                SharedPointer<TreeNode<Int>>(
-                                        new TreeNode<Int>(7,SharedPointer<TreeNode<Int>>())
-                                ),
-                                7,
-                                SharedPointer<TreeNode<Int>>())
-                ),
-                3,
-                6,
-                SharedPointer<TreeNode<Int>>()
-            )
-    );
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5)),4));
     link(root);
     auto* t1 = new BTree23<Int>(root);
 
     t1->printTree();
 }
+
 TEST_F(Tests, btreeInsert3To4Once) {
 
 }
