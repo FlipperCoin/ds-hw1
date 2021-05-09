@@ -82,13 +82,52 @@ struct TreeNode {
         Sons++;
     }
 
-    void insertValue(DataType value){
-        for (int i = 0; i < Sons; i++) {
-            if (key < Indices[i]) {
+    void insertValue(SharedPointer<TreeNode<DataType>> new_node) {
+        DataType value = new_node.getValue();
+        int i = 0;
+        for (; i < Sons-1; i++) {
+            if (value < Indices[i]) {
 
+                if (value < Children[i]) {
+                    DataType keyPushNext = Indices[i];
+                    SharedPointer<TreeNode<DataType>> childPushNext = Children[i];
+                    Indices[i] = Children[i].getValue();
+                    Children[i] = new_node;
+                } else {
+                    DataType keyPushNext = Indices[i];
+                    Indices[i] = value;
+                    SharedPointer<TreeNode<DataType>> childPushNext = new_node;
+                }
+                for (; i < Sons - 1; i++) {
+                    DataType tmpKey = Indices[i + 1];
+                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i + 1];
+
+                    Indices[i + 1] = keyPushNext;
+                    Children[i + 1] = childPushNext;
+
+                    childPushNext = tmpChild;
+                    keyPushNext = tmpKey;
+                }
+                Indices[i + 1] = keyPushNext;
+                Children[i + 1] = childPushNext;
+                break;
             }
         }
+        if (i == Sons - 1) {
+            if (value < Children[i]) {
+                Indices[i] = Children[i].GetValue();
+                Children[i+1] = Children[i];
+                Children[i] = new_node;
+
+            }
+            else {
+                Indices[i] = value;
+                Children[i+1]  = new_node;
+            }
+        }
+        Sons++;
     }
+
 };
 
 

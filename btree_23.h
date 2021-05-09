@@ -44,7 +44,8 @@ void BTree23<DataType>::insert(DataType value) {
     SharedPointer<TreeNode<DataType>> place = find(value, root); // return the
     if (place.isleaf()) return; // value is already in tree!
     // else - insert new node in father
-    place.InsertNode(value);
+    SharedPointer<TreeNode<DataType>> new_node = new TreeNode<DataType>(value, place);
+    place.InsertNode(new_node);
     if(sons == 3) return; //great! no need for fixing!
     fix(place);
     return;
@@ -58,7 +59,7 @@ void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
         root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(first_half, second_half,node->Indices[1]));
     }
     else node->parent.swap(first_half, second_half,node->Indices[1]);
-    if (node->parent->sons ==4)
+    if (node->parent->sons == 4)
         fix(parent);
 }
 
