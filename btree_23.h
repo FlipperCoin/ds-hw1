@@ -20,7 +20,6 @@ class BTree23 {
 private:
     SharedPointer<TreeNode<DataType>> root;
 public:
-    BTree23() = default;
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
     void insert(DataType value);
     SharedPointer<TreeNode<DataType>> remove(DataType value);
