@@ -59,7 +59,7 @@ struct TreeNode {
     TreeNode(DataType value, SharedPointer<TreeNode<DataType>> parent = SharedPointer<TreeNode<DataType>>()) : Value(value), Sons(0), Parent(parent) {
     }
 
-    void Swap(SharedPointer<TreeNode<DataType>> firstHalf,
+    void swap(SharedPointer<TreeNode<DataType>> firstHalf,
                SharedPointer<TreeNode<DataType>> secondHalf,
                DataType key) {
         for (int i = 0; i < Sons-1; i++) {
@@ -80,7 +80,7 @@ struct TreeNode {
                 Children[i+1] = childTmpPrev;
             }
             // If reached end of indices and key still bigger, insert in the end
-            if (i == Sons-2 && key > Indices[i]) {
+            if (i == Sons-2 && Indices[i] < key) {
                 Indices[i+1] = key;
                 Children[i+1] = firstHalf;
                 Children[i+2] = secondHalf;
@@ -90,20 +90,20 @@ struct TreeNode {
     }
 
     void insertValue(SharedPointer<TreeNode<DataType>> new_node) {
-        DataType value = new_node.getValue();
+        DataType value = new_node->Value;
         int i = 0;
         for (; i < Sons-1; i++) {
             if (value < Indices[i]) {
 
-                if (value < Children[i]) {
-                    DataType keyPushNext = Indices[i];
-                    SharedPointer<TreeNode<DataType>> childPushNext = Children[i];
-                    Indices[i] = Children[i].getValue();
+                DataType keyPushNext = Indices[i];
+                SharedPointer<TreeNode<DataType>> childPushNext;
+                if (value < Children[i]->Value) {
+                    childPushNext = Children[i];
+                    Indices[i] = Children[i]->Value;
                     Children[i] = new_node;
                 } else {
-                    DataType keyPushNext = Indices[i];
                     Indices[i] = value;
-                    SharedPointer<TreeNode<DataType>> childPushNext = new_node;
+                    childPushNext = new_node;
                 }
                 for (; i < Sons - 1; i++) {
                     DataType tmpKey = Indices[i + 1];
@@ -121,8 +121,8 @@ struct TreeNode {
             }
         }
         if (i == Sons - 1) {
-            if (value < Children[i]) {
-                Indices[i] = Children[i].GetValue();
+            if (value < Children[i]->Value) {
+                Indices[i] = Children[i]->Value;
                 Children[i+1] = Children[i];
                 Children[i] = new_node;
 

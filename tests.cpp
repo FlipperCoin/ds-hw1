@@ -39,6 +39,9 @@ struct Int {
     bool operator!=(const Int& other) const{
         return n != other.n;
     }
+    bool operator==(const Int& other) const {
+        return n == other.n;
+    }
 };
 
 void link(SharedPointer<TreeNode<Int>> node) {
@@ -55,6 +58,7 @@ TEST_F(Tests, btreeInsertEmpty) {
     t1->insert(1);
 
     auto* t_exp = new BTree23<Int>(expected);
+    t1->printTree();
     ASSERT_TRUE(t1 == t_exp);
 }
 TEST_F(Tests, btreeInsert1to2) {

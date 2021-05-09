@@ -20,12 +20,11 @@ class BTree23 {
 private:
     SharedPointer<TreeNode<DataType>> root;
 public:
-    BTree23() = default;
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
     SharedPointer<TreeNode<DataType>> insert(DataType value);
     SharedPointer<TreeNode<DataType>> remove(DataType value);
     SharedPointer<TreeNode<DataType>> find(DataType value,
-                                           SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>());
+                                           SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>()) const;
     void printTree() const;
     void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
@@ -36,32 +35,34 @@ public:
 };
 
 template<typename DataType>
-void BTree23<DataType>::insert(DataType value) {
-    if (!root) {
+SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
+    if (root.isEmpty()) {
         root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value)); // add new tree node
-        return;
+        return root;
     }
     SharedPointer<TreeNode<DataType>> place = find(value, root); // return the
-    if (place.isleaf()) return; // value is already in tree!
+    if (isLeaf(place)) return SharedPointer<TreeNode<DataType>>(); // value is already in tree!
     // else - insert new node in father
-    SharedPointer<TreeNode<DataType>> new_node = new TreeNode<DataType>(value, place);
-    place.InsertNode(new_node);
-    if(sons == 3) return; //great! no need for fixing!
+    SharedPointer<TreeNode<DataType>> new_node =
+            SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value, place));
+    place->insertValue(new_node);
+    if(place->Sons == 3) return new_node; //great! no need for fixing!
     fix(place);
-    return;
+    return new_node;
 }
-SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
 
 template<typename DataType>
 void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
-    SharedPointer<TreeNode<DataType>> first_half = new TreeNode<DataType>(node->children[0], node->children[1], node->Indices[0]);
-    SharedPointer<TreeNode<DataType>> second_half = new TreeNode<DataType>(node->children[2], node->children[3], node->Indices[2]);
-    if (node->parent == nullptr){
+    auto first_half = SharedPointer<TreeNode<DataType>>(
+            new TreeNode<DataType>(node->Children[0], node->Children[1], node->Indices[0]));
+    auto second_half = SharedPointer<TreeNode<DataType>>(
+            new TreeNode<DataType>(node->Children[2], node->Children[3], node->Indices[2]));
+    if (node->Parent.isEmpty()){
         root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(first_half, second_half,node->Indices[1]));
     }
-    else node->parent.swap(first_half, second_half,node->Indices[1]);
-    if (node->parent->sons == 4)
-        fix(parent);
+    else node->Parent->swap(first_half, second_half,node->Indices[1]);
+    if (node->Parent->Sons == 4)
+        fix(node->Parent);
 }
 
 template<typename DataType>
@@ -70,20 +71,20 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
 }
 
 template<typename DataType>
-SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value, SharedPointer<TreeNode<DataType>> node) {
+SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value, SharedPointer<TreeNode<DataType>> node) const {
     if (node.isEmpty()) node = root;
 
     if (node->Indices.getCount() == 0) {
-        if (!value == node->Value) return SharedPointer<TreeNode<DataType>>();
+        if (!(value == node->Value)) return SharedPointer<TreeNode<DataType>>();
 
         return node;
     }
 
     if (value < node->Indices[0]) {
-        return find(value, node->Small);
+        //return find(value, node->Small);
     }
 
-    if (node->Indices.getCount() == 1) return find(value, node->MiddleOne);
+    //if (node->Indices.getCount() == 1) return find(value, node->MiddleOne);
 
     //if (value >=)
 }
