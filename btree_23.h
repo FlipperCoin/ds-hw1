@@ -136,9 +136,7 @@ BTree23<DataType>::BTree23(SharedPointer<TreeNode<DataType>> root) : root(root) 
 
 template<typename DataType>
 bool BTree23<DataType>::operator==(const BTree23<DataType> &other) const {
-    auto node = root;
-
-
+    return compare(*root, *(other.root));
 }
 
 template<typename DataType>
@@ -150,7 +148,7 @@ bool BTree23<DataType>::compare(const TreeNode<DataType> &node1, const TreeNode<
     }
 
     for (int i = 0; i < node1.Sons; i++) {
-        if (!compare(node1.Children[i],node2.Children[i])) return false;
+        if (!compare(*(node1.Children[i]),*(node2.Children[i]))) return false;
     }
 
     return true;
