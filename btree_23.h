@@ -30,6 +30,8 @@ public:
     void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
+    bool operator==(const BTree23<DataType>& other) const;
+    static bool compare(const TreeNode<DataType>& node1, const TreeNode<DataType>& node2);
 };
 
 template<typename DataType>
@@ -105,5 +107,27 @@ bool BTree23<DataType>::isLeaf(SharedPointer<TreeNode<DataType>> node) const {
 
 template<typename DataType>
 BTree23<DataType>::BTree23(SharedPointer<TreeNode<DataType>> root) : root(root) { }
+
+template<typename DataType>
+bool BTree23<DataType>::operator==(const BTree23<DataType> &other) const {
+    auto node = root;
+
+
+}
+
+template<typename DataType>
+bool BTree23<DataType>::compare(const TreeNode<DataType> &node1, const TreeNode<DataType> &node2) {
+    if (node1.Sons != node2.Sons) return false;
+
+    for (int i = 0; i < node1.Sons; i++) {
+        if (node1.Indices[i] != node2.Indices[i]) return false;
+    }
+
+    for (int i = 0; i < node1.Sons; i++) {
+        if (!compare(node1.Children[i],node2.Children[i])) return false;
+    }
+
+    return true;
+}
 
 #endif //DS_EX1_TREE23_H
