@@ -81,8 +81,10 @@ struct TreeNode {
     }
 
     void insertValue(DataType value){
-        for (int i = 0; i < sons; ++i) {
+        for (int i = 0; i < Sons; i++) {
+            if (key < Indices[i]) {
 
+            }
         }
     }
 };
