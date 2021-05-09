@@ -20,17 +20,22 @@ struct CarNode {
     int BestSellingModel;
     Vector<SharedPointer<ModelData>> Models;
 public:
-    bool operator<(const GradeNode& other) const;
-    bool operator>=(const GradeNode& other) const;
+    bool operator<(const CarNode& other) const;
+    bool operator>=(const CarNode& other) const;
+    bool operator==(const CarNode& other) const;
     string str() const;
 };
 
-bool CarNode::operator<(const GradeNode &other) const {
+bool CarNode::operator<(const CarNode &other) const {
     return TypeID < other.TypeID;
 }
 
-bool CarNode::operator>=(const GradeNode &other) const {
+bool CarNode::operator>=(const CarNode &other) const {
     return TypeID >= other.TypeID;
+}
+
+bool CarNode::operator==(const CarNode &other) const {
+    return TypeID == other.TypeID;
 }
 
 string CarNode::str() const {

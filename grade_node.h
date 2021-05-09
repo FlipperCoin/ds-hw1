@@ -20,6 +20,7 @@ struct GradeNode {
 public:
     bool operator<(const GradeNode& other) const;
     bool operator>=(const GradeNode& other) const;
+    bool operator==(const GradeNode& other) const;
     string str() const;
 };
 
@@ -35,6 +36,10 @@ bool GradeNode::operator<(const GradeNode &other) const {
 
 bool GradeNode::operator>=(const GradeNode &other) const {
     return !(*this < other);
+}
+
+bool GradeNode::operator==(const GradeNode &other) const {
+    return Grade == other.Grade && TypeID == other.TypeID && ModelID == other.ModelID;
 }
 
 string GradeNode::str() const {
