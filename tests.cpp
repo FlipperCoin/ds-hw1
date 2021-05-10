@@ -196,13 +196,15 @@ TEST_F(Tests, btreeInsert3To4FirstBig) {
     ASSERT_TRUE(*t1 == *t_exp);
 }
 TEST_F(Tests, btreeInsert3To4SecondSmall) {
-    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(-1)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(0)),0)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),4,6)),2));
-    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(-1)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(0)),0)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(1)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),6)),1,4));
+    // Different from btreeInsert3To4second.json
+    // needed to change second's values a bit
+    SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(-1)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(0)),0)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),4,6)),2));
+    SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(-1)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(0)),0)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(2)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(4)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(6)),6)),2,4));
     link(root);
     auto* t1 = new BTree23<Int>(root);
 
-    t1->insert(1);
-
+    t1->insert(2);
+    
     auto* t_exp = new BTree23<Int>(expected);
     ASSERT_TRUE(*t1 == *t_exp);
 }

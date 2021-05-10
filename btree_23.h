@@ -41,7 +41,9 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
         return root;
     }
     SharedPointer<TreeNode<DataType>> place = find(value, root); // return the
-    if (isLeaf(place)) return SharedPointer<TreeNode<DataType>>(); // value is already in tree!
+    if (isLeaf(place)) { // value is already in tree!
+        return SharedPointer<TreeNode<DataType>>();
+    }
     // else - insert new node in father
     SharedPointer<TreeNode<DataType>> new_node =
             SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value, place));
@@ -59,8 +61,9 @@ void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
             new TreeNode<DataType>(node->Children[2], node->Children[3], node->Indices[2]));
     if (node->Parent.isEmpty()){
         root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(first_half, second_half,node->Indices[1]));
+        return;
     }
-    else node->Parent->swap(first_half, second_half,node->Indices[1]);
+    node->Parent->swap(first_half, second_half,node->Indices[1]);
     if (node->Parent->Sons == 4)
         fix(node->Parent);
 }
@@ -72,21 +75,48 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
 
 template<typename DataType>
 SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value, SharedPointer<TreeNode<DataType>> node) const {
-    if (node.isEmpty()) node = root;
+    // first run, init from root
+    if (node.isEmpty()) {
+        node = root;
+    }
 
-    if (node->Indices.getCount() == 0) {
-        if (!(value == node->Value)) return SharedPointer<TreeNode<DataType>>();
+    // reached a leaf, its either the wanted value or the value is not in the tree
+    if (isLeaf(node)) {
+        // return an empty pointer indicating the value's not in the tree
+        // and the parent should be returned instead
+        if (!(value == node->Value)) {
+            return SharedPointer<TreeNode<DataType>>();
+        }
 
+        // return the found leaf with the wanted value
         return node;
     }
 
-    if (value < node->Indices[0]) {
-        //return find(value, node->Small);
+    SharedPointer<TreeNode<DataType>> found;
+    for (int i = 0; i < node->Sons-1; i++) {
+        // if not less than this part, check if it was the last part
+        if (!(value < node->Indices[i])) {
+            if (i == node->Sons-2) {
+                // definitely larger equals node->Indices[node->Sons-1])
+                found = find(value, node->Children[i+1]);
+            }
+
+            // if not the last, continue in the loop
+            continue;
+        };
+
+        // value is in this part, try find and break
+        found = find(value, node->Children[i]);
+        break;
     }
 
-    //if (node->Indices.getCount() == 1) return find(value, node->MiddleOne);
+    // if didn't find, return parent
+    if (found.isEmpty()) {
+        return node;
+    }
 
-    //if (value >=)
+    // return leaf (or parent from below)
+    return found;
 }
 
 
@@ -143,12 +173,16 @@ template<typename DataType>
 bool BTree23<DataType>::compare(const TreeNode<DataType> &node1, const TreeNode<DataType> &node2) {
     if (node1.Sons != node2.Sons) return false;
 
-    for (int i = 0; i < node1.Sons; i++) {
-        if (node1.Indices[i] != node2.Indices[i]) return false;
+    for (int i = 0; i < node1.Sons-1; i++) {
+        if (node1.Indices[i] != node2.Indices[i]) {
+            return false;
+        }
     }
 
     for (int i = 0; i < node1.Sons; i++) {
-        if (!compare(*(node1.Children[i]),*(node2.Children[i]))) return false;
+        if (!compare(*(node1.Children[i]),*(node2.Children[i]))) {
+            return false;
+        }
     }
 
     return true;

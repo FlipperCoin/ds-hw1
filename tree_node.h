@@ -92,10 +92,10 @@ struct TreeNode {
     void insertValue(SharedPointer<TreeNode<DataType>> new_node) {
         DataType value = new_node->Value;
         int i = 0;
-        bool changed = False;
+        bool changed = false;
         for (; i < Sons-1; i++) {
             if (value < Indices[i]) {
-                changed = True;
+                changed = true;
                 DataType keyPushNext = Indices[i];
                 SharedPointer<TreeNode<DataType>> childPushNext;
                 if (value < Children[i]->Value) {
@@ -108,16 +108,16 @@ struct TreeNode {
                     childPushNext = new_node;
                 }
                 for (; i < Sons - 1; i++) {
-                    if(if i+1 < sons-1) DataType tmpKey = Indices[i + 1]; // check!!
-                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i  1];
+                    DataType tmpKey = Indices[i + 1]; // check!!
+                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i + 1];
 
                     Indices[i + 1] = keyPushNext;
                     Children[i + 1] = childPushNext;
 
                     childPushNext = tmpChild;
-                    if(if i+1 < sons-1) keyPushNext = tmpKey;
+                    if(i+1 < Sons-1) keyPushNext = tmpKey;
                 }
-                if(if i+1 < sons-1) Indices[i + 1] = keyPushNext;
+                if(i+1 < Sons-1) Indices[i + 1] = keyPushNext;
                 Children[i + 1] = childPushNext;
                 break;
             }
