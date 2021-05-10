@@ -18,6 +18,7 @@ using std::ostringstream;
 struct CarNode {
     int TypeID;
     int BestSellingModel;
+    int SellsForBestSelling;
     Vector<SharedPointer<ModelData>> Models;
 public:
     bool operator<(const CarNode& other) const;

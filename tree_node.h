@@ -137,6 +137,9 @@ struct TreeNode {
         Sons++;
     }
 
+    bool isLeaf() const {
+        return Sons == 0;
+    }
 };
 
 
