@@ -40,7 +40,28 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
         root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value)); // add new tree node
         return root;
     }
-    SharedPointer<TreeNode<DataType>> place = find(value, root); // return the
+
+    if (isLeaf(root)) {
+        SharedPointer<TreeNode<DataType>> new_root =
+                SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(DataType()));
+        SharedPointer<TreeNode<DataType>> new_node =
+                SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value, new_root));
+        root->Parent = new_root;
+        new_root->Sons = 2;
+        if(value < root->Value){
+            new_root->Children[0] = new_node;
+            new_root->Children[1] = root;
+            new_node->Indices[0] = root->Value;
+        }
+        else {
+            new_root->Children[0] = root;
+            new_root->Children[1] = new_node;
+            new_node->Indices[0] = new_node->Value;
+        }
+        root = new_root;
+    }
+
+    SharedPointer<TreeNode<DataType>> place = find(value, root);
     if (isLeaf(place)) { // value is already in tree!
         return SharedPointer<TreeNode<DataType>>();
     }
@@ -70,6 +91,63 @@ void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
 
 template<typename DataType>
 SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
+    SharedPointer<TreeNode<DataType>> node = find(value, root);
+    if(!isLeaf(node)){ // check if the value doesn't exist
+        return SharedPointer<TreeNode<DataType>>(); // what to give back ????
+    }
+    if (node->Parent == SharedPointer<TreeNode<DataType>>()){
+        root = SharedPointer<TreeNode<DataType>>();
+        return root;
+    }
+    if (node->Parent->Sons == 3){
+        node.removeThirdSon();
+    }
+    /*
+    else if (node->Parent->Sons == 1){ // are there any other cases there's only one child?
+        root = SharedPointer<TreeNode<DataType>>();
+        return SharedPointer<TreeNode<DataType>>();
+    }
+
+     NOT SUPPOSED TO HAPPEN!!
+    */
+
+
+    else if(node->Parent->Sons == 2){
+        SharedPointer<TreeNode<DataType>> other_son = SharedPointer<TreeNode<DataType>>();
+        if(node->parent->Children[0]->Value == value){
+            other_son = node->parent->Children[1];
+        }
+        else{
+            other_son = node->parent->Children[0];
+        }
+
+        if(node->parent == root){ // if parent is root then the other child will be the new root.
+            if(root->Children[0] == node) {
+                root = root->Children[1];
+            }
+            else {
+                root= root->Children[0];
+            }
+        }
+
+        else {
+            if(node->Parent->Parent->Sons == 3) {
+                if (node->Parent->Parent->Children[2] == node->Parent) {
+                    if (node->Parent->Parent->Children[1].Sons == 2){
+                        node->Parent->Parent->Children[1].Sons = 3;
+                        node->Parent->Parent->Children[1].Indices[1] = other_son->Value;
+                        node->Parent->Parent->Children[1].Children[2] = other_son;
+                    }
+                    else{
+                        borrow_leaf(node->Parent->Parent->Children[1],2)
+                    }
+                }
+            }
+
+        }
+    }
+
+    // node->Parent->Sons--; done in remove third son
     return SharedPointer<TreeNode<DataType>>();
 }
 
