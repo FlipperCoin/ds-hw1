@@ -109,6 +109,8 @@ struct TreeNode {
                     childPushNext = new_node;
                 }
                 for (; i < Sons - 1; i++) {
+                    DataType tmpKey = Indices[i + 1]; // check!!
+                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i + 1];
                     if(i+1 < Sons-1) DataType tmpKey = Indices[i + 1]; // check!!
                     SharedPointer<TreeNode<DataType>> tmpChild = Children[i+1];
 
@@ -138,6 +140,9 @@ struct TreeNode {
         Sons++;
     }
 
+    bool isLeaf() const {
+        return Sons == 0;
+    }
 };
 
 

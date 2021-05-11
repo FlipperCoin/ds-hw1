@@ -14,9 +14,9 @@
 using std::string;
 
 struct GradeNode {
-    int Grade;
     int TypeID;
     int ModelID;
+    int Grade;
 public:
     bool operator<(const GradeNode& other) const;
     bool operator>=(const GradeNode& other) const;
