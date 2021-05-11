@@ -16,34 +16,18 @@ using std::string;
 using std::ostringstream;
 
 struct CarNode {
-    int TypeID;
-    int BestSellingModel;
-    int SellsForBestSelling;
+    int TypeID{};
+    int BestSellingModel{};
+    int SellsForBestSelling{};
     Vector<SharedPointer<ModelData>> Models;
-public:
+
+    CarNode() = default;
+    explicit CarNode(int typeID, int numOfModels=0) : TypeID(typeID), BestSellingModel(0),
+    SellsForBestSelling(0), Models(Vector<SharedPointer<ModelData>>(numOfModels)){}
     bool operator<(const CarNode& other) const;
     bool operator>=(const CarNode& other) const;
     bool operator==(const CarNode& other) const;
     string str() const;
 };
-
-bool CarNode::operator<(const CarNode &other) const {
-    return TypeID < other.TypeID;
-}
-
-bool CarNode::operator>=(const CarNode &other) const {
-    return TypeID >= other.TypeID;
-}
-
-bool CarNode::operator==(const CarNode &other) const {
-    return TypeID == other.TypeID;
-}
-
-string CarNode::str() const {
-    std::ostringstream string_stream;
-    string_stream << "(" << TypeID << "," << BestSellingModel << "," << Models.getCount() << ")";
-    return string_stream.str();
-}
-
 
 #endif //DS_EX1_CARNODE_H
