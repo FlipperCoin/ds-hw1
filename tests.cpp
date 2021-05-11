@@ -61,9 +61,10 @@ TEST_F(Tests, btreeInsertEmpty) {
     ASSERT_TRUE(*t1 == *t_exp);
 }
 TEST_F(Tests, btreeInsert1to2) {
-    auto* t1 = new BTree23<Int>();
     SharedPointer<TreeNode<Int>> root = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3));
     SharedPointer<TreeNode<Int>> expected = SharedPointer<TreeNode<Int>>(new TreeNode<Int>(SharedPointer<TreeNode<Int>>(new TreeNode<Int>(3)),SharedPointer<TreeNode<Int>>(new TreeNode<Int>(5)),5));
+    link(root);
+    auto* t1 = new BTree23<Int>(root);
 
     t1->insert(5);
 

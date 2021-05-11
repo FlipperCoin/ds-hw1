@@ -51,6 +51,10 @@ public:
         return this->pointer == other;
     }
 
+    bool operator==(const SharedPointer<T>& other) {
+        return this->pointer == other.pointer;
+    }
+
     T& operator*() {
         return *pointer;
     }

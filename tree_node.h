@@ -126,8 +126,6 @@ struct TreeNode {
                 for (; i < Sons - 1; i++) {
                     DataType tmpKey = Indices[i + 1]; // check!!
                     SharedPointer<TreeNode<DataType>> tmpChild = Children[i + 1];
-                    if(i+1 < Sons-1) DataType tmpKey = Indices[i + 1]; // check!!
-                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i+1];
 
                     Indices[i + 1] = keyPushNext;
                     Children[i + 1] = childPushNext;
