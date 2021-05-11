@@ -89,6 +89,21 @@ struct TreeNode {
         Sons++;
     }
 
+    void removeThirdSon() { // removes a third son only
+        if(this->Sons != 3 || !(this.isLeaf())){
+            return;
+        }
+        if(this->Parent->Children[0] == this){
+            this->Parent->Indices[0] = this->Parent->Indices[1];
+            this->Parent->Children[0] = this->Parent->Children[1];
+            this->Parent->Children[1] = this->Parent->Children[2];
+        }
+        else if(this->Parent->Children[1] == this){
+            this->Parent->Children[1] = this->Parent->Children[2];
+        }
+        this->Parent->Sons--;
+    }
+
     void insertValue(SharedPointer<TreeNode<DataType>> new_node) {
 
         DataType value = new_node->Value;
@@ -126,7 +141,7 @@ struct TreeNode {
             }
         }
         if (!changed) {
-            if (value < Children[i]->Value) {
+            if (value < Children[i]->Value) { // Seg fault???? if no children
                 Indices[i] = Children[i]->Value;
                 Children[i+1] = Children[i];
                 Children[i] = new_node;
