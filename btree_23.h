@@ -40,7 +40,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
         root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value)); // add new tree node
         return root;
     }
-    SharedPointer<TreeNode<DataType>> place = find(value, root); // return the
+    SharedPointer<TreeNode<DataType>> place = find(value, root);
     if (isLeaf(place)) return SharedPointer<TreeNode<DataType>>(); // value is already in tree!
     // else - insert new node in father
     SharedPointer<TreeNode<DataType>> new_node =
@@ -67,6 +67,27 @@ void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
 
 template<typename DataType>
 SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
+    SharedPointer<TreeNode<DataType>> node = find(value, root);
+    if (node->Parent->Sons == 3){
+        if(node->Parent->Indices[0] == node->Value){
+            node->Parent->Indices[0] = node->Parent->Indices[1];
+            node->Parent->Children[0] = node->Parent->Children[1];
+            node->Parent->Children[1] = node->Parent->Children[2];
+        }
+        else if(node->Parent->Indices[1] == node->Value){
+            node->Parent->Children[1] = node->Parent->Children[2];
+        }
+    }
+    else{
+        if(node->parent == root){ // if parent is root then now root will take the other child's value
+            if(root->Children[0] == node) root->Value = root->Children[1]->Value;
+            else root->Value = root->Children[0]->Value;
+            root->Sons--;
+        }
+
+
+    }
+    node->Parent->Sons--;
     return SharedPointer<TreeNode<DataType>>();
 }
 
