@@ -9,12 +9,7 @@ StatusType CarDealershipManager::AddCarType(int typeID, int numOfModels) {
         return INVALID_INPUT;
     }
     try {
-        CarNode car = {
-                .TypeID=typeID,
-                .BestSellingModel=0,
-                .SellsForBestSelling=0,
-                .Models=Vector<SharedPointer<ModelData>>(numOfModels)
-        };
+        CarNode car(typeID);
         // The models do not exist until they are sold or complained about
         // so init to null
         // O(m)
@@ -47,7 +42,7 @@ StatusType CarDealershipManager::RemoveCarType(int typeID) {
         // find car in type tree
         // O(log(n))
         SharedPointer<TreeNode<CarNode>> carNode =
-                Cars.find({.TypeID=typeID,.Models=Vector<SharedPointer<ModelData>>()});
+                Cars.find(CarNode(typeID));
 
         if (!carNode->isLeaf()) {
             // provided type isn't in the cars tree
@@ -104,7 +99,7 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
         // find car in type tree
         // O(log(n))
         SharedPointer<TreeNode<CarNode>> carNode =
-                Cars.find({.TypeID=typeID,.Models=Vector<SharedPointer<ModelData>>()});
+                Cars.find(CarNode(typeID));
 
         if (!carNode->isLeaf()) {
             // provided type isn't in the cars tree
