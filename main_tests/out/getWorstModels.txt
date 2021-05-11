@@ -1,0 +1,8 @@
+init done.
+
+Model	|	Car
+10	|	2
+10	|	0
+10	|	1
+--End of worst cars--
+quit done.

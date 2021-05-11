@@ -1,0 +1,13 @@
+init done.
+MakeComplaint: INVALID_INPUT
+MakeComplaint: INVALID_INPUT
+MakeComplaint: INVALID_INPUT
+MakeComplaint: FAILURE
+AddCarType: SUCCESS
+MakeComplaint: SUCCESS
+MakeComplaint: INVALID_INPUT
+MakeComplaint: INVALID_INPUT
+MakeComplaint: INVALID_INPUT
+RemoveCarType: SUCCESS
+MakeComplaint: FAILURE
+quit done.

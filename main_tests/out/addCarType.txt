@@ -1,0 +1,10 @@
+init done.
+AddCarType: INVALID_INPUT
+AddCarType: INVALID_INPUT
+AddCarType: INVALID_INPUT
+AddCarType: INVALID_INPUT
+AddCarType: INVALID_INPUT
+AddCarType: SUCCESS
+AddCarType: FAILURE
+AddCarType: SUCCESS
+quit done.

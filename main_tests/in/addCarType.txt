@@ -1,0 +1,10 @@
+Init
+AddCarType 0 3
+AddCarType 3 0
+AddCarType 0 0
+AddCarType -1 2
+AddCarType 2 -1
+AddCarType 3 3
+AddCarType 3 4
+AddCarType 4 4
+Quit
