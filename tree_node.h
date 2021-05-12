@@ -15,7 +15,7 @@ struct TreeNode {
 
     DataType Value;
 
-    SharedPointer<TreeNode> Parent = SharedPointer<TreeNode<DataType>>();
+    TreeNode<DataType>* Parent = nullptr;
 
     Vector<SharedPointer<TreeNode<DataType>>> Children = Vector<SharedPointer<TreeNode<DataType>>>(4);
 
@@ -23,7 +23,7 @@ struct TreeNode {
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> big,
              DataType key,
-             SharedPointer<TreeNode<DataType>> parent = SharedPointer<TreeNode<DataType>>()) : Sons(2), Parent(parent) {
+             TreeNode<DataType>* parent = nullptr) : Sons(2), Parent(parent) {
         Indices[0] = key;
         Children[0] = small;
         Children[1] = big;
@@ -33,7 +33,7 @@ struct TreeNode {
              SharedPointer<TreeNode<DataType>> big,
              DataType key1,
              DataType key2,
-             SharedPointer<TreeNode<DataType>> parent = SharedPointer<TreeNode<DataType>>()) : Sons(3), Parent(parent) {
+             TreeNode<DataType>* parent = nullptr) : Sons(3), Parent(parent) {
         Indices[0] = key1;
         Indices[1] = key2;
         Children[0] = small;
@@ -47,7 +47,7 @@ struct TreeNode {
              DataType key1,
              DataType key2,
              DataType key3,
-             SharedPointer<TreeNode<DataType>> parent = SharedPointer<TreeNode<DataType>>()) : Sons(4), Parent(parent) {
+             TreeNode<DataType>* parent = nullptr) : Sons(4), Parent(parent) {
         Indices[0] = key1;
         Indices[1] = key2;
         Indices[2] = key3;
@@ -56,7 +56,7 @@ struct TreeNode {
         Children[2] = middleTwo;
         Children[3] = big;
     }
-    TreeNode(DataType value, SharedPointer<TreeNode<DataType>> parent = SharedPointer<TreeNode<DataType>>()) : Value(value), Sons(0), Parent(parent) {
+    TreeNode(DataType value, TreeNode<DataType>* parent = nullptr) : Value(value), Sons(0), Parent(parent) {
     }
 
     void swap(SharedPointer<TreeNode<DataType>> firstHalf,
@@ -89,19 +89,28 @@ struct TreeNode {
         Sons++;
     }
 
-    void removeThirdSon() { // removes a third son only
-        if(this->Sons != 3 || !(this->isLeaf())){
-            return;
+    void removeSon(DataType Value) {
+        if (this->Sons == 3) {
+            if (this->Children[0]->Value == value) {
+                this->Indices[0] = this->Indices[1]; // update node Indices
+                this->Children[0] = this->Children[1]; // update node children
+                this->Children[1] = this->Children[2];
+                this->Value = this->Children[0]->Value; // update node value
+            }
+            else if (this->Children[1]->Value == value) {
+                this->Children[1] = this->Parent->Children[2];
+                this->Indices[0] = this->Indices[1];
+            }
         }
-        if(this->Parent->Children[0] == this){
-            this->Parent->Indices[0] = this->Parent->Indices[1];
-            this->Parent->Children[0] = this->Parent->Children[1];
-            this->Parent->Children[1] = this->Parent->Children[2];
+        else if(this->Sons == 2){
+            if (this->Children[0]->Value == value) {
+                this->Parent->Indices[0] = this->Parent->Indices[1];
+                this->Children[0] = this->Children[1];
+                this->Value = this->Children[0]->Value; // update node value
+            }
+            // else if (this->Parent->Children[1] == this) this->Parent->Indices[0] = this->Value;
         }
-        else if(this->Parent->Children[1] == this){
-            this->Parent->Children[1] = this->Parent->Children[2];
-        }
-        this->Parent->Sons--;
+        this->Sons--;
     }
 
     void insertValue(SharedPointer<TreeNode<DataType>> new_node) {
@@ -124,8 +133,8 @@ struct TreeNode {
                     childPushNext = new_node;
                 }
                 for (; i < Sons - 1; i++) {
-                    DataType tmpKey = Indices[i + 1]; // check!!
-                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i + 1];
+                    DataType tmpKey = Indices[i + 1];
+                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i+1];
 
                     Indices[i + 1] = keyPushNext;
                     Children[i + 1] = childPushNext;
@@ -156,6 +165,66 @@ struct TreeNode {
     bool isLeaf() const {
         return Sons == 0;
     }
+
+    void borrow(int id, int other){
+        if (other > id){ // borrowing from right hand side
+            // fixing indicators
+            this->Indices[0] = this->Parent->Indices[other - 1];
+            this->Parent->Indices[other - 1] = this->Parent->Children[other]->Indeices[0];
+
+            // transferring the first child of other node
+            this->Children[1] = this->Parent->Children[other]->Children[0];
+            this->Children[1]->Parent = this;
+
+            // fixing the other node
+            this->Parent->Children[other]->Sons = 2;
+            this->Parent->Children[other]->Indices[0] = this->Parent->Children[other]->Indices[1];
+            this->Parent->Children[other]->Children[0] = this->Parent->Children[other]->Children[1];
+            this->Parent->Children[other]->Children[1] = this->Parent->Children[other]->Children[2];
+
+        else{ // borrowing from left hand side
+            // fixing indicators
+            this->Indices[0] = this->Parent->indices[other];
+            this->Parent->Indices[other] = this->Parent->Children[other]->Indeices[1];
+
+            // transferring the last child of other node
+            this->Children[1] = this->Children[0];
+            this->Children[0] = this->Parent->Children[other]->Children[2];
+            this->Children[0]->Parent = this;
+
+            // fixing the other node
+            this->Parent->Children[other]->Sons = 2;
+        }
+    }
+
+    void combine(int id, int other){
+        if (other > id){ // combining with right hand side
+            // transferring the children other node
+            this->Children[1] = this->Parent->Children[other]->Children[0];
+            this->Children[2] = this->Parent->Children[other]->Children[1];
+            this->Children[1]->Parent = this;
+            this->Children[2]->Parent = this;
+
+            // fixing indicators
+            this->Indices[0] = this->Children[1]->Value;
+            this->Indices[1] = this->Children[2]->Value;
+
+        }
+        else{ // combining with left hand side
+            // transferring the children other node
+            this->Children[2] = this->Children[0];
+            this->Children[0] = this->Parent->Children[other]->Children[0];
+            this->Children[1] = this->Parent->Children[other]->Children[0];
+            this->Children[0]->Parent = this;
+            this->Children[1]->Parent = this;
+
+            // fixing indicators
+            this->Indices[0] = this->Children[1]->Value;
+            this->Indices[1] = this->Children[2]->Value;
+
+        }
+        //delete other node
+        this->Parent.removeSon(this->Parent->Children[other]->Value);
 };
 
 

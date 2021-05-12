@@ -85,7 +85,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
 }
 
 template<typename DataType>
-void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
+void BTree23<DataType>::fix_insert(SharedPointer<TreeNode<DataType>> node) {
     auto first_half = SharedPointer<TreeNode<DataType>>(
             new TreeNode<DataType>(node->Children[0], node->Children[1], node->Indices[0]));
     auto second_half = SharedPointer<TreeNode<DataType>>(
@@ -96,69 +96,55 @@ void BTree23<DataType>::fix(SharedPointer<TreeNode<DataType>> node) {
     }
     node->Parent->swap(first_half, second_half,node->Indices[1]);
     if (node->Parent->Sons == 4)
-        fix(node->Parent);
+        fix_insert(node->Parent);
 }
 
 template<typename DataType>
 SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
-//    SharedPointer<TreeNode<DataType>> node = find(value, root);
-//    if(!isLeaf(node)){ // check if the value doesn't exist
-//        return SharedPointer<TreeNode<DataType>>(); // what to give back ????
-//    }
-//    if (node->Parent == SharedPointer<TreeNode<DataType>>()){
-//        root = SharedPointer<TreeNode<DataType>>();
-//        return root;
-//    }
-//    if (node->Parent->Sons == 3){
-//        node.removeThirdSon();
-//    }
-//    /*
-//    else if (node->Parent->Sons == 1){ // are there any other cases there's only one child?
-//        root = SharedPointer<TreeNode<DataType>>();
-//        return SharedPointer<TreeNode<DataType>>();
-//    }
-//
-//     NOT SUPPOSED TO HAPPEN!!
-//    */
-//
-//
-//    else if(node->Parent->Sons == 2){
-//        SharedPointer<TreeNode<DataType>> other_son = SharedPointer<TreeNode<DataType>>();
-//        if(node->parent->Children[0]->Value == value){
-//            other_son = node->parent->Children[1];
-//        }
-//        else{
-//            other_son = node->parent->Children[0];
-//        }
-//
-//        if(node->parent == root){ // if parent is root then the other child will be the new root.
-//            if(root->Children[0] == node) {
-//                root = root->Children[1];
-//            }
-//            else {
-//                root= root->Children[0];
-//            }
-//        }
-//
-//        else {
-//            if(node->Parent->Parent->Sons == 3) {
-//                if (node->Parent->Parent->Children[2] == node->Parent) {
-//                    if (node->Parent->Parent->Children[1].Sons == 2){
-//                        node->Parent->Parent->Children[1].Sons = 3;
-//                        node->Parent->Parent->Children[1].Indices[1] = other_son->Value;
-//                        node->Parent->Parent->Children[1].Children[2] = other_son;
-//                    }
-//                    else{
-//                        borrow_leaf(node->Parent->Parent->Children[1],2);
-//                    }
-//                }
-//            }
-//
-//        }
-//    }
-//
-//    // node->Parent->Sons--; done in remove third son
-//    return SharedPointer<TreeNode<DataType>>();
+    SharedPointer<TreeNode<DataType>> node = find(value, root);
+    if (!isLeaf(node)) { // check if the value doesn't exist
+        return SharedPointer<TreeNode<DataType>>(); // what to give back ????
+    }
+    if (node->Parent == SharedPointer<TreeNode<DataType>>()) {
+        root = SharedPointer<TreeNode<DataType>>();
+        return root;
+    }
+    SharedPointer<TreeNode<DataType>> v_node = node->Parent;
+    v_node.removeSon(value);
+
+    // recursive function here!!
+    fix_remove(v_node);
+    return SharedPointer<TreeNode<DataType>>();
+}
+
+template<typename DataType>
+void BTree23<DataType>::fix_remove(SharedPointer<TreeNode<DataType>> v_node) {
+    if (v_node->Sons != 1) return;
+
+    if (v_node == root) {
+        root == v_node->Children[0];
+        root->Parent = nullptr;
+        return;
+    }
+    // v_node has one son but he's not root
+    if (v_node->Parent->Children[0]->Value == v_node->Value) { // if this is first child - id = 0
+        if (v_node->Parent->Children[1]->Sons == 3) v_node.borrow(0, 1); // borrow from second child
+        else v_node.combine(0, 1); // combine with second child
+    }
+    else if (v_node->Parent->Children[1]->Value == v_node->Value) { // if this is middle child - id = 1
+        if (v_node->Parent->Children[0]->Sons == 3) v_node.borrow(1, 0); // borrow from first child
+        else if (v_node->Parent->Sons == 3) { // if parent has three sons
+            if (v_node->Parent->Children[2]->Sons == 3) v_node.borrow(1, 2); // borrow from third side
+            else v_node.combine(1, 2); // combine with third side
+
+        }
+        else v_node.combine(1, 0);
+    }
+    else { // this is the third child - id = 2
+        if (v_node->Parent->Children[1]->Sons == 3) v_node.borrow(2, 1);
+        else v_node.combine(2, 1);
+    }
+    fix_remove(v_node->Parent);
 }
 
 template<typename DataType>
