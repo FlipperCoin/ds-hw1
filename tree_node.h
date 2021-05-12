@@ -10,12 +10,12 @@
 
 template <typename DataType>
 struct TreeNode {
-    Vector<DataType> Indices = Vector<DataType>(3);
+    Vector<DataType> Indices=Vector<DataType>(3);
     int Sons;
 
     DataType Value;
 
-    TreeNode<DataType> *Parent = nullptr;
+    TreeNode<DataType>* Parent = nullptr;
 
     Vector<SharedPointer<TreeNode<DataType>>> Children = Vector<SharedPointer<TreeNode<DataType>>>(4);
 
@@ -23,7 +23,7 @@ struct TreeNode {
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> big,
              DataType key,
-             TreeNode<DataType> *parent = nullptr) : Sons(2), Parent(parent) {
+             TreeNode<DataType>* parent = nullptr) : Sons(2), Parent(parent) {
         Indices[0] = key;
         Children[0] = small;
         Children[1] = big;
@@ -34,7 +34,7 @@ struct TreeNode {
              SharedPointer<TreeNode<DataType>> big,
              DataType key1,
              DataType key2,
-             TreeNode<DataType> *parent = nullptr) : Sons(3), Parent(parent) {
+             TreeNode<DataType>* parent = nullptr) : Sons(3), Parent(parent) {
         Indices[0] = key1;
         Indices[1] = key2;
         Children[0] = small;
@@ -49,7 +49,7 @@ struct TreeNode {
              DataType key1,
              DataType key2,
              DataType key3,
-             TreeNode<DataType> *parent = nullptr) : Sons(4), Parent(parent) {
+             TreeNode<DataType>* parent = nullptr) : Sons(4), Parent(parent) {
         Indices[0] = key1;
         Indices[1] = key2;
         Indices[2] = key3;
@@ -58,35 +58,34 @@ struct TreeNode {
         Children[2] = middleTwo;
         Children[3] = big;
     }
-
-    TreeNode(DataType value, TreeNode<DataType> *parent = nullptr) : Value(value), Sons(0), Parent(parent) {
+    TreeNode(DataType value, TreeNode<DataType>* parent = nullptr) : Value(value), Sons(0), Parent(parent) {
     }
 
     void swap(SharedPointer<TreeNode<DataType>> firstHalf,
-              SharedPointer<TreeNode<DataType>> secondHalf,
-              DataType key) {
-        for (int i = 0; i < Sons - 1; i++) {
+               SharedPointer<TreeNode<DataType>> secondHalf,
+               DataType key) {
+        for (int i = 0; i < Sons-1; i++) {
             // if key should insert between i-1 & i
             if (key < Indices[i]) {
                 DataType tmpPrev = key;
                 Children[i] = firstHalf;
                 SharedPointer<TreeNode<DataType>> childTmpPrev = secondHalf;
-                for (; i < Sons - 1; i++) {
+                for (; i < Sons-1; i++) {
                     DataType tmp = Indices[i];
                     Indices[i] = tmpPrev;
-                    SharedPointer<TreeNode<DataType>> childTmp = Children[i + 1];
-                    Children[i + 1] = childTmpPrev;
+                    SharedPointer<TreeNode<DataType>> childTmp = Children[i+1];
+                    Children[i+1] = childTmpPrev;
                     childTmpPrev = childTmp;
                     tmpPrev = tmp;
                 }
                 Indices[i] = tmpPrev;
-                Children[i + 1] = childTmpPrev;
+                Children[i+1] = childTmpPrev;
             }
             // If reached end of indices and key still bigger, insert in the end
-            if (i == Sons - 2 && Indices[i] < key) {
-                Indices[i + 1] = key;
-                Children[i + 1] = firstHalf;
-                Children[i + 2] = secondHalf;
+            if (i == Sons-2 && Indices[i] < key) {
+                Indices[i+1] = key;
+                Children[i+1] = firstHalf;
+                Children[i+2] = secondHalf;
             }
         }
         Sons++;
@@ -99,18 +98,19 @@ struct TreeNode {
                 this->Children[0] = this->Children[1]; // update node children
                 this->Children[1] = this->Children[2];
                 this->Value = this->Children[0]->Value; // update node value
-            } else if (this->Children[1]->Value == value) {
+            }
+            else if (this->Children[1]->Value == value) {
                 this->Children[1] = this->Children[2];
                 this->Indices[0] = this->Indices[1];
 
             }
-        } else if (this->Sons == 2) {
+        }
+        else if(this->Sons == 2){
             if (this->Children[0]->Value == value) {
                 this->Indices[0] = this->Indices[1];
                 this->Children[0] = this->Children[1];
                 this->Value = this->Children[0]->Value; // update node value
             }
-            // else if (this->Parent->Children[1] == this) this->Parent->Indices[0] = this->Value;
         }
         this->Sons--;
     }
@@ -120,7 +120,7 @@ struct TreeNode {
         DataType value = new_node->Value;
         int i = 0;
         bool changed = false;
-        for (; i < Sons - 1; i++) {
+        for (; i < Sons-1; i++) {
             if (value < Indices[i]) {
                 changed = true;
                 DataType keyPushNext = Indices[i];
@@ -136,15 +136,15 @@ struct TreeNode {
                 }
                 for (; i < Sons - 1; i++) {
                     DataType tmpKey = Indices[i + 1];
-                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i + 1];
+                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i+1];
 
                     Indices[i + 1] = keyPushNext;
                     Children[i + 1] = childPushNext;
 
                     childPushNext = tmpChild;
-                    if (i + 1 < Sons - 1) keyPushNext = tmpKey;
+                    if(i+1 < Sons-1) keyPushNext = tmpKey;
                 }
-                if (i + 1 < Sons - 1) Indices[i + 1] = keyPushNext;
+                if(i+1 < Sons-1) Indices[i + 1] = keyPushNext;
                 Children[i + 1] = childPushNext;
                 break;
             }
@@ -152,12 +152,13 @@ struct TreeNode {
         if (!changed) {
             if (value < Children[i]->Value) { // Seg fault???? if no children
                 Indices[i] = Children[i]->Value;
-                Children[i + 1] = Children[i];
+                Children[i+1] = Children[i];
                 Children[i] = new_node;
 
-            } else {
+            }
+            else {
                 Indices[i] = value;
-                Children[i + 1] = new_node;
+                Children[i+1]  = new_node;
             }
         }
         Sons++;
@@ -171,7 +172,7 @@ struct TreeNode {
         if (other > id) { // borrowing from right hand side
             // fixing indicators
             this->Indices[0] = this->Parent->Indices[other - 1];
-            this->Parent->Indices[other - 1] = this->Parent->Children[other]->Indeices[0];
+            this->Parent->Indices[other - 1] = this->Parent->Children[other]->Indices[0];
 
             // transferring the first child of other node
             this->Children[1] = this->Parent->Children[other]->Children[0];
@@ -184,8 +185,8 @@ struct TreeNode {
             this->Parent->Children[other]->Children[1] = this->Parent->Children[other]->Children[2];
         } else { // borrowing from left hand side
             // fixing indicators
-            this->Indices[0] = this->Parent->indices[other];
-            this->Parent->Indices[other] = this->Parent->Children[other]->Indeices[1];
+            this->Indices[0] = this->Parent->Indices[other];
+            this->Parent->Indices[other] = this->Parent->Children[other]->Indices[1];
 
             // transferring the last child of other node
             this->Children[1] = this->Children[0];
@@ -197,8 +198,8 @@ struct TreeNode {
         }
     }
 
-    void combine(int id, int other) {
-        if (other > id) { // combining with right hand side
+    void combine(int id, int other){
+        if (other > id){ // combining with right hand side
             // transferring the children other node
             this->Children[1] = this->Parent->Children[other]->Children[0];
             this->Children[2] = this->Parent->Children[other]->Children[1];
@@ -209,7 +210,8 @@ struct TreeNode {
             this->Indices[0] = this->Children[1]->Value;
             this->Indices[1] = this->Children[2]->Value;
 
-        } else { // combining with left hand side
+        }
+        else{ // combining with left hand side
             // transferring the children other node
             this->Children[2] = this->Children[0];
             this->Children[0] = this->Parent->Children[other]->Children[0];
@@ -223,8 +225,9 @@ struct TreeNode {
 
         }
         //delete other node
-        this->Parent.removeSon(this->Parent->Children[other]->Value);
+        this->Parent->removeSon(this->Parent->Children[other]->Value);
     }
 };
+
 
 #endif //DS_EX1_TREE_NODE_H
