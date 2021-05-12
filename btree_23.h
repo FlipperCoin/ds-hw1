@@ -1,7 +1,3 @@
-//
-// Created by Itai on 08/05/2021.
-//
-
 #ifndef DS_EX1_TREE23_H
 #define DS_EX1_TREE23_H
 
@@ -20,7 +16,6 @@ template <typename DataType>
 class BTree23 {
 private:
     SharedPointer<TreeNode<DataType>> root;
-    SharedPointer<TreeNode<DataType>> child;
 public:
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
     // tree with ascending values from 0 to n-1
@@ -36,7 +31,8 @@ public:
                   void (*should_continue)(SharedPointer<TreeNode<DataType>>));
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
-    void fix(SharedPointer<TreeNode<DataType>> node);
+    void fix_insert(SharedPointer<TreeNode<DataType>> node);
+    void fix_remove(SharedPointer<TreeNode<DataType>> node);
     bool operator==(const BTree23<DataType>& other) const;
     static bool compare(const TreeNode<DataType>& node1, const TreeNode<DataType>& node2);
 

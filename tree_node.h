@@ -166,7 +166,7 @@ struct TreeNode {
         return Sons == 0;
     }
 
-    void borrow(int id, int other){
+    void borrow(int id, int other) {
         if (other > id) { // borrowing from right hand side
             // fixing indicators
             this->Indices[0] = this->Parent->Indices[other - 1];
@@ -181,8 +181,7 @@ struct TreeNode {
             this->Parent->Children[other]->Indices[0] = this->Parent->Children[other]->Indices[1];
             this->Parent->Children[other]->Children[0] = this->Parent->Children[other]->Children[1];
             this->Parent->Children[other]->Children[1] = this->Parent->Children[other]->Children[2];
-        }
-        else{ // borrowing from left hand side
+        } else { // borrowing from left hand side
             // fixing indicators
             this->Indices[0] = this->Parent->indices[other];
             this->Parent->Indices[other] = this->Parent->Children[other]->Indeices[1];
@@ -197,8 +196,8 @@ struct TreeNode {
         }
     }
 
-    void combine(int id, int other) {
-        if (other > id) { // combining with right hand side
+    void combine(int id, int other){
+        if (other > id){ // combining with right hand side
             // transferring the children other node
             this->Children[1] = this->Parent->Children[other]->Children[0];
             this->Children[2] = this->Parent->Children[other]->Children[1];
@@ -209,7 +208,8 @@ struct TreeNode {
             this->Indices[0] = this->Children[1]->Value;
             this->Indices[1] = this->Children[2]->Value;
 
-        } else { // combining with left hand side
+        }
+        else{ // combining with left hand side
             // transferring the children other node
             this->Children[2] = this->Children[0];
             this->Children[0] = this->Parent->Children[other]->Children[0];
