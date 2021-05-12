@@ -1,0 +1,34 @@
+Init
+GetBestSellerModelByType -1
+GetBestSellerModelByType 1
+GetBestSellerModelByType 0
+AddCarType 1 4
+AddCarType 2 5
+GetBestSellerModelByType 0
+GetBestSellerModelByType 1
+GetBestSellerModelByType 2
+GetBestSellerModelByType 3
+SellCar 2 2
+GetBestSellerModelByType 2
+GetBestSellerModelByType 0
+SellCar 1 3
+GetBestSellerModelByType 1
+GetBestSellerModelByType 2
+GetBestSellerModelByType 0
+SellCar 1 0
+GetBestSellerModelByType 0
+GetBestSellerModelByType 1
+GetBestSellerModelByType 2
+SellCar 1 1
+GetBestSellerModelByType 0
+GetBestSellerModelByType 1
+SellCar 2 1
+GetBestSellerModelByType 0
+GetBestSellerModelByType 1
+GetBestSellerModelByType 2
+SellCar 1 0
+SellCar 2 1
+GetBestSellerModelByType 0
+SellCar 2 1
+GetBestSellerModelByType 0
+Quit

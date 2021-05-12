@@ -3,21 +3,6 @@ project(ds_ex1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ds_ex1 main.cpp
-        car_dealership_manager.cpp
-        car_dealership_manager.h
-        btree_23.h
-        car_node.h
-        car_node.cpp
-        grade_node.h
-        grade_node.cpp
-        model_data.h
-        model_node.h
-        shared_pointer.h
-        tree_node.h
-        vector.h
-        )
-
 add_executable(main_tests main1.cpp
         car_dealership_manager.cpp
         car_dealership_manager.h
@@ -28,7 +13,8 @@ add_executable(main_tests main1.cpp
         car_node.cpp
         grade_node.h
         grade_node.cpp
-        model_node.h
+        zero_grade_type_node.cpp
+        zero_grade_type_node.h
         model_data.h
         shared_pointer.h
         tree_node.h

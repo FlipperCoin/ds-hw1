@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <string>
+#include "vector.h"
 
 using std::cout;
 using std::endl;
@@ -19,19 +20,28 @@ template <typename DataType>
 class BTree23 {
 private:
     SharedPointer<TreeNode<DataType>> root;
+    SharedPointer<TreeNode<DataType>> child;
 public:
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
+    // tree with ascending values from 0 to n-1
+    explicit BTree23(int n);
     SharedPointer<TreeNode<DataType>> insert(DataType value);
     SharedPointer<TreeNode<DataType>> remove(DataType value);
     SharedPointer<TreeNode<DataType>> find(DataType value,
-                                           SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>()) const;
+                                           SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>(),
+                                           bool updateOnPath = false) const;
     void printTree() const;
     void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
+    void run(void (*action)(SharedPointer<TreeNode<DataType>>),
+                  void (*should_continue)(SharedPointer<TreeNode<DataType>>));
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
     void fix(SharedPointer<TreeNode<DataType>> node);
     bool operator==(const BTree23<DataType>& other) const;
     static bool compare(const TreeNode<DataType>& node1, const TreeNode<DataType>& node2);
+
+    void createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, int k, int r) const;
+
 };
 
 template<typename DataType>
@@ -134,7 +144,9 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
 }
 
 template<typename DataType>
-SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value, SharedPointer<TreeNode<DataType>> node) const {
+SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value,
+                                                          SharedPointer<TreeNode<DataType>> node,
+                                                          bool updateOnPath) const {
     // first run, init from root
     if (node.isEmpty()) {
         node = root;
@@ -152,6 +164,12 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value, Shared
         return node;
     }
 
+    // if find should update on path the smallest value in the node's subtrees
+    if (updateOnPath && (node->Value > value)) {
+        node->Value = value;
+    }
+
+    // recall find on correct subtree
     SharedPointer<TreeNode<DataType>> found;
     for (int i = 0; i < node->Sons-1; i++) {
         // if not less than this part, check if it was the last part
@@ -226,6 +244,13 @@ BTree23<DataType>::BTree23(SharedPointer<TreeNode<DataType>> root) : root(root) 
 
 template<typename DataType>
 bool BTree23<DataType>::operator==(const BTree23<DataType> &other) const {
+    if (root.isEmpty()) {
+        return other.root.isEmpty();
+    }
+    else if (other.root.isEmpty()) {
+        return false;
+    }
+
     return compare(*root, *(other.root));
 }
 
@@ -246,6 +271,81 @@ bool BTree23<DataType>::compare(const TreeNode<DataType> &node1, const TreeNode<
     }
 
     return true;
+}
+
+template<>
+BTree23<int>::BTree23(int n) {
+    if (n == 0) {
+        root = SharedPointer<TreeNode<int>>();
+        return;
+    }
+
+    // create references for all nodes in final tree,
+    // less than 2*n for n leaves
+    Vector<SharedPointer<TreeNode<int>>> nodes(2*n);
+
+    // create row of leaves
+    for (int i = 0; i < n; i++) {
+        nodes.add(SharedPointer<TreeNode<int>>(new TreeNode<int>(i)));
+    }
+
+    // loop row by row, from the bottom up
+    // each time creating the row's parents and linking them
+    int k = n;
+    int r = 0;
+    while (r+k - r > 1) {
+        createRow(nodes, k, r);
+        r += k;
+        k /= 2; // rounding down is a wanted behaviour, in case of 3 sons in the end
+    }
+
+    root = nodes[r];
+}
+
+template<typename DataType>
+void BTree23<DataType>::createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, int k, int r) const {
+    for (int i = r; i < r + k; i+=2) {
+        SharedPointer<TreeNode<int>> parent;
+
+        // if only 3 left, add a parent to 3 sons
+        if ((r+k - i) == 3) {
+            parent = SharedPointer<TreeNode<int>>(
+                    new TreeNode<int>(
+                            nodes[i],
+                            nodes[i+1],
+                            nodes[i+2],
+                            nodes[i+1]->Value,
+                            nodes[i+2]->Value
+                    ));
+            // use the Value field in non-leaves to save the lowest value under it
+            parent->Value = nodes[i]->Value;
+            nodes.add(parent);
+            nodes[i]->Parent = parent;
+            nodes[i+1]->Parent = parent;
+            nodes[i+2]->Parent = parent;
+            break;
+        }
+            // add a parent with 2 sons
+        else {
+            parent = SharedPointer<TreeNode<int>>(
+                    new TreeNode<int>(
+                            nodes[i],
+                            nodes[i+1],
+                            nodes[i+1]->Value
+                    ));
+            parent->Value = nodes[i]->Value;
+        }
+
+        nodes.add(parent);
+        nodes[i]->Parent = parent;
+        nodes[i+1]->Parent = parent;
+    }
+}
+
+template<typename DataType>
+void BTree23<DataType>::run(void (*action)(SharedPointer<TreeNode<DataType>>),
+                            void (*should_continue)(SharedPointer<TreeNode<DataType>>)) {
+
 }
 
 #endif //DS_EX1_TREE23_H

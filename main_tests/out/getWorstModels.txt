@@ -1,0 +1,90 @@
+init done.
+GetWorstModels: INVALID_INPUT
+GetWorstModels: INVALID_INPUT
+GetWorstModels: FAILURE
+GetWorstModels: INVALID_INPUT
+AddCarType: SUCCESS
+Model	|	Car
+0	|	2
+--End of worst cars--
+Model	|	Car
+0	|	2
+1	|	2
+2	|	2
+--End of worst cars--
+GetWorstModels: FAILURE
+SellCar: SUCCESS
+Model	|	Car
+0	|	2
+--End of worst cars--
+Model	|	Car
+0	|	2
+2	|	2
+1	|	2
+--End of worst cars--
+MakeComplaint: SUCCESS
+SellCar: SUCCESS
+Model	|	Car
+2	|	2
+--End of worst cars--
+Model	|	Car
+2	|	2
+0	|	2
+1	|	2
+--End of worst cars--
+AddCarType: SUCCESS
+Model	|	Car
+2	|	2
+0	|	1
+1	|	1
+0	|	2
+1	|	2
+--End of worst cars--
+MakeComplaint: SUCCESS
+Model	|	Car
+1	|	1
+2	|	2
+0	|	1
+0	|	2
+1	|	2
+--End of worst cars--
+SellCar: SUCCESS
+Model	|	Car
+1	|	1
+0	|	1
+0	|	2
+2	|	2
+1	|	2
+--End of worst cars--
+SellCar: SUCCESS
+Model	|	Car
+1	|	1
+0	|	1
+0	|	2
+1	|	2
+2	|	2
+--End of worst cars--
+AddCarType: SUCCESS
+Model	|	Car
+1	|	1
+0	|	1
+0	|	2
+--End of worst cars--
+Model	|	Car
+1	|	1
+0	|	1
+0	|	2
+0	|	3
+1	|	3
+--End of worst cars--
+Model	|	Car
+1	|	1
+0	|	1
+0	|	2
+0	|	3
+1	|	3
+2	|	3
+1	|	2
+2	|	2
+--End of worst cars--
+quit done.

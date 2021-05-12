@@ -1,0 +1,12 @@
+Init
+RemoveCarType 0
+RemoveCarType -1
+RemoveCarType 1
+AddCarType 1 1
+AddCarType 2 3
+RemoveCarType 1
+RemoveCarType 3
+RemoveCarType 2
+RemoveCarType 1
+RemoveCarType 2
+Quit

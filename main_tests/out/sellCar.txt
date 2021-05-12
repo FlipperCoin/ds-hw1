@@ -1,0 +1,9 @@
+init done.
+AddCarType: SUCCESS
+AddCarType: SUCCESS
+AddCarType: SUCCESS
+SellCar: INVALID_INPUT
+SellCar: INVALID_INPUT
+SellCar: INVALID_INPUT
+SellCar: SUCCESS
+quit done.

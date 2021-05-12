@@ -4,6 +4,7 @@
 
 #ifndef _SHAREDPOINTER_H
 #define _SHAREDPOINTER_H
+
 template<typename T>
 class SharedPointer
 {
@@ -51,6 +52,10 @@ public:
         return this->pointer == other;
     }
 
+    bool operator==(const SharedPointer<T>& other) {
+        return this->pointer == other.pointer;
+    }
+
     T& operator*() {
         return *pointer;
     }
@@ -58,6 +63,9 @@ public:
         return *pointer;
     }
     T* operator->() {
+        return pointer;
+    }
+    T* rawPointer() {
         return pointer;
     }
     const T* operator->() const {
