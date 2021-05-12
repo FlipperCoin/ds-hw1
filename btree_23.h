@@ -165,7 +165,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value,
     }
 
     // if find should update on path the smallest value in the node's subtrees
-    if (updateOnPath && (node->Value > value)) {
+    if (updateOnPath && (value < node->Value)) {
         node->Value = value;
     }
 
