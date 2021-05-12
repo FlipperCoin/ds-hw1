@@ -324,9 +324,9 @@ void BTree23<DataType>::createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, i
             // use the Value field in non-leaves to save the lowest value under it
             parent->Value = nodes[i]->Value;
             nodes.add(parent);
-            nodes[i]->Parent = parent;
-            nodes[i+1]->Parent = parent;
-            nodes[i+2]->Parent = parent;
+            nodes[i]->Parent = parent.rawPointer();
+            nodes[i+1]->Parent = parent.rawPointer();
+            nodes[i+2]->Parent = parent.rawPointer();
             break;
         }
             // add a parent with 2 sons
@@ -341,15 +341,15 @@ void BTree23<DataType>::createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, i
         }
 
         nodes.add(parent);
-        nodes[i]->Parent = parent;
-        nodes[i+1]->Parent = parent;
+        nodes[i]->Parent = parent.rawPointer();
+        nodes[i+1]->Parent = parent.rawPointer();
     }
 }
 
-template<typename DataType>
-void BTree23<DataType>::run(void (*action)(SharedPointer<TreeNode<DataType>>),
-                            void (*should_continue)(SharedPointer<TreeNode<DataType>>)) {
-
-}
+//template<typename DataType>
+//void BTree23<DataType>::run(void (*action)(SharedPointer<TreeNode<DataType>>),
+//                            void (*should_continue)(SharedPointer<TreeNode<DataType>>)) {
+//
+//}
 
 #endif //DS_EX1_TREE23_H
