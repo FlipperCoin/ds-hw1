@@ -31,7 +31,7 @@ private:
 
 template<typename T>
 Vector<T>::Vector(size_t initial_size) :
-        data(new T[initial_size]),
+        data(new T[initial_size]()),
         size(initial_size),
         count(0) {
 }

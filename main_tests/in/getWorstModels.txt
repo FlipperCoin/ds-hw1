@@ -1,3 +1,28 @@
 Init
-
+GetWorstModels 0
+GetWorstModels -1
+GetWorstModels 1
+AddCarType 2 3
+GetWorstModels 0
+GetWorstModels 1
+GetWorstModels 3
+GetWorstModels 4
+SellCar 2 1
+GetWorstModels 1
+GetWorstModels 3
+MakeComplaint 2 2 10
+GetWorstModels 1
+GetWorstModels 3
+AddCarType 1 2
+GetWorstModels 5
+MakeComplaint 1 1 10
+GetWorstModels 5
+SellCar 2 2
+GetWorstModels 5
+SellCar 2 2
+GetWorstModels 5
+AddCarType 3 3
+GetWorstModels 3
+GetWorstModels 5
+GetWorstModels 8
 Quit

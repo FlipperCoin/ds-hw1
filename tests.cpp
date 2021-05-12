@@ -410,6 +410,77 @@ TEST_F(Tests, btreeRemove2To1UnionTwice) {
     ASSERT_TRUE(*t1 == *t_exp);
 }
 
+TEST_F(Tests, btreeCreateAscendingSize0) {
+    BTree23<int> t(0);
+    BTree23<int> t_exp;
+
+    ASSERT_TRUE(t == t_exp);
+}
+
+TEST_F(Tests, btreeCreateAscendingSize1) {
+    auto expected = SharedPointer<TreeNode<int>>(new TreeNode<int>(0));
+    BTree23<int> t(1);
+    BTree23<int> t_exp(expected);
+
+    ASSERT_TRUE(t == t_exp);
+}
+
+TEST_F(Tests, btreeCreateAscendingSize2) {
+    auto expected = SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(0)),SharedPointer<TreeNode<int>>(new TreeNode<int>(1)),1));
+    BTree23<int> t(2);
+    BTree23<int> t_exp(expected);
+
+    ASSERT_TRUE(t == t_exp);
+}
+
+TEST_F(Tests, btreeCreateAscendingSize3) {
+    auto expected = SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(0)),SharedPointer<TreeNode<int>>(new TreeNode<int>(1)),SharedPointer<TreeNode<int>>(new TreeNode<int>(2)),1,2));
+    BTree23<int> t(3);
+    BTree23<int> t_exp(expected);
+
+    ASSERT_TRUE(t == t_exp);
+}
+
+TEST_F(Tests, btreeCreateAscendingSize4) {
+    auto expected = SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(0)),SharedPointer<TreeNode<int>>(new TreeNode<int>(1)),1)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(2)),SharedPointer<TreeNode<int>>(new TreeNode<int>(3)),3)),2));
+    BTree23<int> t(4);
+    BTree23<int> t_exp(expected);
+
+    ASSERT_TRUE(t == t_exp);
+}
+
+TEST_F(Tests, btreeCreateAscendingSize5) {
+    auto expected = SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(0)),SharedPointer<TreeNode<int>>(new TreeNode<int>(1)),1)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(2)),SharedPointer<TreeNode<int>>(new TreeNode<int>(3)),SharedPointer<TreeNode<int>>(new TreeNode<int>(4)),3,4)),2));
+    BTree23<int> t(5);
+    BTree23<int> t_exp(expected);
+
+    ASSERT_TRUE(t == t_exp);
+}
+
+TEST_F(Tests, btreeCreateAscendingSize6) {
+    auto expected = SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(0)),SharedPointer<TreeNode<int>>(new TreeNode<int>(1)),1)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(2)),SharedPointer<TreeNode<int>>(new TreeNode<int>(3)),3)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(4)),SharedPointer<TreeNode<int>>(new TreeNode<int>(5)),5)),2,4));
+    BTree23<int> t(6);
+    BTree23<int> t_exp(expected);
+
+    ASSERT_TRUE(t == t_exp);
+}
+
+TEST_F(Tests, btreeCreateAscendingSize7) {
+    auto expected = SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(0)),SharedPointer<TreeNode<int>>(new TreeNode<int>(1)),1)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(2)),SharedPointer<TreeNode<int>>(new TreeNode<int>(3)),3)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(4)),SharedPointer<TreeNode<int>>(new TreeNode<int>(5)),SharedPointer<TreeNode<int>>(new TreeNode<int>(6)),5,6)),2,4));
+    BTree23<int> t(7);
+    BTree23<int> t_exp(expected);
+
+    ASSERT_TRUE(t == t_exp);
+}
+
+TEST_F(Tests, btreeCreateAscendingSize8) {
+    auto expected = SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(0)),SharedPointer<TreeNode<int>>(new TreeNode<int>(1)),1)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(2)),SharedPointer<TreeNode<int>>(new TreeNode<int>(3)),3)),2)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(4)),SharedPointer<TreeNode<int>>(new TreeNode<int>(5)),5)),SharedPointer<TreeNode<int>>(new TreeNode<int>(SharedPointer<TreeNode<int>>(new TreeNode<int>(6)),SharedPointer<TreeNode<int>>(new TreeNode<int>(7)),7)),6)),4));
+    BTree23<int> t(8);
+    BTree23<int> t_exp(expected);
+
+    ASSERT_TRUE(t == t_exp);
+}
+
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
