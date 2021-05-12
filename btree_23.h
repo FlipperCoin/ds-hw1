@@ -101,7 +101,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
     if (!isLeaf(node)) { // check if the value doesn't exist
         return SharedPointer<TreeNode<DataType>>(); // what to give back ????
     }
-    if (node->Parent == SharedPointer<TreeNode<DataType>>()) {
+    if (node->Parent == nullptr) {
         root = SharedPointer<TreeNode<DataType>>();
         return root;
     }

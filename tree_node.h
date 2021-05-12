@@ -100,12 +100,13 @@ struct TreeNode {
                 this->Children[1] = this->Children[2];
                 this->Value = this->Children[0]->Value; // update node value
             } else if (this->Children[1]->Value == value) {
-                this->Children[1] = this->Parent->Children[2];
+                this->Children[1] = this->Children[2];
                 this->Indices[0] = this->Indices[1];
+
             }
         } else if (this->Sons == 2) {
             if (this->Children[0]->Value == value) {
-                this->Parent->Indices[0] = this->Parent->Indices[1];
+                this->Indices[0] = this->Indices[1];
                 this->Children[0] = this->Children[1];
                 this->Value = this->Children[0]->Value; // update node value
             }
