@@ -109,6 +109,23 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
     if (parent->Sons == 2) return parent;
 
     if (parent->Sons == 1){
+        if (parent->Parent->Children[1]->Value == parent->Value) { // if this is middle child
+            if (parent->Parent->Children[0]->Sons == 3) { // if left hand side has three children
+                parent.borrow(0); // borrow from left hand side
+                break;
+            }
+            if (parent->Parent->Sons == 3) { // if parent has three sons check borrow from right side
+                if (parent->Parent->Children[2]->Sons == 3) parent.borrow(1);
+                else parent.combine(1);
+                break;
+            }
+            parent.combine(0);
+
+        }
+
+
+
+
         if (parent->Parent->Children[0]->Value == parent->Value) { // if this is the first child
             int direction = 1; // make change with right hand side
         }
@@ -119,25 +136,17 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
             if ((parent->Parent->Children[2]->Value == parent->Value) { // if this is the third child
                 int direction = 0; // make change with left hand side
             }
-            if (parent->Parent->Children[1]->Value == parent->Value && parent->Parent->Children[2]->Sons == 3) {
-                direction = 1; // make change with left hand side
-            }
         }
-
-
-
-        if (parent->Parent->Children[1]->Value == parent->Value) {
-            if (parent->Parent->Children[2]->Sons == 3) parent.borrow(1); // right
-            else if (parent->Parent->Children[0]->Sons == 3) parent.borrow(0); // left
-            else parent.combine(1);
-        }
-
         if(parent->Parent->Children[1]->Sons == 3){
             parent.borrow(direction);
         }
-        else{
+        else {
             parent.combine(direction);
         }
+        break;
+
+
+
 
 
     }
