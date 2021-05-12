@@ -98,17 +98,16 @@ struct TreeNode {
                 this->Value = this->Children[0]->Value; // update node value
             }
             else if (this->Children[1]->Value == value) {
-                this->Children[1] = this->Parent->Children[2];
+                this->Children[1] = this->Children[2];
                 this->Indices[0] = this->Indices[1];
             }
         }
         else if(this->Sons == 2){
             if (this->Children[0]->Value == value) {
-                this->Parent->Indices[0] = this->Parent->Indices[1];
+                this->Indices[0] = this->Indices[1];
                 this->Children[0] = this->Children[1];
                 this->Value = this->Children[0]->Value; // update node value
             }
-            // else if (this->Parent->Children[1] == this) this->Parent->Indices[0] = this->Value;
         }
         this->Sons--;
     }
@@ -170,7 +169,7 @@ struct TreeNode {
         if (other > id) { // borrowing from right hand side
             // fixing indicators
             this->Indices[0] = this->Parent->Indices[other - 1];
-            this->Parent->Indices[other - 1] = this->Parent->Children[other]->Indeices[0];
+            this->Parent->Indices[other - 1] = this->Parent->Children[other]->Indices[0];
 
             // transferring the first child of other node
             this->Children[1] = this->Parent->Children[other]->Children[0];
@@ -183,8 +182,8 @@ struct TreeNode {
             this->Parent->Children[other]->Children[1] = this->Parent->Children[other]->Children[2];
         } else { // borrowing from left hand side
             // fixing indicators
-            this->Indices[0] = this->Parent->indices[other];
-            this->Parent->Indices[other] = this->Parent->Children[other]->Indeices[1];
+            this->Indices[0] = this->Parent->Indices[other];
+            this->Parent->Indices[other] = this->Parent->Children[other]->Indices[1];
 
             // transferring the last child of other node
             this->Children[1] = this->Children[0];
@@ -223,7 +222,7 @@ struct TreeNode {
 
         }
         //delete other node
-        this->Parent.removeSon(this->Parent->Children[other]->Value);
+        this->Parent->removeSon(this->Parent->Children[other]->Value);
     }
 };
 
