@@ -20,6 +20,7 @@ template <typename DataType>
 class BTree23 {
 private:
     SharedPointer<TreeNode<DataType>> root;
+    SharedPointer<TreeNode<DataType>> child;
 public:
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
     // tree with ascending values from 0 to n-1
@@ -27,9 +28,12 @@ public:
     SharedPointer<TreeNode<DataType>> insert(DataType value);
     SharedPointer<TreeNode<DataType>> remove(DataType value);
     SharedPointer<TreeNode<DataType>> find(DataType value,
-                                           SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>()) const;
+                                           SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>(),
+                                           bool updateOnPath = false) const;
     void printTree() const;
     void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
+    void run(void (*action)(SharedPointer<TreeNode<DataType>>),
+                  void (*should_continue)(SharedPointer<TreeNode<DataType>>));
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
     void fix(SharedPointer<TreeNode<DataType>> node);
@@ -37,6 +41,7 @@ public:
     static bool compare(const TreeNode<DataType>& node1, const TreeNode<DataType>& node2);
 
     void createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, int k, int r) const;
+
 };
 
 template<typename DataType>
@@ -157,7 +162,9 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
 }
 
 template<typename DataType>
-SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value, SharedPointer<TreeNode<DataType>> node) const {
+SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value,
+                                                          SharedPointer<TreeNode<DataType>> node,
+                                                          bool updateOnPath) const {
     // first run, init from root
     if (node.isEmpty()) {
         node = root;
@@ -175,6 +182,12 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value, Shared
         return node;
     }
 
+    // if find should update on path the smallest value in the node's subtrees
+    if (updateOnPath && (node->Value > value)) {
+        node->Value = value;
+    }
+
+    // recall find on correct subtree
     SharedPointer<TreeNode<DataType>> found;
     for (int i = 0; i < node->Sons-1; i++) {
         // if not less than this part, check if it was the last part
@@ -345,6 +358,12 @@ void BTree23<DataType>::createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, i
         nodes[i]->Parent = parent;
         nodes[i+1]->Parent = parent;
     }
+}
+
+template<typename DataType>
+void BTree23<DataType>::run(void (*action)(SharedPointer<TreeNode<DataType>>),
+                            void (*should_continue)(SharedPointer<TreeNode<DataType>>)) {
+
 }
 
 #endif //DS_EX1_TREE23_H

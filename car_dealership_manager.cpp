@@ -14,7 +14,7 @@ StatusType CarDealershipManager::AddCarType(int typeID, int numOfModels) {
         // so init to null
         // O(m)
         for (int i = 0; i < numOfModels; i++) {
-            car.Models.add(SharedPointer<ModelData>());
+            car.Models.add({});
         }
         // insert & check if succeeded (empty means the node already existed)
         // O(log(n))
@@ -26,6 +26,7 @@ StatusType CarDealershipManager::AddCarType(int typeID, int numOfModels) {
         if (CarTypeOfBestSelling == NO_CAR_TYPE) {
             CarTypeOfBestSelling = typeID;
         }
+
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
     }

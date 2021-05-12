@@ -6,13 +6,11 @@
 #define DS_EX1_MODELDATA_H
 
 #include "tree_node.h"
-#include "model_node.h"
 #include "grade_node.h"
 
 struct ModelData {
-    SharedPointer<TreeNode<GradeNode>> Grade;
-    int Sells;
+    int Grade{0};
+    int Sells{0};
 };
-
 
 #endif //DS_EX1_MODELDATA_H

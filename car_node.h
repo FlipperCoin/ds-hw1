@@ -18,12 +18,11 @@ using std::ostringstream;
 struct CarNode {
     int TypeID{};
     int BestSellingModel{};
-    int SellsForBestSelling{};
-    Vector<SharedPointer<ModelData>> Models;
+    Vector<ModelData> Models;
 
     CarNode() = default;
     explicit CarNode(int typeID, int numOfModels=0) : TypeID(typeID), BestSellingModel(0),
-    SellsForBestSelling(0), Models(Vector<SharedPointer<ModelData>>(numOfModels)){}
+        Models(Vector<ModelData>(numOfModels)){}
     bool operator<(const CarNode& other) const;
     bool operator>=(const CarNode& other) const;
     bool operator==(const CarNode& other) const;
