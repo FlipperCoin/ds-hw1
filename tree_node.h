@@ -90,9 +90,6 @@ struct TreeNode {
     }
 
     void removeSon(DataType Value) {
-        if(this.isLeaf()){
-            return;
-        }
         if (this->Sons == 3) {
             if (this->Children[0]->Value == value) {
                 this->Indices[0] = this->Indices[1];
@@ -209,7 +206,9 @@ struct TreeNode {
             // fixing indicators
             this->Indices[0] = this->Children[1]->Value;
             this->Indices[1] = this->Children[2]->Value;
-            this->Parent.removeSon(this->Parent->Children[other]->Value) //fix remove son!
+
+            //delete other node
+            this->Parent.removeSon(this->Parent->Children[other]->Value)
 
         }
 };
