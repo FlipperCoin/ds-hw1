@@ -65,6 +65,9 @@ public:
     T* operator->() {
         return pointer;
     }
+    T* rawPointer() {
+        return pointer;
+    }
     const T* operator->() const {
         return pointer;
     }
