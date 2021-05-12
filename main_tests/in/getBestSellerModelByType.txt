@@ -31,4 +31,6 @@ SellCar 2 1
 GetBestSellerModelByType 0
 SellCar 2 1
 GetBestSellerModelByType 0
+RemoveCarType 2
+GetBestSellerModelByType 0
 Quit

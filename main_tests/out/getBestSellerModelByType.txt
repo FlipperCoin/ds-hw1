@@ -31,4 +31,6 @@ SellCar: SUCCESS
 GetBestSellerModelByType: 0
 SellCar: SUCCESS
 GetBestSellerModelByType: 1
+RemoveCarType: SUCCESS
+GetBestSellerModelByType: 0
 quit done.

@@ -22,10 +22,17 @@ StatusType CarDealershipManager::AddCarType(int typeID, int numOfModels) {
             return FAILURE;
         }
         // if the first car type inserted to the system,
+        // or no sells were made and this type id is lower,
         // set it as the best selling
-        if (CarTypeOfBestSelling == NO_CAR_TYPE) {
-            CarTypeOfBestSelling = typeID;
+        if (BestSellingCarType == NO_CAR_TYPE ||
+            (BestSellingCarType > typeID && SellsForBestSelling == 0)) {
+            BestSellingCarType = typeID;
+            BestSellingCarModel = 0;
         }
+        // all models have grade zero, init o(m) zero grade model tree
+        ZeroGradeTypeNode zeroGradesNode(typeID, numOfModels);
+        // insert log(n) into zero grade type tree
+        ZeroGrades.insert(zeroGradesNode);
 
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
@@ -50,23 +57,34 @@ StatusType CarDealershipManager::RemoveCarType(int typeID) {
             return FAILURE;
         }
 
-        // remove all models from grades tree
+        // remove all models from grades & sells trees
         // O(m*log(M))
         for (int i = 0; i < carNode->Value.Models.getCount(); i++) {
-            SharedPointer<ModelData> model = carNode->Value.Models[i];
+            ModelData model = carNode->Value.Models[i];
 
-            if (model.isEmpty()) {
-                // model wasn't sold or complained about, so isn't in grades tree
-                continue;
+            // remove from zero tree
+            if (model.Grade == 0) {
+                ZeroGradeTypeNode zeroNode(typeID);
+                ZeroGrades.remove(zeroNode);
+            }
+            // remove from grades tree
+            else {
+                GradeNode gradeNode{.TypeID=typeID,.ModelID=i,.Grade=model.Grade};
+                Grades.remove(gradeNode);
             }
 
-            GradeNode gradeNode = model->Grade->Value;
-            Grades.remove(gradeNode);
+            SellsNode sellsNode{.TypeID=typeID,.ModelID=i,.Sells=model.Sells};
+            Sells.remove(sellsNode);
         }
 
         // remove car in type tree
         // O(log(n))
         Cars.remove(carNode->Value);
+
+        // update best seller
+        if (BestSellingCarType == typeID) {
+
+        }
 
         return SUCCESS;
     } catch (std::bad_alloc& e) {
@@ -149,11 +167,11 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
         }
 
         // Keep most sold overall invariant updated
-        if (shouldSwitchBestSelling(SellsForBestSelling, BestSellingModelOverall, CarTypeOfBestSelling,
+        if (shouldSwitchBestSelling(SellsForBestSelling, BestSellingCarModel, BestSellingCarType,
                                     modelData->Sells, modelID, typeID)) {
             SellsForBestSelling = modelData->Sells;
-            BestSellingModelOverall = modelID;
-            CarTypeOfBestSelling = typeID;
+            BestSellingCarModel = modelID;
+            BestSellingCarType = typeID;
         }
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;

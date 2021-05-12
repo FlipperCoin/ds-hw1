@@ -12,6 +12,11 @@ struct ZeroGradeTypeNode {
     BTree23<int> ModelsTree;
 
     ZeroGradeTypeNode(int typeID, int n) : TypeID(typeID), ModelsTree(n) {}
+    ZeroGradeTypeNode(int typeID) : TypeID(typeID) {}
+    bool operator<(const ZeroGradeTypeNode& other) const;
+    bool operator>=(const ZeroGradeTypeNode& other) const;
+    bool operator==(const ZeroGradeTypeNode& other) const;
+    string str() const;
 };
 
 

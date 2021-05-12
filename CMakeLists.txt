@@ -15,10 +15,12 @@ add_executable(main_tests main1.cpp
         grade_node.cpp
         zero_grade_type_node.cpp
         zero_grade_type_node.h
+        sells_node.cpp
+        sells_node.h
         model_data.h
         shared_pointer.h
         tree_node.h
-        vector.h)
+        vector.h sells_node.cpp sells_node.h)
 
 find_package(GTest CONFIG REQUIRED)
 add_executable(tests tests.cpp)
