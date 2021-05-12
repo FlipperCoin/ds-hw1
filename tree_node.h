@@ -61,10 +61,16 @@ struct TreeNode {
     TreeNode(DataType value, TreeNode<DataType>* parent = nullptr) : Value(value), Sons(0), Parent(parent) {
     }
 
-    SharedPointer<TreeNode<DataType>> getSharedParent(){
-        if (this->Parent->Children[0]->Value == this->Value) return this->Parent->Children[0];
-        else if (this->Parent->Children[1]->Value == node->Value) return this->Parent->Children[1];
-        return this->Parent->Children[2];
+    SharedPointer<TreeNode<DataType>> getSharedParent() {
+        auto p = this->Parent;
+        if (p->Parent == nullptr) return SharedPointer<TreeNode<DataType>>();
+        if (p->Parent->Children[0]->Value == p->Value) {
+            return p->Parent->Children[0];
+        }
+        else if (p->Parent->Children[1]->Value == p->Value) {
+            return p->Parent->Children[1];
+        }
+        return p->Parent->Children[2];
     }
 
     void swap(SharedPointer<TreeNode<DataType>> firstHalf,
@@ -80,12 +86,12 @@ struct TreeNode {
                     DataType tmp = Indices[i];
                     Indices[i] = tmpPrev;
                     SharedPointer<TreeNode<DataType>> childTmp = Children[i+1];
-                    if(i < Sons-1) Children[i+1] = childTmpPrev;
+                    Children[i+1] = childTmpPrev;
                     childTmpPrev = childTmp;
                     tmpPrev = tmp;
                 }
                 Indices[i] = tmpPrev;
-                if(i < Sons-1) Children[i+1] = childTmpPrev;
+                Children[i+1] = childTmpPrev;
             }
             // If reached end of indices and key still bigger, insert in the end
             if (i == Sons-2 && Indices[i] < key) {
