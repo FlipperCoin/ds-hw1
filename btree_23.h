@@ -27,12 +27,13 @@ public:
                                            bool updateOnPath = false) const;
     void printTree() const;
     void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
+    SharedPointer<TreeNode<DataType>> getSmallestChild() const;
     void run(void (*action)(SharedPointer<TreeNode<DataType>>),
                   void (*should_continue)(SharedPointer<TreeNode<DataType>>));
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
-    void fix_insert(TreeNode<DataType>* node);
-    void fix_remove(TreeNode<DataType>* node);
+    void fix_insert(SharedPointer<TreeNode<DataType>> node);
+    void fix_remove(SharedPointer<TreeNode<DataType>> node);
     bool operator==(const BTree23<DataType>& other) const;
     static bool compare(const TreeNode<DataType>& node1, const TreeNode<DataType>& node2);
 
@@ -76,12 +77,12 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
             SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value, place.rawPointer()));
     place->insertValue(new_node);
     if(place->Sons == 3) return new_node; //great! no need for fixing!
-    fix_insert(place.rawPointer());
+    fix_insert(place);
     return new_node;
 }
 
 template<typename DataType>
-void BTree23<DataType>::fix_insert(TreeNode<DataType>* node) {
+void BTree23<DataType>::fix_insert(SharedPointer<TreeNode<DataType>> node) {
     auto first_half = SharedPointer<TreeNode<DataType>>(
             new TreeNode<DataType>(node->Children[0], node->Children[1], node->Indices[0]));
     auto second_half = SharedPointer<TreeNode<DataType>>(
@@ -91,8 +92,11 @@ void BTree23<DataType>::fix_insert(TreeNode<DataType>* node) {
         return;
     }
     node->Parent->swap(first_half, second_half,node->Indices[1]);
-    if (node->Parent->Sons == 4)
-        fix_insert(node->Parent);
+    if (node->Parent->Sons == 4) {
+        auto p = node->getSharedParent();
+        if (p.isEmpty()) p = root;
+        fix_insert(p);
+    }
 }
 
 template<typename DataType>
@@ -105,7 +109,9 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
         root = SharedPointer<TreeNode<DataType>>();
         return root;
     }
-    TreeNode<DataType>* v_node = node->Parent;
+    auto p = node->getSharedParent();
+    if (p.isEmpty()) p = root;
+    SharedPointer<TreeNode<DataType>> v_node = p;
     v_node->removeSon(value);
 
     // recursive function here!!
@@ -114,7 +120,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
 }
 
 template<typename DataType>
-void BTree23<DataType>::fix_remove(TreeNode<DataType>* v_node) {
+void BTree23<DataType>::fix_remove(SharedPointer<TreeNode<DataType>> v_node) {
     if (v_node->Sons != 1) return;
 
     if (v_node == root.rawPointer()) {
@@ -140,7 +146,9 @@ void BTree23<DataType>::fix_remove(TreeNode<DataType>* v_node) {
         if (v_node->Parent->Children[1]->Sons == 3) v_node->borrow(2, 1);
         else v_node->combine(2, 1);
     }
-    fix_remove(v_node->Parent);
+    auto p = v_node->getSharedParent();
+    if (p.isEmpty()) p = root;
+    fix_remove(p);
 }
 
 template<typename DataType>

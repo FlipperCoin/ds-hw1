@@ -61,10 +61,16 @@ struct TreeNode {
     TreeNode(DataType value, TreeNode<DataType>* parent = nullptr) : Value(value), Sons(0), Parent(parent) {
     }
 
-    SharedPointer<TreeNode<DataType>> getSharedParent(SharedPointer<TreeNode<DataType>> node){
-        if (node->Parent->Children[0]->Value == node->Value) return node->Parent->Children[0];
-        else if (node->Parent->Children[1]->Value == node->Value) return node->Parent->Children[1];
-        else (node->Parent->Children[2]->Value == node->Value) return node->Parent->Children[2];
+    SharedPointer<TreeNode<DataType>> getSharedParent() {
+        auto p = this->Parent;
+        if (p->Parent == nullptr) return SharedPointer<TreeNode<DataType>>();
+        if (p->Parent->Children[0]->Value == p->Value) {
+            return p->Parent->Children[0];
+        }
+        else if (p->Parent->Children[1]->Value == p->Value) {
+            return p->Parent->Children[1];
+        }
+        return p->Parent->Children[2];
     }
 
     void swap(SharedPointer<TreeNode<DataType>> firstHalf,

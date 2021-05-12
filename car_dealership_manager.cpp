@@ -83,7 +83,8 @@ StatusType CarDealershipManager::RemoveCarType(int typeID) {
 
         // update best seller
         if (BestSellingCarType == typeID) {
-
+            SharedPointer<TreeNode<SellsNode>> nextBestSeller = Sells.getSmallestChild();
+            BestSellingCarType = nextBestSeller->Value.Sells;
         }
 
         return SUCCESS;
