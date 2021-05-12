@@ -92,18 +92,21 @@ struct TreeNode {
     void removeSon(DataType Value) {
         if (this->Sons == 3) {
             if (this->Children[0]->Value == value) {
-                this->Indices[0] = this->Indices[1];
-                this->Children[0] = this->Children[1];
+                this->Indices[0] = this->Indices[1]; // update node Indices
+                this->Children[0] = this->Children[1]; // update node children
                 this->Children[1] = this->Children[2];
+                this->Value = this->Children[0]->Value; // update node value
             }
             else if (this->Children[1]->Value == value) {
                 this->Children[1] = this->Parent->Children[2];
+                this->Indices[0] = this->Indices[1];
             }
         }
         else if(this->Sons == 2){
             if (this->Children[0]->Value == value) {
-                //this->Parent->Indices[0] = this->Parent->Indices[1];
+                this->Parent->Indices[0] = this->Parent->Indices[1];
                 this->Children[0] = this->Children[1];
+                this->Value = this->Children[0]->Value; // update node value
             }
             // else if (this->Parent->Children[1] == this) this->Parent->Indices[0] = this->Value;
         }
@@ -196,7 +199,6 @@ struct TreeNode {
 
     void combine(int id, int other){
         if (other > id){ // combining with right hand side
-
             // transferring the children other node
             this->Children[1] = this->Parent->Children[other]->Children[0];
             this->Children[2] = this->Parent->Children[other]->Children[1];
@@ -207,10 +209,22 @@ struct TreeNode {
             this->Indices[0] = this->Children[1]->Value;
             this->Indices[1] = this->Children[2]->Value;
 
-            //delete other node
-            this->Parent.removeSon(this->Parent->Children[other]->Value)
+        }
+        else{ // combining with left hand side
+            // transferring the children other node
+            this->Children[2] = this->Children[0];
+            this->Children[0] = this->Parent->Children[other]->Children[0];
+            this->Children[1] = this->Parent->Children[other]->Children[0];
+            this->Children[0]->Parent = this;
+            this->Children[1]->Parent = this;
+
+            // fixing indicators
+            this->Indices[0] = this->Children[1]->Value;
+            this->Indices[1] = this->Children[2]->Value;
 
         }
+        //delete other node
+        this->Parent.removeSon(this->Parent->Children[other]->Value);
 };
 
 
