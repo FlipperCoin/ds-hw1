@@ -89,19 +89,28 @@ struct TreeNode {
         Sons++;
     }
 
-    void removeThirdSon() { // removes a third son only
-        if(this->Sons != 3 || !(this.isLeaf())){
+    void removeSon(DataType Value) {
+        if(this.isLeaf()){
             return;
         }
-        if(this->Parent->Children[0] == this){
-            this->Parent->Indices[0] = this->Parent->Indices[1];
-            this->Parent->Children[0] = this->Parent->Children[1];
-            this->Parent->Children[1] = this->Parent->Children[2];
+        if (this->Sons == 3) {
+            if (this->Children[0]->Value == value) {
+                this->Indices[0] = this->Indices[1];
+                this->Children[0] = this->Children[1];
+                this->Children[1] = this->Children[2];
+            }
+            else if (this->Children[1]->Value == value) {
+                this->Children[1] = this->Parent->Children[2];
+            }
         }
-        else if(this->Parent->Children[1] == this){
-            this->Parent->Children[1] = this->Parent->Children[2];
+        else if(this->Sons == 2){
+            if (this->Children[0]->Value == value) {
+                //this->Parent->Indices[0] = this->Parent->Indices[1];
+                this->Children[0] = this->Children[1];
+            }
+            // else if (this->Parent->Children[1] == this) this->Parent->Indices[0] = this->Value;
         }
-        this->Parent->Sons--;
+        this->Sons--;
     }
 
     void insertValue(SharedPointer<TreeNode<DataType>> new_node) {
@@ -124,9 +133,7 @@ struct TreeNode {
                     childPushNext = new_node;
                 }
                 for (; i < Sons - 1; i++) {
-                    DataType tmpKey = Indices[i + 1]; // check!!
-                    SharedPointer<TreeNode<DataType>> tmpChild = Children[i + 1];
-                    if(i+1 < Sons-1) DataType tmpKey = Indices[i + 1]; // check!!
+                    DataType tmpKey = Indices[i + 1];
                     SharedPointer<TreeNode<DataType>> tmpChild = Children[i+1];
 
                     Indices[i + 1] = keyPushNext;
@@ -157,6 +164,14 @@ struct TreeNode {
 
     bool isLeaf() const {
         return Sons == 0;
+    }
+
+    void borrow(int dir){
+
+    }
+
+    void combine(int dir){
+
     }
 };
 

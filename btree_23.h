@@ -51,12 +51,12 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
         if(value < root->Value){
             new_root->Children[0] = new_node;
             new_root->Children[1] = root;
-            new_node->Indices[0] = root->Value;
+            new_root->Indices[0] = root->Value;
         }
         else {
             new_root->Children[0] = root;
             new_root->Children[1] = new_node;
-            new_node->Indices[0] = new_node->Value;
+            new_root->Indices[0] = new_node->Value;
         }
         root = new_root;
     }
@@ -99,9 +99,53 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
         root = SharedPointer<TreeNode<DataType>>();
         return root;
     }
+    SharedPointer<TreeNode<DataType>> parent = node->Parent;
+    parent.removeSon(value);
+    if(parent == root && parent->Sons == 1){
+        root == parent->Children[0];
+        root->parent = SharedPointer<TreeNode<DataType>>();
+        return root;
+    }
+    if (parent->Sons == 2) return parent;
+
+    if (parent->Sons == 1){
+        if (parent->Parent->Children[0]->Value == parent->Value) { // if this is the first child
+            int direction = 1; // make change with right hand side
+        }
+        if (parent->Parent->Children[1]->Value == parent->Value) { // if this is the second child
+            int direction = 0; // make change with left hand side
+
+        if(parent->Parent->Sons == 3){
+            if ((parent->Parent->Children[2]->Value == parent->Value) { // if this is the third child
+                int direction = 0; // make change with left hand side
+            }
+            if (parent->Parent->Children[1]->Value == parent->Value && parent->Parent->Children[2]->Sons == 3) {
+                direction = 1; // make change with left hand side
+            }
+        }
+
+
+
+        if (parent->Parent->Children[1]->Value == parent->Value) {
+            if (parent->Parent->Children[2]->Sons == 3) parent.borrow(1); // right
+            else if (parent->Parent->Children[0]->Sons == 3) parent.borrow(0); // left
+            else parent.combine(1);
+        }
+
+        if(parent->Parent->Children[1]->Sons == 3){
+            parent.borrow(direction);
+        }
+        else{
+            parent.combine(direction);
+        }
+
+
+    }
+    /*
     if (node->Parent->Sons == 3){
         node.removeThirdSon();
     }
+
     /*
     else if (node->Parent->Sons == 1){ // are there any other cases there's only one child?
         root = SharedPointer<TreeNode<DataType>>();
@@ -109,7 +153,6 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
     }
 
      NOT SUPPOSED TO HAPPEN!!
-    */
 
 
     else if(node->Parent->Sons == 2){
@@ -148,7 +191,11 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
     }
 
     // node->Parent->Sons--; done in remove third son
+
+     */
+
     return SharedPointer<TreeNode<DataType>>();
+
 }
 
 template<typename DataType>
