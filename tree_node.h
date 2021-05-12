@@ -90,7 +90,7 @@ struct TreeNode {
     }
 
     void removeThirdSon() { // removes a third son only
-        if(this->Sons != 3 || !(this.isLeaf())){
+        if(this->Sons != 3 || !(this->isLeaf())){
             return;
         }
         if(this->Parent->Children[0] == this){

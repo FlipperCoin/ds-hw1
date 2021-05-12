@@ -4,6 +4,7 @@
 
 #ifndef _SHAREDPOINTER_H
 #define _SHAREDPOINTER_H
+
 template<typename T>
 class SharedPointer
 {
