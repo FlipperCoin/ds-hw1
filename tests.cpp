@@ -365,7 +365,7 @@ TEST_F(Tests, btreeRemove2To1BorrowSmall) {
     auto* t1 = new BTree23<Int>(root);
 
     t1->remove(7);
-
+    t1->printTree();
     auto* t_exp = new BTree23<Int>(expected);
     ASSERT_TRUE(*t1 == *t_exp);
     delete t1;

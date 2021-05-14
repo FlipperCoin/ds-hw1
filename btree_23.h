@@ -16,6 +16,7 @@ template <typename DataType>
 class BTree23 {
 private:
     SharedPointer<TreeNode<DataType>> root;
+    SharedPointer<TreeNode<DataType>> child;
 public:
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
     // tree with ascending values from 0 to n-1
@@ -29,14 +30,20 @@ public:
     void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
     SharedPointer<TreeNode<DataType>> getSmallestChild() const;
     void run(void (*action)(SharedPointer<TreeNode<DataType>>),
-                  void (*should_continue)(SharedPointer<TreeNode<DataType>>));
+              void (*should_continue)(SharedPointer<TreeNode<DataType>>));
+    void up(void (*action)(SharedPointer<TreeNode<DataType>>),
+              void (*should_continue)(SharedPointer<TreeNode<DataType>>),
+              SharedPointer<TreeNode<DataType>> node);
+    bool contRun(void (*action)(SharedPointer<TreeNode<DataType>>),
+              void (*should_continue)(SharedPointer<TreeNode<DataType>>),
+              SharedPointer<TreeNode<DataType>> node);
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
     void fix_insert(SharedPointer<TreeNode<DataType>> node);
     void fix_remove(SharedPointer<TreeNode<DataType>> node);
     bool operator==(const BTree23<DataType>& other) const;
     static bool compare(const TreeNode<DataType>& node1, const TreeNode<DataType>& node2);
-
+    void link(SharedPointer<TreeNode<DataType>> node);
     void createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, int k, int r) const;
 
 };
@@ -45,6 +52,7 @@ template<typename DataType>
 SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
     if (root.isEmpty()) {
         root = SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value)); // add new tree node
+        child = root;
         return root;
     }
 
@@ -107,6 +115,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
     }
     if (node->Parent == nullptr) {
         root = SharedPointer<TreeNode<DataType>>();
+        child = SharedPointer<TreeNode<DataType>>();
         return root;
     }
     auto p = node->getSharedParent();
@@ -124,16 +133,21 @@ void BTree23<DataType>::fix_remove(SharedPointer<TreeNode<DataType>> v_node) {
     if (v_node->Sons != 1) return;
 
     if (v_node == root.rawPointer()) {
-        root == v_node->Children[0];
+        root = v_node->Children[0];
         root->Parent = nullptr;
+        child = root;
         return;
     }
     // v_node has one son but he's not root
-    if (v_node->Parent->Children[0]->Value == v_node->Value) { // if this is first child - id = 0
+    if (v_node->Parent->Children[0] == v_node) { // if this is first child - id = 0
         if (v_node->Parent->Children[1]->Sons == 3) v_node->borrow(0, 1); // borrow from second child
         else v_node->combine(0, 1); // combine with second child
+        // if prev child was smaller,
+        // then it was removed and this is the new child that needs to be assigned
+        if (isLeaf(v_node->Children[0]) && child->Value < v_node->Children[0]->Value)
+            child = v_node->Children[0];
     }
-    else if (v_node->Parent->Children[1]->Value == v_node->Value) { // if this is middle child - id = 1
+    else if (v_node->Parent->Children[1] == v_node) { // if this is middle child - id = 1
         if (v_node->Parent->Children[0]->Sons == 3) v_node->borrow(1, 0); // borrow from first child
         else if (v_node->Parent->Sons == 3) { // if parent has three sons
             if (v_node->Parent->Children[2]->Sons == 3) v_node->borrow(1, 2); // borrow from third side
@@ -248,7 +262,32 @@ bool BTree23<DataType>::isLeaf(SharedPointer<TreeNode<DataType>> node) const {
 }
 
 template<typename DataType>
-BTree23<DataType>::BTree23(SharedPointer<TreeNode<DataType>> root) : root(root) { }
+void BTree23<DataType>::link(SharedPointer<TreeNode<DataType>> node) {
+    if (isLeaf(node)) {
+        if (child.isEmpty()) {
+            child = node;
+        }
+        return;
+    }
+
+    DataType min;
+    for (int i = 0; i < node->Sons; i++) {
+        node->Children[i]->Parent = node.rawPointer();
+        link(node->Children[i]);
+
+        auto val = node->Children[i]->Value;
+        if (i == 0) min = val;
+        else if (node->Children[i]->Value < min) min = val;
+    }
+
+    node->Value = min;
+}
+
+template<typename DataType>
+BTree23<DataType>::BTree23(SharedPointer<TreeNode<DataType>> root) : root(root), child(SharedPointer<TreeNode<DataType>>()) {
+    if (!root.isEmpty())
+        link(root);
+}
 
 template<typename DataType>
 bool BTree23<DataType>::operator==(const BTree23<DataType> &other) const {
@@ -296,6 +335,8 @@ BTree23<int>::BTree23(int n) {
     for (int i = 0; i < n; i++) {
         nodes.add(SharedPointer<TreeNode<int>>(new TreeNode<int>(i)));
     }
+
+    child = nodes[0];
 
     // loop row by row, from the bottom up
     // each time creating the row's parents and linking them
@@ -350,10 +391,53 @@ void BTree23<DataType>::createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, i
     }
 }
 
-//template<typename DataType>
-//void BTree23<DataType>::run(void (*action)(SharedPointer<TreeNode<DataType>>),
-//                            void (*should_continue)(SharedPointer<TreeNode<DataType>>)) {
-//
-//}
+template<typename DataType>
+SharedPointer<TreeNode<DataType>> BTree23<DataType>::getSmallestChild() const {
+    return child;
+}
+
+template<typename DataType>
+void BTree23<DataType>::run(void (*action)(SharedPointer<TreeNode<DataType>>),
+                            void (*should_continue)(SharedPointer<TreeNode<DataType>>)) {
+    if (child.isEmpty()) return;
+
+    if (!should_continue(child)) return;
+    action(child);
+
+    if (child == root) return;
+    up(action, should_continue, child->Parent);
+}
+
+template<typename DataType>
+void BTree23<DataType>::up(void (*action)(SharedPointer<TreeNode<DataType>>),
+                           void (*should_continue)(SharedPointer<TreeNode<DataType>>),
+                           SharedPointer<TreeNode<DataType>> node) {
+    for (int i = 1; i < node->Sons; i++) {
+        if (!contRun(action, should_continue, node->Children[i])) {
+            return;
+        }
+    }
+
+    if (node == root) return;
+    up(action, should_continue, node->Parent);
+}
+
+template<typename DataType>
+bool BTree23<DataType>::contRun(void (*action)(SharedPointer<TreeNode<DataType>>),
+                                void (*should_continue)(SharedPointer<TreeNode<DataType>>),
+                                SharedPointer<TreeNode<DataType>> node) {
+    if (isLeaf(node)) {
+        if (!should_continue(node)) return false;
+
+        action(node);
+    }
+    else {
+        for (int i = 0; i < node->Sons; ++i) {
+            if (!contRun(action, should_continue, node->Children[i])) return false;
+        }
+    }
+
+    return true;
+}
 
 #endif //DS_EX1_TREE23_H
