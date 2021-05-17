@@ -27,6 +27,7 @@ struct CarNode {
     bool operator>=(const CarNode& other) const;
     bool operator==(const CarNode& other) const;
     string str() const;
+    int getBestSellingModel();
 };
 
 #endif //DS_EX1_CARNODE_H

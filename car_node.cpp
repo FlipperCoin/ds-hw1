@@ -30,3 +30,7 @@ string CarNode::str() const {
     string_stream << "(" << TypeID << "," << BestSellingModel << "," << Models.getCount() << ")";
     return string_stream.str();
 }
+
+int CarNode::getBestSellingModel() const{
+    return BestSellingModel;
+}

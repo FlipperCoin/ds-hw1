@@ -3,6 +3,7 @@
 //
 
 #include "car_dealership_manager.h"
+#include "car_node.h"
 
 StatusType CarDealershipManager::AddCarType(int typeID, int numOfModels) {
     if (typeID <= 0 || numOfModels <= 0) {
@@ -187,6 +188,25 @@ StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
 }
 
 StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *modelID) {
+    if (typeID <= 0) {
+        return INVALID_INPUT;
+    }
+
+    try {
+        // find car in type tree
+        // O(log(n))
+        SharedPointer<TreeNode<CarNode>> carNode =
+                Cars.find(CarNode(typeID));
+
+        if (!carNode->isLeaf()) {
+            // provided type isn't in the cars tree
+            return FAILURE;
+        }
+        *modelID = carNode.getBestSellingModel(); // but whyyyy???
+
+    }catch (std::bad_alloc& e){
+            return ALLOCATION_ERROR;
+    }
     return FAILURE;
 }
 

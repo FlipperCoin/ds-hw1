@@ -136,7 +136,6 @@ struct TreeNode {
 
                 this->Children[1] = this->Children[2];
                 this->Indices[0] = this->Indices[1];
-
             }
             else{
                 this->Children[1]->Next = this->Children[2]->Next;
