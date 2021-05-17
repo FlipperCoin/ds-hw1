@@ -182,6 +182,7 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
 }
 
 StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
+
     return FAILURE;
 }
 

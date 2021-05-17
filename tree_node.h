@@ -19,6 +19,9 @@ struct TreeNode {
 
     Vector<SharedPointer<TreeNode<DataType>>> Children = Vector<SharedPointer<TreeNode<DataType>>>(4);
 
+    TreeNode<DataType>* next = nullptr;
+
+    TreeNode<DataType>* previous = nullptr;
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> big,
@@ -227,7 +230,7 @@ struct TreeNode {
             // transferring the children other node
             this->Children[2] = this->Children[0];
             this->Children[0] = this->Parent->Children[other]->Children[0];
-            this->Children[1] = this->Parent->Children[other]->Children[0];
+            this->Children[1] = this->Parent->Children[other]->Children[1];
             this->Children[0]->Parent = this;
             this->Children[1]->Parent = this;
 
