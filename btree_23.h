@@ -67,11 +67,17 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
             new_root->Children[0] = new_node;
             new_root->Children[1] = root;
             new_root->Indices[0] = root->Value;
+            //fix linked list connections
+            new_node->next = new_root->Children[1].rawPointer();
+            new_root->Children[1]->previous = new_node.rawPointer();
         }
         else {
             new_root->Children[0] = root;
             new_root->Children[1] = new_node;
             new_root->Indices[0] = new_node->Value;
+            //fix linked list connections
+            new_root->Children[0]->next = new_node.rawPointer();
+            new_node->previous = new_root->Children[0].rawPointer();
         }
         root = new_root;
     }

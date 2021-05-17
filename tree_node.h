@@ -159,11 +159,16 @@ struct TreeNode {
                     childPushNext = Children[i];
                     Indices[i] = Children[i]->Value;
                     Children[i] = new_node;
+
                 } else {
                     DataType keyPushNext = Indices[i];
                     Indices[i] = value;
                     childPushNext = new_node;
                 }
+
+                Children[i]->next = childPushNext.rawPointer();
+                childPushNext->previous = Children[i].rawPointer();
+
                 for (; i < Sons - 1; i++) {
                     DataType tmpKey = Indices[i + 1];
                     SharedPointer<TreeNode<DataType>> tmpChild = Children[i+1];
@@ -180,16 +185,18 @@ struct TreeNode {
             }
         }
         if (!changed) {
-            if (value < Children[i]->Value) { // Seg fault???? if no children
+            if (value < Children[i]->Value) {
                 Indices[i] = Children[i]->Value;
                 Children[i+1] = Children[i];
                 Children[i] = new_node;
-
             }
             else {
                 Indices[i] = value;
                 Children[i+1]  = new_node;
             }
+
+            Children[i]->next = Children[i+1].rawPointer();
+            Children[i+1]->previous = Children[i].rawPointer();
         }
         Sons++;
         new_node->Parent = this;
