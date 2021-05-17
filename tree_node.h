@@ -8,6 +8,11 @@
 #include "vector.h"
 #include "shared_pointer.h"
 
+#include <iostream>
+
+using std::cout;
+using std::endl;
+
 template <typename DataType>
 struct TreeNode {
     Vector<DataType> Indices=Vector<DataType>(3);
@@ -30,6 +35,7 @@ struct TreeNode {
         Indices[0] = key;
         Children[0] = small;
         Children[1] = big;
+        Value = small->Value;
     }
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
@@ -43,6 +49,7 @@ struct TreeNode {
         Children[0] = small;
         Children[1] = middle;
         Children[2] = big;
+        Value = small->Value;
     }
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
@@ -60,6 +67,7 @@ struct TreeNode {
         Children[1] = middleOne;
         Children[2] = middleTwo;
         Children[3] = big;
+        Value = small->Value;
     }
     TreeNode(DataType value, TreeNode<DataType>* parent = nullptr) : Value(value), Sons(0), Parent(parent) {
     }
@@ -95,6 +103,9 @@ struct TreeNode {
                 }
                 Indices[i] = tmpPrev;
                 Children[i+1] = childTmpPrev;
+                if (i == 0) {
+                    Value = firstHalf->Value;
+                }
             }
             // If reached end of indices and key still bigger, insert in the end
             if (i == Sons-2 && Indices[i] < key) {
@@ -104,6 +115,8 @@ struct TreeNode {
             }
         }
         Sons++;
+        firstHalf->Parent = this;
+        secondHalf->Parent = this;
     }
 
     void removeSon(DataType value) {
@@ -131,12 +144,14 @@ struct TreeNode {
     }
 
     void insertValue(SharedPointer<TreeNode<DataType>> new_node) {
-
         DataType value = new_node->Value;
         int i = 0;
         bool changed = false;
         for (; i < Sons-1; i++) {
             if (value < Indices[i]) {
+                if (i == 0) {
+                    Value = value;
+                }
                 changed = true;
                 DataType keyPushNext = Indices[i];
                 SharedPointer<TreeNode<DataType>> childPushNext;
@@ -177,6 +192,7 @@ struct TreeNode {
             }
         }
         Sons++;
+        new_node->Parent = this;
     }
 
     bool isLeaf() const {
@@ -211,6 +227,7 @@ struct TreeNode {
             // fixing the other node
             this->Parent->Children[other]->Sons = 2;
         }
+        this->Sons = 2;
     }
 
     void combine(int id, int other){
@@ -238,9 +255,31 @@ struct TreeNode {
             this->Indices[0] = this->Children[1]->Value;
             this->Indices[1] = this->Children[2]->Value;
 
+            this->Value = this->Children[0]->Value;
         }
+        Sons = 3;
         //delete other node
         this->Parent->removeSon(this->Parent->Children[other]->Value);
+    }
+
+    void printNode() {
+        cout << "Sons: " << Sons << ", ";
+        cout << "Indices: [";
+        for (int i = 0; i < Sons-1; i++) {
+            cout << Indices[i].str();
+            if (i != Sons-2) {
+                cout << ",";
+            }
+        }
+        cout << "], Children (Values): [";
+        for (int i = 0; i < Sons; i++) {
+            cout << Children[i]->Value.str();
+            if (i != Sons-1) {
+                cout << ",";
+            }
+        }
+        cout << "], Value: " << Value.str() << "." << endl;
+
     }
 };
 

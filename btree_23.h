@@ -30,12 +30,12 @@ public:
     void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
     SharedPointer<TreeNode<DataType>> getSmallestChild() const;
     void run(void (*action)(SharedPointer<TreeNode<DataType>>),
-              void (*should_continue)(SharedPointer<TreeNode<DataType>>));
+              bool (*should_continue)(SharedPointer<TreeNode<DataType>>));
     void up(void (*action)(SharedPointer<TreeNode<DataType>>),
-              void (*should_continue)(SharedPointer<TreeNode<DataType>>),
+              bool (*should_continue)(SharedPointer<TreeNode<DataType>>),
               SharedPointer<TreeNode<DataType>> node);
     bool contRun(void (*action)(SharedPointer<TreeNode<DataType>>),
-              void (*should_continue)(SharedPointer<TreeNode<DataType>>),
+              bool (*should_continue)(SharedPointer<TreeNode<DataType>>),
               SharedPointer<TreeNode<DataType>> node);
     bool isLeaf(SharedPointer<TreeNode<DataType>> node) const;
     void printMidNode(const SharedPointer<TreeNode<DataType>> &node) const;
@@ -154,7 +154,9 @@ void BTree23<DataType>::fix_remove(SharedPointer<TreeNode<DataType>> v_node) {
             else v_node->combine(1, 2); // combine with third side
 
         }
-        else v_node->combine(1, 0);
+        else {
+            v_node->combine(1, 0);
+        }
     }
     else { // this is the third child - id = 2
         if (v_node->Parent->Children[1]->Sons == 3) v_node->borrow(2, 1);
@@ -398,7 +400,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::getSmallestChild() const {
 
 template<typename DataType>
 void BTree23<DataType>::run(void (*action)(SharedPointer<TreeNode<DataType>>),
-                            void (*should_continue)(SharedPointer<TreeNode<DataType>>)) {
+                            bool (*should_continue)(SharedPointer<TreeNode<DataType>>)) {
     if (child.isEmpty()) return;
 
     if (!should_continue(child)) return;
@@ -410,7 +412,7 @@ void BTree23<DataType>::run(void (*action)(SharedPointer<TreeNode<DataType>>),
 
 template<typename DataType>
 void BTree23<DataType>::up(void (*action)(SharedPointer<TreeNode<DataType>>),
-                           void (*should_continue)(SharedPointer<TreeNode<DataType>>),
+                           bool (*should_continue)(SharedPointer<TreeNode<DataType>>),
                            SharedPointer<TreeNode<DataType>> node) {
     for (int i = 1; i < node->Sons; i++) {
         if (!contRun(action, should_continue, node->Children[i])) {
@@ -424,7 +426,7 @@ void BTree23<DataType>::up(void (*action)(SharedPointer<TreeNode<DataType>>),
 
 template<typename DataType>
 bool BTree23<DataType>::contRun(void (*action)(SharedPointer<TreeNode<DataType>>),
-                                void (*should_continue)(SharedPointer<TreeNode<DataType>>),
+                                bool (*should_continue)(SharedPointer<TreeNode<DataType>>),
                                 SharedPointer<TreeNode<DataType>> node) {
     if (isLeaf(node)) {
         if (!should_continue(node)) return false;
