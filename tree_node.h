@@ -24,9 +24,9 @@ struct TreeNode {
 
     Vector<SharedPointer<TreeNode<DataType>>> Children = Vector<SharedPointer<TreeNode<DataType>>>(4);
 
-    TreeNode<DataType>* next = nullptr;
+    TreeNode<DataType>* Next = nullptr;
 
-    TreeNode<DataType>* previous = nullptr;
+    TreeNode<DataType>* Previous = nullptr;
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
              SharedPointer<TreeNode<DataType>> big,
@@ -122,22 +122,39 @@ struct TreeNode {
     void removeSon(DataType value) {
         if (this->Sons == 3) {
             if (this->Children[0]->Value == value) {
+                this->Children[1]->previous = this->Children[0]->Previous;
+                if(this->Children[0]->Previous != nullptr) this->Children[0]->previous->Next = this->Children[1].rawPointer();
+
                 this->Indices[0] = this->Indices[1]; // update node Indices
                 this->Children[0] = this->Children[1]; // update node children
                 this->Children[1] = this->Children[2];
                 this->Value = this->Children[0]->Value; // update node value
             }
             else if (this->Children[1]->Value == value) {
+                this->Children[0]->Next = this->Children[1]->Next;
+                this->Children[2]->Previous = this->Children[1]->Previous;
+
                 this->Children[1] = this->Children[2];
                 this->Indices[0] = this->Indices[1];
 
             }
+            else{
+                this->Children[1]->Next = this->Children[2]->Next;
+                if(this->Children[2]->Next != nullptr) this->Children[2]->Next->Previous = this->Children[1].rawPointer();
+            }
         }
         else if(this->Sons == 2){
             if (this->Children[0]->Value == value) {
+                this->Children[1]->previous = this->Children[0]->Previous;
+                if(this->Children[0]->Previous != nullptr) this->Children[0]->previous->Next = this->Children[1].rawPointer();
+
                 this->Indices[0] = this->Indices[1];
                 this->Children[0] = this->Children[1];
                 this->Value = this->Children[0]->Value; // update node value
+            }
+            else{
+                this->Children[0]->Next = this->Children[1]->Next;
+                if(this->Children[1]->Next != nullptr) this->Children[1]->Next->Previous = this->Children[0].rawPointer();
             }
         }
         this->Sons--;
@@ -145,6 +162,7 @@ struct TreeNode {
 
     void insertValue(SharedPointer<TreeNode<DataType>> new_node) {
         DataType value = new_node->Value;
+
         int i = 0;
         bool changed = false;
         for (; i < Sons-1; i++) {
@@ -156,18 +174,24 @@ struct TreeNode {
                 DataType keyPushNext = Indices[i];
                 SharedPointer<TreeNode<DataType>> childPushNext;
                 if (value < Children[i]->Value) {
+                    new_node->Previous = Children[i]->Previous;
+                    if (new_node->Previous != nullptr) new_node->Previous->Next = new_node;
+
                     childPushNext = Children[i];
                     Indices[i] = Children[i]->Value;
                     Children[i] = new_node;
 
                 } else {
+                    new_node->Next = Children[i]->Next;
+                    if (new_node->Next != nullptr) new_node->Next->Previous = new_node;
+
                     DataType keyPushNext = Indices[i];
                     Indices[i] = value;
                     childPushNext = new_node;
                 }
 
-                Children[i]->next = childPushNext.rawPointer();
-                childPushNext->previous = Children[i].rawPointer();
+                Children[i]->Next = childPushNext.rawPointer();
+                childPushNext->Previous = Children[i].rawPointer();
 
                 for (; i < Sons - 1; i++) {
                     DataType tmpKey = Indices[i + 1];
@@ -195,8 +219,13 @@ struct TreeNode {
                 Children[i+1]  = new_node;
             }
 
-            Children[i]->next = Children[i+1].rawPointer();
-            Children[i+1]->previous = Children[i].rawPointer();
+            Children[i]->Next = Children[i+1].rawPointer();
+            Children[i+1]->Previous = Children[i].rawPointer();
+
+            if(this->Parent != nullptr){
+
+            }
+
         }
         Sons++;
         new_node->Parent = this;
