@@ -64,10 +64,10 @@ struct TreeNode {
     SharedPointer<TreeNode<DataType>> getSharedParent() {
         auto p = this->Parent;
         if (p->Parent == nullptr) return SharedPointer<TreeNode<DataType>>();
-        if (p->Parent->Children[0]->Value == p->Value) {
+        if (p->Parent->Children[0] == p) {
             return p->Parent->Children[0];
         }
-        else if (p->Parent->Children[1]->Value == p->Value) {
+        else if (p->Parent->Children[1] == p) {
             return p->Parent->Children[1];
         }
         return p->Parent->Children[2];
