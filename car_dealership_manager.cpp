@@ -183,8 +183,42 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
 }
 
 StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
+    if (typeID <= 0 || modelID < 0 || t <= 0) {
+        return INVALID_INPUT;
+    }
 
-    return FAILURE;
+    try {
+        // find car in type tree
+        // O(log(n))
+        SharedPointer<TreeNode<CarNode>> carNode =
+                Cars.find(CarNode(typeID));
+
+        if (!carNode->isLeaf()) {
+            // provided type isn't in the cars tree
+            return FAILURE;
+        }
+
+        // check with itai!
+        if (carNode->Value.Models.getCount() <= modelID) {
+            return FAILURE;
+        }
+
+        SharedPointer<ModelData> modelData = carNode->Value.Models[modelID];
+
+        // remove and add grade node with new score (to reorder in tree)
+        GradeNode gradeNode = modelData->Grade->Value;
+        Grades.remove(gradeNode);
+        ZeroGrades.remove(gradeNode); // need to make a conversion
+
+        gradeNode.Grade -= int(100/t); // should round down
+        if(gradeNode.Grade == 0) ZeroGrades.insert(gradeNode);
+        else Grades.insert(gradeNode);
+
+    } catch (std::bad_alloc& e) {
+        return ALLOCATION_ERROR;
+    }
+
+    return SUCCESS;
 }
 
 StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *modelID) {
@@ -202,7 +236,7 @@ StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *model
             // provided type isn't in the cars tree
             return FAILURE;
         }
-        *modelID = carNode.getBestSellingModel(); // but whyyyy???
+        *modelID = carNode.getBestSellingModel(); // but why in red??
 
     }catch (std::bad_alloc& e){
             return ALLOCATION_ERROR;
