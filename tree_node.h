@@ -122,8 +122,8 @@ struct TreeNode {
     void removeSon(DataType value) {
         if (this->Sons == 3) {
             if (this->Children[0]->Value == value) {
-                this->Children[1]->previous = this->Children[0]->Previous;
-                if(this->Children[0]->Previous != nullptr) this->Children[0]->previous->Next = this->Children[1].rawPointer();
+                this->Children[1]->Previous = this->Children[0]->Previous;
+                if(this->Children[0]->Previous != nullptr) this->Children[0]->Previous->Next = this->Children[1].rawPointer();
 
                 this->Indices[0] = this->Indices[1]; // update node Indices
                 this->Children[0] = this->Children[1]; // update node children
@@ -144,8 +144,8 @@ struct TreeNode {
         }
         else if(this->Sons == 2){
             if (this->Children[0]->Value == value) {
-                this->Children[1]->previous = this->Children[0]->Previous;
-                if(this->Children[0]->Previous != nullptr) this->Children[0]->previous->Next = this->Children[1].rawPointer();
+                this->Children[1]->Previous = this->Children[0]->Previous;
+                if(this->Children[0]->Previous != nullptr) this->Children[0]->Previous->Next = this->Children[1].rawPointer();
 
                 this->Indices[0] = this->Indices[1];
                 this->Children[0] = this->Children[1];
@@ -174,7 +174,7 @@ struct TreeNode {
                 SharedPointer<TreeNode<DataType>> childPushNext;
                 if (value < Children[i]->Value) {
                     new_node->Previous = Children[i]->Previous;
-                    if (new_node->Previous != nullptr) new_node->Previous->Next = new_node;
+                    if (new_node->Previous != nullptr) new_node->Previous->Next = new_node.rawPointer();
 
                     childPushNext = Children[i];
                     Indices[i] = Children[i]->Value;
@@ -182,7 +182,7 @@ struct TreeNode {
 
                 } else {
                     new_node->Next = Children[i]->Next;
-                    if (new_node->Next != nullptr) new_node->Next->Previous = new_node;
+                    if (new_node->Next != nullptr) new_node->Next->Previous = new_node.rawPointer();
 
                     DataType keyPushNext = Indices[i];
                     Indices[i] = value;
