@@ -212,7 +212,6 @@ StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
             return FAILURE;
         }
 
-        // check with itai!
         if (carNode->Value.Models.getCount() <= modelID) {
             return FAILURE;
         }
@@ -236,10 +235,13 @@ StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
 }
 
 StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *modelID) {
-    if (typeID <= 0) {
+    if (typeID < 0) {
         return INVALID_INPUT;
     }
-
+    if (typeID == 0){
+        if (Sells.isEmpty()) return FAILURE;
+        *modelID = Sells.getSmallestChild()->Value.ModelID;
+    }
     try {
         // find car in type tree
         // O(log(n))
@@ -255,7 +257,7 @@ StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *model
     }catch (std::bad_alloc& e){
             return ALLOCATION_ERROR;
     }
-    return FAILURE;
+    return SUCCESS;
 }
 // get smallest child should return a regular pointer
 StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int *models) {
@@ -270,13 +272,23 @@ StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int
             models[i] = iter->Value.ModelID;
             iter = iter->Next;
         }
-        else{
-            // need a loop for every zero grade node that goes through all nodes in tree4 - zero models.
+        else if(zero_iter != nullptr){
+            // need a loop for every zero grade node that goes through all nodes in tree4 - zero models
+            auto models_iter = zero_iter->Value.ModelsTree.getSmallestChild().rawPointer();
 
-            types[i] = zero_iter->Value.TypeID;
-            models[i] = zero_iter->Value.ModelID;
+            while(models_iter != nullptr && i < numOfModels){
+                types[i] = zero_iter->Value.TypeID;
+                models[i] = models_iter->Value;
+                i++;
+                models_iter = models_iter->Next;
+            }
             zero_iter = zero_iter->Next;
         }
+        else if(iter != nullptr){
+            types[i] = iter->Value.TypeID;
+            models[i] = iter->Value.ModelID;
+            iter = iter->Next;
+        }
     }
-    return FAILURE;
+    return SUCCESS;
 }
