@@ -74,14 +74,6 @@ StatusType CarDealershipManager::RemoveCarType(int typeID) {
         // O(log(n))
         Cars.remove(carNode->Value);
 
-        // update best seller
-        if (BestSellingCarType == typeID) {
-            SharedPointer<TreeNode<SellsNode>> nextBestSeller = Sells.getSmallestChild();
-            BestSellingCarType = nextBestSeller->Value.TypeID;
-            BestSellingCarModel = nextBestSeller->Value.ModelID;
-            SellsForBestSelling = nextBestSeller->Value.Sells;
-        }
-
         return SUCCESS;
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
@@ -205,8 +197,42 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
 }
 
 StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
+    if (typeID <= 0 || modelID < 0 || t <= 0) {
+        return INVALID_INPUT;
+    }
 
-    return FAILURE;
+    try {
+        // find car in type tree
+        // O(log(n))
+        SharedPointer<TreeNode<CarNode>> carNode =
+                Cars.find(CarNode(typeID));
+
+        if (!carNode->isLeaf()) {
+            // provided type isn't in the cars tree
+            return FAILURE;
+        }
+
+        // check with itai!
+        if (carNode->Value.Models.getCount() <= modelID) {
+            return FAILURE;
+        }
+
+        SharedPointer<ModelData> modelData = carNode->Value.Models[modelID];
+
+        // remove and add grade node with new score (to reorder in tree)
+        GradeNode gradeNode = modelData->Grade->Value;
+        Grades.remove(gradeNode);
+        ZeroGrades.remove(gradeNode); // need to make a conversion
+
+        gradeNode.Grade -= int(100/t); // should round down
+        if(gradeNode.Grade == 0) ZeroGrades.insert(gradeNode);
+        else Grades.insert(gradeNode);
+
+    } catch (std::bad_alloc& e) {
+        return ALLOCATION_ERROR;
+    }
+
+    return SUCCESS;
 }
 
 StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *modelID) {
@@ -224,14 +250,33 @@ StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *model
             // provided type isn't in the cars tree
             return FAILURE;
         }
-        *modelID = carNode->Value.BestSellingModel; // but whyyyy???
+        *modelID = carNode->Value.BestSellingModel;
 
     }catch (std::bad_alloc& e){
             return ALLOCATION_ERROR;
     }
     return FAILURE;
 }
-
+// get smallest child should return a regular pointer
 StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int *models) {
+    if (numOfModels <= 0) { // need to check if DS is NULL
+        return INVALID_INPUT;
+    }
+    TreeNode<GradeNode>* iter = Grades.getSmallestChild().rawPointer();
+    TreeNode<ZeroGradeTypeNode>* zero_iter = ZeroGrades.getSmallestChild().rawPointer();
+    for (int i = 0; i < numOfModels; i++){
+        if(iter != nullptr && iter->Value.Grade < 0){
+            types[i] = iter->Value.TypeID;
+            models[i] = iter->Value.ModelID;
+            iter = iter->Next;
+        }
+        else{
+            // need a loop for every zero grade node that goes through all nodes in tree4 - zero models.
+
+            types[i] = zero_iter->Value.TypeID;
+            models[i] = zero_iter->Value.ModelID;
+            zero_iter = zero_iter->Next;
+        }
+    }
     return FAILURE;
 }
