@@ -110,13 +110,15 @@ void CarDealershipManager::UpdateGrade(CarNode carNode, int modelID, int oldGrad
 
     // move from zero to non-zero grade
     else if(oldGrade == 0) {
-
-
+        auto zeroGradeTypeNode = ZeroGrades.find(ZeroGradeTypeNode(carNode.TypeID));
+        zeroGradeTypeNode->Value.ModelsTree.remove(modelID);
+        Grades.insert({.TypeID=carNode.TypeID, .ModelID=modelID, .Grade=newGrade});
         return;
     }
 
     // stay non-zero
-
+    Grades.remove({carNode.TypeID, modelID, oldGrade});
+    Grades.insert({carNode.TypeID, modelID, newGrade});
 }
 
 StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
@@ -145,50 +147,6 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
         Sells.insert({.TypeID=typeID, .ModelID=modelID, .Sells = modelData.Sells});
 
         UpdateGrade(carNode->Value, modelID, modelData.Grade, modelData.Grade + 10);
-
-//        if (carNode->Value.Models[modelID].isEmpty()) {
-//            // the model was never sold or complained about,
-//            // need to init for the first time
-//            SharedPointer<TreeNode<GradeNode>> gradeNode = Grades.insert(
-//            {
-//                     .TypeID=typeID,
-//                     .ModelID=modelID,
-//                     .Grade=10
-//                 });
-//
-//            auto newModelData = SharedPointer<ModelData>(new ModelData());
-//            newModelData->Grade = gradeNode;
-//            newModelData->Sells = 1;
-//            carNode->Value.Models[modelID] = newModelData;
-//            modelData = newModelData;
-//        }
-//        else {
-//            // increase sells by 1
-//            // remove and add grade node with an increase in score (to reorder in tree)
-//            modelData->Sells += 1;
-//            GradeNode gradeNode = modelData->Grade->Value;
-//            Grades.remove(gradeNode);
-//            gradeNode.Grade += 10;
-//            Grades.insert(gradeNode);
-//        }
-//
-//        // Keep car node most sold invariant updated
-//        if (shouldSwitchBestSelling(carNode->Value.SellsForBestSelling,
-//                                    carNode->Value.BestSellingModel,
-//                                    modelData->Sells,
-//                                    modelID))
-//        {
-//            carNode->Value.SellsForBestSelling = modelData->Sells;
-//            carNode->Value.BestSellingModel = modelID;
-//        }
-//
-//        // Keep most sold overall invariant updated
-//        if (shouldSwitchBestSelling(SellsForBestSelling, BestSellingCarModel, BestSellingCarType,
-//                                    modelData->Sells, modelID, typeID)) {
-//            SellsForBestSelling = modelData->Sells;
-//            BestSellingCarModel = modelID;
-//            BestSellingCarType = typeID;
-//        }
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
     }
