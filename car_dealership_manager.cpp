@@ -80,23 +80,6 @@ StatusType CarDealershipManager::RemoveCarType(int typeID) {
     }
 }
 
-static bool shouldSwitchBestSelling(int sellsForBestSelling, int bestSellingModel,
-                                    int sells, int modelID) {
-    return sellsForBestSelling < sells ||
-           (sellsForBestSelling == sells &&
-            bestSellingModel > modelID);
-}
-
-static bool shouldSwitchBestSelling(int sellsForBestSelling, int bestSellingModel, int bestSellingType,
-                                    int sells, int modelID, int typeID) {
-    return sellsForBestSelling < sells ||
-           (sellsForBestSelling == sells &&
-            bestSellingType > typeID) ||
-            (sellsForBestSelling == sells &&
-             bestSellingType == typeID &&
-                bestSellingModel > modelID);
-}
-
 void CarDealershipManager::UpdateGrade(CarNode carNode, int modelID, int oldGrade, int newGrade) {
     carNode.Models[modelID].Grade = newGrade;
 
@@ -137,16 +120,31 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
             return FAILURE;
         }
 
-        if (carNode->Value.Models.getCount() >= modelID) {
+        if (carNode->Value.Models.getCount() <= modelID) {
             return INVALID_INPUT;
         }
 
         ModelData modelData = carNode->Value.Models[modelID];
 
+        // update sells
         Sells.remove({.TypeID=typeID, .ModelID=modelID, .Sells = modelData.Sells++});
         Sells.insert({.TypeID=typeID, .ModelID=modelID, .Sells = modelData.Sells});
 
-        UpdateGrade(carNode->Value, modelID, modelData.Grade, modelData.Grade + 10);
+        // update sells in model data
+        carNode->Value.Models[modelID].Sells = modelData.Sells;
+
+        // update best seller for same type id
+        auto bestSellingModel = carNode->Value.BestSellingModel;
+        auto sellsForBestSelling = carNode->Value.Models[bestSellingModel].Sells;
+
+        if (modelData.Sells < sellsForBestSelling ||
+            (modelData.Sells == sellsForBestSelling && modelID <= bestSellingModel)) {
+            carNode->Value.BestSellingModel = modelID;
+        }
+
+        // update grade
+        int newGrade = modelData.Grade + 10;
+        UpdateGrade(carNode->Value, modelID, modelData.Grade, newGrade);
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
     }
@@ -170,21 +168,12 @@ StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
             return FAILURE;
         }
 
-        // check with itai!
         if (carNode->Value.Models.getCount() <= modelID) {
             return FAILURE;
         }
 
         ModelData modelData = carNode->Value.Models[modelID];
-
-        // remove and add grade node with new score (to reorder in tree)
-        GradeNode gradeNode = modelData.Grade;
-        Grades.remove(gradeNode);
-        ZeroGrades.remove(gradeNode); // need to make a conversion
-
-        gradeNode.Grade -= int(100/t); // should round down
-        if(gradeNode.Grade == 0) ZeroGrades.insert(gradeNode);
-        else Grades.insert(gradeNode);
+        UpdateGrade(carNode->Value, modelID, modelData.Grade, modelData.Grade - int(100/t));
 
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
