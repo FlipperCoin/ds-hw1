@@ -236,14 +236,33 @@ StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *model
             // provided type isn't in the cars tree
             return FAILURE;
         }
-        *modelID = carNode.getBestSellingModel(); // but why in red??
+        *modelID = carNode->Value.BestSellingModel;
 
     }catch (std::bad_alloc& e){
             return ALLOCATION_ERROR;
     }
     return FAILURE;
 }
-
+// get smallest child should return a regular pointer
 StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int *models) {
+    if (numOfModels <= 0) { // need to check if DS is NULL
+        return INVALID_INPUT;
+    }
+    TreeNode<GradeNode>* iter = Grades.getSmallestChild().rawPointer();
+    TreeNode<ZeroGradeTypeNode>* zero_iter = ZeroGrades.getSmallestChild().rawPointer();
+    for (int i = 0; i < numOfModels; i++){
+        if(iter != nullptr && iter->Value.Grade < 0){
+            types[i] = iter->Value.TypeID;
+            models[i] = iter->Value.ModelID;
+            iter = iter->Next;
+        }
+        else{
+            // need a loop for every zero grade node that goes through all nodes in tree4 - zero models.
+
+            types[i] = zero_iter->Value.TypeID;
+            models[i] = zero_iter->Value.ModelID;
+            zero_iter = zero_iter->Next;
+        }
+    }
     return FAILURE;
 }
