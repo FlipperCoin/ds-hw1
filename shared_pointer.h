@@ -10,6 +10,9 @@ class SharedPointer
 {
 private:
     void dispose() {
+        // if already disposed of
+        if (ref_count == nullptr) return;
+
         if ((*ref_count)-- <= 1) {
             if (pointer != nullptr) {
                 delete pointer;

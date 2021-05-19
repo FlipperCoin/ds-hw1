@@ -6,7 +6,6 @@
 #define DS_EX1_GRADENODE_H
 
 #include "shared_pointer.h"
-#include "model_node.h"
 
 #include <string>
 #include <sstream>

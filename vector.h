@@ -43,6 +43,11 @@ Vector<T>::~Vector() {
 
 template<typename T>
 void Vector<T>::resize() {
+    if (size == 0) {
+        size = 10;
+        data = new T[size];
+        return;
+    }
     auto temp = new T[size * 2];
 
     for (size_t i = 0; i < count; i++) {

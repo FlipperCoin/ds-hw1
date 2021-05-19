@@ -45,7 +45,7 @@ StatusType CarDealershipManager::RemoveCarType(int typeID) {
         SharedPointer<TreeNode<CarNode>> carNode =
                 Cars.find(CarNode(typeID));
 
-        if (!carNode->isLeaf()) {
+        if (carNode.isEmpty() || !carNode->isLeaf()) {
             // provided type isn't in the cars tree
             return FAILURE;
         }

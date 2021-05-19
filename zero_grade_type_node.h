@@ -8,11 +8,12 @@
 #include "btree_23.h"
 
 struct ZeroGradeTypeNode {
-    int TypeID;
+    int TypeID{};
     BTree23<int> ModelsTree;
 
-    ZeroGradeTypeNode(int typeID, int n) : TypeID(typeID), ModelsTree(n) {}
-    ZeroGradeTypeNode(int typeID) : TypeID(typeID) {}
+    ZeroGradeTypeNode(int typeID, int n);
+    explicit ZeroGradeTypeNode(int typeID) : TypeID(typeID) {}
+    ZeroGradeTypeNode() = default;
     bool operator<(const ZeroGradeTypeNode& other) const;
     bool operator>=(const ZeroGradeTypeNode& other) const;
     bool operator==(const ZeroGradeTypeNode& other) const;

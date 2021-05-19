@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <string>
+#include <exception>
 #include "vector.h"
 
 using std::cout;
@@ -15,8 +16,8 @@ using std::string;
 template <typename DataType>
 class BTree23 {
 private:
-    SharedPointer<TreeNode<DataType>> root;
-    SharedPointer<TreeNode<DataType>> child;
+    SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>();
+    SharedPointer<TreeNode<DataType>> child = SharedPointer<TreeNode<DataType>>();
 public:
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
     // tree with ascending values from 0 to n-1
@@ -46,6 +47,7 @@ public:
     void link(SharedPointer<TreeNode<DataType>> node);
     void createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, int k, int r) const;
 
+    bool isEmpty();
 };
 
 template<typename DataType>
@@ -57,10 +59,8 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
     }
 
     if (isLeaf(root)) {
-        SharedPointer<TreeNode<DataType>> new_root =
-                SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(DataType()));
-        SharedPointer<TreeNode<DataType>> new_node =
-                SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value, new_root.rawPointer()));
+        SharedPointer<TreeNode<DataType>> new_root(new TreeNode<DataType>(DataType()));
+        SharedPointer<TreeNode<DataType>> new_node(new TreeNode<DataType>(value, new_root.rawPointer()));
         root->Parent = new_root.rawPointer();
         new_root->Sons = 2;
         if(value < root->Value){
@@ -80,6 +80,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
             new_node->Previous = new_root->Children[0].rawPointer();
         }
         root = new_root;
+        return new_node;
     }
 
     SharedPointer<TreeNode<DataType>> place = find(value, root);
@@ -116,6 +117,8 @@ void BTree23<DataType>::fix_insert(SharedPointer<TreeNode<DataType>> node) {
 template<typename DataType>
 SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
     SharedPointer<TreeNode<DataType>> node = find(value, root);
+    if (node.isEmpty()) return node; // returns NULL
+
     if (!isLeaf(node)) { // check if the value doesn't exist
         return SharedPointer<TreeNode<DataType>>(); // what to give back ????
     }
@@ -177,6 +180,10 @@ template<typename DataType>
 SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value,
                                                           SharedPointer<TreeNode<DataType>> node,
                                                           bool updateOnPath) const {
+    if (root.isEmpty()) {
+        return root; // returning null
+    }
+
     // first run, init from root
     if (node.isEmpty()) {
         node = root;
@@ -328,36 +335,8 @@ bool BTree23<DataType>::compare(const TreeNode<DataType> &node1, const TreeNode<
     return true;
 }
 
-template<>
-BTree23<int>::BTree23(int n) {
-    if (n == 0) {
-        root = SharedPointer<TreeNode<int>>();
-        return;
-    }
-
-    // create references for all nodes in final tree,
-    // less than 2*n for n leaves
-    Vector<SharedPointer<TreeNode<int>>> nodes(2*n);
-
-    // create row of leaves
-    for (int i = 0; i < n; i++) {
-        nodes.add(SharedPointer<TreeNode<int>>(new TreeNode<int>(i)));
-    }
-
-    child = nodes[0];
-
-    // loop row by row, from the bottom up
-    // each time creating the row's parents and linking them
-    int k = n;
-    int r = 0;
-    while (r+k - r > 1) {
-        createRow(nodes, k, r);
-        r += k;
-        k /= 2; // rounding down is a wanted behaviour, in case of 3 sons in the end
-    }
-
-    root = nodes[r];
-}
+template<typename DataType>
+BTree23<DataType>::BTree23(int n) {throw std::exception();}
 
 template<typename DataType>
 void BTree23<DataType>::createRow(Vector<SharedPointer<TreeNode<int>>> &nodes, int k, int r) const {
@@ -446,6 +425,11 @@ bool BTree23<DataType>::contRun(void (*action)(SharedPointer<TreeNode<DataType>>
     }
 
     return true;
+}
+
+template<typename DataType>
+bool BTree23<DataType>::isEmpty() {
+    return root.isEmpty();
 }
 
 #endif //DS_EX1_TREE23_H

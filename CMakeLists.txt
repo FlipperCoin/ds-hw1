@@ -20,7 +20,7 @@ add_executable(main_tests main1.cpp
         model_data.h
         shared_pointer.h
         tree_node.h
-        vector.h sells_node.cpp sells_node.h)
+        vector.h)
 
 find_package(GTest CONFIG REQUIRED)
 add_executable(tests tests.cpp)
