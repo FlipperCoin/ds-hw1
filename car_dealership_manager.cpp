@@ -217,10 +217,10 @@ StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
             return FAILURE;
         }
 
-        SharedPointer<ModelData> modelData = carNode->Value.Models[modelID];
+        ModelData modelData = carNode->Value.Models[modelID];
 
         // remove and add grade node with new score (to reorder in tree)
-        GradeNode gradeNode = modelData->Grade->Value;
+        GradeNode gradeNode = modelData.Grade;
         Grades.remove(gradeNode);
         ZeroGrades.remove(gradeNode); // need to make a conversion
 
