@@ -12,17 +12,14 @@
 #include "zero_grade_type_node.h"
 #include "sells_node.h"
 
-#define NO_CAR_TYPE (-1)
-
 class CarDealershipManager {
 private:
     BTree23<CarNode> Cars;
     BTree23<GradeNode> Grades;
     BTree23<ZeroGradeTypeNode> ZeroGrades;
     BTree23<SellsNode> Sells;
-    int BestSellingCarModel;
-    int BestSellingCarType = NO_CAR_TYPE;
-    int SellsForBestSelling;
+
+    void UpdateGrade(CarNode carNode, int modelID, int oldGrade, int newGrade);
 public:
     CarDealershipManager() = default;
     StatusType AddCarType(int typeID, int numOfModels);
