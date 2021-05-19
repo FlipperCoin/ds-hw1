@@ -144,7 +144,7 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
         Sells.remove({.TypeID=typeID, .ModelID=modelID, .Sells = modelData.Sells++});
         Sells.insert({.TypeID=typeID, .ModelID=modelID, .Sells = modelData.Sells});
 
-        UpdateGrade(carNode, modelID, modelData.Grade, modelData.Grade + 10);
+        UpdateGrade(carNode->Value, modelID, modelData.Grade, modelData.Grade + 10);
 
 //        if (carNode->Value.Models[modelID].isEmpty()) {
 //            // the model was never sold or complained about,
