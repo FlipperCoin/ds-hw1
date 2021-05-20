@@ -3,7 +3,6 @@ GetWorstModels 0
 GetWorstModels -1
 GetWorstModels 1
 AddCarType 2 3
-GetWorstModels 0
 GetWorstModels 1
 GetWorstModels 3
 GetWorstModels 4

@@ -45,6 +45,7 @@ template<typename T>
 void Vector<T>::resize() {
     if (size == 0) {
         size = 10;
+        delete[] data;
         data = new T[size];
         return;
     }

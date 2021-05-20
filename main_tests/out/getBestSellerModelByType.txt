@@ -1,7 +1,7 @@
 init done.
 GetBestSellerModelByType: INVALID_INPUT
 GetBestSellerModelByType: FAILURE
-GetBestSellerModelByType: ?
+GetBestSellerModelByType: FAILURE
 AddCarType: SUCCESS
 AddCarType: SUCCESS
 GetBestSellerModelByType: 0

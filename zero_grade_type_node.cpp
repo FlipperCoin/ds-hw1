@@ -19,6 +19,10 @@ BTree23<int>::BTree23(int n) {
     // create row of leaves
     for (int i = 0; i < n; i++) {
         nodes.add(SharedPointer<TreeNode<int>>(new TreeNode<int>(i)));
+        if (i != 0) {
+            nodes[i-1]->Next = nodes[i].rawPointer();
+            nodes[i]->Previous = nodes[i-1].rawPointer();
+        }
     }
 
     child = nodes[0];

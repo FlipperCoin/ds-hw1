@@ -114,7 +114,7 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
         SharedPointer<TreeNode<CarNode>> carNode =
                 Cars.find(CarNode(typeID));
 
-        if (!carNode->isLeaf()) {
+        if (carNode.isEmpty() || !carNode->isLeaf()) {
             // provided type isn't in the cars tree
             return FAILURE;
         }
@@ -162,7 +162,7 @@ StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
         SharedPointer<TreeNode<CarNode>> carNode =
                 Cars.find(CarNode(typeID));
 
-        if (!carNode->isLeaf()) {
+        if (carNode.isEmpty() || !carNode->isLeaf()) {
             // provided type isn't in the cars tree
             return FAILURE;
         }
@@ -246,6 +246,8 @@ StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int
             types[i] = iter->Value.TypeID;
             models[i] = iter->Value.ModelID;
             iter = iter->Next;
+        } else {
+            return FAILURE; // not enough models
         }
     }
     return SUCCESS;

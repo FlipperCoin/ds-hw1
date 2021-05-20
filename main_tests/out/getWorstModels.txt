@@ -2,7 +2,6 @@ init done.
 GetWorstModels: INVALID_INPUT
 GetWorstModels: INVALID_INPUT
 GetWorstModels: FAILURE
-GetWorstModels: INVALID_INPUT
 AddCarType: SUCCESS
 Model	|	Car
 0	|	2
@@ -23,7 +22,6 @@ Model	|	Car
 1	|	2
 --End of worst cars--
 MakeComplaint: SUCCESS
-SellCar: SUCCESS
 Model	|	Car
 2	|	2
 --End of worst cars--
