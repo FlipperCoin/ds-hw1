@@ -99,7 +99,6 @@ void CarDealershipManager::UpdateGrade(CarNode* carNode, int modelID, int oldGra
     }
 
     // stay non-zero
-    Grades.printTree();
     Grades.remove({carNode->TypeID, modelID, oldGrade});
     Grades.insert({carNode->TypeID, modelID, newGrade});
 }
