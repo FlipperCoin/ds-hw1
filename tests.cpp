@@ -5,6 +5,37 @@
 #include "gtest/gtest.h"
 #include "btree_23.h"
 
+template<>
+BTree23<int>::BTree23(int n) {
+    if (n == 0) {
+        root = SharedPointer<TreeNode<int>>();
+        return;
+    }
+
+    // create references for all nodes in final tree,
+    // less than 2*n for n leaves
+    Vector<SharedPointer<TreeNode<int>>> nodes(2*n);
+
+    // create row of leaves
+    for (int i = 0; i < n; i++) {
+        nodes.add(SharedPointer<TreeNode<int>>(new TreeNode<int>(i)));
+    }
+
+    child = nodes[0];
+
+    // loop row by row, from the bottom up
+    // each time creating the row's parents and linking them
+    int k = n;
+    int r = 0;
+    while (r+k - r > 1) {
+        createRow(nodes, k, r);
+        r += k;
+        k /= 2; // rounding down is a wanted behaviour, in case of 3 sons in the end
+    }
+
+    root = nodes[r];
+}
+
 class Tests : public ::testing::Test {
 
 protected:
@@ -417,10 +448,8 @@ TEST_F(Tests, btreeRemove2To1UnionMid) {
 
     link(root);
     auto* t1 = new BTree23<Int>(root);
-    t1->printTree();
 
     t1->remove(7);
-    t1->printTree();
 
     auto* t_exp = new BTree23<Int>(expected);
     ASSERT_TRUE(*t1 == *t_exp);

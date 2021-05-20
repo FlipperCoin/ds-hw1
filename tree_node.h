@@ -36,6 +36,8 @@ struct TreeNode {
         Children[0] = small;
         Children[1] = big;
         Value = small->Value;
+        small->Parent = this;
+        big->Parent = this;
     }
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
@@ -50,6 +52,9 @@ struct TreeNode {
         Children[1] = middle;
         Children[2] = big;
         Value = small->Value;
+        small->Parent = this;
+        middle->Parent = this;
+        big->Parent = this;
     }
 
     TreeNode(SharedPointer<TreeNode<DataType>> small,
@@ -68,6 +73,10 @@ struct TreeNode {
         Children[2] = middleTwo;
         Children[3] = big;
         Value = small->Value;
+        small->Parent = this;
+        middleOne->Parent = this;
+        middleTwo->Parent = this;
+        big->Parent = this;
     }
     TreeNode(DataType value, TreeNode<DataType>* parent = nullptr) : Value(value), Sons(0), Parent(parent) {
     }
@@ -166,13 +175,11 @@ struct TreeNode {
         bool changed = false;
         for (; i < Sons-1; i++) {
             if (value < Indices[i]) {
-                if (i == 0) {
-                    Value = value;
-                }
                 changed = true;
                 DataType keyPushNext = Indices[i];
                 SharedPointer<TreeNode<DataType>> childPushNext;
                 if (value < Children[i]->Value) {
+                    Value = value;
                     new_node->Previous = Children[i]->Previous;
                     if (new_node->Previous != nullptr) new_node->Previous->Next = new_node.rawPointer();
 
@@ -249,6 +256,7 @@ struct TreeNode {
             this->Parent->Children[other]->Indices[0] = this->Parent->Children[other]->Indices[1];
             this->Parent->Children[other]->Children[0] = this->Parent->Children[other]->Children[1];
             this->Parent->Children[other]->Children[1] = this->Parent->Children[other]->Children[2];
+            this->Parent->Children[other]->Value = this->Parent->Children[other]->Children[0]->Value;
         } else { // borrowing from left hand side
             // fixing indicators
             this->Indices[0] = this->Parent->Indices[other];
@@ -258,7 +266,7 @@ struct TreeNode {
             this->Children[1] = this->Children[0];
             this->Children[0] = this->Parent->Children[other]->Children[2];
             this->Children[0]->Parent = this;
-
+            this->Value = this->Children[0]->Value;
             // fixing the other node
             this->Parent->Children[other]->Sons = 2;
         }

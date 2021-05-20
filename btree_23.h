@@ -59,6 +59,9 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
     }
 
     if (isLeaf(root)) {
+        // if already in tree
+        if (root->Value == value) return SharedPointer<TreeNode<DataType>>();
+
         SharedPointer<TreeNode<DataType>> new_root(new TreeNode<DataType>(DataType()));
         SharedPointer<TreeNode<DataType>> new_node(new TreeNode<DataType>(value, new_root.rawPointer()));
         root->Parent = new_root.rawPointer();
@@ -79,11 +82,13 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
             new_root->Children[0]->Next = new_node.rawPointer();
             new_node->Previous = new_root->Children[0].rawPointer();
         }
+        new_root->Value = new_root->Children[0]->Value;
         root = new_root;
+        child = root->Children[0];
         return new_node;
     }
 
-    SharedPointer<TreeNode<DataType>> place = find(value, root);
+    SharedPointer<TreeNode<DataType>> place = find(value, root, true);
     if (isLeaf(place)) { // value is already in tree!
         return SharedPointer<TreeNode<DataType>>();
     }
@@ -91,8 +96,8 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::insert(DataType value) {
     SharedPointer<TreeNode<DataType>> new_node =
             SharedPointer<TreeNode<DataType>>(new TreeNode<DataType>(value, place.rawPointer()));
     place->insertValue(new_node);
-    if(place->Sons == 3) return new_node; //great! no need for fixing!
-    fix_insert(place);
+    if (value < child->Value) child = new_node;
+    if(place->Sons != 3) fix_insert(place);
     return new_node;
 }
 
@@ -127,11 +132,16 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::remove(DataType value) {
         child = SharedPointer<TreeNode<DataType>>();
         return root;
     }
+
     auto p = node->getSharedParent();
     if (p.isEmpty()) p = root;
+
+    if (child == node) {
+        child = p->Children[1];
+    }
+
     SharedPointer<TreeNode<DataType>> v_node = p;
     v_node->removeSon(value);
-
     // recursive function here!!
     fix_remove(v_node);
     return SharedPointer<TreeNode<DataType>>();
@@ -300,8 +310,9 @@ void BTree23<DataType>::link(SharedPointer<TreeNode<DataType>> node) {
 
 template<typename DataType>
 BTree23<DataType>::BTree23(SharedPointer<TreeNode<DataType>> root) : root(root), child(SharedPointer<TreeNode<DataType>>()) {
-    if (!root.isEmpty())
+    if (!root.isEmpty()) {
         link(root);
+    }
 }
 
 template<typename DataType>
@@ -319,6 +330,17 @@ bool BTree23<DataType>::operator==(const BTree23<DataType> &other) const {
 template<typename DataType>
 bool BTree23<DataType>::compare(const TreeNode<DataType> &node1, const TreeNode<DataType> &node2) {
     if (node1.Sons != node2.Sons) return false;
+    if (node1.Value != node2.Value) return false;
+
+    // hard to check if parent is valid, this is a best effort for now
+    if (node1.Parent == nullptr) {
+        if (node1.Parent != node2.Parent) return false;
+    }
+    else if (node2.Parent == nullptr) return false;
+    else {
+        if (node1.Parent->Sons != node2.Parent->Sons) return false;
+        if (node1.Parent->Value != node2.Parent->Value) return false;
+    }
 
     for (int i = 0; i < node1.Sons-1; i++) {
         if (node1.Indices[i] != node2.Indices[i]) {

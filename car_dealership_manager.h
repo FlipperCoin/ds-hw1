@@ -19,7 +19,7 @@ private:
     BTree23<ZeroGradeTypeNode> ZeroGrades;
     BTree23<SellsNode> Sells;
 
-    void UpdateGrade(CarNode carNode, int modelID, int oldGrade, int newGrade);
+    void UpdateGrade(CarNode* carNode, int modelID, int oldGrade, int newGrade);
 public:
     CarDealershipManager() = default;
     StatusType AddCarType(int typeID, int numOfModels);

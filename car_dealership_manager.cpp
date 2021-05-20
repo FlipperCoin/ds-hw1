@@ -26,7 +26,6 @@ StatusType CarDealershipManager::AddCarType(int typeID, int numOfModels) {
         ZeroGradeTypeNode zeroGradesNode(typeID, numOfModels);
         // insert log(n) into zero grade type tree
         ZeroGrades.insert(zeroGradesNode);
-
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
     }
@@ -80,28 +79,29 @@ StatusType CarDealershipManager::RemoveCarType(int typeID) {
     }
 }
 
-void CarDealershipManager::UpdateGrade(CarNode carNode, int modelID, int oldGrade, int newGrade) {
-    carNode.Models[modelID].Grade = newGrade;
+void CarDealershipManager::UpdateGrade(CarNode* carNode, int modelID, int oldGrade, int newGrade) {
+    carNode->Models[modelID].Grade = newGrade;
 
     // move from non-zero to zero grade (if new grade is zero, old grade def not zero)
     if (newGrade == 0) {
-        Grades.remove({carNode.TypeID, modelID, oldGrade});
-        auto zeroGradeTypeNode = ZeroGrades.find(ZeroGradeTypeNode(carNode.TypeID));
+        Grades.remove({carNode->TypeID, modelID, oldGrade});
+        auto zeroGradeTypeNode = ZeroGrades.find(ZeroGradeTypeNode(carNode->TypeID));
         zeroGradeTypeNode->Value.ModelsTree.insert(modelID);
         return;
     }
 
     // move from zero to non-zero grade
     else if(oldGrade == 0) {
-        auto zeroGradeTypeNode = ZeroGrades.find(ZeroGradeTypeNode(carNode.TypeID));
+        auto zeroGradeTypeNode = ZeroGrades.find(ZeroGradeTypeNode(carNode->TypeID));
         zeroGradeTypeNode->Value.ModelsTree.remove(modelID);
-        Grades.insert({.TypeID=carNode.TypeID, .ModelID=modelID, .Grade=newGrade});
+        Grades.insert({.TypeID=carNode->TypeID, .ModelID=modelID, .Grade=newGrade});
         return;
     }
 
     // stay non-zero
-    Grades.remove({carNode.TypeID, modelID, oldGrade});
-    Grades.insert({carNode.TypeID, modelID, newGrade});
+    Grades.printTree();
+    Grades.remove({carNode->TypeID, modelID, oldGrade});
+    Grades.insert({carNode->TypeID, modelID, newGrade});
 }
 
 StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
@@ -137,14 +137,14 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
         auto bestSellingModel = carNode->Value.BestSellingModel;
         auto sellsForBestSelling = carNode->Value.Models[bestSellingModel].Sells;
 
-        if (modelData.Sells < sellsForBestSelling ||
+        if (modelData.Sells > sellsForBestSelling ||
             (modelData.Sells == sellsForBestSelling && modelID <= bestSellingModel)) {
             carNode->Value.BestSellingModel = modelID;
         }
 
         // update grade
         int newGrade = modelData.Grade + 10;
-        UpdateGrade(carNode->Value, modelID, modelData.Grade, newGrade);
+        UpdateGrade(&(carNode->Value), modelID, modelData.Grade, newGrade);
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
     }
@@ -173,7 +173,7 @@ StatusType CarDealershipManager::MakeComplaint(int typeID, int modelID, int t) {
         }
 
         ModelData modelData = carNode->Value.Models[modelID];
-        UpdateGrade(carNode->Value, modelID, modelData.Grade, modelData.Grade - int(100/t));
+        UpdateGrade(&(carNode->Value), modelID, modelData.Grade, modelData.Grade - int(100/t));
 
     } catch (std::bad_alloc& e) {
         return ALLOCATION_ERROR;
@@ -186,17 +186,27 @@ StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *model
     if (typeID < 0) {
         return INVALID_INPUT;
     }
-    if (typeID == 0){
-        if (Sells.isEmpty()) return FAILURE;
-        *modelID = Sells.getSmallestChild()->Value.ModelID;
-    }
     try {
+        if (typeID == 0){
+            if (!Sells.isEmpty()) {
+                *modelID = Sells.getSmallestChild()->Value.ModelID;
+                return SUCCESS;
+            }
+            if (Cars.isEmpty()) {
+                return FAILURE;
+            }
+            else {
+                *modelID = 0; // doesn't matter the car type, it'll be model id 0
+                return SUCCESS;
+            }
+        }
+
         // find car in type tree
         // O(log(n))
         SharedPointer<TreeNode<CarNode>> carNode =
                 Cars.find(CarNode(typeID));
 
-        if (!carNode->isLeaf()) {
+        if (carNode.isEmpty() || !carNode->isLeaf()) {
             // provided type isn't in the cars tree
             return FAILURE;
         }
@@ -230,6 +240,7 @@ StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int
                 i++;
                 models_iter = models_iter->Next;
             }
+            i--;
             zero_iter = zero_iter->Next;
         }
         else if(iter != nullptr){
