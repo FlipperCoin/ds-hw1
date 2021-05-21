@@ -3,7 +3,6 @@
 //
 
 #include "car_dealership_manager.h"
-#include "car_node.h"
 
 StatusType CarDealershipManager::AddCarType(int typeID, int numOfModels) {
     if (typeID <= 0 || numOfModels <= 0) {
@@ -214,44 +213,6 @@ StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *model
             return ALLOCATION_ERROR;
     }
     return SUCCESS;
-}
-
-template<>
-void BTree23<int>::printMidNode(const SharedPointer<TreeNode<int>> &node) const {
-    cout << "[";
-    for (int i = 0; i < node->Sons-1; i++) {
-        cout << node->Indices[i];
-        if (i != node->Sons-2) {
-            cout << ",";
-        }
-    }
-    cout << "]";
-}
-
-template<>
-void BTree23<int>::printTree(SharedPointer<TreeNode<int>> node, bool is_right_most, const string& prefix) const {
-    if (isLeaf(node)) {
-        cout << node->Value << endl;
-        return;
-    }
-
-    printMidNode(node);
-    cout << "-";
-    string padding = "";
-    for (int i = 0; i < ((node->Sons-1)*2); i++) padding += " ";
-    printTree(node->Children[node->Sons-1], true, prefix + padding + "| ");
-    for (int i = node->Sons-2; i > 0; i--) {
-        cout << prefix << padding << "|-";
-        printTree(node->Children[i], false, prefix + padding + "| ");
-    }
-    cout << prefix << padding << "\\-";
-    printTree(node->Children[0], false, prefix + padding + "  ");
-}
-
-
-template<>
-void BTree23<int>::printTree() const {
-    printTree(root, true, "");
 }
 
 StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int *models) {
