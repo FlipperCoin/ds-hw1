@@ -154,7 +154,6 @@ void BTree23<DataType>::fix_remove(SharedPointer<TreeNode<DataType>> v_node) {
     if (v_node == root.rawPointer()) {
         root = v_node->Children[0];
         root->Parent = nullptr;
-        child = root;
         return;
     }
     // v_node has one son but he's not root

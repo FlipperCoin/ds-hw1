@@ -270,7 +270,7 @@ StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int
         else if(zero_iter != nullptr){
             // need a loop for every zero grade node that goes through all nodes in tree4 - zero models
             auto models_iter = zero_iter->Value.ModelsTree.getSmallestChild().rawPointer();
-            zero_iter->Value.ModelsTree.printTree();
+
             while(models_iter != nullptr && i < numOfModels){
                 types[i] = zero_iter->Value.TypeID;
                 models[i] = models_iter->Value;
