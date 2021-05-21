@@ -1,1687 +1,1600 @@
 1.txt
 
-==10345== Memcheck, a memory error detector
-==10345== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10345== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10345== Command: ./cmake-build-debug/main_tests
-==10345== 
-==10345== 
-==10345== HEAP SUMMARY:
-==10345==     in use at exit: 0 bytes in 0 blocks
-==10345==   total heap usage: 244,476 allocs, 244,476 frees, 8,279,928 bytes allocated
-==10345== 
-==10345== All heap blocks were freed -- no leaks are possible
-==10345== 
-==10345== For counts of detected and suppressed errors, rerun with: -v
-==10345== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30816== Memcheck, a memory error detector
+==30816== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30816== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30816== Command: ./cmake-build-debug/main_tests
+==30816== 
+==30816== 
+==30816== HEAP SUMMARY:
+==30816==     in use at exit: 0 bytes in 0 blocks
+==30816==   total heap usage: 244,500 allocs, 244,500 frees, 8,285,528 bytes allocated
+==30816== 
+==30816== All heap blocks were freed -- no leaks are possible
+==30816== 
+==30816== For counts of detected and suppressed errors, rerun with: -v
+==30816== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 10.txt
 
-==10351== Memcheck, a memory error detector
-==10351== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10351== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10351== Command: ./cmake-build-debug/main_tests
-==10351== 
-==10351== 
-==10351== HEAP SUMMARY:
-==10351==     in use at exit: 0 bytes in 0 blocks
-==10351==   total heap usage: 30,450 allocs, 30,450 frees, 965,496 bytes allocated
-==10351== 
-==10351== All heap blocks were freed -- no leaks are possible
-==10351== 
-==10351== For counts of detected and suppressed errors, rerun with: -v
-==10351== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30822== Memcheck, a memory error detector
+==30822== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30822== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30822== Command: ./cmake-build-debug/main_tests
+==30822== 
+==30822== 
+==30822== HEAP SUMMARY:
+==30822==     in use at exit: 0 bytes in 0 blocks
+==30822==   total heap usage: 30,476 allocs, 30,476 frees, 969,816 bytes allocated
+==30822== 
+==30822== All heap blocks were freed -- no leaks are possible
+==30822== 
+==30822== For counts of detected and suppressed errors, rerun with: -v
+==30822== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 100.txt
 
-==10357== Memcheck, a memory error detector
-==10357== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10357== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10357== Command: ./cmake-build-debug/main_tests
-==10357== 
-==10357== 
-==10357== HEAP SUMMARY:
-==10357==     in use at exit: 0 bytes in 0 blocks
-==10357==   total heap usage: 129,209 allocs, 129,209 frees, 4,044,428 bytes allocated
-==10357== 
-==10357== All heap blocks were freed -- no leaks are possible
-==10357== 
-==10357== For counts of detected and suppressed errors, rerun with: -v
-==10357== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30828== Memcheck, a memory error detector
+==30828== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30828== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30828== Command: ./cmake-build-debug/main_tests
+==30828== 
+==30828== 
+==30828== HEAP SUMMARY:
+==30828==     in use at exit: 0 bytes in 0 blocks
+==30828==   total heap usage: 129,582 allocs, 129,582 frees, 4,064,016 bytes allocated
+==30828== 
+==30828== All heap blocks were freed -- no leaks are possible
+==30828== 
+==30828== For counts of detected and suppressed errors, rerun with: -v
+==30828== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 11.txt
 
-==10363== Memcheck, a memory error detector
-==10363== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10363== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10363== Command: ./cmake-build-debug/main_tests
-==10363== 
-==10363== 
-==10363== HEAP SUMMARY:
-==10363==     in use at exit: 0 bytes in 0 blocks
-==10363==   total heap usage: 6,344 allocs, 6,344 frees, 258,260 bytes allocated
-==10363== 
-==10363== All heap blocks were freed -- no leaks are possible
-==10363== 
-==10363== For counts of detected and suppressed errors, rerun with: -v
-==10363== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30834== Memcheck, a memory error detector
+==30834== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30834== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30834== Command: ./cmake-build-debug/main_tests
+==30834== 
+==30834== 
+==30834== HEAP SUMMARY:
+==30834==     in use at exit: 0 bytes in 0 blocks
+==30834==   total heap usage: 6,344 allocs, 6,344 frees, 258,260 bytes allocated
+==30834== 
+==30834== All heap blocks were freed -- no leaks are possible
+==30834== 
+==30834== For counts of detected and suppressed errors, rerun with: -v
+==30834== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 12.txt
 
-==10369== Memcheck, a memory error detector
-==10369== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10369== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10369== Command: ./cmake-build-debug/main_tests
-==10369== 
-==10369== 
-==10369== HEAP SUMMARY:
-==10369==     in use at exit: 0 bytes in 0 blocks
-==10369==   total heap usage: 6,504 allocs, 6,504 frees, 263,424 bytes allocated
-==10369== 
-==10369== All heap blocks were freed -- no leaks are possible
-==10369== 
-==10369== For counts of detected and suppressed errors, rerun with: -v
-==10369== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30840== Memcheck, a memory error detector
+==30840== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30840== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30840== Command: ./cmake-build-debug/main_tests
+==30840== 
+==30840== 
+==30840== HEAP SUMMARY:
+==30840==     in use at exit: 0 bytes in 0 blocks
+==30840==   total heap usage: 6,504 allocs, 6,504 frees, 263,424 bytes allocated
+==30840== 
+==30840== All heap blocks were freed -- no leaks are possible
+==30840== 
+==30840== For counts of detected and suppressed errors, rerun with: -v
+==30840== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 13.txt
 
-==10375== Memcheck, a memory error detector
-==10375== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10375== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10375== Command: ./cmake-build-debug/main_tests
-==10375== 
+==30846== Memcheck, a memory error detector
+==30846== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30846== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30846== Command: ./cmake-build-debug/main_tests
+==30846== 
+==30846== 
+==30846== HEAP SUMMARY:
+==30846==     in use at exit: 0 bytes in 0 blocks
+==30846==   total heap usage: 74,723 allocs, 74,723 frees, 2,099,696 bytes allocated
+==30846== 
+==30846== All heap blocks were freed -- no leaks are possible
+==30846== 
+==30846== For counts of detected and suppressed errors, rerun with: -v
+==30846== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 14.txt
 
-==10381== Memcheck, a memory error detector
-==10381== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10381== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10381== Command: ./cmake-build-debug/main_tests
-==10381== 
-==10381== 
-==10381== Process terminating with default action of signal 2 (SIGINT)
-==10381==    at 0x54EF222: write (write.c:27)
-==10381==    by 0x546A28C: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1203)
-==10381==    by 0x546C020: new_do_write (fileops.c:457)
-==10381==    by 0x546C020: _IO_do_write@@GLIBC_2.2.5 (fileops.c:433)
-==10381==    by 0x5469857: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:813)
-==10381==    by 0x545D95C: fflush (iofflush.c:40)
-==10381==    by 0x1098E5: main (main1.cpp:92)
-==10381== 
-==10381== HEAP SUMMARY:
-==10381==     in use at exit: 19,484 bytes in 676 blocks
-==10381==   total heap usage: 1,543 allocs, 867 frees, 121,380 bytes allocated
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 1 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x114772: SharedPointer<TreeNode<GradeNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11FDF8: CarDealershipManager::CarDealershipManager() (car_dealership_manager.h:24)
-==10381==    by 0x11FAB2: Init (library.cpp:10)
-==10381==    by 0x109C31: OnInit (main1.cpp:193)
-==10381==    by 0x109AE2: parser (main1.cpp:148)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 2 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x114772: SharedPointer<TreeNode<GradeNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x120098: BTree23<GradeNode>::BTree23(SharedPointer<TreeNode<GradeNode> >) (btree_23.h:307)
-==10381==    by 0x11FE07: CarDealershipManager::CarDealershipManager() (car_dealership_manager.h:24)
-==10381==    by 0x11FAB2: Init (library.cpp:10)
-==10381==    by 0x109C31: OnInit (main1.cpp:193)
-==10381==    by 0x109AE2: parser (main1.cpp:148)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 3 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x1158E0: SharedPointer<TreeNode<SellsNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11FE56: CarDealershipManager::CarDealershipManager() (car_dealership_manager.h:24)
-==10381==    by 0x11FAB2: Init (library.cpp:10)
-==10381==    by 0x109C31: OnInit (main1.cpp:193)
-==10381==    by 0x109AE2: parser (main1.cpp:148)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 4 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x1158E0: SharedPointer<TreeNode<SellsNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x12025C: BTree23<SellsNode>::BTree23(SharedPointer<TreeNode<SellsNode> >) (btree_23.h:307)
-==10381==    by 0x11FE65: CarDealershipManager::CarDealershipManager() (car_dealership_manager.h:24)
-==10381==    by 0x11FAB2: Init (library.cpp:10)
-==10381==    by 0x109C31: OnInit (main1.cpp:193)
-==10381==    by 0x109AE2: parser (main1.cpp:148)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 5 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10D86A: SharedPointer<TreeNode<CarNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11AB69: Vector<SharedPointer<TreeNode<CarNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1112A2: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C740: BTree23<CarNode>::insert(CarNode) (btree_23.h:65)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 6 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x111318: SharedPointer<TreeNode<CarNode> >::SharedPointer(TreeNode<CarNode>*) (shared_pointer.h:24)
-==10381==    by 0x10C74F: BTree23<CarNode>::insert(CarNode) (btree_23.h:65)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 7 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x10CEB5: ZeroGradeTypeNode::ZeroGradeTypeNode() (zero_grade_type_node.h:16)
-==10381==    by 0x11B2D8: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D131: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:65)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 8 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x10C3AA: BTree23<int>::BTree23(SharedPointer<TreeNode<int> >) (btree_23.h:307)
-==10381==    by 0x10CEC4: ZeroGradeTypeNode::ZeroGradeTypeNode() (zero_grade_type_node.h:16)
-==10381==    by 0x11B2D8: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D131: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:65)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 9 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10EBF4: SharedPointer<TreeNode<ZeroGradeTypeNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11B449: Vector<SharedPointer<TreeNode<ZeroGradeTypeNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1125AC: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D131: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:65)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 10 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11261C: SharedPointer<TreeNode<ZeroGradeTypeNode> >::SharedPointer(TreeNode<ZeroGradeTypeNode>*) (shared_pointer.h:24)
-==10381==    by 0x10D140: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:65)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 11 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x111318: SharedPointer<TreeNode<CarNode> >::SharedPointer(TreeNode<CarNode>*) (shared_pointer.h:24)
-==10381==    by 0x10CBD4: BTree23<CarNode>::insert(CarNode) (btree_23.h:96)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 4 bytes in 1 blocks are still reachable in loss record 12 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11261C: SharedPointer<TreeNode<ZeroGradeTypeNode> >::SharedPointer(TreeNode<ZeroGradeTypeNode>*) (shared_pointer.h:24)
-==10381==    by 0x10D5C5: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:96)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 8 bytes in 2 blocks are still reachable in loss record 13 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x111318: SharedPointer<TreeNode<CarNode> >::SharedPointer(TreeNode<CarNode>*) (shared_pointer.h:24)
-==10381==    by 0x10C7AE: BTree23<CarNode>::insert(CarNode) (btree_23.h:66)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 8 bytes in 2 blocks are still reachable in loss record 14 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11261C: SharedPointer<TreeNode<ZeroGradeTypeNode> >::SharedPointer(TreeNode<ZeroGradeTypeNode>*) (shared_pointer.h:24)
-==10381==    by 0x10D19F: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:66)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 12 bytes in 3 blocks are still reachable in loss record 15 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11E12D: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x121E89: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, int, TreeNode<int>*) (tree_node.h:48)
-==10381==    by 0x12178A: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:366)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 12 bytes in 3 blocks are still reachable in loss record 16 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x1171D0: SharedPointer<TreeNode<int> >::SharedPointer(TreeNode<int>*) (shared_pointer.h:24)
-==10381==    by 0x12179D: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:365)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 12 bytes in 3 blocks are still reachable in loss record 17 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x10CEB5: ZeroGradeTypeNode::ZeroGradeTypeNode() (zero_grade_type_node.h:16)
-==10381==    by 0x11B2D8: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D5B6: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:97)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 12 bytes in 3 blocks are still reachable in loss record 18 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x10C3AA: BTree23<int>::BTree23(SharedPointer<TreeNode<int> >) (btree_23.h:307)
-==10381==    by 0x10CEC4: ZeroGradeTypeNode::ZeroGradeTypeNode() (zero_grade_type_node.h:16)
-==10381==    by 0x11B2D8: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D5B6: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:97)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 16 bytes in 4 blocks are still reachable in loss record 19 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10D86A: SharedPointer<TreeNode<CarNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11AB69: Vector<SharedPointer<TreeNode<CarNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1112A2: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10CBC5: BTree23<CarNode>::insert(CarNode) (btree_23.h:97)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 16 bytes in 4 blocks are still reachable in loss record 20 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10EBF4: SharedPointer<TreeNode<ZeroGradeTypeNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11B449: Vector<SharedPointer<TreeNode<ZeroGradeTypeNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1125AC: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D5B6: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:97)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 24 bytes in 6 blocks are still reachable in loss record 21 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x10CEB5: ZeroGradeTypeNode::ZeroGradeTypeNode() (zero_grade_type_node.h:16)
-==10381==    by 0x11B2D8: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D190: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:66)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 24 bytes in 6 blocks are still reachable in loss record 22 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x10C3AA: BTree23<int>::BTree23(SharedPointer<TreeNode<int> >) (btree_23.h:307)
-==10381==    by 0x10CEC4: ZeroGradeTypeNode::ZeroGradeTypeNode() (zero_grade_type_node.h:16)
-==10381==    by 0x11B2D8: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D190: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:66)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 32 bytes in 8 blocks are still reachable in loss record 23 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10D86A: SharedPointer<TreeNode<CarNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11AB69: Vector<SharedPointer<TreeNode<CarNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1112A2: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C79F: BTree23<CarNode>::insert(CarNode) (btree_23.h:66)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 32 bytes in 8 blocks are still reachable in loss record 24 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10EBF4: SharedPointer<TreeNode<ZeroGradeTypeNode> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11B449: Vector<SharedPointer<TreeNode<ZeroGradeTypeNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1125AC: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D190: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:66)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 36 bytes in 3 blocks are still reachable in loss record 25 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11E075: Vector<int>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x121E5D: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, int, TreeNode<int>*) (tree_node.h:48)
-==10381==    by 0x12178A: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:366)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 72 bytes in 1 blocks are still reachable in loss record 26 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11AB47: Vector<SharedPointer<TreeNode<CarNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1112A2: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C740: BTree23<CarNode>::insert(CarNode) (btree_23.h:65)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 72 bytes in 1 blocks are still reachable in loss record 27 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11B427: Vector<SharedPointer<TreeNode<ZeroGradeTypeNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1125AC: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D131: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:65)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 72 bytes in 1 blocks are still reachable in loss record 28 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11AB47: Vector<SharedPointer<TreeNode<CarNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1112A2: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10CBC5: BTree23<CarNode>::insert(CarNode) (btree_23.h:97)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 72 bytes in 1 blocks are still reachable in loss record 29 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11B427: Vector<SharedPointer<TreeNode<ZeroGradeTypeNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1125AC: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D5B6: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:97)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 80 bytes in 1 blocks are still reachable in loss record 30 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C157: Vector<ModelData>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x10C4E7: CarNode::CarNode() (car_node.h:23)
-==10381==    by 0x11AA0C: Vector<CarNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11125F: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C740: BTree23<CarNode>::insert(CarNode) (btree_23.h:65)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 80 bytes in 1 blocks are still reachable in loss record 31 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x111454: Vector<ModelData>::operator=(Vector<ModelData>) (vector.h:122)
-==10381==    by 0x10C553: CarNode::operator=(CarNode const&) (car_node.h:18)
-==10381==    by 0x10CA63: BTree23<CarNode>::insert(CarNode) (btree_23.h:85)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 104 bytes in 1 blocks are still reachable in loss record 32 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11A9C5: Vector<CarNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11125F: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C740: BTree23<CarNode>::insert(CarNode) (btree_23.h:65)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 104 bytes in 1 blocks are still reachable in loss record 33 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11A9C5: Vector<CarNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11125F: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10CBC5: BTree23<CarNode>::insert(CarNode) (btree_23.h:97)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 112 bytes in 1 blocks are still reachable in loss record 34 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C72D: BTree23<CarNode>::insert(CarNode) (btree_23.h:65)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 112 bytes in 1 blocks are still reachable in loss record 35 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10CBB4: BTree23<CarNode>::insert(CarNode) (btree_23.h:97)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 120 bytes in 1 blocks are still reachable in loss record 36 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10D11E: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:65)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 120 bytes in 1 blocks are still reachable in loss record 37 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10D5A5: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:97)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 128 bytes in 1 blocks are still reachable in loss record 38 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11FA91: Init (library.cpp:10)
-==10381==    by 0x109C31: OnInit (main1.cpp:193)
-==10381==    by 0x109AE2: parser (main1.cpp:148)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 128 bytes in 1 blocks are still reachable in loss record 39 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11B290: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D131: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:65)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 128 bytes in 1 blocks are still reachable in loss record 40 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11B290: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D5B6: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:97)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 140 bytes in 35 blocks are still reachable in loss record 41 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x1171D0: SharedPointer<TreeNode<int> >::SharedPointer(TreeNode<int>*) (shared_pointer.h:24)
-==10381==    by 0x12199B: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:383)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 144 bytes in 2 blocks are still reachable in loss record 42 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11AB47: Vector<SharedPointer<TreeNode<CarNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1112A2: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C79F: BTree23<CarNode>::insert(CarNode) (btree_23.h:66)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 144 bytes in 2 blocks are still reachable in loss record 43 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11B427: Vector<SharedPointer<TreeNode<ZeroGradeTypeNode> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x1125AC: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D190: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:66)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 160 bytes in 1 blocks are still reachable in loss record 44 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x111454: Vector<ModelData>::operator=(Vector<ModelData>) (vector.h:122)
-==10381==    by 0x10C553: CarNode::operator=(CarNode const&) (car_node.h:18)
-==10381==    by 0x1119AA: TreeNode<CarNode>::insertValue(SharedPointer<TreeNode<CarNode> >) (tree_node.h:206)
-==10381==    by 0x10CC11: BTree23<CarNode>::insert(CarNode) (btree_23.h:98)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 176 bytes in 44 blocks are still reachable in loss record 45 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x1171D0: SharedPointer<TreeNode<int> >::SharedPointer(TreeNode<int>*) (shared_pointer.h:24)
-==10381==    by 0x1211CE: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 208 bytes in 2 blocks are still reachable in loss record 46 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11A9C5: Vector<CarNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11125F: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C79F: BTree23<CarNode>::insert(CarNode) (btree_23.h:66)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 216 bytes in 3 blocks are still reachable in loss record 47 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11E10B: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x121E89: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, int, TreeNode<int>*) (tree_node.h:48)
-==10381==    by 0x12178A: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:366)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 224 bytes in 2 blocks are still reachable in loss record 48 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C78E: BTree23<CarNode>::insert(CarNode) (btree_23.h:66)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 240 bytes in 2 blocks are still reachable in loss record 49 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C247: Vector<ModelData>::Vector(Vector<ModelData> const&) (vector.h:136)
-==10381==    by 0x10C080: CarNode::CarNode(CarNode const&) (car_node.h:18)
-==10381==    by 0x111281: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C79F: BTree23<CarNode>::insert(CarNode) (btree_23.h:66)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 240 bytes in 2 blocks are still reachable in loss record 50 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10D17F: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:66)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 240 bytes in 3 blocks are still reachable in loss record 51 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x121766: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:366)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 240 bytes in 3 blocks are still reachable in loss record 52 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C157: Vector<ModelData>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x10C4E7: CarNode::CarNode() (car_node.h:23)
-==10381==    by 0x11AA0C: Vector<CarNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11125F: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10CBC5: BTree23<CarNode>::insert(CarNode) (btree_23.h:97)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 256 bytes in 2 blocks are still reachable in loss record 53 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11B290: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10381==    by 0x10D190: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:66)
-==10381==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 280 bytes in 70 blocks are still reachable in loss record 54 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11E12D: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11E20A: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, TreeNode<int>*) (tree_node.h:34)
-==10381==    by 0x12198C: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:384)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 320 bytes in 1 blocks are still reachable in loss record 55 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C247: Vector<ModelData>::Vector(Vector<ModelData> const&) (vector.h:136)
-==10381==    by 0x10C080: CarNode::CarNode(CarNode const&) (car_node.h:18)
-==10381==    by 0x111281: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10CBC5: BTree23<CarNode>::insert(CarNode) (btree_23.h:97)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 320 bytes in 1 blocks are still reachable in loss record 56 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x111454: Vector<ModelData>::operator=(Vector<ModelData>) (vector.h:122)
-==10381==    by 0x10C553: CarNode::operator=(CarNode const&) (car_node.h:18)
-==10381==    by 0x11186C: TreeNode<CarNode>::insertValue(SharedPointer<TreeNode<CarNode> >) (tree_node.h:195)
-==10381==    by 0x10CC11: BTree23<CarNode>::insert(CarNode) (btree_23.h:98)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 420 bytes in 35 blocks are still reachable in loss record 57 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11E075: Vector<int>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11E1DE: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, TreeNode<int>*) (tree_node.h:34)
-==10381==    by 0x12198C: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:384)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 480 bytes in 6 blocks are still reachable in loss record 58 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C157: Vector<ModelData>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x10C4E7: CarNode::CarNode() (car_node.h:23)
-==10381==    by 0x11AA0C: Vector<CarNode>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11125F: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10381==    by 0x10C79F: BTree23<CarNode>::insert(CarNode) (btree_23.h:66)
-==10381==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 528 bytes in 44 blocks are still reachable in loss record 59 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11E075: Vector<int>::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11713A: TreeNode<int>::TreeNode(int, TreeNode<int>*) (tree_node.h:81)
-==10381==    by 0x1211BF: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 704 bytes in 176 blocks are still reachable in loss record 60 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10381==    by 0x11E12D: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x117170: TreeNode<int>::TreeNode(int, TreeNode<int>*) (tree_node.h:81)
-==10381==    by 0x1211BF: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 2,520 bytes in 35 blocks are still reachable in loss record 61 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11E10B: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x11E20A: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, TreeNode<int>*) (tree_node.h:34)
-==10381==    by 0x12198C: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:384)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 2,800 bytes in 35 blocks are still reachable in loss record 62 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x121972: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:384)
-==10381==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 3,168 bytes in 44 blocks are still reachable in loss record 63 of 64
-==10381==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x11E10B: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10381==    by 0x117170: TreeNode<int>::TreeNode(int, TreeNode<int>*) (tree_node.h:81)
-==10381==    by 0x1211BF: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== 3,520 bytes in 44 blocks are still reachable in loss record 64 of 64
-==10381==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10381==    by 0x1211AA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10381==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10381==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10381==    by 0x11FB33: AddCarType (library.cpp:19)
-==10381==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10381==    by 0x109B00: parser (main1.cpp:151)
-==10381==    by 0x1098F4: main (main1.cpp:93)
-==10381== 
-==10381== LEAK SUMMARY:
-==10381==    definitely lost: 0 bytes in 0 blocks
-==10381==    indirectly lost: 0 bytes in 0 blocks
-==10381==      possibly lost: 0 bytes in 0 blocks
-==10381==    still reachable: 19,484 bytes in 676 blocks
-==10381==                       of which reachable via heuristic:
-==10381==                         newarray           : 7,408 bytes in 98 blocks
-==10381==         suppressed: 0 bytes in 0 blocks
-==10381== 
-==10381== For counts of detected and suppressed errors, rerun with: -v
-==10381== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30852== Memcheck, a memory error detector
+==30852== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30852== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30852== Command: ./cmake-build-debug/main_tests
+==30852== 
+==30852== 
+==30852== HEAP SUMMARY:
+==30852==     in use at exit: 0 bytes in 0 blocks
+==30852==   total heap usage: 26,719 allocs, 26,719 frees, 842,952 bytes allocated
+==30852== 
+==30852== All heap blocks were freed -- no leaks are possible
+==30852== 
+==30852== For counts of detected and suppressed errors, rerun with: -v
+==30852== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 15.txt
 
+==30858== Memcheck, a memory error detector
+==30858== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30858== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30858== Command: ./cmake-build-debug/main_tests
+==30858== 
+==30858== 
+==30858== HEAP SUMMARY:
+==30858==     in use at exit: 0 bytes in 0 blocks
+==30858==   total heap usage: 59,807 allocs, 59,807 frees, 1,775,072 bytes allocated
+==30858== 
+==30858== All heap blocks were freed -- no leaks are possible
+==30858== 
+==30858== For counts of detected and suppressed errors, rerun with: -v
+==30858== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 16.txt
 
-==10393== Memcheck, a memory error detector
-==10393== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10393== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10393== Command: ./cmake-build-debug/main_tests
-==10393== 
-==10393== 
-==10393== Process terminating with default action of signal 2 (SIGINT)
-==10393==    at 0x401CEBB: open (open64.c:47)
-==10393==    by 0x4005BF1: open_verify.constprop.7 (dl-load.c:1723)
-==10393==    by 0x400957D: _dl_map_object (dl-load.c:2363)
-==10393==    by 0x400E4C1: openaux (dl-deps.c:63)
-==10393==    by 0x401BE4A: _dl_catch_exception (dl-error-skeleton.c:196)
-==10393==    by 0x400E83A: _dl_map_object_deps (dl-deps.c:249)
-==10393==    by 0x4003EC5: dl_main (rtld.c:1726)
-==10393==    by 0x401AF4F: _dl_sysdep_start (dl-sysdep.c:253)
-==10393==    by 0x4002127: _dl_start_final (rtld.c:414)
-==10393==    by 0x4002127: _dl_start (rtld.c:521)
-==10393==    by 0x4001097: ??? (in /lib/x86_64-linux-gnu/ld-2.27.so)
-==10393== Jump to the invalid address stated on the next line
-==10393==    at 0x556: ???
-==10393==    by 0x4005BF1: open_verify.constprop.7 (dl-load.c:1723)
-==10393==    by 0x400957D: _dl_map_object (dl-load.c:2363)
-==10393==    by 0x400E4C1: openaux (dl-deps.c:63)
-==10393==    by 0x401BE4A: _dl_catch_exception (dl-error-skeleton.c:196)
-==10393==    by 0x400E83A: _dl_map_object_deps (dl-deps.c:249)
-==10393==    by 0x4003EC5: dl_main (rtld.c:1726)
-==10393==    by 0x401AF4F: _dl_sysdep_start (dl-sysdep.c:253)
-==10393==    by 0x4002127: _dl_start_final (rtld.c:414)
-==10393==    by 0x4002127: _dl_start (rtld.c:521)
-==10393==    by 0x4001097: ??? (in /lib/x86_64-linux-gnu/ld-2.27.so)
-==10393==  Address 0x556 is not stack'd, malloc'd or (recently) free'd
-==10393== 
-==10393== 
-==10393== Process terminating with default action of signal 11 (SIGSEGV)
-==10393==  Bad permissions for mapped region at address 0x556
-==10393==    at 0x556: ???
-==10393==    by 0x4005BF1: open_verify.constprop.7 (dl-load.c:1723)
-==10393==    by 0x400957D: _dl_map_object (dl-load.c:2363)
-==10393==    by 0x400E4C1: openaux (dl-deps.c:63)
-==10393==    by 0x401BE4A: _dl_catch_exception (dl-error-skeleton.c:196)
-==10393==    by 0x400E83A: _dl_map_object_deps (dl-deps.c:249)
-==10393==    by 0x4003EC5: dl_main (rtld.c:1726)
-==10393==    by 0x401AF4F: _dl_sysdep_start (dl-sysdep.c:253)
-==10393==    by 0x4002127: _dl_start_final (rtld.c:414)
-==10393==    by 0x4002127: _dl_start (rtld.c:521)
-==10393==    by 0x4001097: ??? (in /lib/x86_64-linux-gnu/ld-2.27.so)
-==10393== 
-==10393== HEAP SUMMARY:
-==10393==     in use at exit: 0 bytes in 0 blocks
-==10393==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==10393== 
-==10393== All heap blocks were freed -- no leaks are possible
-==10393== 
-==10393== For counts of detected and suppressed errors, rerun with: -v
-==10393== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==30864== Memcheck, a memory error detector
+==30864== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30864== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30864== Command: ./cmake-build-debug/main_tests
+==30864== 
+==30864== 
+==30864== HEAP SUMMARY:
+==30864==     in use at exit: 0 bytes in 0 blocks
+==30864==   total heap usage: 67,195 allocs, 67,195 frees, 2,025,316 bytes allocated
+==30864== 
+==30864== All heap blocks were freed -- no leaks are possible
+==30864== 
+==30864== For counts of detected and suppressed errors, rerun with: -v
+==30864== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 17.txt
 
-==10399== Memcheck, a memory error detector
-==10399== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10399== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10399== Command: ./cmake-build-debug/main_tests
-==10399== 
-==10399== 
-==10399== Process terminating with default action of signal 2 (SIGINT)
-==10399==    at 0x54EF224: write (write.c:27)
-==10399==    by 0x546A28C: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1203)
-==10399==    by 0x546C020: new_do_write (fileops.c:457)
-==10399==    by 0x546C020: _IO_do_write@@GLIBC_2.2.5 (fileops.c:433)
-==10399==    by 0x5469857: _IO_file_sync@@GLIBC_2.2.5 (fileops.c:813)
-==10399==    by 0x545D95C: fflush (iofflush.c:40)
-==10399==    by 0x1098E5: main (main1.cpp:92)
-==10399== 
-==10399== HEAP SUMMARY:
-==10399==     in use at exit: 10,920 bytes in 403 blocks
-==10399==   total heap usage: 554 allocs, 151 frees, 94,480 bytes allocated
-==10399== 
-==10399== 4 bytes in 1 blocks are still reachable in loss record 1 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x114772: SharedPointer<TreeNode<GradeNode> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x11FDF8: CarDealershipManager::CarDealershipManager() (car_dealership_manager.h:24)
-==10399==    by 0x11FAB2: Init (library.cpp:10)
-==10399==    by 0x109C31: OnInit (main1.cpp:193)
-==10399==    by 0x109AE2: parser (main1.cpp:148)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 4 bytes in 1 blocks are still reachable in loss record 2 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x114772: SharedPointer<TreeNode<GradeNode> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x120098: BTree23<GradeNode>::BTree23(SharedPointer<TreeNode<GradeNode> >) (btree_23.h:307)
-==10399==    by 0x11FE07: CarDealershipManager::CarDealershipManager() (car_dealership_manager.h:24)
-==10399==    by 0x11FAB2: Init (library.cpp:10)
-==10399==    by 0x109C31: OnInit (main1.cpp:193)
-==10399==    by 0x109AE2: parser (main1.cpp:148)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 4 bytes in 1 blocks are still reachable in loss record 3 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x1158E0: SharedPointer<TreeNode<SellsNode> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x11FE56: CarDealershipManager::CarDealershipManager() (car_dealership_manager.h:24)
-==10399==    by 0x11FAB2: Init (library.cpp:10)
-==10399==    by 0x109C31: OnInit (main1.cpp:193)
-==10399==    by 0x109AE2: parser (main1.cpp:148)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 4 bytes in 1 blocks are still reachable in loss record 4 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x1158E0: SharedPointer<TreeNode<SellsNode> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x12025C: BTree23<SellsNode>::BTree23(SharedPointer<TreeNode<SellsNode> >) (btree_23.h:307)
-==10399==    by 0x11FE65: CarDealershipManager::CarDealershipManager() (car_dealership_manager.h:24)
-==10399==    by 0x11FAB2: Init (library.cpp:10)
-==10399==    by 0x109C31: OnInit (main1.cpp:193)
-==10399==    by 0x109AE2: parser (main1.cpp:148)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 4 bytes in 1 blocks are still reachable in loss record 5 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x111318: SharedPointer<TreeNode<CarNode> >::SharedPointer(TreeNode<CarNode>*) (shared_pointer.h:24)
-==10399==    by 0x10C620: BTree23<CarNode>::insert(CarNode) (btree_23.h:56)
-==10399==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 4 bytes in 1 blocks are still reachable in loss record 6 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11261C: SharedPointer<TreeNode<ZeroGradeTypeNode> >::SharedPointer(TreeNode<ZeroGradeTypeNode>*) (shared_pointer.h:24)
-==10399==    by 0x10D010: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:56)
-==10399==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 8 bytes in 2 blocks are still reachable in loss record 7 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x11E12D: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x121E89: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, int, TreeNode<int>*) (tree_node.h:48)
-==10399==    by 0x12178A: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:366)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 8 bytes in 2 blocks are still reachable in loss record 8 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x1171D0: SharedPointer<TreeNode<int> >::SharedPointer(TreeNode<int>*) (shared_pointer.h:24)
-==10399==    by 0x12179D: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:365)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 12 bytes in 3 blocks are still reachable in loss record 9 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x10CEB5: ZeroGradeTypeNode::ZeroGradeTypeNode() (zero_grade_type_node.h:16)
-==10399==    by 0x11B2D8: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10399==    by 0x10D001: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:56)
-==10399==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 12 bytes in 3 blocks are still reachable in loss record 10 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x10C3AA: BTree23<int>::BTree23(SharedPointer<TreeNode<int> >) (btree_23.h:307)
-==10399==    by 0x10CEC4: ZeroGradeTypeNode::ZeroGradeTypeNode() (zero_grade_type_node.h:16)
-==10399==    by 0x11B2D8: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10399==    by 0x10D001: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:56)
-==10399==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 16 bytes in 4 blocks are still reachable in loss record 11 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10D86A: SharedPointer<TreeNode<CarNode> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x11AB69: Vector<SharedPointer<TreeNode<CarNode> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x1112A2: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10399==    by 0x10C611: BTree23<CarNode>::insert(CarNode) (btree_23.h:56)
-==10399==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 16 bytes in 4 blocks are still reachable in loss record 12 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10EBF4: SharedPointer<TreeNode<ZeroGradeTypeNode> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x11B449: Vector<SharedPointer<TreeNode<ZeroGradeTypeNode> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x1125AC: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10399==    by 0x10D001: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:56)
-==10399==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 24 bytes in 2 blocks are still reachable in loss record 13 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11E075: Vector<int>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x121E5D: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, int, TreeNode<int>*) (tree_node.h:48)
-==10399==    by 0x12178A: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:366)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 72 bytes in 1 blocks are still reachable in loss record 14 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11AB47: Vector<SharedPointer<TreeNode<CarNode> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x1112A2: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10399==    by 0x10C611: BTree23<CarNode>::insert(CarNode) (btree_23.h:56)
-==10399==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 72 bytes in 1 blocks are still reachable in loss record 15 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11B427: Vector<SharedPointer<TreeNode<ZeroGradeTypeNode> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x1125AC: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10399==    by 0x10D001: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:56)
-==10399==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 92 bytes in 23 blocks are still reachable in loss record 16 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x1171D0: SharedPointer<TreeNode<int> >::SharedPointer(TreeNode<int>*) (shared_pointer.h:24)
-==10399==    by 0x12199B: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:383)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 104 bytes in 1 blocks are still reachable in loss record 17 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11A9C5: Vector<CarNode>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x11125F: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10399==    by 0x10C611: BTree23<CarNode>::insert(CarNode) (btree_23.h:56)
-==10399==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 112 bytes in 1 blocks are still reachable in loss record 18 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10C5FE: BTree23<CarNode>::insert(CarNode) (btree_23.h:56)
-==10399==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 112 bytes in 28 blocks are still reachable in loss record 19 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x1171D0: SharedPointer<TreeNode<int> >::SharedPointer(TreeNode<int>*) (shared_pointer.h:24)
-==10399==    by 0x1211CE: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 120 bytes in 1 blocks are still reachable in loss record 20 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10CFEE: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:56)
-==10399==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 128 bytes in 1 blocks are still reachable in loss record 21 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11FA91: Init (library.cpp:10)
-==10399==    by 0x109C31: OnInit (main1.cpp:193)
-==10399==    by 0x109AE2: parser (main1.cpp:148)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 128 bytes in 1 blocks are still reachable in loss record 22 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11B290: Vector<ZeroGradeTypeNode>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x112569: TreeNode<ZeroGradeTypeNode>::TreeNode(ZeroGradeTypeNode, TreeNode<ZeroGradeTypeNode>*) (tree_node.h:81)
-==10399==    by 0x10D001: BTree23<ZeroGradeTypeNode>::insert(ZeroGradeTypeNode) (btree_23.h:56)
-==10399==    by 0x10A53C: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:28)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 144 bytes in 2 blocks are still reachable in loss record 23 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11E10B: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x121E89: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, int, TreeNode<int>*) (tree_node.h:48)
-==10399==    by 0x12178A: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:366)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 160 bytes in 2 blocks are still reachable in loss record 24 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x121766: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:366)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 184 bytes in 46 blocks are still reachable in loss record 25 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x11E12D: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x11E20A: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, TreeNode<int>*) (tree_node.h:34)
-==10399==    by 0x12198C: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:384)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 240 bytes in 3 blocks are still reachable in loss record 26 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10C157: Vector<ModelData>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x10C4E7: CarNode::CarNode() (car_node.h:23)
-==10399==    by 0x11AA0C: Vector<CarNode>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x11125F: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10399==    by 0x10C611: BTree23<CarNode>::insert(CarNode) (btree_23.h:56)
-==10399==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 276 bytes in 23 blocks are still reachable in loss record 27 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11E075: Vector<int>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x11E1DE: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, TreeNode<int>*) (tree_node.h:34)
-==10399==    by 0x12198C: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:384)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 320 bytes in 1 blocks are still reachable in loss record 28 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10C247: Vector<ModelData>::Vector(Vector<ModelData> const&) (vector.h:136)
-==10399==    by 0x10C080: CarNode::CarNode(CarNode const&) (car_node.h:18)
-==10399==    by 0x111281: TreeNode<CarNode>::TreeNode(CarNode, TreeNode<CarNode>*) (tree_node.h:81)
-==10399==    by 0x10C611: BTree23<CarNode>::insert(CarNode) (btree_23.h:56)
-==10399==    by 0x10A4AF: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:21)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 336 bytes in 28 blocks are still reachable in loss record 29 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11E075: Vector<int>::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x11713A: TreeNode<int>::TreeNode(int, TreeNode<int>*) (tree_node.h:81)
-==10399==    by 0x1211BF: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 448 bytes in 112 blocks are still reachable in loss record 30 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x10C2FE: SharedPointer<TreeNode<int> >::SharedPointer() (shared_pointer.h:26)
-==10399==    by 0x11E12D: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x117170: TreeNode<int>::TreeNode(int, TreeNode<int>*) (tree_node.h:81)
-==10399==    by 0x1211BF: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 1,656 bytes in 23 blocks are still reachable in loss record 31 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11E10B: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x11E20A: TreeNode<int>::TreeNode(SharedPointer<TreeNode<int> >, SharedPointer<TreeNode<int> >, int, TreeNode<int>*) (tree_node.h:34)
-==10399==    by 0x12198C: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:384)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 1,840 bytes in 23 blocks are still reachable in loss record 32 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x121972: BTree23<int>::createRow(Vector<SharedPointer<TreeNode<int> > >&, int, int) const (btree_23.h:384)
-==10399==    by 0x1212CA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:35)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 2,016 bytes in 28 blocks are still reachable in loss record 33 of 34
-==10399==    at 0x4C3289F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x11E10B: Vector<SharedPointer<TreeNode<int> > >::Vector(unsigned long) (vector.h:34)
-==10399==    by 0x117170: TreeNode<int>::TreeNode(int, TreeNode<int>*) (tree_node.h:81)
-==10399==    by 0x1211BF: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== 2,240 bytes in 28 blocks are still reachable in loss record 34 of 34
-==10399==    at 0x4C3217F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==10399==    by 0x1211AA: BTree23<int>::BTree23(int) (zero_grade_type_node.cpp:21)
-==10399==    by 0x1213D1: ZeroGradeTypeNode::ZeroGradeTypeNode(int, int) (zero_grade_type_node.cpp:43)
-==10399==    by 0x10A508: CarDealershipManager::AddCarType(int, int) (car_dealership_manager.cpp:26)
-==10399==    by 0x11FB33: AddCarType (library.cpp:19)
-==10399==    by 0x109CEC: OnAddCarType (main1.cpp:207)
-==10399==    by 0x109B00: parser (main1.cpp:151)
-==10399==    by 0x1098F4: main (main1.cpp:93)
-==10399== 
-==10399== LEAK SUMMARY:
-==10399==    definitely lost: 0 bytes in 0 blocks
-==10399==    indirectly lost: 0 bytes in 0 blocks
-==10399==      possibly lost: 0 bytes in 0 blocks
-==10399==    still reachable: 10,920 bytes in 403 blocks
-==10399==                       of which reachable via heuristic:
-==10399==                         newarray           : 4,192 bytes in 57 blocks
-==10399==         suppressed: 0 bytes in 0 blocks
-==10399== 
-==10399== For counts of detected and suppressed errors, rerun with: -v
-==10399== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==30870== Memcheck, a memory error detector
+==30870== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30870== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30870== Command: ./cmake-build-debug/main_tests
+==30870== 
+==30870== 
+==30870== HEAP SUMMARY:
+==30870==     in use at exit: 0 bytes in 0 blocks
+==30870==   total heap usage: 184,540 allocs, 184,540 frees, 6,032,980 bytes allocated
+==30870== 
+==30870== All heap blocks were freed -- no leaks are possible
+==30870== 
+==30870== For counts of detected and suppressed errors, rerun with: -v
+==30870== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 18.txt
 
-==10405== Memcheck, a memory error detector
-==10405== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10405== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10405== Command: ./cmake-build-debug/main_tests
-==10405== 
+==30876== Memcheck, a memory error detector
+==30876== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30876== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30876== Command: ./cmake-build-debug/main_tests
+==30876== 
+==30876== 
+==30876== HEAP SUMMARY:
+==30876==     in use at exit: 0 bytes in 0 blocks
+==30876==   total heap usage: 17,727 allocs, 17,727 frees, 591,012 bytes allocated
+==30876== 
+==30876== All heap blocks were freed -- no leaks are possible
+==30876== 
+==30876== For counts of detected and suppressed errors, rerun with: -v
+==30876== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 19.txt
 
+==30882== Memcheck, a memory error detector
+==30882== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30882== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30882== Command: ./cmake-build-debug/main_tests
+==30882== 
+==30882== 
+==30882== HEAP SUMMARY:
+==30882==     in use at exit: 0 bytes in 0 blocks
+==30882==   total heap usage: 25,892 allocs, 25,892 frees, 796,648 bytes allocated
+==30882== 
+==30882== All heap blocks were freed -- no leaks are possible
+==30882== 
+==30882== For counts of detected and suppressed errors, rerun with: -v
+==30882== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 2.txt
 
+==30888== Memcheck, a memory error detector
+==30888== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30888== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30888== Command: ./cmake-build-debug/main_tests
+==30888== 
+==30888== 
+==30888== HEAP SUMMARY:
+==30888==     in use at exit: 0 bytes in 0 blocks
+==30888==   total heap usage: 47,293 allocs, 47,293 frees, 1,449,212 bytes allocated
+==30888== 
+==30888== All heap blocks were freed -- no leaks are possible
+==30888== 
+==30888== For counts of detected and suppressed errors, rerun with: -v
+==30888== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 20.txt
 
+==30894== Memcheck, a memory error detector
+==30894== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30894== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30894== Command: ./cmake-build-debug/main_tests
+==30894== 
+==30894== 
+==30894== HEAP SUMMARY:
+==30894==     in use at exit: 0 bytes in 0 blocks
+==30894==   total heap usage: 5,076 allocs, 5,076 frees, 226,024 bytes allocated
+==30894== 
+==30894== All heap blocks were freed -- no leaks are possible
+==30894== 
+==30894== For counts of detected and suppressed errors, rerun with: -v
+==30894== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 21.txt
 
+==30900== Memcheck, a memory error detector
+==30900== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30900== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30900== Command: ./cmake-build-debug/main_tests
+==30900== 
+==30900== 
+==30900== HEAP SUMMARY:
+==30900==     in use at exit: 0 bytes in 0 blocks
+==30900==   total heap usage: 10,652 allocs, 10,652 frees, 372,384 bytes allocated
+==30900== 
+==30900== All heap blocks were freed -- no leaks are possible
+==30900== 
+==30900== For counts of detected and suppressed errors, rerun with: -v
+==30900== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 22.txt
 
+==30906== Memcheck, a memory error detector
+==30906== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30906== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30906== Command: ./cmake-build-debug/main_tests
+==30906== 
+==30906== 
+==30906== HEAP SUMMARY:
+==30906==     in use at exit: 0 bytes in 0 blocks
+==30906==   total heap usage: 22,119 allocs, 22,119 frees, 749,128 bytes allocated
+==30906== 
+==30906== All heap blocks were freed -- no leaks are possible
+==30906== 
+==30906== For counts of detected and suppressed errors, rerun with: -v
+==30906== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 23.txt
 
+==30912== Memcheck, a memory error detector
+==30912== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30912== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30912== Command: ./cmake-build-debug/main_tests
+==30912== 
+==30912== 
+==30912== HEAP SUMMARY:
+==30912==     in use at exit: 0 bytes in 0 blocks
+==30912==   total heap usage: 58,717 allocs, 58,717 frees, 1,665,960 bytes allocated
+==30912== 
+==30912== All heap blocks were freed -- no leaks are possible
+==30912== 
+==30912== For counts of detected and suppressed errors, rerun with: -v
+==30912== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 24.txt
 
+==30918== Memcheck, a memory error detector
+==30918== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30918== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30918== Command: ./cmake-build-debug/main_tests
+==30918== 
+==30918== 
+==30918== HEAP SUMMARY:
+==30918==     in use at exit: 0 bytes in 0 blocks
+==30918==   total heap usage: 20,694 allocs, 20,694 frees, 640,572 bytes allocated
+==30918== 
+==30918== All heap blocks were freed -- no leaks are possible
+==30918== 
+==30918== For counts of detected and suppressed errors, rerun with: -v
+==30918== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 25.txt
 
+==30924== Memcheck, a memory error detector
+==30924== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30924== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30924== Command: ./cmake-build-debug/main_tests
+==30924== 
+==30924== 
+==30924== HEAP SUMMARY:
+==30924==     in use at exit: 0 bytes in 0 blocks
+==30924==   total heap usage: 169,100 allocs, 169,100 frees, 5,525,188 bytes allocated
+==30924== 
+==30924== All heap blocks were freed -- no leaks are possible
+==30924== 
+==30924== For counts of detected and suppressed errors, rerun with: -v
+==30924== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 26.txt
 
-==10459== Memcheck, a memory error detector
-==10459== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10459== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10459== Command: ./cmake-build-debug/main_tests
-==10459== 
+==30930== Memcheck, a memory error detector
+==30930== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30930== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30930== Command: ./cmake-build-debug/main_tests
+==30930== 
+==30930== 
+==30930== HEAP SUMMARY:
+==30930==     in use at exit: 0 bytes in 0 blocks
+==30930==   total heap usage: 200,569 allocs, 200,569 frees, 6,480,280 bytes allocated
+==30930== 
+==30930== All heap blocks were freed -- no leaks are possible
+==30930== 
+==30930== For counts of detected and suppressed errors, rerun with: -v
+==30930== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 27.txt
 
-==10465== Memcheck, a memory error detector
-==10465== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10465== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10465== Command: ./cmake-build-debug/main_tests
-==10465== 
+==30936== Memcheck, a memory error detector
+==30936== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30936== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30936== Command: ./cmake-build-debug/main_tests
+==30936== 
+==30936== 
+==30936== HEAP SUMMARY:
+==30936==     in use at exit: 0 bytes in 0 blocks
+==30936==   total heap usage: 91,668 allocs, 91,668 frees, 2,677,492 bytes allocated
+==30936== 
+==30936== All heap blocks were freed -- no leaks are possible
+==30936== 
+==30936== For counts of detected and suppressed errors, rerun with: -v
+==30936== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 28.txt
 
+==30942== Memcheck, a memory error detector
+==30942== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30942== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30942== Command: ./cmake-build-debug/main_tests
+==30942== 
+==30942== 
+==30942== HEAP SUMMARY:
+==30942==     in use at exit: 0 bytes in 0 blocks
+==30942==   total heap usage: 54,669 allocs, 54,669 frees, 1,539,004 bytes allocated
+==30942== 
+==30942== All heap blocks were freed -- no leaks are possible
+==30942== 
+==30942== For counts of detected and suppressed errors, rerun with: -v
+==30942== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 29.txt
 
+==30949== Memcheck, a memory error detector
+==30949== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30949== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30949== Command: ./cmake-build-debug/main_tests
+==30949== 
+==30949== 
+==30949== HEAP SUMMARY:
+==30949==     in use at exit: 0 bytes in 0 blocks
+==30949==   total heap usage: 133,031 allocs, 133,031 frees, 4,027,056 bytes allocated
+==30949== 
+==30949== All heap blocks were freed -- no leaks are possible
+==30949== 
+==30949== For counts of detected and suppressed errors, rerun with: -v
+==30949== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 3.txt
 
-==10482== Memcheck, a memory error detector
-==10482== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10482== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10482== Command: ./cmake-build-debug/main_tests
-==10482== 
-==10488== Memcheck, a memory error detector
-==10488== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10488== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10488== Command: ./cmake-build-debug/main_tests
-==10488== 
+==30955== Memcheck, a memory error detector
+==30955== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30955== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30955== Command: ./cmake-build-debug/main_tests
+==30955== 
+==30955== 
+==30955== HEAP SUMMARY:
+==30955==     in use at exit: 0 bytes in 0 blocks
+==30955==   total heap usage: 113,890 allocs, 113,890 frees, 3,553,728 bytes allocated
+==30955== 
+==30955== All heap blocks were freed -- no leaks are possible
+==30955== 
+==30955== For counts of detected and suppressed errors, rerun with: -v
+==30955== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+30.txt
+
+==30961== Memcheck, a memory error detector
+==30961== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30961== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30961== Command: ./cmake-build-debug/main_tests
+==30961== 
+==30961== 
+==30961== HEAP SUMMARY:
+==30961==     in use at exit: 0 bytes in 0 blocks
+==30961==   total heap usage: 414,309 allocs, 414,309 frees, 15,725,064 bytes allocated
+==30961== 
+==30961== All heap blocks were freed -- no leaks are possible
+==30961== 
+==30961== For counts of detected and suppressed errors, rerun with: -v
+==30961== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 31.txt
 
-==10494== Memcheck, a memory error detector
-==10494== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10494== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10494== Command: ./cmake-build-debug/main_tests
-==10494== 
+==30968== Memcheck, a memory error detector
+==30968== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30968== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30968== Command: ./cmake-build-debug/main_tests
+==30968== 
+==30968== 
+==30968== HEAP SUMMARY:
+==30968==     in use at exit: 0 bytes in 0 blocks
+==30968==   total heap usage: 76,399 allocs, 76,399 frees, 2,247,964 bytes allocated
+==30968== 
+==30968== All heap blocks were freed -- no leaks are possible
+==30968== 
+==30968== For counts of detected and suppressed errors, rerun with: -v
+==30968== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 32.txt
 
+==30974== Memcheck, a memory error detector
+==30974== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30974== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30974== Command: ./cmake-build-debug/main_tests
+==30974== 
+==30974== 
+==30974== HEAP SUMMARY:
+==30974==     in use at exit: 0 bytes in 0 blocks
+==30974==   total heap usage: 177,323 allocs, 177,323 frees, 5,460,148 bytes allocated
+==30974== 
+==30974== All heap blocks were freed -- no leaks are possible
+==30974== 
+==30974== For counts of detected and suppressed errors, rerun with: -v
+==30974== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 33.txt
 
-==10505== Memcheck, a memory error detector
-==10505== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10505== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10505== Command: ./cmake-build-debug/main_tests
-==10505== 
+==30980== Memcheck, a memory error detector
+==30980== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30980== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30980== Command: ./cmake-build-debug/main_tests
+==30980== 
+==30980== 
+==30980== HEAP SUMMARY:
+==30980==     in use at exit: 0 bytes in 0 blocks
+==30980==   total heap usage: 366,443 allocs, 366,443 frees, 13,693,084 bytes allocated
+==30980== 
+==30980== All heap blocks were freed -- no leaks are possible
+==30980== 
+==30980== For counts of detected and suppressed errors, rerun with: -v
+==30980== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 34.txt
 
-==10511== Memcheck, a memory error detector
-==10511== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10511== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10511== Command: ./cmake-build-debug/main_tests
-==10511== 
+==30986== Memcheck, a memory error detector
+==30986== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30986== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30986== Command: ./cmake-build-debug/main_tests
+==30986== 
+==30986== 
+==30986== HEAP SUMMARY:
+==30986==     in use at exit: 0 bytes in 0 blocks
+==30986==   total heap usage: 4,582 allocs, 4,582 frees, 207,928 bytes allocated
+==30986== 
+==30986== All heap blocks were freed -- no leaks are possible
+==30986== 
+==30986== For counts of detected and suppressed errors, rerun with: -v
+==30986== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 35.txt
 
+==30992== Memcheck, a memory error detector
+==30992== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30992== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30992== Command: ./cmake-build-debug/main_tests
+==30992== 
+==30992== 
+==30992== HEAP SUMMARY:
+==30992==     in use at exit: 0 bytes in 0 blocks
+==30992==   total heap usage: 126,344 allocs, 126,344 frees, 3,990,304 bytes allocated
+==30992== 
+==30992== All heap blocks were freed -- no leaks are possible
+==30992== 
+==30992== For counts of detected and suppressed errors, rerun with: -v
+==30992== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 36.txt
 
-==10523== Memcheck, a memory error detector
-==10523== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10523== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10523== Command: ./cmake-build-debug/main_tests
-==10523== 
+==30998== Memcheck, a memory error detector
+==30998== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30998== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30998== Command: ./cmake-build-debug/main_tests
+==30998== 
+==30998== 
+==30998== HEAP SUMMARY:
+==30998==     in use at exit: 0 bytes in 0 blocks
+==30998==   total heap usage: 79,519 allocs, 79,519 frees, 2,538,456 bytes allocated
+==30998== 
+==30998== All heap blocks were freed -- no leaks are possible
+==30998== 
+==30998== For counts of detected and suppressed errors, rerun with: -v
+==30998== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 37.txt
 
-==10529== Memcheck, a memory error detector
-==10529== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10529== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10529== Command: ./cmake-build-debug/main_tests
-==10529== 
+==31004== Memcheck, a memory error detector
+==31004== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31004== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31004== Command: ./cmake-build-debug/main_tests
+==31004== 
+==31004== 
+==31004== HEAP SUMMARY:
+==31004==     in use at exit: 0 bytes in 0 blocks
+==31004==   total heap usage: 14 allocs, 14 frees, 81,060 bytes allocated
+==31004== 
+==31004== All heap blocks were freed -- no leaks are possible
+==31004== 
+==31004== For counts of detected and suppressed errors, rerun with: -v
+==31004== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 38.txt
 
+==31010== Memcheck, a memory error detector
+==31010== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31010== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31010== Command: ./cmake-build-debug/main_tests
+==31010== 
+==31010== 
+==31010== HEAP SUMMARY:
+==31010==     in use at exit: 0 bytes in 0 blocks
+==31010==   total heap usage: 5,080 allocs, 5,080 frees, 216,780 bytes allocated
+==31010== 
+==31010== All heap blocks were freed -- no leaks are possible
+==31010== 
+==31010== For counts of detected and suppressed errors, rerun with: -v
+==31010== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 39.txt
 
+==31016== Memcheck, a memory error detector
+==31016== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31016== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31016== Command: ./cmake-build-debug/main_tests
+==31016== 
+==31016== 
+==31016== HEAP SUMMARY:
+==31016==     in use at exit: 0 bytes in 0 blocks
+==31016==   total heap usage: 23,978 allocs, 23,978 frees, 717,488 bytes allocated
+==31016== 
+==31016== All heap blocks were freed -- no leaks are possible
+==31016== 
+==31016== For counts of detected and suppressed errors, rerun with: -v
+==31016== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 4.txt
 
+==31022== Memcheck, a memory error detector
+==31022== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31022== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31022== Command: ./cmake-build-debug/main_tests
+==31022== 
+==31022== 
+==31022== HEAP SUMMARY:
+==31022==     in use at exit: 0 bytes in 0 blocks
+==31022==   total heap usage: 69,804 allocs, 69,804 frees, 2,147,236 bytes allocated
+==31022== 
+==31022== All heap blocks were freed -- no leaks are possible
+==31022== 
+==31022== For counts of detected and suppressed errors, rerun with: -v
+==31022== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 40.txt
 
+==31028== Memcheck, a memory error detector
+==31028== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31028== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31028== Command: ./cmake-build-debug/main_tests
+==31028== 
+==31028== 
+==31028== HEAP SUMMARY:
+==31028==     in use at exit: 0 bytes in 0 blocks
+==31028==   total heap usage: 69,495 allocs, 69,495 frees, 1,937,416 bytes allocated
+==31028== 
+==31028== All heap blocks were freed -- no leaks are possible
+==31028== 
+==31028== For counts of detected and suppressed errors, rerun with: -v
+==31028== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 41.txt
 
+==31034== Memcheck, a memory error detector
+==31034== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31034== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31034== Command: ./cmake-build-debug/main_tests
+==31034== 
+==31034== 
+==31034== HEAP SUMMARY:
+==31034==     in use at exit: 0 bytes in 0 blocks
+==31034==   total heap usage: 16,885 allocs, 16,885 frees, 550,488 bytes allocated
+==31034== 
+==31034== All heap blocks were freed -- no leaks are possible
+==31034== 
+==31034== For counts of detected and suppressed errors, rerun with: -v
+==31034== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 42.txt
 
+==31040== Memcheck, a memory error detector
+==31040== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31040== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31040== Command: ./cmake-build-debug/main_tests
+==31040== 
+==31040== 
+==31040== HEAP SUMMARY:
+==31040==     in use at exit: 0 bytes in 0 blocks
+==31040==   total heap usage: 26,251 allocs, 26,251 frees, 815,916 bytes allocated
+==31040== 
+==31040== All heap blocks were freed -- no leaks are possible
+==31040== 
+==31040== For counts of detected and suppressed errors, rerun with: -v
+==31040== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 43.txt
 
+==31046== Memcheck, a memory error detector
+==31046== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31046== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31046== Command: ./cmake-build-debug/main_tests
+==31046== 
+==31046== 
+==31046== HEAP SUMMARY:
+==31046==     in use at exit: 0 bytes in 0 blocks
+==31046==   total heap usage: 47,064 allocs, 47,064 frees, 1,459,672 bytes allocated
+==31046== 
+==31046== All heap blocks were freed -- no leaks are possible
+==31046== 
+==31046== For counts of detected and suppressed errors, rerun with: -v
+==31046== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 44.txt
 
+==31052== Memcheck, a memory error detector
+==31052== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31052== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31052== Command: ./cmake-build-debug/main_tests
+==31052== 
+==31052== 
+==31052== HEAP SUMMARY:
+==31052==     in use at exit: 0 bytes in 0 blocks
+==31052==   total heap usage: 48,773 allocs, 48,773 frees, 1,478,456 bytes allocated
+==31052== 
+==31052== All heap blocks were freed -- no leaks are possible
+==31052== 
+==31052== For counts of detected and suppressed errors, rerun with: -v
+==31052== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 45.txt
 
+==31058== Memcheck, a memory error detector
+==31058== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31058== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31058== Command: ./cmake-build-debug/main_tests
+==31058== 
+==31058== 
+==31058== HEAP SUMMARY:
+==31058==     in use at exit: 0 bytes in 0 blocks
+==31058==   total heap usage: 2,202 allocs, 2,202 frees, 142,384 bytes allocated
+==31058== 
+==31058== All heap blocks were freed -- no leaks are possible
+==31058== 
+==31058== For counts of detected and suppressed errors, rerun with: -v
+==31058== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 46.txt
 
+==31064== Memcheck, a memory error detector
+==31064== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31064== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31064== Command: ./cmake-build-debug/main_tests
+==31064== 
+==31064== 
+==31064== HEAP SUMMARY:
+==31064==     in use at exit: 0 bytes in 0 blocks
+==31064==   total heap usage: 262,916 allocs, 262,916 frees, 9,829,836 bytes allocated
+==31064== 
+==31064== All heap blocks were freed -- no leaks are possible
+==31064== 
+==31064== For counts of detected and suppressed errors, rerun with: -v
+==31064== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 47.txt
 
-==10593== Memcheck, a memory error detector
-==10593== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10593== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10593== Command: ./cmake-build-debug/main_tests
-==10593== 
+==31070== Memcheck, a memory error detector
+==31070== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31070== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31070== Command: ./cmake-build-debug/main_tests
+==31070== 
+==31070== 
+==31070== HEAP SUMMARY:
+==31070==     in use at exit: 0 bytes in 0 blocks
+==31070==   total heap usage: 173,357 allocs, 173,357 frees, 5,543,104 bytes allocated
+==31070== 
+==31070== All heap blocks were freed -- no leaks are possible
+==31070== 
+==31070== For counts of detected and suppressed errors, rerun with: -v
+==31070== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 48.txt
 
-==10599== Memcheck, a memory error detector
-==10599== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10599== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10599== Command: ./cmake-build-debug/main_tests
-==10599== 
+==31076== Memcheck, a memory error detector
+==31076== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31076== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31076== Command: ./cmake-build-debug/main_tests
+==31076== 
+==31076== 
+==31076== HEAP SUMMARY:
+==31076==     in use at exit: 0 bytes in 0 blocks
+==31076==   total heap usage: 79,374 allocs, 79,374 frees, 2,460,676 bytes allocated
+==31076== 
+==31076== All heap blocks were freed -- no leaks are possible
+==31076== 
+==31076== For counts of detected and suppressed errors, rerun with: -v
+==31076== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 49.txt
 
-==10605== Memcheck, a memory error detector
-==10605== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10605== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10605== Command: ./cmake-build-debug/main_tests
-==10605== 
+==31082== Memcheck, a memory error detector
+==31082== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31082== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31082== Command: ./cmake-build-debug/main_tests
+==31082== 
+==31082== 
+==31082== HEAP SUMMARY:
+==31082==     in use at exit: 0 bytes in 0 blocks
+==31082==   total heap usage: 224,953 allocs, 224,953 frees, 7,709,524 bytes allocated
+==31082== 
+==31082== All heap blocks were freed -- no leaks are possible
+==31082== 
+==31082== For counts of detected and suppressed errors, rerun with: -v
+==31082== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 5.txt
 
-==10611== Memcheck, a memory error detector
-==10611== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10611== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10611== Command: ./cmake-build-debug/main_tests
-==10611== 
+==31088== Memcheck, a memory error detector
+==31088== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31088== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31088== Command: ./cmake-build-debug/main_tests
+==31088== 
+==31088== 
+==31088== HEAP SUMMARY:
+==31088==     in use at exit: 0 bytes in 0 blocks
+==31088==   total heap usage: 42,340 allocs, 42,340 frees, 1,273,028 bytes allocated
+==31088== 
+==31088== All heap blocks were freed -- no leaks are possible
+==31088== 
+==31088== For counts of detected and suppressed errors, rerun with: -v
+==31088== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 50.txt
 
-==10623== Memcheck, a memory error detector
-==10623== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10623== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10623== Command: ./cmake-build-debug/main_tests
-==10623== 
+==31094== Memcheck, a memory error detector
+==31094== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31094== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31094== Command: ./cmake-build-debug/main_tests
+==31094== 
+==31094== 
+==31094== HEAP SUMMARY:
+==31094==     in use at exit: 0 bytes in 0 blocks
+==31094==   total heap usage: 126,746 allocs, 126,746 frees, 3,820,288 bytes allocated
+==31094== 
+==31094== All heap blocks were freed -- no leaks are possible
+==31094== 
+==31094== For counts of detected and suppressed errors, rerun with: -v
+==31094== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+51.txt
+
+==31100== Memcheck, a memory error detector
+==31100== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31100== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31100== Command: ./cmake-build-debug/main_tests
+==31100== 
+==31100== 
+==31100== HEAP SUMMARY:
+==31100==     in use at exit: 0 bytes in 0 blocks
+==31100==   total heap usage: 70,831 allocs, 70,831 frees, 2,152,716 bytes allocated
+==31100== 
+==31100== All heap blocks were freed -- no leaks are possible
+==31100== 
+==31100== For counts of detected and suppressed errors, rerun with: -v
+==31100== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 52.txt
 
+==31106== Memcheck, a memory error detector
+==31106== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31106== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31106== Command: ./cmake-build-debug/main_tests
+==31106== 
+==31106== 
+==31106== HEAP SUMMARY:
+==31106==     in use at exit: 0 bytes in 0 blocks
+==31106==   total heap usage: 120,385 allocs, 120,385 frees, 3,858,672 bytes allocated
+==31106== 
+==31106== All heap blocks were freed -- no leaks are possible
+==31106== 
+==31106== For counts of detected and suppressed errors, rerun with: -v
+==31106== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 53.txt
 
-==10634== Memcheck, a memory error detector
-==10634== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10634== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10634== Command: ./cmake-build-debug/main_tests
-==10634== 
+==31112== Memcheck, a memory error detector
+==31112== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31112== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31112== Command: ./cmake-build-debug/main_tests
+==31112== 
+==31112== 
+==31112== HEAP SUMMARY:
+==31112==     in use at exit: 0 bytes in 0 blocks
+==31112==   total heap usage: 55,504 allocs, 55,504 frees, 1,733,204 bytes allocated
+==31112== 
+==31112== All heap blocks were freed -- no leaks are possible
+==31112== 
+==31112== For counts of detected and suppressed errors, rerun with: -v
+==31112== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 54.txt
 
+==31118== Memcheck, a memory error detector
+==31118== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31118== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31118== Command: ./cmake-build-debug/main_tests
+==31118== 
+==31118== 
+==31118== HEAP SUMMARY:
+==31118==     in use at exit: 0 bytes in 0 blocks
+==31118==   total heap usage: 58,799 allocs, 58,799 frees, 1,809,836 bytes allocated
+==31118== 
+==31118== All heap blocks were freed -- no leaks are possible
+==31118== 
+==31118== For counts of detected and suppressed errors, rerun with: -v
+==31118== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 55.txt
 
+==31124== Memcheck, a memory error detector
+==31124== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31124== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31124== Command: ./cmake-build-debug/main_tests
+==31124== 
+==31124== 
+==31124== HEAP SUMMARY:
+==31124==     in use at exit: 0 bytes in 0 blocks
+==31124==   total heap usage: 322,368 allocs, 322,368 frees, 11,477,152 bytes allocated
+==31124== 
+==31124== All heap blocks were freed -- no leaks are possible
+==31124== 
+==31124== For counts of detected and suppressed errors, rerun with: -v
+==31124== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 56.txt
 
-==10652== Memcheck, a memory error detector
-==10652== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10652== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10652== Command: ./cmake-build-debug/main_tests
-==10652== 
+==31130== Memcheck, a memory error detector
+==31130== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31130== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31130== Command: ./cmake-build-debug/main_tests
+==31130== 
+==31130== 
+==31130== HEAP SUMMARY:
+==31130==     in use at exit: 0 bytes in 0 blocks
+==31130==   total heap usage: 73,989 allocs, 73,989 frees, 2,233,212 bytes allocated
+==31130== 
+==31130== All heap blocks were freed -- no leaks are possible
+==31130== 
+==31130== For counts of detected and suppressed errors, rerun with: -v
+==31130== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 57.txt
 
+==31136== Memcheck, a memory error detector
+==31136== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31136== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31136== Command: ./cmake-build-debug/main_tests
+==31136== 
+==31136== 
+==31136== HEAP SUMMARY:
+==31136==     in use at exit: 0 bytes in 0 blocks
+==31136==   total heap usage: 4,427 allocs, 4,427 frees, 205,004 bytes allocated
+==31136== 
+==31136== All heap blocks were freed -- no leaks are possible
+==31136== 
+==31136== For counts of detected and suppressed errors, rerun with: -v
+==31136== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 58.txt
 
+==31142== Memcheck, a memory error detector
+==31142== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31142== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31142== Command: ./cmake-build-debug/main_tests
+==31142== 
+==31142== 
+==31142== HEAP SUMMARY:
+==31142==     in use at exit: 0 bytes in 0 blocks
+==31142==   total heap usage: 12,869 allocs, 12,869 frees, 420,340 bytes allocated
+==31142== 
+==31142== All heap blocks were freed -- no leaks are possible
+==31142== 
+==31142== For counts of detected and suppressed errors, rerun with: -v
+==31142== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 59.txt
 
+==31148== Memcheck, a memory error detector
+==31148== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31148== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31148== Command: ./cmake-build-debug/main_tests
+==31148== 
+==31148== 
+==31148== HEAP SUMMARY:
+==31148==     in use at exit: 0 bytes in 0 blocks
+==31148==   total heap usage: 3,082 allocs, 3,082 frees, 169,892 bytes allocated
+==31148== 
+==31148== All heap blocks were freed -- no leaks are possible
+==31148== 
+==31148== For counts of detected and suppressed errors, rerun with: -v
+==31148== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 6.txt
 
+==31154== Memcheck, a memory error detector
+==31154== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31154== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31154== Command: ./cmake-build-debug/main_tests
+==31154== 
+==31154== 
+==31154== HEAP SUMMARY:
+==31154==     in use at exit: 0 bytes in 0 blocks
+==31154==   total heap usage: 108,863 allocs, 108,863 frees, 3,566,396 bytes allocated
+==31154== 
+==31154== All heap blocks were freed -- no leaks are possible
+==31154== 
+==31154== For counts of detected and suppressed errors, rerun with: -v
+==31154== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 60.txt
 
-==10681== Memcheck, a memory error detector
-==10681== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10681== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10681== Command: ./cmake-build-debug/main_tests
-==10681== 
+==31160== Memcheck, a memory error detector
+==31160== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31160== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31160== Command: ./cmake-build-debug/main_tests
+==31160== 
+==31160== 
+==31160== HEAP SUMMARY:
+==31160==     in use at exit: 0 bytes in 0 blocks
+==31160==   total heap usage: 174,397 allocs, 174,397 frees, 5,766,392 bytes allocated
+==31160== 
+==31160== All heap blocks were freed -- no leaks are possible
+==31160== 
+==31160== For counts of detected and suppressed errors, rerun with: -v
+==31160== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 61.txt
 
-==10687== Memcheck, a memory error detector
-==10687== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10687== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10687== Command: ./cmake-build-debug/main_tests
-==10687== 
-==10693== Memcheck, a memory error detector
-==10693== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10693== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10693== Command: ./cmake-build-debug/main_tests
-==10693== 
+==31166== Memcheck, a memory error detector
+==31166== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31166== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31166== Command: ./cmake-build-debug/main_tests
+==31166== 
+==31166== 
+==31166== HEAP SUMMARY:
+==31166==     in use at exit: 0 bytes in 0 blocks
+==31166==   total heap usage: 60,780 allocs, 60,780 frees, 1,883,064 bytes allocated
+==31166== 
+==31166== All heap blocks were freed -- no leaks are possible
+==31166== 
+==31166== For counts of detected and suppressed errors, rerun with: -v
+==31166== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+62.txt
+
+==31172== Memcheck, a memory error detector
+==31172== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31172== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31172== Command: ./cmake-build-debug/main_tests
+==31172== 
+==31172== 
+==31172== HEAP SUMMARY:
+==31172==     in use at exit: 0 bytes in 0 blocks
+==31172==   total heap usage: 52,495 allocs, 52,495 frees, 1,569,376 bytes allocated
+==31172== 
+==31172== All heap blocks were freed -- no leaks are possible
+==31172== 
+==31172== For counts of detected and suppressed errors, rerun with: -v
+==31172== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 63.txt
 
+==31178== Memcheck, a memory error detector
+==31178== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31178== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31178== Command: ./cmake-build-debug/main_tests
+==31178== 
+==31178== 
+==31178== HEAP SUMMARY:
+==31178==     in use at exit: 0 bytes in 0 blocks
+==31178==   total heap usage: 25,028 allocs, 25,028 frees, 817,932 bytes allocated
+==31178== 
+==31178== All heap blocks were freed -- no leaks are possible
+==31178== 
+==31178== For counts of detected and suppressed errors, rerun with: -v
+==31178== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 64.txt
 
+==31184== Memcheck, a memory error detector
+==31184== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31184== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31184== Command: ./cmake-build-debug/main_tests
+==31184== 
+==31184== 
+==31184== HEAP SUMMARY:
+==31184==     in use at exit: 0 bytes in 0 blocks
+==31184==   total heap usage: 37,697 allocs, 37,697 frees, 1,146,844 bytes allocated
+==31184== 
+==31184== All heap blocks were freed -- no leaks are possible
+==31184== 
+==31184== For counts of detected and suppressed errors, rerun with: -v
+==31184== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 65.txt
 
+==31190== Memcheck, a memory error detector
+==31190== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31190== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31190== Command: ./cmake-build-debug/main_tests
+==31190== 
+==31190== 
+==31190== HEAP SUMMARY:
+==31190==     in use at exit: 0 bytes in 0 blocks
+==31190==   total heap usage: 108,242 allocs, 108,242 frees, 3,199,364 bytes allocated
+==31190== 
+==31190== All heap blocks were freed -- no leaks are possible
+==31190== 
+==31190== For counts of detected and suppressed errors, rerun with: -v
+==31190== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 66.txt
 
-==10717== Memcheck, a memory error detector
-==10717== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10717== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10717== Command: ./cmake-build-debug/main_tests
-==10717== 
+==31196== Memcheck, a memory error detector
+==31196== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31196== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31196== Command: ./cmake-build-debug/main_tests
+==31196== 
+==31196== 
+==31196== HEAP SUMMARY:
+==31196==     in use at exit: 0 bytes in 0 blocks
+==31196==   total heap usage: 8,422 allocs, 8,422 frees, 316,740 bytes allocated
+==31196== 
+==31196== All heap blocks were freed -- no leaks are possible
+==31196== 
+==31196== For counts of detected and suppressed errors, rerun with: -v
+==31196== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 67.txt
 
+==31202== Memcheck, a memory error detector
+==31202== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31202== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31202== Command: ./cmake-build-debug/main_tests
+==31202== 
+==31202== 
+==31202== HEAP SUMMARY:
+==31202==     in use at exit: 0 bytes in 0 blocks
+==31202==   total heap usage: 34,614 allocs, 34,614 frees, 1,077,080 bytes allocated
+==31202== 
+==31202== All heap blocks were freed -- no leaks are possible
+==31202== 
+==31202== For counts of detected and suppressed errors, rerun with: -v
+==31202== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 68.txt
 
+==31208== Memcheck, a memory error detector
+==31208== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31208== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31208== Command: ./cmake-build-debug/main_tests
+==31208== 
+==31208== 
+==31208== HEAP SUMMARY:
+==31208==     in use at exit: 0 bytes in 0 blocks
+==31208==   total heap usage: 81,761 allocs, 81,761 frees, 2,458,060 bytes allocated
+==31208== 
+==31208== All heap blocks were freed -- no leaks are possible
+==31208== 
+==31208== For counts of detected and suppressed errors, rerun with: -v
+==31208== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 69.txt
 
+==31214== Memcheck, a memory error detector
+==31214== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31214== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31214== Command: ./cmake-build-debug/main_tests
+==31214== 
+==31214== 
+==31214== HEAP SUMMARY:
+==31214==     in use at exit: 0 bytes in 0 blocks
+==31214==   total heap usage: 55,959 allocs, 55,959 frees, 1,701,464 bytes allocated
+==31214== 
+==31214== All heap blocks were freed -- no leaks are possible
+==31214== 
+==31214== For counts of detected and suppressed errors, rerun with: -v
+==31214== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 7.txt
 
+==31220== Memcheck, a memory error detector
+==31220== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31220== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31220== Command: ./cmake-build-debug/main_tests
+==31220== 
+==31220== 
+==31220== HEAP SUMMARY:
+==31220==     in use at exit: 0 bytes in 0 blocks
+==31220==   total heap usage: 176,859 allocs, 176,859 frees, 5,988,760 bytes allocated
+==31220== 
+==31220== All heap blocks were freed -- no leaks are possible
+==31220== 
+==31220== For counts of detected and suppressed errors, rerun with: -v
+==31220== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 70.txt
 
-==10746== Memcheck, a memory error detector
-==10746== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10746== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10746== Command: ./cmake-build-debug/main_tests
-==10746== 
+==31226== Memcheck, a memory error detector
+==31226== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31226== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31226== Command: ./cmake-build-debug/main_tests
+==31226== 
+==31226== 
+==31226== HEAP SUMMARY:
+==31226==     in use at exit: 0 bytes in 0 blocks
+==31226==   total heap usage: 473,642 allocs, 473,642 frees, 19,939,616 bytes allocated
+==31226== 
+==31226== All heap blocks were freed -- no leaks are possible
+==31226== 
+==31226== For counts of detected and suppressed errors, rerun with: -v
+==31226== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 71.txt
 
-==10752== Memcheck, a memory error detector
-==10752== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10752== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10752== Command: ./cmake-build-debug/main_tests
-==10752== 
+==31232== Memcheck, a memory error detector
+==31232== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31232== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31232== Command: ./cmake-build-debug/main_tests
+==31232== 
+==31232== 
+==31232== HEAP SUMMARY:
+==31232==     in use at exit: 0 bytes in 0 blocks
+==31232==   total heap usage: 189,160 allocs, 189,160 frees, 6,027,752 bytes allocated
+==31232== 
+==31232== All heap blocks were freed -- no leaks are possible
+==31232== 
+==31232== For counts of detected and suppressed errors, rerun with: -v
+==31232== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 72.txt
 
-==10758== Memcheck, a memory error detector
-==10758== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10758== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10758== Command: ./cmake-build-debug/main_tests
-==10758== 
+==31238== Memcheck, a memory error detector
+==31238== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31238== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31238== Command: ./cmake-build-debug/main_tests
+==31238== 
+==31238== 
+==31238== HEAP SUMMARY:
+==31238==     in use at exit: 0 bytes in 0 blocks
+==31238==   total heap usage: 26,690 allocs, 26,690 frees, 871,508 bytes allocated
+==31238== 
+==31238== All heap blocks were freed -- no leaks are possible
+==31238== 
+==31238== For counts of detected and suppressed errors, rerun with: -v
+==31238== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 73.txt
 
+==31245== Memcheck, a memory error detector
+==31245== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31245== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31245== Command: ./cmake-build-debug/main_tests
+==31245== 
+==31245== 
+==31245== HEAP SUMMARY:
+==31245==     in use at exit: 0 bytes in 0 blocks
+==31245==   total heap usage: 12,314 allocs, 12,314 frees, 410,968 bytes allocated
+==31245== 
+==31245== All heap blocks were freed -- no leaks are possible
+==31245== 
+==31245== For counts of detected and suppressed errors, rerun with: -v
+==31245== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 74.txt
 
+==31251== Memcheck, a memory error detector
+==31251== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31251== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31251== Command: ./cmake-build-debug/main_tests
+==31251== 
+==31251== 
+==31251== HEAP SUMMARY:
+==31251==     in use at exit: 0 bytes in 0 blocks
+==31251==   total heap usage: 60,522 allocs, 60,522 frees, 1,784,888 bytes allocated
+==31251== 
+==31251== All heap blocks were freed -- no leaks are possible
+==31251== 
+==31251== For counts of detected and suppressed errors, rerun with: -v
+==31251== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 75.txt
 
+==31257== Memcheck, a memory error detector
+==31257== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31257== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31257== Command: ./cmake-build-debug/main_tests
+==31257== 
+==31257== 
+==31257== HEAP SUMMARY:
+==31257==     in use at exit: 0 bytes in 0 blocks
+==31257==   total heap usage: 47,040 allocs, 47,040 frees, 1,417,444 bytes allocated
+==31257== 
+==31257== All heap blocks were freed -- no leaks are possible
+==31257== 
+==31257== For counts of detected and suppressed errors, rerun with: -v
+==31257== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 76.txt
 
+==31263== Memcheck, a memory error detector
+==31263== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31263== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31263== Command: ./cmake-build-debug/main_tests
+==31263== 
+==31263== 
+==31263== HEAP SUMMARY:
+==31263==     in use at exit: 0 bytes in 0 blocks
+==31263==   total heap usage: 13,302 allocs, 13,302 frees, 482,232 bytes allocated
+==31263== 
+==31263== All heap blocks were freed -- no leaks are possible
+==31263== 
+==31263== For counts of detected and suppressed errors, rerun with: -v
+==31263== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 77.txt
 
+==31269== Memcheck, a memory error detector
+==31269== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31269== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31269== Command: ./cmake-build-debug/main_tests
+==31269== 
+==31269== 
+==31269== HEAP SUMMARY:
+==31269==     in use at exit: 0 bytes in 0 blocks
+==31269==   total heap usage: 80,253 allocs, 80,253 frees, 2,353,324 bytes allocated
+==31269== 
+==31269== All heap blocks were freed -- no leaks are possible
+==31269== 
+==31269== For counts of detected and suppressed errors, rerun with: -v
+==31269== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 78.txt
 
+==31275== Memcheck, a memory error detector
+==31275== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31275== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31275== Command: ./cmake-build-debug/main_tests
+==31275== 
+==31275== 
+==31275== HEAP SUMMARY:
+==31275==     in use at exit: 0 bytes in 0 blocks
+==31275==   total heap usage: 85,275 allocs, 85,275 frees, 2,710,152 bytes allocated
+==31275== 
+==31275== All heap blocks were freed -- no leaks are possible
+==31275== 
+==31275== For counts of detected and suppressed errors, rerun with: -v
+==31275== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 79.txt
 
-==10798== Memcheck, a memory error detector
-==10798== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10798== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10798== Command: ./cmake-build-debug/main_tests
-==10798== 
+==31281== Memcheck, a memory error detector
+==31281== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31281== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31281== Command: ./cmake-build-debug/main_tests
+==31281== 
+==31281== 
+==31281== HEAP SUMMARY:
+==31281==     in use at exit: 0 bytes in 0 blocks
+==31281==   total heap usage: 66,697 allocs, 66,697 frees, 2,155,044 bytes allocated
+==31281== 
+==31281== All heap blocks were freed -- no leaks are possible
+==31281== 
+==31281== For counts of detected and suppressed errors, rerun with: -v
+==31281== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 8.txt
 
+==31287== Memcheck, a memory error detector
+==31287== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31287== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31287== Command: ./cmake-build-debug/main_tests
+==31287== 
+==31287== 
+==31287== HEAP SUMMARY:
+==31287==     in use at exit: 0 bytes in 0 blocks
+==31287==   total heap usage: 142,151 allocs, 142,151 frees, 4,443,560 bytes allocated
+==31287== 
+==31287== All heap blocks were freed -- no leaks are possible
+==31287== 
+==31287== For counts of detected and suppressed errors, rerun with: -v
+==31287== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 80.txt
 
-==10809== Memcheck, a memory error detector
-==10809== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10809== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10809== Command: ./cmake-build-debug/main_tests
-==10809== 
+==31293== Memcheck, a memory error detector
+==31293== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31293== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31293== Command: ./cmake-build-debug/main_tests
+==31293== 
+==31293== 
+==31293== HEAP SUMMARY:
+==31293==     in use at exit: 0 bytes in 0 blocks
+==31293==   total heap usage: 202,558 allocs, 202,558 frees, 6,273,308 bytes allocated
+==31293== 
+==31293== All heap blocks were freed -- no leaks are possible
+==31293== 
+==31293== For counts of detected and suppressed errors, rerun with: -v
+==31293== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 81.txt
 
-==10815== Memcheck, a memory error detector
-==10815== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10815== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10815== Command: ./cmake-build-debug/main_tests
-==10815== 
+==31299== Memcheck, a memory error detector
+==31299== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31299== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31299== Command: ./cmake-build-debug/main_tests
+==31299== 
+==31299== 
+==31299== HEAP SUMMARY:
+==31299==     in use at exit: 0 bytes in 0 blocks
+==31299==   total heap usage: 29,659 allocs, 29,659 frees, 905,580 bytes allocated
+==31299== 
+==31299== All heap blocks were freed -- no leaks are possible
+==31299== 
+==31299== For counts of detected and suppressed errors, rerun with: -v
+==31299== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 82.txt
 
+==31306== Memcheck, a memory error detector
+==31306== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31306== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31306== Command: ./cmake-build-debug/main_tests
+==31306== 
+==31306== 
+==31306== HEAP SUMMARY:
+==31306==     in use at exit: 0 bytes in 0 blocks
+==31306==   total heap usage: 18,559 allocs, 18,559 frees, 610,316 bytes allocated
+==31306== 
+==31306== All heap blocks were freed -- no leaks are possible
+==31306== 
+==31306== For counts of detected and suppressed errors, rerun with: -v
+==31306== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 83.txt
 
+==31312== Memcheck, a memory error detector
+==31312== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31312== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31312== Command: ./cmake-build-debug/main_tests
+==31312== 
+==31312== 
+==31312== HEAP SUMMARY:
+==31312==     in use at exit: 0 bytes in 0 blocks
+==31312==   total heap usage: 58,937 allocs, 58,937 frees, 1,787,384 bytes allocated
+==31312== 
+==31312== All heap blocks were freed -- no leaks are possible
+==31312== 
+==31312== For counts of detected and suppressed errors, rerun with: -v
+==31312== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 84.txt
 
+==31318== Memcheck, a memory error detector
+==31318== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31318== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31318== Command: ./cmake-build-debug/main_tests
+==31318== 
+==31318== 
+==31318== HEAP SUMMARY:
+==31318==     in use at exit: 0 bytes in 0 blocks
+==31318==   total heap usage: 238,594 allocs, 238,594 frees, 8,047,976 bytes allocated
+==31318== 
+==31318== All heap blocks were freed -- no leaks are possible
+==31318== 
+==31318== For counts of detected and suppressed errors, rerun with: -v
+==31318== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 85.txt
 
-==10838== Memcheck, a memory error detector
-==10838== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10838== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10838== Command: ./cmake-build-debug/main_tests
-==10838== 
+==31324== Memcheck, a memory error detector
+==31324== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31324== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31324== Command: ./cmake-build-debug/main_tests
+==31324== 
+==31324== 
+==31324== HEAP SUMMARY:
+==31324==     in use at exit: 0 bytes in 0 blocks
+==31324==   total heap usage: 36,966 allocs, 36,966 frees, 1,096,156 bytes allocated
+==31324== 
+==31324== All heap blocks were freed -- no leaks are possible
+==31324== 
+==31324== For counts of detected and suppressed errors, rerun with: -v
+==31324== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 86.txt
 
+==31330== Memcheck, a memory error detector
+==31330== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31330== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31330== Command: ./cmake-build-debug/main_tests
+==31330== 
+==31330== 
+==31330== HEAP SUMMARY:
+==31330==     in use at exit: 0 bytes in 0 blocks
+==31330==   total heap usage: 1,899 allocs, 1,899 frees, 136,256 bytes allocated
+==31330== 
+==31330== All heap blocks were freed -- no leaks are possible
+==31330== 
+==31330== For counts of detected and suppressed errors, rerun with: -v
+==31330== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 87.txt
 
-==10850== Memcheck, a memory error detector
-==10850== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10850== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10850== Command: ./cmake-build-debug/main_tests
-==10850== 
+==31336== Memcheck, a memory error detector
+==31336== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31336== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31336== Command: ./cmake-build-debug/main_tests
+==31336== 
+==31336== 
+==31336== HEAP SUMMARY:
+==31336==     in use at exit: 0 bytes in 0 blocks
+==31336==   total heap usage: 222,486 allocs, 222,486 frees, 7,300,580 bytes allocated
+==31336== 
+==31336== All heap blocks were freed -- no leaks are possible
+==31336== 
+==31336== For counts of detected and suppressed errors, rerun with: -v
+==31336== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 88.txt
 
-==10856== Memcheck, a memory error detector
-==10856== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10856== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10856== Command: ./cmake-build-debug/main_tests
-==10856== 
+==31342== Memcheck, a memory error detector
+==31342== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31342== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31342== Command: ./cmake-build-debug/main_tests
+==31342== 
+==31342== 
+==31342== HEAP SUMMARY:
+==31342==     in use at exit: 0 bytes in 0 blocks
+==31342==   total heap usage: 106,167 allocs, 106,167 frees, 3,283,660 bytes allocated
+==31342== 
+==31342== All heap blocks were freed -- no leaks are possible
+==31342== 
+==31342== For counts of detected and suppressed errors, rerun with: -v
+==31342== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 89.txt
 
-==10862== Memcheck, a memory error detector
-==10862== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10862== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10862== Command: ./cmake-build-debug/main_tests
-==10862== 
+==31348== Memcheck, a memory error detector
+==31348== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31348== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31348== Command: ./cmake-build-debug/main_tests
+==31348== 
+==31348== 
+==31348== HEAP SUMMARY:
+==31348==     in use at exit: 0 bytes in 0 blocks
+==31348==   total heap usage: 17,876 allocs, 17,876 frees, 618,496 bytes allocated
+==31348== 
+==31348== All heap blocks were freed -- no leaks are possible
+==31348== 
+==31348== For counts of detected and suppressed errors, rerun with: -v
+==31348== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 9.txt
 
+==31354== Memcheck, a memory error detector
+==31354== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31354== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31354== Command: ./cmake-build-debug/main_tests
+==31354== 
+==31354== 
+==31354== HEAP SUMMARY:
+==31354==     in use at exit: 0 bytes in 0 blocks
+==31354==   total heap usage: 119,626 allocs, 119,626 frees, 3,731,268 bytes allocated
+==31354== 
+==31354== All heap blocks were freed -- no leaks are possible
+==31354== 
+==31354== For counts of detected and suppressed errors, rerun with: -v
+==31354== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 90.txt
 
-==10874== Memcheck, a memory error detector
-==10874== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10874== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10874== Command: ./cmake-build-debug/main_tests
-==10874== 
+==31361== Memcheck, a memory error detector
+==31361== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31361== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31361== Command: ./cmake-build-debug/main_tests
+==31361== 
+==31361== 
+==31361== HEAP SUMMARY:
+==31361==     in use at exit: 0 bytes in 0 blocks
+==31361==   total heap usage: 129,898 allocs, 129,898 frees, 3,941,840 bytes allocated
+==31361== 
+==31361== All heap blocks were freed -- no leaks are possible
+==31361== 
+==31361== For counts of detected and suppressed errors, rerun with: -v
+==31361== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 91.txt
 
-==10880== Memcheck, a memory error detector
-==10880== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10880== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10880== Command: ./cmake-build-debug/main_tests
-==10880== 
+==31367== Memcheck, a memory error detector
+==31367== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31367== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31367== Command: ./cmake-build-debug/main_tests
+==31367== 
+==31367== 
+==31367== HEAP SUMMARY:
+==31367==     in use at exit: 0 bytes in 0 blocks
+==31367==   total heap usage: 44,300 allocs, 44,300 frees, 1,245,336 bytes allocated
+==31367== 
+==31367== All heap blocks were freed -- no leaks are possible
+==31367== 
+==31367== For counts of detected and suppressed errors, rerun with: -v
+==31367== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 92.txt
 
+==31373== Memcheck, a memory error detector
+==31373== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31373== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31373== Command: ./cmake-build-debug/main_tests
+==31373== 
+==31373== 
+==31373== HEAP SUMMARY:
+==31373==     in use at exit: 0 bytes in 0 blocks
+==31373==   total heap usage: 346,701 allocs, 346,701 frees, 12,435,536 bytes allocated
+==31373== 
+==31373== All heap blocks were freed -- no leaks are possible
+==31373== 
+==31373== For counts of detected and suppressed errors, rerun with: -v
+==31373== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 93.txt
 
-==10892== Memcheck, a memory error detector
-==10892== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10892== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10892== Command: ./cmake-build-debug/main_tests
-==10892== 
+==31379== Memcheck, a memory error detector
+==31379== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31379== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31379== Command: ./cmake-build-debug/main_tests
+==31379== 
+==31379== 
+==31379== HEAP SUMMARY:
+==31379==     in use at exit: 0 bytes in 0 blocks
+==31379==   total heap usage: 115,103 allocs, 115,103 frees, 3,564,980 bytes allocated
+==31379== 
+==31379== All heap blocks were freed -- no leaks are possible
+==31379== 
+==31379== For counts of detected and suppressed errors, rerun with: -v
+==31379== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 94.txt
 
-==10898== Memcheck, a memory error detector
-==10898== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10898== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10898== Command: ./cmake-build-debug/main_tests
-==10898== 
+==31385== Memcheck, a memory error detector
+==31385== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31385== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31385== Command: ./cmake-build-debug/main_tests
+==31385== 
+==31385== 
+==31385== HEAP SUMMARY:
+==31385==     in use at exit: 0 bytes in 0 blocks
+==31385==   total heap usage: 15,719 allocs, 15,719 frees, 534,012 bytes allocated
+==31385== 
+==31385== All heap blocks were freed -- no leaks are possible
+==31385== 
+==31385== For counts of detected and suppressed errors, rerun with: -v
+==31385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 95.txt
 
+==31391== Memcheck, a memory error detector
+==31391== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31391== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31391== Command: ./cmake-build-debug/main_tests
+==31391== 
+==31391== 
+==31391== HEAP SUMMARY:
+==31391==     in use at exit: 0 bytes in 0 blocks
+==31391==   total heap usage: 6,947 allocs, 6,947 frees, 297,132 bytes allocated
+==31391== 
+==31391== All heap blocks were freed -- no leaks are possible
+==31391== 
+==31391== For counts of detected and suppressed errors, rerun with: -v
+==31391== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 96.txt
 
+==31397== Memcheck, a memory error detector
+==31397== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31397== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31397== Command: ./cmake-build-debug/main_tests
+==31397== 
+==31397== 
+==31397== HEAP SUMMARY:
+==31397==     in use at exit: 0 bytes in 0 blocks
+==31397==   total heap usage: 104,117 allocs, 104,117 frees, 2,946,888 bytes allocated
+==31397== 
+==31397== All heap blocks were freed -- no leaks are possible
+==31397== 
+==31397== For counts of detected and suppressed errors, rerun with: -v
+==31397== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 97.txt
 
-==10916== Memcheck, a memory error detector
-==10916== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10916== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10916== Command: ./cmake-build-debug/main_tests
-==10916== 
+==31404== Memcheck, a memory error detector
+==31404== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31404== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31404== Command: ./cmake-build-debug/main_tests
+==31404== 
+==31404== 
+==31404== HEAP SUMMARY:
+==31404==     in use at exit: 0 bytes in 0 blocks
+==31404==   total heap usage: 337,775 allocs, 337,775 frees, 12,505,744 bytes allocated
+==31404== 
+==31404== All heap blocks were freed -- no leaks are possible
+==31404== 
+==31404== For counts of detected and suppressed errors, rerun with: -v
+==31404== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 98.txt
 
-==10922== Memcheck, a memory error detector
-==10922== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10922== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10922== Command: ./cmake-build-debug/main_tests
-==10922== 
+==31410== Memcheck, a memory error detector
+==31410== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31410== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31410== Command: ./cmake-build-debug/main_tests
+==31410== 
+==31410== 
+==31410== HEAP SUMMARY:
+==31410==     in use at exit: 0 bytes in 0 blocks
+==31410==   total heap usage: 177,446 allocs, 177,446 frees, 5,590,176 bytes allocated
+==31410== 
+==31410== All heap blocks were freed -- no leaks are possible
+==31410== 
+==31410== For counts of detected and suppressed errors, rerun with: -v
+==31410== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 99.txt
 
-==10928== Memcheck, a memory error detector
-==10928== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10928== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==10928== Command: ./cmake-build-debug/main_tests
-==10928== 
+==31417== Memcheck, a memory error detector
+==31417== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31417== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31417== Command: ./cmake-build-debug/main_tests
+==31417== 
+==31417== 
+==31417== HEAP SUMMARY:
+==31417==     in use at exit: 0 bytes in 0 blocks
+==31417==   total heap usage: 16,242 allocs, 16,242 frees, 551,592 bytes allocated
+==31417== 
+==31417== All heap blocks were freed -- no leaks are possible
+==31417== 
+==31417== For counts of detected and suppressed errors, rerun with: -v
+==31417== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
