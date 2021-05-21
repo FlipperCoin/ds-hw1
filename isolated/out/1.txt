@@ -204,3 +204,109 @@ CarType	|	Model
 8030	|	18
 8030	|	20
 --End of worst models--
+GetWorstModels: SUCCESS
+GetBestSellerModelByType: 19
+--Start of worst models--
+CarType	|	Model
+19	|	1
+19	|	5
+105	|	0
+105	|	1
+105	|	2
+105	|	3
+105	|	4
+105	|	5
+105	|	6
+105	|	7
+105	|	8
+105	|	9
+105	|	10
+105	|	11
+105	|	12
+105	|	13
+105	|	14
+105	|	15
+105	|	16
+105	|	17
+105	|	18
+105	|	19
+105	|	20
+105	|	21
+105	|	22
+105	|	23
+105	|	24
+105	|	25
+105	|	26
+105	|	27
+2705	|	0
+2705	|	1
+2705	|	2
+2705	|	3
+2705	|	5
+2705	|	6
+4170	|	0
+4170	|	1
+4170	|	2
+4170	|	3
+4170	|	4
+4170	|	5
+4170	|	6
+4170	|	7
+4170	|	8
+4170	|	9
+4170	|	10
+4170	|	11
+4170	|	12
+4170	|	13
+4170	|	14
+4170	|	15
+4170	|	16
+4170	|	17
+4170	|	18
+4170	|	19
+4170	|	20
+4170	|	21
+4170	|	22
+4170	|	23
+--End of worst models--
+GetWorstModels: SUCCESS
+GetBestSellerModelByType: 0
+GetBestSellerModelByType: 0
+SellCar: SUCCESS
+AddCarType: FAILURE
+SellCar: SUCCESS
+GetBestSellerModelByType: 0
+SellCar: SUCCESS
+SellCar: INVALID_INPUT
+RemoveCarType: SUCCESS
+SellCar: SUCCESS
+SellCar: INVALID_INPUT
+SellCar: SUCCESS
+SellCar: FAILURE
+MakeComplaint: SUCCESS
+SellCar: SUCCESS
+MakeComplaint: FAILURE
+SellCar: SUCCESS
+AddCarType: SUCCESS
+AddCarType: SUCCESS
+RemoveCarType: SUCCESS
+SellCar: SUCCESS
+RemoveCarType: FAILURE
+AddCarType: SUCCESS
+GetBestSellerModelByType: 0
+MakeComplaint: SUCCESS
+SellCar: FAILURE
+MakeComplaint: SUCCESS
+AddCarType: SUCCESS
+MakeComplaint: SUCCESS
+SellCar: INVALID_INPUT
+MakeComplaint: FAILURE
+MakeComplaint: FAILURE
+SellCar: SUCCESS
+AddCarType: SUCCESS
+SellCar: SUCCESS
+MakeComplaint: SUCCESS
+SellCar: SUCCESS
+SellCar: INVALID_INPUT
+RemoveCarType: SUCCESS
+SellCar: SUCCESS

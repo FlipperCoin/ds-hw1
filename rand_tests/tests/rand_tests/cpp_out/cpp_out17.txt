@@ -1,0 +1,10 @@
+init done.
+AddCarType: INVALID_INPUT
+GetWorstModels: INVALID_INPUT
+AddCarType: INVALID_INPUT
+GetBestSellerModelByType: INVALID_INPUT
+GetBestSellerModelByType: INVALID_INPUT
+GetWorstModels: INVALID_INPUT
+RemoveCarType: FAILURE
+AddCarType: SUCCESS
+AddCarType: SUCCESS

@@ -254,9 +254,9 @@ template<>
 void BTree23<int>::printTree() const {
     printTree(root, true, "");
 }
-// get smallest child should return a regular pointer
+
 StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int *models) {
-    if (numOfModels <= 0) { // need to check if DS is NULL
+    if (numOfModels <= 0) {
         return INVALID_INPUT;
     }
     TreeNode<GradeNode>* iter = Grades.getSmallestChild().rawPointer();
@@ -268,7 +268,7 @@ StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int
             iter = iter->Next;
         }
         else if(zero_iter != nullptr){
-            // need a loop for every zero grade node that goes through all nodes in tree4 - zero models
+            // need a loop for every zero grade node that goes through all nodes in tree - zero models
             auto models_iter = zero_iter->Value.ModelsTree.getSmallestChild().rawPointer();
 
             while(models_iter != nullptr && i < numOfModels){

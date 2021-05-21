@@ -1,0 +1,32 @@
+init done.
+GetBestSellerModelByType: FAILURE
+MakeComplaint: INVALID_INPUT
+GetBestSellerModelByType: FAILURE
+AddCarType: SUCCESS
+AddCarType: SUCCESS
+RemoveCarType: SUCCESS
+MakeComplaint: INVALID_INPUT
+AddCarType: FAILURE
+AddCarType: SUCCESS
+GetBestSellerModelByType: FAILURE
+--Start of worst models--
+CarType	|	Model
+4383	|	0
+9887	|	0
+9887	|	1
+9887	|	2
+9887	|	3
+9887	|	4
+9887	|	5
+9887	|	6
+9887	|	7
+9887	|	8
+9887	|	9
+9887	|	10
+9887	|	11
+9887	|	12
+9887	|	13
+--End of worst models--
+GetWorstModels: SUCCESS
+AddCarType: SUCCESS
+RemoveCarType: SUCCESS

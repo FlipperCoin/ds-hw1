@@ -160,10 +160,6 @@ void BTree23<DataType>::fix_remove(SharedPointer<TreeNode<DataType>> v_node) {
     if (v_node->Parent->Children[0] == v_node) { // if this is first child - id = 0
         if (v_node->Parent->Children[1]->Sons == 3) v_node->borrow(0, 1); // borrow from second child
         else v_node->combine(0, 1); // combine with second child
-        // if prev child was smaller,
-        // then it was removed and this is the new child that needs to be assigned
-        if (isLeaf(v_node->Children[0]) && child->Value < v_node->Children[0]->Value)
-            child = v_node->Children[0];
     }
     else if (v_node->Parent->Children[1] == v_node) { // if this is middle child - id = 1
         if (v_node->Parent->Children[0]->Sons == 3) v_node->borrow(1, 0); // borrow from first child

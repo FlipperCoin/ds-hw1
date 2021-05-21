@@ -214,24 +214,25 @@ struct TreeNode {
                 break;
             }
         }
+        SharedPointer<TreeNode<DataType>> prev;
         if (!changed) {
             if (value < Children[i]->Value) {
                 Indices[i] = Children[i]->Value;
                 Children[i+1] = Children[i];
                 Children[i] = new_node;
+                prev = Children[i-1];
             }
             else {
                 Indices[i] = value;
                 Children[i+1]  = new_node;
+                prev = Children[i];
             }
 
-            Children[i]->Next = Children[i+1].rawPointer();
-            Children[i+1]->Previous = Children[i].rawPointer();
-
-            if(this->Parent != nullptr){
-
-            }
-
+            auto tmpNext = prev->Next;
+            prev->Next = new_node.rawPointer();
+            new_node->Next = tmpNext;
+            new_node->Previous = prev.rawPointer();
+            if (tmpNext != nullptr) tmpNext->Previous = new_node.rawPointer();
         }
         Sons++;
         new_node->Parent = this;
@@ -285,6 +286,8 @@ struct TreeNode {
             this->Indices[0] = this->Children[1]->Value;
             this->Indices[1] = this->Children[2]->Value;
 
+            // TODO: make sure here no need for fix like in "else", something like:
+            // this->Parent->Indices[id] = ...
         }
         else{ // combining with left hand side
             // transferring the children other node
@@ -297,6 +300,8 @@ struct TreeNode {
             // fixing indicators
             this->Indices[0] = this->Children[1]->Value;
             this->Indices[1] = this->Children[2]->Value;
+
+            this->Parent->Indices[other] = this->Children[0]->Value;
 
             this->Value = this->Children[0]->Value;
         }
