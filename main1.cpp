@@ -37,7 +37,7 @@ typedef enum {
     QUIT_CMD = 7
 } commandType;
 
-static const int numActions = 10;
+static const int numActions = 8;
 static const char *commandStr[] = {
         "Init",
         "AddCarType",
@@ -296,8 +296,8 @@ static errorType OnGetWorstModels(void* DS, const char* const command) {
         return error_free;
     }
 
-    printf("%s: %s\n", commandStr[GETWORSTMODELS_CMD], ReturnValToStr(res));
-
+    
+    printf("--Start of worst models--\n");
 	printf("CarType\t|\tModel\n");
 
     for (int i = 0; i < numOfModels; i++)
@@ -305,7 +305,8 @@ static errorType OnGetWorstModels(void* DS, const char* const command) {
         printf("%d\t|\t%d\n", types[i], models[i]);
     }
 
-    printf("--End of worst types--\n");
+    printf("--End of worst models--\n");
+	printf("%s: %s\n", commandStr[GETWORSTMODELS_CMD], ReturnValToStr(res));
 
 	if (types != NULL) free(types);
 	if (models != NULL) free(models);

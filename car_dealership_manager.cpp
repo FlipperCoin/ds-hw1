@@ -120,7 +120,7 @@ StatusType CarDealershipManager::SellCar(int typeID, int modelID) {
         }
 
         if (carNode->Value.Models.getCount() <= modelID) {
-            return INVALID_INPUT;
+            return FAILURE;
         }
 
         ModelData modelData = carNode->Value.Models[modelID];
@@ -216,6 +216,44 @@ StatusType CarDealershipManager::GetBestSellerModelByType(int typeID, int *model
     }
     return SUCCESS;
 }
+
+template<>
+void BTree23<int>::printMidNode(const SharedPointer<TreeNode<int>> &node) const {
+    cout << "[";
+    for (int i = 0; i < node->Sons-1; i++) {
+        cout << node->Indices[i];
+        if (i != node->Sons-2) {
+            cout << ",";
+        }
+    }
+    cout << "]";
+}
+
+template<>
+void BTree23<int>::printTree(SharedPointer<TreeNode<int>> node, bool is_right_most, const string& prefix) const {
+    if (isLeaf(node)) {
+        cout << node->Value << endl;
+        return;
+    }
+
+    printMidNode(node);
+    cout << "-";
+    string padding = "";
+    for (int i = 0; i < ((node->Sons-1)*2); i++) padding += " ";
+    printTree(node->Children[node->Sons-1], true, prefix + padding + "| ");
+    for (int i = node->Sons-2; i > 0; i--) {
+        cout << prefix << padding << "|-";
+        printTree(node->Children[i], false, prefix + padding + "| ");
+    }
+    cout << prefix << padding << "\\-";
+    printTree(node->Children[0], false, prefix + padding + "  ");
+}
+
+
+template<>
+void BTree23<int>::printTree() const {
+    printTree(root, true, "");
+}
 // get smallest child should return a regular pointer
 StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int *models) {
     if (numOfModels <= 0) { // need to check if DS is NULL
@@ -232,7 +270,7 @@ StatusType CarDealershipManager::GetWorstModels(int numOfModels, int *types, int
         else if(zero_iter != nullptr){
             // need a loop for every zero grade node that goes through all nodes in tree4 - zero models
             auto models_iter = zero_iter->Value.ModelsTree.getSmallestChild().rawPointer();
-
+            zero_iter->Value.ModelsTree.printTree();
             while(models_iter != nullptr && i < numOfModels){
                 types[i] = zero_iter->Value.TypeID;
                 models[i] = models_iter->Value;

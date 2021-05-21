@@ -1,0 +1,206 @@
+init done.
+AddCarType: SUCCESS
+RemoveCarType: SUCCESS
+SellCar: INVALID_INPUT
+AddCarType: SUCCESS
+AddCarType: SUCCESS
+--Start of worst models--
+CarType	|	Model
+19	|	0
+19	|	1
+19	|	2
+19	|	3
+19	|	4
+19	|	5
+8253	|	0
+8253	|	1
+8253	|	2
+--End of worst models--
+GetWorstModels: SUCCESS
+RemoveCarType: SUCCESS
+RemoveCarType: FAILURE
+MakeComplaint: INVALID_INPUT
+AddCarType: SUCCESS
+SellCar: SUCCESS
+RemoveCarType: SUCCESS
+AddCarType: SUCCESS
+GetBestSellerModelByType: 0
+MakeComplaint: INVALID_INPUT
+MakeComplaint: FAILURE
+SellCar: SUCCESS
+AddCarType: SUCCESS
+--Start of worst models--
+CarType	|	Model
+19	|	1
+19	|	2
+19	|	3
+19	|	4
+19	|	5
+2705	|	0
+2705	|	1
+2705	|	2
+2705	|	3
+2705	|	4
+2705	|	5
+2705	|	6
+8125	|	0
+--End of worst models--
+GetWorstModels: SUCCESS
+AddCarType: SUCCESS
+GetWorstModels: FAILURE
+MakeComplaint: SUCCESS
+SellCar: SUCCESS
+GetBestSellerModelByType: 0
+AddCarType: SUCCESS
+SellCar: SUCCESS
+MakeComplaint: FAILURE
+AddCarType: FAILURE
+MakeComplaint: INVALID_INPUT
+--Start of worst models--
+CarType	|	Model
+19	|	1
+19	|	2
+19	|	4
+19	|	5
+105	|	0
+105	|	1
+105	|	2
+105	|	3
+105	|	4
+105	|	5
+105	|	6
+105	|	7
+105	|	8
+105	|	9
+105	|	10
+105	|	11
+105	|	12
+105	|	13
+105	|	14
+105	|	15
+105	|	16
+105	|	17
+105	|	18
+105	|	19
+105	|	20
+105	|	21
+105	|	22
+105	|	23
+105	|	24
+105	|	25
+105	|	26
+105	|	27
+2705	|	0
+2705	|	1
+--End of worst models--
+GetWorstModels: SUCCESS
+AddCarType: SUCCESS
+SellCar: FAILURE
+SellCar: SUCCESS
+SellCar: SUCCESS
+GetBestSellerModelByType: 0
+MakeComplaint: FAILURE
+GetBestSellerModelByType: FAILURE
+AddCarType: SUCCESS
+MakeComplaint: INVALID_INPUT
+AddCarType: SUCCESS
+SellCar: FAILURE
+SellCar: SUCCESS
+SellCar: SUCCESS
+SellCar: SUCCESS
+GetBestSellerModelByType: 0
+MakeComplaint: SUCCESS
+--Start of worst models--
+CarType	|	Model
+19	|	1
+19	|	5
+105	|	0
+105	|	1
+105	|	2
+105	|	3
+105	|	4
+105	|	5
+105	|	6
+105	|	7
+105	|	8
+105	|	9
+105	|	10
+105	|	11
+105	|	12
+105	|	13
+105	|	14
+105	|	15
+105	|	16
+105	|	17
+105	|	18
+105	|	19
+105	|	20
+105	|	21
+105	|	22
+105	|	23
+105	|	24
+105	|	25
+105	|	26
+105	|	27
+2705	|	0
+2705	|	1
+2705	|	2
+2705	|	3
+2705	|	5
+2705	|	6
+4170	|	0
+4170	|	1
+4170	|	2
+4170	|	3
+4170	|	4
+4170	|	5
+4170	|	6
+4170	|	7
+4170	|	8
+4170	|	9
+4170	|	10
+4170	|	11
+4170	|	12
+4170	|	13
+4170	|	14
+4170	|	15
+4170	|	16
+4170	|	17
+4170	|	18
+4170	|	19
+4170	|	20
+4170	|	21
+4170	|	22
+4170	|	23
+5223	|	0
+5223	|	1
+5223	|	2
+5223	|	3
+5223	|	4
+5223	|	7
+5701	|	0
+5701	|	1
+5701	|	2
+5701	|	3
+5701	|	4
+8030	|	0
+8030	|	1
+8030	|	2
+8030	|	3
+8030	|	4
+8030	|	5
+8030	|	6
+8030	|	7
+8030	|	8
+8030	|	9
+8030	|	10
+8030	|	11
+8030	|	12
+8030	|	13
+8030	|	14
+8030	|	15
+8030	|	16
+8030	|	17
+8030	|	18
+8030	|	20
+--End of worst models--

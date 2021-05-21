@@ -10,10 +10,11 @@ SellCar: SUCCESS
 SellCar: SUCCESS
 MakeComplaint: SUCCESS
 GetBestSellerModelByType: 1
-Model	|	Car
+--Start of worst models--
+CarType	|	Model
 10	|	2
 10	|	0
 10	|	1
---End of worst cars--
+--End of worst models--
 GetWorstModels: SUCCESS
 quit done.
