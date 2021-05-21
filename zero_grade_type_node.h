@@ -9,6 +9,9 @@
 
 struct ZeroGradeTypeNode {
     int TypeID{};
+    /**
+     * Tree of all model IDs that have a grade of zero, fast initialized
+     */
     BTree23<int> ModelsTree;
 
     ZeroGradeTypeNode(int typeID, int n);

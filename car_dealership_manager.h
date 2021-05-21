@@ -14,9 +14,24 @@
 
 class CarDealershipManager {
 private:
+    /**
+     * Tree containing all car nodes
+     */
     BTree23<CarNode> Cars;
+    /**
+     * Tree containing all non-zero grades (negative and positive),
+     * ordered from lowest to highest grade, type id & model id
+     */
     BTree23<GradeNode> Grades;
+    /**
+     * Tree containing all car types,
+     * in each node we have an integer tree for all models with grade 0 (fast consecutive init)
+     */
     BTree23<ZeroGradeTypeNode> ZeroGrades;
+    /**
+     * Tree containing all sells of all models,
+     * ordered from highest sell count to lowest, then lowest to highest type id & model id
+     */
     BTree23<SellsNode> Sells;
 
     void UpdateGrade(CarNode* carNode, int modelID, int oldGrade, int newGrade);

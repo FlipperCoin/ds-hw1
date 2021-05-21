@@ -13,10 +13,20 @@ using std::cout;
 using std::endl;
 using std::string;
 
+/**
+ * Generic implementation of a 2-3 tree
+ * @tparam DataType type supporting operators '<','>=','==' and method str() for print only
+ */
 template <typename DataType>
 class BTree23 {
 private:
+    /**
+     * root of the tree
+     */
     SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>();
+    /**
+     * Smallest leaf (child), head of the leaves linked-list
+     */
     SharedPointer<TreeNode<DataType>> child = SharedPointer<TreeNode<DataType>>();
 
     void printTree(SharedPointer<TreeNode<DataType>> node, bool is_right_most = true, const string& prefix = "") const;
@@ -28,14 +38,39 @@ private:
     void link(SharedPointer<TreeNode<DataType>> node);
 
 public:
+    /**
+     * Inits tree with given root (defaults to empty tree)
+     * for n being the number of nodes in the given tree, inits the tree in O(n)
+     * @param root root of the tree to copy
+     */
     explicit BTree23(SharedPointer<TreeNode<DataType>> root = SharedPointer<TreeNode<DataType>>());
     /**
-     * tree with ascending values from 0 to n-1
+     * Inits tree with ascending values from 0 to n-1 in O(n)
+     * Implemented for DataType of type int only (see zero_grade_type_node.cpp)
+     * @param n amount of leaves wanted
      */
     explicit BTree23(int n);
 
+    /**
+     * Insert the given value to the tree as a leaf in O(log(n))
+     * @param value the value to insert
+     * @return pointer to the leaf if was inserted,
+     * otherwise (value was already in the tree) returns an empty shared pointer
+     */
     SharedPointer<TreeNode<DataType>> insert(DataType value);
+    /**
+     * Remove the leaf corresponding to the given value from the tree in O(log(n))
+     * @param value the value to remove
+     * @return always an empty shared pointer
+     */
     SharedPointer<TreeNode<DataType>> remove(DataType value);
+    /**
+     * Search for a leaf containing the given value in O(log(n))
+     * @param value the value to search for
+     * @param node node to start the search from, defaults to the root of the tree
+     * @param updateOnPath should the method update on its path the minimum child in each node
+     * @return the leaf if found, last parent on the path otherwise
+     */
     SharedPointer<TreeNode<DataType>> find(DataType value,
                                            SharedPointer<TreeNode<DataType>> node = SharedPointer<TreeNode<DataType>>(),
                                            bool updateOnPath = false) const;
@@ -48,9 +83,15 @@ public:
      * @return the smallest child (leaf) in the tree, head of the linked-list of all leaves
      */
     SharedPointer<TreeNode<DataType>> getSmallestChild() const;
-
+    /**
+     * Prints a graph of the tree to stdout
+     */
     void printTree() const;
-
+    /**
+     * Compare this tree with other
+     * @param other the tree to compare with
+     * @return are the trees equal
+     */
     bool operator==(const BTree23<DataType>& other) const;
 };
 
@@ -351,6 +392,11 @@ bool BTree23<DataType>::compare(const TreeNode<DataType> &node1, const TreeNode<
     return true;
 }
 
+/**
+ * Not implemented for generic DataType!
+ * @tparam DataType
+ * @param n
+ */
 template<typename DataType>
 BTree23<DataType>::BTree23(int n) {throw std::exception();}
 
