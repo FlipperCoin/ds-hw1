@@ -49,18 +49,17 @@ StatusType CarDealershipManager::RemoveCarType(int typeID) {
             return FAILURE;
         }
 
+        // remove type from zero grades tree
+        ZeroGradeTypeNode zeroNode(typeID);
+        ZeroGrades.remove(zeroNode);
+
         // remove all models from grades & sells trees
         // O(m*log(M))
         for (int i = 0; i < carNode->Value.Models.getCount(); i++) {
             ModelData model = carNode->Value.Models[i];
 
-            // remove from zero tree
-            if (model.Grade == 0) {
-                ZeroGradeTypeNode zeroNode(typeID);
-                ZeroGrades.remove(zeroNode);
-            }
             // remove from grades tree
-            else {
+            if (model.Grade != 0) {
                 GradeNode gradeNode{.TypeID=typeID,.ModelID=i,.Grade=model.Grade};
                 Grades.remove(gradeNode);
             }

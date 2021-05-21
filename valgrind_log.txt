@@ -1,1600 +1,1600 @@
 1.txt
 
-==30816== Memcheck, a memory error detector
-==30816== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30816== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30816== Command: ./cmake-build-debug/main_tests
-==30816== 
-==30816== 
-==30816== HEAP SUMMARY:
-==30816==     in use at exit: 0 bytes in 0 blocks
-==30816==   total heap usage: 244,500 allocs, 244,500 frees, 8,285,528 bytes allocated
-==30816== 
-==30816== All heap blocks were freed -- no leaks are possible
-==30816== 
-==30816== For counts of detected and suppressed errors, rerun with: -v
-==30816== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24884== Memcheck, a memory error detector
+==24884== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24884== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==24884== Command: ./cmake-build-debug/main_tests
+==24884== 
+==24884== 
+==24884== HEAP SUMMARY:
+==24884==     in use at exit: 0 bytes in 0 blocks
+==24884==   total heap usage: 234,486 allocs, 234,486 frees, 8,250,092 bytes allocated
+==24884== 
+==24884== All heap blocks were freed -- no leaks are possible
+==24884== 
+==24884== For counts of detected and suppressed errors, rerun with: -v
+==24884== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 10.txt
 
-==30822== Memcheck, a memory error detector
-==30822== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30822== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30822== Command: ./cmake-build-debug/main_tests
-==30822== 
-==30822== 
-==30822== HEAP SUMMARY:
-==30822==     in use at exit: 0 bytes in 0 blocks
-==30822==   total heap usage: 30,476 allocs, 30,476 frees, 969,816 bytes allocated
-==30822== 
-==30822== All heap blocks were freed -- no leaks are possible
-==30822== 
-==30822== For counts of detected and suppressed errors, rerun with: -v
-==30822== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24966== Memcheck, a memory error detector
+==24966== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24966== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==24966== Command: ./cmake-build-debug/main_tests
+==24966== 
+==24966== 
+==24966== HEAP SUMMARY:
+==24966==     in use at exit: 0 bytes in 0 blocks
+==24966==   total heap usage: 29,430 allocs, 29,430 frees, 965,632 bytes allocated
+==24966== 
+==24966== All heap blocks were freed -- no leaks are possible
+==24966== 
+==24966== For counts of detected and suppressed errors, rerun with: -v
+==24966== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 100.txt
 
-==30828== Memcheck, a memory error detector
-==30828== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30828== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30828== Command: ./cmake-build-debug/main_tests
-==30828== 
-==30828== 
-==30828== HEAP SUMMARY:
-==30828==     in use at exit: 0 bytes in 0 blocks
-==30828==   total heap usage: 129,582 allocs, 129,582 frees, 4,064,016 bytes allocated
-==30828== 
-==30828== All heap blocks were freed -- no leaks are possible
-==30828== 
-==30828== For counts of detected and suppressed errors, rerun with: -v
-==30828== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25238== Memcheck, a memory error detector
+==25238== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25238== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25238== Command: ./cmake-build-debug/main_tests
+==25238== 
+==25238== 
+==25238== HEAP SUMMARY:
+==25238==     in use at exit: 0 bytes in 0 blocks
+==25238==   total heap usage: 123,806 allocs, 123,806 frees, 4,039,064 bytes allocated
+==25238== 
+==25238== All heap blocks were freed -- no leaks are possible
+==25238== 
+==25238== For counts of detected and suppressed errors, rerun with: -v
+==25238== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 11.txt
 
-==30834== Memcheck, a memory error detector
-==30834== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30834== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30834== Command: ./cmake-build-debug/main_tests
-==30834== 
-==30834== 
-==30834== HEAP SUMMARY:
-==30834==     in use at exit: 0 bytes in 0 blocks
-==30834==   total heap usage: 6,344 allocs, 6,344 frees, 258,260 bytes allocated
-==30834== 
-==30834== All heap blocks were freed -- no leaks are possible
-==30834== 
-==30834== For counts of detected and suppressed errors, rerun with: -v
-==30834== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25431== Memcheck, a memory error detector
+==25431== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25431== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25431== Command: ./cmake-build-debug/main_tests
+==25431== 
+==25431== 
+==25431== HEAP SUMMARY:
+==25431==     in use at exit: 0 bytes in 0 blocks
+==25431==   total heap usage: 6,136 allocs, 6,136 frees, 257,428 bytes allocated
+==25431== 
+==25431== All heap blocks were freed -- no leaks are possible
+==25431== 
+==25431== For counts of detected and suppressed errors, rerun with: -v
+==25431== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 12.txt
 
-==30840== Memcheck, a memory error detector
-==30840== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30840== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30840== Command: ./cmake-build-debug/main_tests
-==30840== 
-==30840== 
-==30840== HEAP SUMMARY:
-==30840==     in use at exit: 0 bytes in 0 blocks
-==30840==   total heap usage: 6,504 allocs, 6,504 frees, 263,424 bytes allocated
-==30840== 
-==30840== All heap blocks were freed -- no leaks are possible
-==30840== 
-==30840== For counts of detected and suppressed errors, rerun with: -v
-==30840== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25671== Memcheck, a memory error detector
+==25671== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25671== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25671== Command: ./cmake-build-debug/main_tests
+==25671== 
+==25671== 
+==25671== HEAP SUMMARY:
+==25671==     in use at exit: 0 bytes in 0 blocks
+==25671==   total heap usage: 6,313 allocs, 6,313 frees, 262,660 bytes allocated
+==25671== 
+==25671== All heap blocks were freed -- no leaks are possible
+==25671== 
+==25671== For counts of detected and suppressed errors, rerun with: -v
+==25671== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 13.txt
 
-==30846== Memcheck, a memory error detector
-==30846== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30846== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30846== Command: ./cmake-build-debug/main_tests
-==30846== 
-==30846== 
-==30846== HEAP SUMMARY:
-==30846==     in use at exit: 0 bytes in 0 blocks
-==30846==   total heap usage: 74,723 allocs, 74,723 frees, 2,099,696 bytes allocated
-==30846== 
-==30846== All heap blocks were freed -- no leaks are possible
-==30846== 
-==30846== For counts of detected and suppressed errors, rerun with: -v
-==30846== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25897== Memcheck, a memory error detector
+==25897== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25897== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25897== Command: ./cmake-build-debug/main_tests
+==25897== 
+==25897== 
+==25897== HEAP SUMMARY:
+==25897==     in use at exit: 0 bytes in 0 blocks
+==25897==   total heap usage: 71,413 allocs, 71,413 frees, 2,087,688 bytes allocated
+==25897== 
+==25897== All heap blocks were freed -- no leaks are possible
+==25897== 
+==25897== For counts of detected and suppressed errors, rerun with: -v
+==25897== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 14.txt
 
-==30852== Memcheck, a memory error detector
-==30852== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30852== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30852== Command: ./cmake-build-debug/main_tests
-==30852== 
-==30852== 
-==30852== HEAP SUMMARY:
-==30852==     in use at exit: 0 bytes in 0 blocks
-==30852==   total heap usage: 26,719 allocs, 26,719 frees, 842,952 bytes allocated
-==30852== 
-==30852== All heap blocks were freed -- no leaks are possible
-==30852== 
-==30852== For counts of detected and suppressed errors, rerun with: -v
-==30852== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26196== Memcheck, a memory error detector
+==26196== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26196== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26196== Command: ./cmake-build-debug/main_tests
+==26196== 
+==26196== 
+==26196== HEAP SUMMARY:
+==26196==     in use at exit: 0 bytes in 0 blocks
+==26196==   total heap usage: 25,719 allocs, 25,719 frees, 838,952 bytes allocated
+==26196== 
+==26196== All heap blocks were freed -- no leaks are possible
+==26196== 
+==26196== For counts of detected and suppressed errors, rerun with: -v
+==26196== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 15.txt
 
-==30858== Memcheck, a memory error detector
-==30858== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30858== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30858== Command: ./cmake-build-debug/main_tests
-==30858== 
-==30858== 
-==30858== HEAP SUMMARY:
-==30858==     in use at exit: 0 bytes in 0 blocks
-==30858==   total heap usage: 59,807 allocs, 59,807 frees, 1,775,072 bytes allocated
-==30858== 
-==30858== All heap blocks were freed -- no leaks are possible
-==30858== 
-==30858== For counts of detected and suppressed errors, rerun with: -v
-==30858== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26457== Memcheck, a memory error detector
+==26457== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26457== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26457== Command: ./cmake-build-debug/main_tests
+==26457== 
+==26457== 
+==26457== HEAP SUMMARY:
+==26457==     in use at exit: 0 bytes in 0 blocks
+==26457==   total heap usage: 57,237 allocs, 57,237 frees, 1,764,792 bytes allocated
+==26457== 
+==26457== All heap blocks were freed -- no leaks are possible
+==26457== 
+==26457== For counts of detected and suppressed errors, rerun with: -v
+==26457== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 16.txt
 
-==30864== Memcheck, a memory error detector
-==30864== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30864== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30864== Command: ./cmake-build-debug/main_tests
-==30864== 
-==30864== 
-==30864== HEAP SUMMARY:
-==30864==     in use at exit: 0 bytes in 0 blocks
-==30864==   total heap usage: 67,195 allocs, 67,195 frees, 2,025,316 bytes allocated
-==30864== 
-==30864== All heap blocks were freed -- no leaks are possible
-==30864== 
-==30864== For counts of detected and suppressed errors, rerun with: -v
-==30864== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26518== Memcheck, a memory error detector
+==26518== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26518== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26518== Command: ./cmake-build-debug/main_tests
+==26518== 
+==26518== 
+==26518== HEAP SUMMARY:
+==26518==     in use at exit: 0 bytes in 0 blocks
+==26518==   total heap usage: 63,690 allocs, 63,690 frees, 2,009,140 bytes allocated
+==26518== 
+==26518== All heap blocks were freed -- no leaks are possible
+==26518== 
+==26518== For counts of detected and suppressed errors, rerun with: -v
+==26518== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 17.txt
 
-==30870== Memcheck, a memory error detector
-==30870== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30870== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30870== Command: ./cmake-build-debug/main_tests
-==30870== 
-==30870== 
-==30870== HEAP SUMMARY:
-==30870==     in use at exit: 0 bytes in 0 blocks
-==30870==   total heap usage: 184,540 allocs, 184,540 frees, 6,032,980 bytes allocated
-==30870== 
-==30870== All heap blocks were freed -- no leaks are possible
-==30870== 
-==30870== For counts of detected and suppressed errors, rerun with: -v
-==30870== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26865== Memcheck, a memory error detector
+==26865== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26865== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26865== Command: ./cmake-build-debug/main_tests
+==26865== 
+==26865== 
+==26865== HEAP SUMMARY:
+==26865==     in use at exit: 0 bytes in 0 blocks
+==26865==   total heap usage: 175,639 allocs, 175,639 frees, 5,994,912 bytes allocated
+==26865== 
+==26865== All heap blocks were freed -- no leaks are possible
+==26865== 
+==26865== For counts of detected and suppressed errors, rerun with: -v
+==26865== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 18.txt
 
-==30876== Memcheck, a memory error detector
-==30876== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30876== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30876== Command: ./cmake-build-debug/main_tests
-==30876== 
-==30876== 
-==30876== HEAP SUMMARY:
-==30876==     in use at exit: 0 bytes in 0 blocks
-==30876==   total heap usage: 17,727 allocs, 17,727 frees, 591,012 bytes allocated
-==30876== 
-==30876== All heap blocks were freed -- no leaks are possible
-==30876== 
-==30876== For counts of detected and suppressed errors, rerun with: -v
-==30876== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26984== Memcheck, a memory error detector
+==26984== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26984== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26984== Command: ./cmake-build-debug/main_tests
+==26984== 
+==26984== 
+==26984== HEAP SUMMARY:
+==26984==     in use at exit: 0 bytes in 0 blocks
+==26984==   total heap usage: 17,100 allocs, 17,100 frees, 588,504 bytes allocated
+==26984== 
+==26984== All heap blocks were freed -- no leaks are possible
+==26984== 
+==26984== For counts of detected and suppressed errors, rerun with: -v
+==26984== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 19.txt
 
-==30882== Memcheck, a memory error detector
-==30882== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30882== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30882== Command: ./cmake-build-debug/main_tests
-==30882== 
-==30882== 
-==30882== HEAP SUMMARY:
-==30882==     in use at exit: 0 bytes in 0 blocks
-==30882==   total heap usage: 25,892 allocs, 25,892 frees, 796,648 bytes allocated
-==30882== 
-==30882== All heap blocks were freed -- no leaks are possible
-==30882== 
-==30882== For counts of detected and suppressed errors, rerun with: -v
-==30882== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26990== Memcheck, a memory error detector
+==26990== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26990== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26990== Command: ./cmake-build-debug/main_tests
+==26990== 
+==26990== 
+==26990== HEAP SUMMARY:
+==26990==     in use at exit: 0 bytes in 0 blocks
+==26990==   total heap usage: 25,120 allocs, 25,120 frees, 793,560 bytes allocated
+==26990== 
+==26990== All heap blocks were freed -- no leaks are possible
+==26990== 
+==26990== For counts of detected and suppressed errors, rerun with: -v
+==26990== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 2.txt
 
-==30888== Memcheck, a memory error detector
-==30888== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30888== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30888== Command: ./cmake-build-debug/main_tests
-==30888== 
-==30888== 
-==30888== HEAP SUMMARY:
-==30888==     in use at exit: 0 bytes in 0 blocks
-==30888==   total heap usage: 47,293 allocs, 47,293 frees, 1,449,212 bytes allocated
-==30888== 
-==30888== All heap blocks were freed -- no leaks are possible
-==30888== 
-==30888== For counts of detected and suppressed errors, rerun with: -v
-==30888== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==26996== Memcheck, a memory error detector
+==26996== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26996== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26996== Command: ./cmake-build-debug/main_tests
+==26996== 
+==26996== 
+==26996== HEAP SUMMARY:
+==26996==     in use at exit: 0 bytes in 0 blocks
+==26996==   total heap usage: 45,845 allocs, 45,845 frees, 1,443,420 bytes allocated
+==26996== 
+==26996== All heap blocks were freed -- no leaks are possible
+==26996== 
+==26996== For counts of detected and suppressed errors, rerun with: -v
+==26996== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 20.txt
 
-==30894== Memcheck, a memory error detector
-==30894== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30894== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30894== Command: ./cmake-build-debug/main_tests
-==30894== 
-==30894== 
-==30894== HEAP SUMMARY:
-==30894==     in use at exit: 0 bytes in 0 blocks
-==30894==   total heap usage: 5,076 allocs, 5,076 frees, 226,024 bytes allocated
-==30894== 
-==30894== All heap blocks were freed -- no leaks are possible
-==30894== 
-==30894== For counts of detected and suppressed errors, rerun with: -v
-==30894== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27002== Memcheck, a memory error detector
+==27002== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27002== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27002== Command: ./cmake-build-debug/main_tests
+==27002== 
+==27002== 
+==27002== HEAP SUMMARY:
+==27002==     in use at exit: 0 bytes in 0 blocks
+==27002==   total heap usage: 5,001 allocs, 5,001 frees, 225,724 bytes allocated
+==27002== 
+==27002== All heap blocks were freed -- no leaks are possible
+==27002== 
+==27002== For counts of detected and suppressed errors, rerun with: -v
+==27002== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 21.txt
 
-==30900== Memcheck, a memory error detector
-==30900== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30900== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30900== Command: ./cmake-build-debug/main_tests
-==30900== 
-==30900== 
-==30900== HEAP SUMMARY:
-==30900==     in use at exit: 0 bytes in 0 blocks
-==30900==   total heap usage: 10,652 allocs, 10,652 frees, 372,384 bytes allocated
-==30900== 
-==30900== All heap blocks were freed -- no leaks are possible
-==30900== 
-==30900== For counts of detected and suppressed errors, rerun with: -v
-==30900== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27008== Memcheck, a memory error detector
+==27008== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27008== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27008== Command: ./cmake-build-debug/main_tests
+==27008== 
+==27008== 
+==27008== HEAP SUMMARY:
+==27008==     in use at exit: 0 bytes in 0 blocks
+==27008==   total heap usage: 10,216 allocs, 10,216 frees, 370,640 bytes allocated
+==27008== 
+==27008== All heap blocks were freed -- no leaks are possible
+==27008== 
+==27008== For counts of detected and suppressed errors, rerun with: -v
+==27008== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 22.txt
 
-==30906== Memcheck, a memory error detector
-==30906== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30906== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30906== Command: ./cmake-build-debug/main_tests
-==30906== 
-==30906== 
-==30906== HEAP SUMMARY:
-==30906==     in use at exit: 0 bytes in 0 blocks
-==30906==   total heap usage: 22,119 allocs, 22,119 frees, 749,128 bytes allocated
-==30906== 
-==30906== All heap blocks were freed -- no leaks are possible
-==30906== 
-==30906== For counts of detected and suppressed errors, rerun with: -v
-==30906== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27014== Memcheck, a memory error detector
+==27014== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27014== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27014== Command: ./cmake-build-debug/main_tests
+==27014== 
+==27014== 
+==27014== HEAP SUMMARY:
+==27014==     in use at exit: 0 bytes in 0 blocks
+==27014==   total heap usage: 21,813 allocs, 21,813 frees, 747,904 bytes allocated
+==27014== 
+==27014== All heap blocks were freed -- no leaks are possible
+==27014== 
+==27014== For counts of detected and suppressed errors, rerun with: -v
+==27014== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 23.txt
 
-==30912== Memcheck, a memory error detector
-==30912== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30912== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30912== Command: ./cmake-build-debug/main_tests
-==30912== 
-==30912== 
-==30912== HEAP SUMMARY:
-==30912==     in use at exit: 0 bytes in 0 blocks
-==30912==   total heap usage: 58,717 allocs, 58,717 frees, 1,665,960 bytes allocated
-==30912== 
-==30912== All heap blocks were freed -- no leaks are possible
-==30912== 
-==30912== For counts of detected and suppressed errors, rerun with: -v
-==30912== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27020== Memcheck, a memory error detector
+==27020== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27020== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27020== Command: ./cmake-build-debug/main_tests
+==27020== 
+==27020== 
+==27020== HEAP SUMMARY:
+==27020==     in use at exit: 0 bytes in 0 blocks
+==27020==   total heap usage: 57,169 allocs, 57,169 frees, 1,659,768 bytes allocated
+==27020== 
+==27020== All heap blocks were freed -- no leaks are possible
+==27020== 
+==27020== For counts of detected and suppressed errors, rerun with: -v
+==27020== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 24.txt
 
-==30918== Memcheck, a memory error detector
-==30918== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30918== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30918== Command: ./cmake-build-debug/main_tests
-==30918== 
-==30918== 
-==30918== HEAP SUMMARY:
-==30918==     in use at exit: 0 bytes in 0 blocks
-==30918==   total heap usage: 20,694 allocs, 20,694 frees, 640,572 bytes allocated
-==30918== 
-==30918== All heap blocks were freed -- no leaks are possible
-==30918== 
-==30918== For counts of detected and suppressed errors, rerun with: -v
-==30918== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27026== Memcheck, a memory error detector
+==27026== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27026== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27026== Command: ./cmake-build-debug/main_tests
+==27026== 
+==27026== 
+==27026== HEAP SUMMARY:
+==27026==     in use at exit: 0 bytes in 0 blocks
+==27026==   total heap usage: 19,755 allocs, 19,755 frees, 636,816 bytes allocated
+==27026== 
+==27026== All heap blocks were freed -- no leaks are possible
+==27026== 
+==27026== For counts of detected and suppressed errors, rerun with: -v
+==27026== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 25.txt
 
-==30924== Memcheck, a memory error detector
-==30924== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30924== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30924== Command: ./cmake-build-debug/main_tests
-==30924== 
-==30924== 
-==30924== HEAP SUMMARY:
-==30924==     in use at exit: 0 bytes in 0 blocks
-==30924==   total heap usage: 169,100 allocs, 169,100 frees, 5,525,188 bytes allocated
-==30924== 
-==30924== All heap blocks were freed -- no leaks are possible
-==30924== 
-==30924== For counts of detected and suppressed errors, rerun with: -v
-==30924== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27033== Memcheck, a memory error detector
+==27033== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27033== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27033== Command: ./cmake-build-debug/main_tests
+==27033== 
+==27033== 
+==27033== HEAP SUMMARY:
+==27033==     in use at exit: 0 bytes in 0 blocks
+==27033==   total heap usage: 163,122 allocs, 163,122 frees, 5,499,120 bytes allocated
+==27033== 
+==27033== All heap blocks were freed -- no leaks are possible
+==27033== 
+==27033== For counts of detected and suppressed errors, rerun with: -v
+==27033== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 26.txt
 
-==30930== Memcheck, a memory error detector
-==30930== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30930== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30930== Command: ./cmake-build-debug/main_tests
-==30930== 
-==30930== 
-==30930== HEAP SUMMARY:
-==30930==     in use at exit: 0 bytes in 0 blocks
-==30930==   total heap usage: 200,569 allocs, 200,569 frees, 6,480,280 bytes allocated
-==30930== 
-==30930== All heap blocks were freed -- no leaks are possible
-==30930== 
-==30930== For counts of detected and suppressed errors, rerun with: -v
-==30930== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27039== Memcheck, a memory error detector
+==27039== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27039== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27039== Command: ./cmake-build-debug/main_tests
+==27039== 
+==27039== 
+==27039== HEAP SUMMARY:
+==27039==     in use at exit: 0 bytes in 0 blocks
+==27039==   total heap usage: 193,273 allocs, 193,273 frees, 6,447,092 bytes allocated
+==27039== 
+==27039== All heap blocks were freed -- no leaks are possible
+==27039== 
+==27039== For counts of detected and suppressed errors, rerun with: -v
+==27039== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 27.txt
 
-==30936== Memcheck, a memory error detector
-==30936== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30936== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30936== Command: ./cmake-build-debug/main_tests
-==30936== 
-==30936== 
-==30936== HEAP SUMMARY:
-==30936==     in use at exit: 0 bytes in 0 blocks
-==30936==   total heap usage: 91,668 allocs, 91,668 frees, 2,677,492 bytes allocated
-==30936== 
-==30936== All heap blocks were freed -- no leaks are possible
-==30936== 
-==30936== For counts of detected and suppressed errors, rerun with: -v
-==30936== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27045== Memcheck, a memory error detector
+==27045== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27045== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27045== Command: ./cmake-build-debug/main_tests
+==27045== 
+==27045== 
+==27045== HEAP SUMMARY:
+==27045==     in use at exit: 0 bytes in 0 blocks
+==27045==   total heap usage: 86,621 allocs, 86,621 frees, 2,657,304 bytes allocated
+==27045== 
+==27045== All heap blocks were freed -- no leaks are possible
+==27045== 
+==27045== For counts of detected and suppressed errors, rerun with: -v
+==27045== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 28.txt
 
-==30942== Memcheck, a memory error detector
-==30942== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30942== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30942== Command: ./cmake-build-debug/main_tests
-==30942== 
-==30942== 
-==30942== HEAP SUMMARY:
-==30942==     in use at exit: 0 bytes in 0 blocks
-==30942==   total heap usage: 54,669 allocs, 54,669 frees, 1,539,004 bytes allocated
-==30942== 
-==30942== All heap blocks were freed -- no leaks are possible
-==30942== 
-==30942== For counts of detected and suppressed errors, rerun with: -v
-==30942== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27051== Memcheck, a memory error detector
+==27051== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27051== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27051== Command: ./cmake-build-debug/main_tests
+==27051== 
+==27051== 
+==27051== HEAP SUMMARY:
+==27051==     in use at exit: 0 bytes in 0 blocks
+==27051==   total heap usage: 52,325 allocs, 52,325 frees, 1,528,396 bytes allocated
+==27051== 
+==27051== All heap blocks were freed -- no leaks are possible
+==27051== 
+==27051== For counts of detected and suppressed errors, rerun with: -v
+==27051== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 29.txt
 
-==30949== Memcheck, a memory error detector
-==30949== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30949== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30949== Command: ./cmake-build-debug/main_tests
-==30949== 
-==30949== 
-==30949== HEAP SUMMARY:
-==30949==     in use at exit: 0 bytes in 0 blocks
-==30949==   total heap usage: 133,031 allocs, 133,031 frees, 4,027,056 bytes allocated
-==30949== 
-==30949== All heap blocks were freed -- no leaks are possible
-==30949== 
-==30949== For counts of detected and suppressed errors, rerun with: -v
-==30949== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27057== Memcheck, a memory error detector
+==27057== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27057== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27057== Command: ./cmake-build-debug/main_tests
+==27057== 
+==27057== 
+==27057== HEAP SUMMARY:
+==27057==     in use at exit: 0 bytes in 0 blocks
+==27057==   total heap usage: 126,598 allocs, 126,598 frees, 3,996,088 bytes allocated
+==27057== 
+==27057== All heap blocks were freed -- no leaks are possible
+==27057== 
+==27057== For counts of detected and suppressed errors, rerun with: -v
+==27057== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 3.txt
 
-==30955== Memcheck, a memory error detector
-==30955== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30955== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30955== Command: ./cmake-build-debug/main_tests
-==30955== 
-==30955== 
-==30955== HEAP SUMMARY:
-==30955==     in use at exit: 0 bytes in 0 blocks
-==30955==   total heap usage: 113,890 allocs, 113,890 frees, 3,553,728 bytes allocated
-==30955== 
-==30955== All heap blocks were freed -- no leaks are possible
-==30955== 
-==30955== For counts of detected and suppressed errors, rerun with: -v
-==30955== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27171== Memcheck, a memory error detector
+==27171== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27171== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27171== Command: ./cmake-build-debug/main_tests
+==27171== 
+==27171== 
+==27171== HEAP SUMMARY:
+==27171==     in use at exit: 0 bytes in 0 blocks
+==27171==   total heap usage: 109,084 allocs, 109,084 frees, 3,531,116 bytes allocated
+==27171== 
+==27171== All heap blocks were freed -- no leaks are possible
+==27171== 
+==27171== For counts of detected and suppressed errors, rerun with: -v
+==27171== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 30.txt
 
-==30961== Memcheck, a memory error detector
-==30961== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30961== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30961== Command: ./cmake-build-debug/main_tests
-==30961== 
-==30961== 
-==30961== HEAP SUMMARY:
-==30961==     in use at exit: 0 bytes in 0 blocks
-==30961==   total heap usage: 414,309 allocs, 414,309 frees, 15,725,064 bytes allocated
-==30961== 
-==30961== All heap blocks were freed -- no leaks are possible
-==30961== 
-==30961== For counts of detected and suppressed errors, rerun with: -v
-==30961== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==27584== Memcheck, a memory error detector
+==27584== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27584== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==27584== Command: ./cmake-build-debug/main_tests
+==27584== 
+==27584== 
+==27584== HEAP SUMMARY:
+==27584==     in use at exit: 0 bytes in 0 blocks
+==27584==   total heap usage: 393,128 allocs, 393,128 frees, 15,643,420 bytes allocated
+==27584== 
+==27584== All heap blocks were freed -- no leaks are possible
+==27584== 
+==27584== For counts of detected and suppressed errors, rerun with: -v
+==27584== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 31.txt
 
-==30968== Memcheck, a memory error detector
-==30968== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30968== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30968== Command: ./cmake-build-debug/main_tests
-==30968== 
-==30968== 
-==30968== HEAP SUMMARY:
-==30968==     in use at exit: 0 bytes in 0 blocks
-==30968==   total heap usage: 76,399 allocs, 76,399 frees, 2,247,964 bytes allocated
-==30968== 
-==30968== All heap blocks were freed -- no leaks are possible
-==30968== 
-==30968== For counts of detected and suppressed errors, rerun with: -v
-==30968== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==28499== Memcheck, a memory error detector
+==28499== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28499== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==28499== Command: ./cmake-build-debug/main_tests
+==28499== 
+==28499== 
+==28499== HEAP SUMMARY:
+==28499==     in use at exit: 0 bytes in 0 blocks
+==28499==   total heap usage: 72,127 allocs, 72,127 frees, 2,230,876 bytes allocated
+==28499== 
+==28499== All heap blocks were freed -- no leaks are possible
+==28499== 
+==28499== For counts of detected and suppressed errors, rerun with: -v
+==28499== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 32.txt
 
-==30974== Memcheck, a memory error detector
-==30974== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30974== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30974== Command: ./cmake-build-debug/main_tests
-==30974== 
-==30974== 
-==30974== HEAP SUMMARY:
-==30974==     in use at exit: 0 bytes in 0 blocks
-==30974==   total heap usage: 177,323 allocs, 177,323 frees, 5,460,148 bytes allocated
-==30974== 
-==30974== All heap blocks were freed -- no leaks are possible
-==30974== 
-==30974== For counts of detected and suppressed errors, rerun with: -v
-==30974== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==28616== Memcheck, a memory error detector
+==28616== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28616== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==28616== Command: ./cmake-build-debug/main_tests
+==28616== 
+==28616== 
+==28616== HEAP SUMMARY:
+==28616==     in use at exit: 0 bytes in 0 blocks
+==28616==   total heap usage: 168,001 allocs, 168,001 frees, 5,417,316 bytes allocated
+==28616== 
+==28616== All heap blocks were freed -- no leaks are possible
+==28616== 
+==28616== For counts of detected and suppressed errors, rerun with: -v
+==28616== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 33.txt
 
-==30980== Memcheck, a memory error detector
-==30980== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30980== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30980== Command: ./cmake-build-debug/main_tests
-==30980== 
-==30980== 
-==30980== HEAP SUMMARY:
-==30980==     in use at exit: 0 bytes in 0 blocks
-==30980==   total heap usage: 366,443 allocs, 366,443 frees, 13,693,084 bytes allocated
-==30980== 
-==30980== All heap blocks were freed -- no leaks are possible
-==30980== 
-==30980== For counts of detected and suppressed errors, rerun with: -v
-==30980== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29054== Memcheck, a memory error detector
+==29054== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29054== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29054== Command: ./cmake-build-debug/main_tests
+==29054== 
+==29054== 
+==29054== HEAP SUMMARY:
+==29054==     in use at exit: 0 bytes in 0 blocks
+==29054==   total heap usage: 346,037 allocs, 346,037 frees, 13,609,612 bytes allocated
+==29054== 
+==29054== All heap blocks were freed -- no leaks are possible
+==29054== 
+==29054== For counts of detected and suppressed errors, rerun with: -v
+==29054== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 34.txt
 
-==30986== Memcheck, a memory error detector
-==30986== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30986== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30986== Command: ./cmake-build-debug/main_tests
-==30986== 
-==30986== 
-==30986== HEAP SUMMARY:
-==30986==     in use at exit: 0 bytes in 0 blocks
-==30986==   total heap usage: 4,582 allocs, 4,582 frees, 207,928 bytes allocated
-==30986== 
-==30986== All heap blocks were freed -- no leaks are possible
-==30986== 
-==30986== For counts of detected and suppressed errors, rerun with: -v
-==30986== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29138== Memcheck, a memory error detector
+==29138== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29138== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29138== Command: ./cmake-build-debug/main_tests
+==29138== 
+==29138== 
+==29138== HEAP SUMMARY:
+==29138==     in use at exit: 0 bytes in 0 blocks
+==29138==   total heap usage: 4,487 allocs, 4,487 frees, 207,548 bytes allocated
+==29138== 
+==29138== All heap blocks were freed -- no leaks are possible
+==29138== 
+==29138== For counts of detected and suppressed errors, rerun with: -v
+==29138== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 35.txt
 
-==30992== Memcheck, a memory error detector
-==30992== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30992== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30992== Command: ./cmake-build-debug/main_tests
-==30992== 
-==30992== 
-==30992== HEAP SUMMARY:
-==30992==     in use at exit: 0 bytes in 0 blocks
-==30992==   total heap usage: 126,344 allocs, 126,344 frees, 3,990,304 bytes allocated
-==30992== 
-==30992== All heap blocks were freed -- no leaks are possible
-==30992== 
-==30992== For counts of detected and suppressed errors, rerun with: -v
-==30992== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29144== Memcheck, a memory error detector
+==29144== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29144== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29144== Command: ./cmake-build-debug/main_tests
+==29144== 
+==29144== 
+==29144== HEAP SUMMARY:
+==29144==     in use at exit: 0 bytes in 0 blocks
+==29144==   total heap usage: 121,865 allocs, 121,865 frees, 3,974,852 bytes allocated
+==29144== 
+==29144== All heap blocks were freed -- no leaks are possible
+==29144== 
+==29144== For counts of detected and suppressed errors, rerun with: -v
+==29144== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 36.txt
 
-==30998== Memcheck, a memory error detector
-==30998== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30998== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==30998== Command: ./cmake-build-debug/main_tests
-==30998== 
-==30998== 
-==30998== HEAP SUMMARY:
-==30998==     in use at exit: 0 bytes in 0 blocks
-==30998==   total heap usage: 79,519 allocs, 79,519 frees, 2,538,456 bytes allocated
-==30998== 
-==30998== All heap blocks were freed -- no leaks are possible
-==30998== 
-==30998== For counts of detected and suppressed errors, rerun with: -v
-==30998== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29150== Memcheck, a memory error detector
+==29150== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29150== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29150== Command: ./cmake-build-debug/main_tests
+==29150== 
+==29150== 
+==29150== HEAP SUMMARY:
+==29150==     in use at exit: 0 bytes in 0 blocks
+==29150==   total heap usage: 76,447 allocs, 76,447 frees, 2,527,092 bytes allocated
+==29150== 
+==29150== All heap blocks were freed -- no leaks are possible
+==29150== 
+==29150== For counts of detected and suppressed errors, rerun with: -v
+==29150== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 37.txt
 
-==31004== Memcheck, a memory error detector
-==31004== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31004== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31004== Command: ./cmake-build-debug/main_tests
-==31004== 
-==31004== 
-==31004== HEAP SUMMARY:
-==31004==     in use at exit: 0 bytes in 0 blocks
-==31004==   total heap usage: 14 allocs, 14 frees, 81,060 bytes allocated
-==31004== 
-==31004== All heap blocks were freed -- no leaks are possible
-==31004== 
-==31004== For counts of detected and suppressed errors, rerun with: -v
-==31004== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29156== Memcheck, a memory error detector
+==29156== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29156== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29156== Command: ./cmake-build-debug/main_tests
+==29156== 
+==29156== 
+==29156== HEAP SUMMARY:
+==29156==     in use at exit: 0 bytes in 0 blocks
+==29156==   total heap usage: 14 allocs, 14 frees, 81,060 bytes allocated
+==29156== 
+==29156== All heap blocks were freed -- no leaks are possible
+==29156== 
+==29156== For counts of detected and suppressed errors, rerun with: -v
+==29156== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 38.txt
 
-==31010== Memcheck, a memory error detector
-==31010== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31010== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31010== Command: ./cmake-build-debug/main_tests
-==31010== 
-==31010== 
-==31010== HEAP SUMMARY:
-==31010==     in use at exit: 0 bytes in 0 blocks
-==31010==   total heap usage: 5,080 allocs, 5,080 frees, 216,780 bytes allocated
-==31010== 
-==31010== All heap blocks were freed -- no leaks are possible
-==31010== 
-==31010== For counts of detected and suppressed errors, rerun with: -v
-==31010== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29162== Memcheck, a memory error detector
+==29162== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29162== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29162== Command: ./cmake-build-debug/main_tests
+==29162== 
+==29162== 
+==29162== HEAP SUMMARY:
+==29162==     in use at exit: 0 bytes in 0 blocks
+==29162==   total heap usage: 4,960 allocs, 4,960 frees, 216,300 bytes allocated
+==29162== 
+==29162== All heap blocks were freed -- no leaks are possible
+==29162== 
+==29162== For counts of detected and suppressed errors, rerun with: -v
+==29162== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 39.txt
 
-==31016== Memcheck, a memory error detector
-==31016== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31016== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31016== Command: ./cmake-build-debug/main_tests
-==31016== 
-==31016== 
-==31016== HEAP SUMMARY:
-==31016==     in use at exit: 0 bytes in 0 blocks
-==31016==   total heap usage: 23,978 allocs, 23,978 frees, 717,488 bytes allocated
-==31016== 
-==31016== All heap blocks were freed -- no leaks are possible
-==31016== 
-==31016== For counts of detected and suppressed errors, rerun with: -v
-==31016== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29169== Memcheck, a memory error detector
+==29169== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29169== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29169== Command: ./cmake-build-debug/main_tests
+==29169== 
+==29169== 
+==29169== HEAP SUMMARY:
+==29169==     in use at exit: 0 bytes in 0 blocks
+==29169==   total heap usage: 22,429 allocs, 22,429 frees, 709,752 bytes allocated
+==29169== 
+==29169== All heap blocks were freed -- no leaks are possible
+==29169== 
+==29169== For counts of detected and suppressed errors, rerun with: -v
+==29169== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 4.txt
 
-==31022== Memcheck, a memory error detector
-==31022== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31022== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31022== Command: ./cmake-build-debug/main_tests
-==31022== 
-==31022== 
-==31022== HEAP SUMMARY:
-==31022==     in use at exit: 0 bytes in 0 blocks
-==31022==   total heap usage: 69,804 allocs, 69,804 frees, 2,147,236 bytes allocated
-==31022== 
-==31022== All heap blocks were freed -- no leaks are possible
-==31022== 
-==31022== For counts of detected and suppressed errors, rerun with: -v
-==31022== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29175== Memcheck, a memory error detector
+==29175== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29175== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29175== Command: ./cmake-build-debug/main_tests
+==29175== 
+==29175== 
+==29175== HEAP SUMMARY:
+==29175==     in use at exit: 0 bytes in 0 blocks
+==29175==   total heap usage: 67,725 allocs, 67,725 frees, 2,138,304 bytes allocated
+==29175== 
+==29175== All heap blocks were freed -- no leaks are possible
+==29175== 
+==29175== For counts of detected and suppressed errors, rerun with: -v
+==29175== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 40.txt
 
-==31028== Memcheck, a memory error detector
-==31028== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31028== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31028== Command: ./cmake-build-debug/main_tests
-==31028== 
-==31028== 
-==31028== HEAP SUMMARY:
-==31028==     in use at exit: 0 bytes in 0 blocks
-==31028==   total heap usage: 69,495 allocs, 69,495 frees, 1,937,416 bytes allocated
-==31028== 
-==31028== All heap blocks were freed -- no leaks are possible
-==31028== 
-==31028== For counts of detected and suppressed errors, rerun with: -v
-==31028== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29181== Memcheck, a memory error detector
+==29181== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29181== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29181== Command: ./cmake-build-debug/main_tests
+==29181== 
+==29181== 
+==29181== HEAP SUMMARY:
+==29181==     in use at exit: 0 bytes in 0 blocks
+==29181==   total heap usage: 65,758 allocs, 65,758 frees, 1,921,544 bytes allocated
+==29181== 
+==29181== All heap blocks were freed -- no leaks are possible
+==29181== 
+==29181== For counts of detected and suppressed errors, rerun with: -v
+==29181== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 41.txt
 
-==31034== Memcheck, a memory error detector
-==31034== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31034== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31034== Command: ./cmake-build-debug/main_tests
-==31034== 
-==31034== 
-==31034== HEAP SUMMARY:
-==31034==     in use at exit: 0 bytes in 0 blocks
-==31034==   total heap usage: 16,885 allocs, 16,885 frees, 550,488 bytes allocated
-==31034== 
-==31034== All heap blocks were freed -- no leaks are possible
-==31034== 
-==31034== For counts of detected and suppressed errors, rerun with: -v
-==31034== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29187== Memcheck, a memory error detector
+==29187== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29187== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29187== Command: ./cmake-build-debug/main_tests
+==29187== 
+==29187== 
+==29187== HEAP SUMMARY:
+==29187==     in use at exit: 0 bytes in 0 blocks
+==29187==   total heap usage: 16,276 allocs, 16,276 frees, 548,052 bytes allocated
+==29187== 
+==29187== All heap blocks were freed -- no leaks are possible
+==29187== 
+==29187== For counts of detected and suppressed errors, rerun with: -v
+==29187== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 42.txt
 
-==31040== Memcheck, a memory error detector
-==31040== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31040== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31040== Command: ./cmake-build-debug/main_tests
-==31040== 
-==31040== 
-==31040== HEAP SUMMARY:
-==31040==     in use at exit: 0 bytes in 0 blocks
-==31040==   total heap usage: 26,251 allocs, 26,251 frees, 815,916 bytes allocated
-==31040== 
-==31040== All heap blocks were freed -- no leaks are possible
-==31040== 
-==31040== For counts of detected and suppressed errors, rerun with: -v
-==31040== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29193== Memcheck, a memory error detector
+==29193== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29193== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29193== Command: ./cmake-build-debug/main_tests
+==29193== 
+==29193== 
+==29193== HEAP SUMMARY:
+==29193==     in use at exit: 0 bytes in 0 blocks
+==29193==   total heap usage: 25,328 allocs, 25,328 frees, 812,224 bytes allocated
+==29193== 
+==29193== All heap blocks were freed -- no leaks are possible
+==29193== 
+==29193== For counts of detected and suppressed errors, rerun with: -v
+==29193== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 43.txt
 
-==31046== Memcheck, a memory error detector
-==31046== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31046== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31046== Command: ./cmake-build-debug/main_tests
-==31046== 
-==31046== 
-==31046== HEAP SUMMARY:
-==31046==     in use at exit: 0 bytes in 0 blocks
-==31046==   total heap usage: 47,064 allocs, 47,064 frees, 1,459,672 bytes allocated
-==31046== 
-==31046== All heap blocks were freed -- no leaks are possible
-==31046== 
-==31046== For counts of detected and suppressed errors, rerun with: -v
-==31046== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29199== Memcheck, a memory error detector
+==29199== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29199== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29199== Command: ./cmake-build-debug/main_tests
+==29199== 
+==29199== 
+==29199== HEAP SUMMARY:
+==29199==     in use at exit: 0 bytes in 0 blocks
+==29199==   total heap usage: 45,565 allocs, 45,565 frees, 1,452,444 bytes allocated
+==29199== 
+==29199== All heap blocks were freed -- no leaks are possible
+==29199== 
+==29199== For counts of detected and suppressed errors, rerun with: -v
+==29199== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 44.txt
 
-==31052== Memcheck, a memory error detector
-==31052== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31052== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31052== Command: ./cmake-build-debug/main_tests
-==31052== 
-==31052== 
-==31052== HEAP SUMMARY:
-==31052==     in use at exit: 0 bytes in 0 blocks
-==31052==   total heap usage: 48,773 allocs, 48,773 frees, 1,478,456 bytes allocated
-==31052== 
-==31052== All heap blocks were freed -- no leaks are possible
-==31052== 
-==31052== For counts of detected and suppressed errors, rerun with: -v
-==31052== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29205== Memcheck, a memory error detector
+==29205== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29205== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29205== Command: ./cmake-build-debug/main_tests
+==29205== 
+==29205== 
+==29205== HEAP SUMMARY:
+==29205==     in use at exit: 0 bytes in 0 blocks
+==29205==   total heap usage: 47,113 allocs, 47,113 frees, 1,477,668 bytes allocated
+==29205== 
+==29205== All heap blocks were freed -- no leaks are possible
+==29205== 
+==29205== For counts of detected and suppressed errors, rerun with: -v
+==29205== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 45.txt
 
-==31058== Memcheck, a memory error detector
-==31058== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31058== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31058== Command: ./cmake-build-debug/main_tests
-==31058== 
-==31058== 
-==31058== HEAP SUMMARY:
-==31058==     in use at exit: 0 bytes in 0 blocks
-==31058==   total heap usage: 2,202 allocs, 2,202 frees, 142,384 bytes allocated
-==31058== 
-==31058== All heap blocks were freed -- no leaks are possible
-==31058== 
-==31058== For counts of detected and suppressed errors, rerun with: -v
-==31058== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29211== Memcheck, a memory error detector
+==29211== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29211== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29211== Command: ./cmake-build-debug/main_tests
+==29211== 
+==29211== 
+==29211== HEAP SUMMARY:
+==29211==     in use at exit: 0 bytes in 0 blocks
+==29211==   total heap usage: 2,202 allocs, 2,202 frees, 142,384 bytes allocated
+==29211== 
+==29211== All heap blocks were freed -- no leaks are possible
+==29211== 
+==29211== For counts of detected and suppressed errors, rerun with: -v
+==29211== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 46.txt
 
-==31064== Memcheck, a memory error detector
-==31064== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31064== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31064== Command: ./cmake-build-debug/main_tests
-==31064== 
-==31064== 
-==31064== HEAP SUMMARY:
-==31064==     in use at exit: 0 bytes in 0 blocks
-==31064==   total heap usage: 262,916 allocs, 262,916 frees, 9,829,836 bytes allocated
-==31064== 
-==31064== All heap blocks were freed -- no leaks are possible
-==31064== 
-==31064== For counts of detected and suppressed errors, rerun with: -v
-==31064== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29217== Memcheck, a memory error detector
+==29217== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29217== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29217== Command: ./cmake-build-debug/main_tests
+==29217== 
+==29217== 
+==29217== HEAP SUMMARY:
+==29217==     in use at exit: 0 bytes in 0 blocks
+==29217==   total heap usage: 254,847 allocs, 254,847 frees, 9,793,556 bytes allocated
+==29217== 
+==29217== All heap blocks were freed -- no leaks are possible
+==29217== 
+==29217== For counts of detected and suppressed errors, rerun with: -v
+==29217== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 47.txt
 
-==31070== Memcheck, a memory error detector
-==31070== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31070== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31070== Command: ./cmake-build-debug/main_tests
-==31070== 
-==31070== 
-==31070== HEAP SUMMARY:
-==31070==     in use at exit: 0 bytes in 0 blocks
-==31070==   total heap usage: 173,357 allocs, 173,357 frees, 5,543,104 bytes allocated
-==31070== 
-==31070== All heap blocks were freed -- no leaks are possible
-==31070== 
-==31070== For counts of detected and suppressed errors, rerun with: -v
-==31070== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29223== Memcheck, a memory error detector
+==29223== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29223== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29223== Command: ./cmake-build-debug/main_tests
+==29223== 
+==29223== 
+==29223== HEAP SUMMARY:
+==29223==     in use at exit: 0 bytes in 0 blocks
+==29223==   total heap usage: 164,977 allocs, 164,977 frees, 5,503,732 bytes allocated
+==29223== 
+==29223== All heap blocks were freed -- no leaks are possible
+==29223== 
+==29223== For counts of detected and suppressed errors, rerun with: -v
+==29223== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 48.txt
 
-==31076== Memcheck, a memory error detector
-==31076== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31076== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31076== Command: ./cmake-build-debug/main_tests
-==31076== 
-==31076== 
-==31076== HEAP SUMMARY:
-==31076==     in use at exit: 0 bytes in 0 blocks
-==31076==   total heap usage: 79,374 allocs, 79,374 frees, 2,460,676 bytes allocated
-==31076== 
-==31076== All heap blocks were freed -- no leaks are possible
-==31076== 
-==31076== For counts of detected and suppressed errors, rerun with: -v
-==31076== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29229== Memcheck, a memory error detector
+==29229== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29229== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29229== Command: ./cmake-build-debug/main_tests
+==29229== 
+==29229== 
+==29229== HEAP SUMMARY:
+==29229==     in use at exit: 0 bytes in 0 blocks
+==29229==   total heap usage: 76,740 allocs, 76,740 frees, 2,451,680 bytes allocated
+==29229== 
+==29229== All heap blocks were freed -- no leaks are possible
+==29229== 
+==29229== For counts of detected and suppressed errors, rerun with: -v
+==29229== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 49.txt
 
-==31082== Memcheck, a memory error detector
-==31082== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31082== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31082== Command: ./cmake-build-debug/main_tests
-==31082== 
-==31082== 
-==31082== HEAP SUMMARY:
-==31082==     in use at exit: 0 bytes in 0 blocks
-==31082==   total heap usage: 224,953 allocs, 224,953 frees, 7,709,524 bytes allocated
-==31082== 
-==31082== All heap blocks were freed -- no leaks are possible
-==31082== 
-==31082== For counts of detected and suppressed errors, rerun with: -v
-==31082== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29235== Memcheck, a memory error detector
+==29235== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29235== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29235== Command: ./cmake-build-debug/main_tests
+==29235== 
+==29235== 
+==29235== HEAP SUMMARY:
+==29235==     in use at exit: 0 bytes in 0 blocks
+==29235==   total heap usage: 216,023 allocs, 216,023 frees, 7,676,268 bytes allocated
+==29235== 
+==29235== All heap blocks were freed -- no leaks are possible
+==29235== 
+==29235== For counts of detected and suppressed errors, rerun with: -v
+==29235== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 5.txt
 
-==31088== Memcheck, a memory error detector
-==31088== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31088== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31088== Command: ./cmake-build-debug/main_tests
-==31088== 
-==31088== 
-==31088== HEAP SUMMARY:
-==31088==     in use at exit: 0 bytes in 0 blocks
-==31088==   total heap usage: 42,340 allocs, 42,340 frees, 1,273,028 bytes allocated
-==31088== 
-==31088== All heap blocks were freed -- no leaks are possible
-==31088== 
-==31088== For counts of detected and suppressed errors, rerun with: -v
-==31088== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29241== Memcheck, a memory error detector
+==29241== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29241== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29241== Command: ./cmake-build-debug/main_tests
+==29241== 
+==29241== 
+==29241== HEAP SUMMARY:
+==29241==     in use at exit: 0 bytes in 0 blocks
+==29241==   total heap usage: 40,492 allocs, 40,492 frees, 1,265,636 bytes allocated
+==29241== 
+==29241== All heap blocks were freed -- no leaks are possible
+==29241== 
+==29241== For counts of detected and suppressed errors, rerun with: -v
+==29241== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 50.txt
 
-==31094== Memcheck, a memory error detector
-==31094== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31094== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31094== Command: ./cmake-build-debug/main_tests
-==31094== 
-==31094== 
-==31094== HEAP SUMMARY:
-==31094==     in use at exit: 0 bytes in 0 blocks
-==31094==   total heap usage: 126,746 allocs, 126,746 frees, 3,820,288 bytes allocated
-==31094== 
-==31094== All heap blocks were freed -- no leaks are possible
-==31094== 
-==31094== For counts of detected and suppressed errors, rerun with: -v
-==31094== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29247== Memcheck, a memory error detector
+==29247== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29247== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29247== Command: ./cmake-build-debug/main_tests
+==29247== 
+==29247== 
+==29247== HEAP SUMMARY:
+==29247==     in use at exit: 0 bytes in 0 blocks
+==29247==   total heap usage: 121,513 allocs, 121,513 frees, 3,802,436 bytes allocated
+==29247== 
+==29247== All heap blocks were freed -- no leaks are possible
+==29247== 
+==29247== For counts of detected and suppressed errors, rerun with: -v
+==29247== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 51.txt
 
-==31100== Memcheck, a memory error detector
-==31100== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31100== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31100== Command: ./cmake-build-debug/main_tests
-==31100== 
-==31100== 
-==31100== HEAP SUMMARY:
-==31100==     in use at exit: 0 bytes in 0 blocks
-==31100==   total heap usage: 70,831 allocs, 70,831 frees, 2,152,716 bytes allocated
-==31100== 
-==31100== All heap blocks were freed -- no leaks are possible
-==31100== 
-==31100== For counts of detected and suppressed errors, rerun with: -v
-==31100== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29253== Memcheck, a memory error detector
+==29253== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29253== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29253== Command: ./cmake-build-debug/main_tests
+==29253== 
+==29253== 
+==29253== HEAP SUMMARY:
+==29253==     in use at exit: 0 bytes in 0 blocks
+==29253==   total heap usage: 68,006 allocs, 68,006 frees, 2,141,416 bytes allocated
+==29253== 
+==29253== All heap blocks were freed -- no leaks are possible
+==29253== 
+==29253== For counts of detected and suppressed errors, rerun with: -v
+==29253== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 52.txt
 
-==31106== Memcheck, a memory error detector
-==31106== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31106== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31106== Command: ./cmake-build-debug/main_tests
-==31106== 
-==31106== 
-==31106== HEAP SUMMARY:
-==31106==     in use at exit: 0 bytes in 0 blocks
-==31106==   total heap usage: 120,385 allocs, 120,385 frees, 3,858,672 bytes allocated
-==31106== 
-==31106== All heap blocks were freed -- no leaks are possible
-==31106== 
-==31106== For counts of detected and suppressed errors, rerun with: -v
-==31106== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29259== Memcheck, a memory error detector
+==29259== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29259== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29259== Command: ./cmake-build-debug/main_tests
+==29259== 
+==29259== 
+==29259== HEAP SUMMARY:
+==29259==     in use at exit: 0 bytes in 0 blocks
+==29259==   total heap usage: 116,508 allocs, 116,508 frees, 3,845,628 bytes allocated
+==29259== 
+==29259== All heap blocks were freed -- no leaks are possible
+==29259== 
+==29259== For counts of detected and suppressed errors, rerun with: -v
+==29259== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 53.txt
 
-==31112== Memcheck, a memory error detector
-==31112== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31112== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31112== Command: ./cmake-build-debug/main_tests
-==31112== 
-==31112== 
-==31112== HEAP SUMMARY:
-==31112==     in use at exit: 0 bytes in 0 blocks
-==31112==   total heap usage: 55,504 allocs, 55,504 frees, 1,733,204 bytes allocated
-==31112== 
-==31112== All heap blocks were freed -- no leaks are possible
-==31112== 
-==31112== For counts of detected and suppressed errors, rerun with: -v
-==31112== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29265== Memcheck, a memory error detector
+==29265== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29265== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29265== Command: ./cmake-build-debug/main_tests
+==29265== 
+==29265== 
+==29265== HEAP SUMMARY:
+==29265==     in use at exit: 0 bytes in 0 blocks
+==29265==   total heap usage: 53,374 allocs, 53,374 frees, 1,729,304 bytes allocated
+==29265== 
+==29265== All heap blocks were freed -- no leaks are possible
+==29265== 
+==29265== For counts of detected and suppressed errors, rerun with: -v
+==29265== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 54.txt
 
-==31118== Memcheck, a memory error detector
-==31118== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31118== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31118== Command: ./cmake-build-debug/main_tests
-==31118== 
-==31118== 
-==31118== HEAP SUMMARY:
-==31118==     in use at exit: 0 bytes in 0 blocks
-==31118==   total heap usage: 58,799 allocs, 58,799 frees, 1,809,836 bytes allocated
-==31118== 
-==31118== All heap blocks were freed -- no leaks are possible
-==31118== 
-==31118== For counts of detected and suppressed errors, rerun with: -v
-==31118== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29271== Memcheck, a memory error detector
+==29271== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29271== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29271== Command: ./cmake-build-debug/main_tests
+==29271== 
+==29271== 
+==29271== HEAP SUMMARY:
+==29271==     in use at exit: 0 bytes in 0 blocks
+==29271==   total heap usage: 56,668 allocs, 56,668 frees, 1,801,312 bytes allocated
+==29271== 
+==29271== All heap blocks were freed -- no leaks are possible
+==29271== 
+==29271== For counts of detected and suppressed errors, rerun with: -v
+==29271== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 55.txt
 
-==31124== Memcheck, a memory error detector
-==31124== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31124== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31124== Command: ./cmake-build-debug/main_tests
-==31124== 
-==31124== 
-==31124== HEAP SUMMARY:
-==31124==     in use at exit: 0 bytes in 0 blocks
-==31124==   total heap usage: 322,368 allocs, 322,368 frees, 11,477,152 bytes allocated
-==31124== 
-==31124== All heap blocks were freed -- no leaks are possible
-==31124== 
-==31124== For counts of detected and suppressed errors, rerun with: -v
-==31124== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29277== Memcheck, a memory error detector
+==29277== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29277== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29277== Command: ./cmake-build-debug/main_tests
+==29277== 
+==29277== 
+==29277== HEAP SUMMARY:
+==29277==     in use at exit: 0 bytes in 0 blocks
+==29277==   total heap usage: 307,492 allocs, 307,492 frees, 11,418,880 bytes allocated
+==29277== 
+==29277== All heap blocks were freed -- no leaks are possible
+==29277== 
+==29277== For counts of detected and suppressed errors, rerun with: -v
+==29277== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 56.txt
 
-==31130== Memcheck, a memory error detector
-==31130== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31130== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31130== Command: ./cmake-build-debug/main_tests
-==31130== 
-==31130== 
-==31130== HEAP SUMMARY:
-==31130==     in use at exit: 0 bytes in 0 blocks
-==31130==   total heap usage: 73,989 allocs, 73,989 frees, 2,233,212 bytes allocated
-==31130== 
-==31130== All heap blocks were freed -- no leaks are possible
-==31130== 
-==31130== For counts of detected and suppressed errors, rerun with: -v
-==31130== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29283== Memcheck, a memory error detector
+==29283== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29283== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29283== Command: ./cmake-build-debug/main_tests
+==29283== 
+==29283== 
+==29283== HEAP SUMMARY:
+==29283==     in use at exit: 0 bytes in 0 blocks
+==29283==   total heap usage: 70,082 allocs, 70,082 frees, 2,217,584 bytes allocated
+==29283== 
+==29283== All heap blocks were freed -- no leaks are possible
+==29283== 
+==29283== For counts of detected and suppressed errors, rerun with: -v
+==29283== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 57.txt
 
-==31136== Memcheck, a memory error detector
-==31136== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31136== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31136== Command: ./cmake-build-debug/main_tests
-==31136== 
-==31136== 
-==31136== HEAP SUMMARY:
-==31136==     in use at exit: 0 bytes in 0 blocks
-==31136==   total heap usage: 4,427 allocs, 4,427 frees, 205,004 bytes allocated
-==31136== 
-==31136== All heap blocks were freed -- no leaks are possible
-==31136== 
-==31136== For counts of detected and suppressed errors, rerun with: -v
-==31136== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29289== Memcheck, a memory error detector
+==29289== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29289== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29289== Command: ./cmake-build-debug/main_tests
+==29289== 
+==29289== 
+==29289== HEAP SUMMARY:
+==29289==     in use at exit: 0 bytes in 0 blocks
+==29289==   total heap usage: 4,253 allocs, 4,253 frees, 203,692 bytes allocated
+==29289== 
+==29289== All heap blocks were freed -- no leaks are possible
+==29289== 
+==29289== For counts of detected and suppressed errors, rerun with: -v
+==29289== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 58.txt
 
-==31142== Memcheck, a memory error detector
-==31142== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31142== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31142== Command: ./cmake-build-debug/main_tests
-==31142== 
-==31142== 
-==31142== HEAP SUMMARY:
-==31142==     in use at exit: 0 bytes in 0 blocks
-==31142==   total heap usage: 12,869 allocs, 12,869 frees, 420,340 bytes allocated
-==31142== 
-==31142== All heap blocks were freed -- no leaks are possible
-==31142== 
-==31142== For counts of detected and suppressed errors, rerun with: -v
-==31142== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29295== Memcheck, a memory error detector
+==29295== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29295== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29295== Command: ./cmake-build-debug/main_tests
+==29295== 
+==29295== 
+==29295== HEAP SUMMARY:
+==29295==     in use at exit: 0 bytes in 0 blocks
+==29295==   total heap usage: 12,300 allocs, 12,300 frees, 418,064 bytes allocated
+==29295== 
+==29295== All heap blocks were freed -- no leaks are possible
+==29295== 
+==29295== For counts of detected and suppressed errors, rerun with: -v
+==29295== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 59.txt
 
-==31148== Memcheck, a memory error detector
-==31148== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31148== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31148== Command: ./cmake-build-debug/main_tests
-==31148== 
-==31148== 
-==31148== HEAP SUMMARY:
-==31148==     in use at exit: 0 bytes in 0 blocks
-==31148==   total heap usage: 3,082 allocs, 3,082 frees, 169,892 bytes allocated
-==31148== 
-==31148== All heap blocks were freed -- no leaks are possible
-==31148== 
-==31148== For counts of detected and suppressed errors, rerun with: -v
-==31148== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29301== Memcheck, a memory error detector
+==29301== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29301== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29301== Command: ./cmake-build-debug/main_tests
+==29301== 
+==29301== 
+==29301== HEAP SUMMARY:
+==29301==     in use at exit: 0 bytes in 0 blocks
+==29301==   total heap usage: 3,082 allocs, 3,082 frees, 169,892 bytes allocated
+==29301== 
+==29301== All heap blocks were freed -- no leaks are possible
+==29301== 
+==29301== For counts of detected and suppressed errors, rerun with: -v
+==29301== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 6.txt
 
-==31154== Memcheck, a memory error detector
-==31154== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31154== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31154== Command: ./cmake-build-debug/main_tests
-==31154== 
-==31154== 
-==31154== HEAP SUMMARY:
-==31154==     in use at exit: 0 bytes in 0 blocks
-==31154==   total heap usage: 108,863 allocs, 108,863 frees, 3,566,396 bytes allocated
-==31154== 
-==31154== All heap blocks were freed -- no leaks are possible
-==31154== 
-==31154== For counts of detected and suppressed errors, rerun with: -v
-==31154== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29307== Memcheck, a memory error detector
+==29307== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29307== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29307== Command: ./cmake-build-debug/main_tests
+==29307== 
+==29307== 
+==29307== HEAP SUMMARY:
+==29307==     in use at exit: 0 bytes in 0 blocks
+==29307==   total heap usage: 105,760 allocs, 105,760 frees, 3,553,984 bytes allocated
+==29307== 
+==29307== All heap blocks were freed -- no leaks are possible
+==29307== 
+==29307== For counts of detected and suppressed errors, rerun with: -v
+==29307== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 60.txt
 
-==31160== Memcheck, a memory error detector
-==31160== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31160== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31160== Command: ./cmake-build-debug/main_tests
-==31160== 
-==31160== 
-==31160== HEAP SUMMARY:
-==31160==     in use at exit: 0 bytes in 0 blocks
-==31160==   total heap usage: 174,397 allocs, 174,397 frees, 5,766,392 bytes allocated
-==31160== 
-==31160== All heap blocks were freed -- no leaks are possible
-==31160== 
-==31160== For counts of detected and suppressed errors, rerun with: -v
-==31160== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29313== Memcheck, a memory error detector
+==29313== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29313== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29313== Command: ./cmake-build-debug/main_tests
+==29313== 
+==29313== 
+==29313== HEAP SUMMARY:
+==29313==     in use at exit: 0 bytes in 0 blocks
+==29313==   total heap usage: 167,194 allocs, 167,194 frees, 5,738,196 bytes allocated
+==29313== 
+==29313== All heap blocks were freed -- no leaks are possible
+==29313== 
+==29313== For counts of detected and suppressed errors, rerun with: -v
+==29313== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 61.txt
 
-==31166== Memcheck, a memory error detector
-==31166== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31166== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31166== Command: ./cmake-build-debug/main_tests
-==31166== 
-==31166== 
-==31166== HEAP SUMMARY:
-==31166==     in use at exit: 0 bytes in 0 blocks
-==31166==   total heap usage: 60,780 allocs, 60,780 frees, 1,883,064 bytes allocated
-==31166== 
-==31166== All heap blocks were freed -- no leaks are possible
-==31166== 
-==31166== For counts of detected and suppressed errors, rerun with: -v
-==31166== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29319== Memcheck, a memory error detector
+==29319== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29319== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29319== Command: ./cmake-build-debug/main_tests
+==29319== 
+==29319== 
+==29319== HEAP SUMMARY:
+==29319==     in use at exit: 0 bytes in 0 blocks
+==29319==   total heap usage: 58,374 allocs, 58,374 frees, 1,873,440 bytes allocated
+==29319== 
+==29319== All heap blocks were freed -- no leaks are possible
+==29319== 
+==29319== For counts of detected and suppressed errors, rerun with: -v
+==29319== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 62.txt
 
-==31172== Memcheck, a memory error detector
-==31172== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31172== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31172== Command: ./cmake-build-debug/main_tests
-==31172== 
-==31172== 
-==31172== HEAP SUMMARY:
-==31172==     in use at exit: 0 bytes in 0 blocks
-==31172==   total heap usage: 52,495 allocs, 52,495 frees, 1,569,376 bytes allocated
-==31172== 
-==31172== All heap blocks were freed -- no leaks are possible
-==31172== 
-==31172== For counts of detected and suppressed errors, rerun with: -v
-==31172== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29325== Memcheck, a memory error detector
+==29325== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29325== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29325== Command: ./cmake-build-debug/main_tests
+==29325== 
+==29325== 
+==29325== HEAP SUMMARY:
+==29325==     in use at exit: 0 bytes in 0 blocks
+==29325==   total heap usage: 50,975 allocs, 50,975 frees, 1,561,448 bytes allocated
+==29325== 
+==29325== All heap blocks were freed -- no leaks are possible
+==29325== 
+==29325== For counts of detected and suppressed errors, rerun with: -v
+==29325== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 63.txt
 
-==31178== Memcheck, a memory error detector
-==31178== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31178== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31178== Command: ./cmake-build-debug/main_tests
-==31178== 
-==31178== 
-==31178== HEAP SUMMARY:
-==31178==     in use at exit: 0 bytes in 0 blocks
-==31178==   total heap usage: 25,028 allocs, 25,028 frees, 817,932 bytes allocated
-==31178== 
-==31178== All heap blocks were freed -- no leaks are possible
-==31178== 
-==31178== For counts of detected and suppressed errors, rerun with: -v
-==31178== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29331== Memcheck, a memory error detector
+==29331== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29331== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29331== Command: ./cmake-build-debug/main_tests
+==29331== 
+==29331== 
+==29331== HEAP SUMMARY:
+==29331==     in use at exit: 0 bytes in 0 blocks
+==29331==   total heap usage: 23,907 allocs, 23,907 frees, 813,448 bytes allocated
+==29331== 
+==29331== All heap blocks were freed -- no leaks are possible
+==29331== 
+==29331== For counts of detected and suppressed errors, rerun with: -v
+==29331== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 64.txt
 
-==31184== Memcheck, a memory error detector
-==31184== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31184== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31184== Command: ./cmake-build-debug/main_tests
-==31184== 
-==31184== 
-==31184== HEAP SUMMARY:
-==31184==     in use at exit: 0 bytes in 0 blocks
-==31184==   total heap usage: 37,697 allocs, 37,697 frees, 1,146,844 bytes allocated
-==31184== 
-==31184== All heap blocks were freed -- no leaks are possible
-==31184== 
-==31184== For counts of detected and suppressed errors, rerun with: -v
-==31184== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29337== Memcheck, a memory error detector
+==29337== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29337== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29337== Command: ./cmake-build-debug/main_tests
+==29337== 
+==29337== 
+==29337== HEAP SUMMARY:
+==29337==     in use at exit: 0 bytes in 0 blocks
+==29337==   total heap usage: 36,780 allocs, 36,780 frees, 1,142,560 bytes allocated
+==29337== 
+==29337== All heap blocks were freed -- no leaks are possible
+==29337== 
+==29337== For counts of detected and suppressed errors, rerun with: -v
+==29337== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 65.txt
 
-==31190== Memcheck, a memory error detector
-==31190== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31190== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31190== Command: ./cmake-build-debug/main_tests
-==31190== 
-==31190== 
-==31190== HEAP SUMMARY:
-==31190==     in use at exit: 0 bytes in 0 blocks
-==31190==   total heap usage: 108,242 allocs, 108,242 frees, 3,199,364 bytes allocated
-==31190== 
-==31190== All heap blocks were freed -- no leaks are possible
-==31190== 
-==31190== For counts of detected and suppressed errors, rerun with: -v
-==31190== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29343== Memcheck, a memory error detector
+==29343== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29343== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29343== Command: ./cmake-build-debug/main_tests
+==29343== 
+==29343== 
+==29343== HEAP SUMMARY:
+==29343==     in use at exit: 0 bytes in 0 blocks
+==29343==   total heap usage: 103,514 allocs, 103,514 frees, 3,176,448 bytes allocated
+==29343== 
+==29343== All heap blocks were freed -- no leaks are possible
+==29343== 
+==29343== For counts of detected and suppressed errors, rerun with: -v
+==29343== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 66.txt
 
-==31196== Memcheck, a memory error detector
-==31196== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31196== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31196== Command: ./cmake-build-debug/main_tests
-==31196== 
-==31196== 
-==31196== HEAP SUMMARY:
-==31196==     in use at exit: 0 bytes in 0 blocks
-==31196==   total heap usage: 8,422 allocs, 8,422 frees, 316,740 bytes allocated
-==31196== 
-==31196== All heap blocks were freed -- no leaks are possible
-==31196== 
-==31196== For counts of detected and suppressed errors, rerun with: -v
-==31196== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29349== Memcheck, a memory error detector
+==29349== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29349== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29349== Command: ./cmake-build-debug/main_tests
+==29349== 
+==29349== 
+==29349== HEAP SUMMARY:
+==29349==     in use at exit: 0 bytes in 0 blocks
+==29349==   total heap usage: 8,097 allocs, 8,097 frees, 317,288 bytes allocated
+==29349== 
+==29349== All heap blocks were freed -- no leaks are possible
+==29349== 
+==29349== For counts of detected and suppressed errors, rerun with: -v
+==29349== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 67.txt
 
-==31202== Memcheck, a memory error detector
-==31202== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31202== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31202== Command: ./cmake-build-debug/main_tests
-==31202== 
-==31202== 
-==31202== HEAP SUMMARY:
-==31202==     in use at exit: 0 bytes in 0 blocks
-==31202==   total heap usage: 34,614 allocs, 34,614 frees, 1,077,080 bytes allocated
-==31202== 
-==31202== All heap blocks were freed -- no leaks are possible
-==31202== 
-==31202== For counts of detected and suppressed errors, rerun with: -v
-==31202== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29355== Memcheck, a memory error detector
+==29355== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29355== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29355== Command: ./cmake-build-debug/main_tests
+==29355== 
+==29355== 
+==29355== HEAP SUMMARY:
+==29355==     in use at exit: 0 bytes in 0 blocks
+==29355==   total heap usage: 33,546 allocs, 33,546 frees, 1,072,808 bytes allocated
+==29355== 
+==29355== All heap blocks were freed -- no leaks are possible
+==29355== 
+==29355== For counts of detected and suppressed errors, rerun with: -v
+==29355== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 68.txt
 
-==31208== Memcheck, a memory error detector
-==31208== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31208== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31208== Command: ./cmake-build-debug/main_tests
-==31208== 
-==31208== 
-==31208== HEAP SUMMARY:
-==31208==     in use at exit: 0 bytes in 0 blocks
-==31208==   total heap usage: 81,761 allocs, 81,761 frees, 2,458,060 bytes allocated
-==31208== 
-==31208== All heap blocks were freed -- no leaks are possible
-==31208== 
-==31208== For counts of detected and suppressed errors, rerun with: -v
-==31208== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29361== Memcheck, a memory error detector
+==29361== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29361== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29361== Command: ./cmake-build-debug/main_tests
+==29361== 
+==29361== 
+==29361== HEAP SUMMARY:
+==29361==     in use at exit: 0 bytes in 0 blocks
+==29361==   total heap usage: 78,687 allocs, 78,687 frees, 2,443,916 bytes allocated
+==29361== 
+==29361== All heap blocks were freed -- no leaks are possible
+==29361== 
+==29361== For counts of detected and suppressed errors, rerun with: -v
+==29361== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 69.txt
 
-==31214== Memcheck, a memory error detector
-==31214== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31214== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31214== Command: ./cmake-build-debug/main_tests
-==31214== 
-==31214== 
-==31214== HEAP SUMMARY:
-==31214==     in use at exit: 0 bytes in 0 blocks
-==31214==   total heap usage: 55,959 allocs, 55,959 frees, 1,701,464 bytes allocated
-==31214== 
-==31214== All heap blocks were freed -- no leaks are possible
-==31214== 
-==31214== For counts of detected and suppressed errors, rerun with: -v
-==31214== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29367== Memcheck, a memory error detector
+==29367== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29367== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29367== Command: ./cmake-build-debug/main_tests
+==29367== 
+==29367== 
+==29367== HEAP SUMMARY:
+==29367==     in use at exit: 0 bytes in 0 blocks
+==29367==   total heap usage: 53,726 allocs, 53,726 frees, 1,693,148 bytes allocated
+==29367== 
+==29367== All heap blocks were freed -- no leaks are possible
+==29367== 
+==29367== For counts of detected and suppressed errors, rerun with: -v
+==29367== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 7.txt
 
-==31220== Memcheck, a memory error detector
-==31220== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31220== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31220== Command: ./cmake-build-debug/main_tests
-==31220== 
-==31220== 
-==31220== HEAP SUMMARY:
-==31220==     in use at exit: 0 bytes in 0 blocks
-==31220==   total heap usage: 176,859 allocs, 176,859 frees, 5,988,760 bytes allocated
-==31220== 
-==31220== All heap blocks were freed -- no leaks are possible
-==31220== 
-==31220== For counts of detected and suppressed errors, rerun with: -v
-==31220== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29373== Memcheck, a memory error detector
+==29373== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29373== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29373== Command: ./cmake-build-debug/main_tests
+==29373== 
+==29373== 
+==29373== HEAP SUMMARY:
+==29373==     in use at exit: 0 bytes in 0 blocks
+==29373==   total heap usage: 170,555 allocs, 170,555 frees, 5,961,696 bytes allocated
+==29373== 
+==29373== All heap blocks were freed -- no leaks are possible
+==29373== 
+==29373== For counts of detected and suppressed errors, rerun with: -v
+==29373== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 70.txt
 
-==31226== Memcheck, a memory error detector
-==31226== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31226== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31226== Command: ./cmake-build-debug/main_tests
-==31226== 
-==31226== 
-==31226== HEAP SUMMARY:
-==31226==     in use at exit: 0 bytes in 0 blocks
-==31226==   total heap usage: 473,642 allocs, 473,642 frees, 19,939,616 bytes allocated
-==31226== 
-==31226== All heap blocks were freed -- no leaks are possible
-==31226== 
-==31226== For counts of detected and suppressed errors, rerun with: -v
-==31226== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29379== Memcheck, a memory error detector
+==29379== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29379== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29379== Command: ./cmake-build-debug/main_tests
+==29379== 
+==29379== 
+==29379== HEAP SUMMARY:
+==29379==     in use at exit: 0 bytes in 0 blocks
+==29379==   total heap usage: 451,997 allocs, 451,997 frees, 19,852,420 bytes allocated
+==29379== 
+==29379== All heap blocks were freed -- no leaks are possible
+==29379== 
+==29379== For counts of detected and suppressed errors, rerun with: -v
+==29379== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 71.txt
 
-==31232== Memcheck, a memory error detector
-==31232== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31232== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31232== Command: ./cmake-build-debug/main_tests
-==31232== 
-==31232== 
-==31232== HEAP SUMMARY:
-==31232==     in use at exit: 0 bytes in 0 blocks
-==31232==   total heap usage: 189,160 allocs, 189,160 frees, 6,027,752 bytes allocated
-==31232== 
-==31232== All heap blocks were freed -- no leaks are possible
-==31232== 
-==31232== For counts of detected and suppressed errors, rerun with: -v
-==31232== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29385== Memcheck, a memory error detector
+==29385== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29385== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29385== Command: ./cmake-build-debug/main_tests
+==29385== 
+==29385== 
+==29385== HEAP SUMMARY:
+==29385==     in use at exit: 0 bytes in 0 blocks
+==29385==   total heap usage: 181,885 allocs, 181,885 frees, 5,996,188 bytes allocated
+==29385== 
+==29385== All heap blocks were freed -- no leaks are possible
+==29385== 
+==29385== For counts of detected and suppressed errors, rerun with: -v
+==29385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 72.txt
 
-==31238== Memcheck, a memory error detector
-==31238== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31238== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31238== Command: ./cmake-build-debug/main_tests
-==31238== 
-==31238== 
-==31238== HEAP SUMMARY:
-==31238==     in use at exit: 0 bytes in 0 blocks
-==31238==   total heap usage: 26,690 allocs, 26,690 frees, 871,508 bytes allocated
-==31238== 
-==31238== All heap blocks were freed -- no leaks are possible
-==31238== 
-==31238== For counts of detected and suppressed errors, rerun with: -v
-==31238== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29391== Memcheck, a memory error detector
+==29391== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29391== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29391== Command: ./cmake-build-debug/main_tests
+==29391== 
+==29391== 
+==29391== HEAP SUMMARY:
+==29391==     in use at exit: 0 bytes in 0 blocks
+==29391==   total heap usage: 25,264 allocs, 25,264 frees, 865,804 bytes allocated
+==29391== 
+==29391== All heap blocks were freed -- no leaks are possible
+==29391== 
+==29391== For counts of detected and suppressed errors, rerun with: -v
+==29391== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 73.txt
 
-==31245== Memcheck, a memory error detector
-==31245== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31245== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31245== Command: ./cmake-build-debug/main_tests
-==31245== 
-==31245== 
-==31245== HEAP SUMMARY:
-==31245==     in use at exit: 0 bytes in 0 blocks
-==31245==   total heap usage: 12,314 allocs, 12,314 frees, 410,968 bytes allocated
-==31245== 
-==31245== All heap blocks were freed -- no leaks are possible
-==31245== 
-==31245== For counts of detected and suppressed errors, rerun with: -v
-==31245== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29397== Memcheck, a memory error detector
+==29397== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29397== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29397== Command: ./cmake-build-debug/main_tests
+==29397== 
+==29397== 
+==29397== HEAP SUMMARY:
+==29397==     in use at exit: 0 bytes in 0 blocks
+==29397==   total heap usage: 11,582 allocs, 11,582 frees, 408,040 bytes allocated
+==29397== 
+==29397== All heap blocks were freed -- no leaks are possible
+==29397== 
+==29397== For counts of detected and suppressed errors, rerun with: -v
+==29397== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 74.txt
 
-==31251== Memcheck, a memory error detector
-==31251== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31251== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31251== Command: ./cmake-build-debug/main_tests
-==31251== 
-==31251== 
-==31251== HEAP SUMMARY:
-==31251==     in use at exit: 0 bytes in 0 blocks
-==31251==   total heap usage: 60,522 allocs, 60,522 frees, 1,784,888 bytes allocated
-==31251== 
-==31251== All heap blocks were freed -- no leaks are possible
-==31251== 
-==31251== For counts of detected and suppressed errors, rerun with: -v
-==31251== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29403== Memcheck, a memory error detector
+==29403== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29403== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29403== Command: ./cmake-build-debug/main_tests
+==29403== 
+==29403== 
+==29403== HEAP SUMMARY:
+==29403==     in use at exit: 0 bytes in 0 blocks
+==29403==   total heap usage: 57,727 allocs, 57,727 frees, 1,774,632 bytes allocated
+==29403== 
+==29403== All heap blocks were freed -- no leaks are possible
+==29403== 
+==29403== For counts of detected and suppressed errors, rerun with: -v
+==29403== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 75.txt
 
-==31257== Memcheck, a memory error detector
-==31257== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31257== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31257== Command: ./cmake-build-debug/main_tests
-==31257== 
-==31257== 
-==31257== HEAP SUMMARY:
-==31257==     in use at exit: 0 bytes in 0 blocks
-==31257==   total heap usage: 47,040 allocs, 47,040 frees, 1,417,444 bytes allocated
-==31257== 
-==31257== All heap blocks were freed -- no leaks are possible
-==31257== 
-==31257== For counts of detected and suppressed errors, rerun with: -v
-==31257== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29409== Memcheck, a memory error detector
+==29409== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29409== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29409== Command: ./cmake-build-debug/main_tests
+==29409== 
+==29409== 
+==29409== HEAP SUMMARY:
+==29409==     in use at exit: 0 bytes in 0 blocks
+==29409==   total heap usage: 44,552 allocs, 44,552 frees, 1,408,108 bytes allocated
+==29409== 
+==29409== All heap blocks were freed -- no leaks are possible
+==29409== 
+==29409== For counts of detected and suppressed errors, rerun with: -v
+==29409== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 76.txt
 
-==31263== Memcheck, a memory error detector
-==31263== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31263== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31263== Command: ./cmake-build-debug/main_tests
-==31263== 
-==31263== 
-==31263== HEAP SUMMARY:
-==31263==     in use at exit: 0 bytes in 0 blocks
-==31263==   total heap usage: 13,302 allocs, 13,302 frees, 482,232 bytes allocated
-==31263== 
-==31263== All heap blocks were freed -- no leaks are possible
-==31263== 
-==31263== For counts of detected and suppressed errors, rerun with: -v
-==31263== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29415== Memcheck, a memory error detector
+==29415== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29415== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29415== Command: ./cmake-build-debug/main_tests
+==29415== 
+==29415== 
+==29415== HEAP SUMMARY:
+==29415==     in use at exit: 0 bytes in 0 blocks
+==29415==   total heap usage: 13,103 allocs, 13,103 frees, 481,436 bytes allocated
+==29415== 
+==29415== All heap blocks were freed -- no leaks are possible
+==29415== 
+==29415== For counts of detected and suppressed errors, rerun with: -v
+==29415== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 77.txt
 
-==31269== Memcheck, a memory error detector
-==31269== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31269== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31269== Command: ./cmake-build-debug/main_tests
-==31269== 
-==31269== 
-==31269== HEAP SUMMARY:
-==31269==     in use at exit: 0 bytes in 0 blocks
-==31269==   total heap usage: 80,253 allocs, 80,253 frees, 2,353,324 bytes allocated
-==31269== 
-==31269== All heap blocks were freed -- no leaks are possible
-==31269== 
-==31269== For counts of detected and suppressed errors, rerun with: -v
-==31269== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29421== Memcheck, a memory error detector
+==29421== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29421== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29421== Command: ./cmake-build-debug/main_tests
+==29421== 
+==29421== 
+==29421== HEAP SUMMARY:
+==29421==     in use at exit: 0 bytes in 0 blocks
+==29421==   total heap usage: 76,946 allocs, 76,946 frees, 2,341,328 bytes allocated
+==29421== 
+==29421== All heap blocks were freed -- no leaks are possible
+==29421== 
+==29421== For counts of detected and suppressed errors, rerun with: -v
+==29421== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 78.txt
 
-==31275== Memcheck, a memory error detector
-==31275== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31275== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31275== Command: ./cmake-build-debug/main_tests
-==31275== 
-==31275== 
-==31275== HEAP SUMMARY:
-==31275==     in use at exit: 0 bytes in 0 blocks
-==31275==   total heap usage: 85,275 allocs, 85,275 frees, 2,710,152 bytes allocated
-==31275== 
-==31275== All heap blocks were freed -- no leaks are possible
-==31275== 
-==31275== For counts of detected and suppressed errors, rerun with: -v
-==31275== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29427== Memcheck, a memory error detector
+==29427== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29427== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29427== Command: ./cmake-build-debug/main_tests
+==29427== 
+==29427== 
+==29427== HEAP SUMMARY:
+==29427==     in use at exit: 0 bytes in 0 blocks
+==29427==   total heap usage: 83,128 allocs, 83,128 frees, 2,702,796 bytes allocated
+==29427== 
+==29427== All heap blocks were freed -- no leaks are possible
+==29427== 
+==29427== For counts of detected and suppressed errors, rerun with: -v
+==29427== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 79.txt
 
-==31281== Memcheck, a memory error detector
-==31281== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31281== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31281== Command: ./cmake-build-debug/main_tests
-==31281== 
-==31281== 
-==31281== HEAP SUMMARY:
-==31281==     in use at exit: 0 bytes in 0 blocks
-==31281==   total heap usage: 66,697 allocs, 66,697 frees, 2,155,044 bytes allocated
-==31281== 
-==31281== All heap blocks were freed -- no leaks are possible
-==31281== 
-==31281== For counts of detected and suppressed errors, rerun with: -v
-==31281== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29433== Memcheck, a memory error detector
+==29433== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29433== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29433== Command: ./cmake-build-debug/main_tests
+==29433== 
+==29433== 
+==29433== HEAP SUMMARY:
+==29433==     in use at exit: 0 bytes in 0 blocks
+==29433==   total heap usage: 64,798 allocs, 64,798 frees, 2,147,448 bytes allocated
+==29433== 
+==29433== All heap blocks were freed -- no leaks are possible
+==29433== 
+==29433== For counts of detected and suppressed errors, rerun with: -v
+==29433== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 8.txt
 
-==31287== Memcheck, a memory error detector
-==31287== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31287== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31287== Command: ./cmake-build-debug/main_tests
-==31287== 
-==31287== 
-==31287== HEAP SUMMARY:
-==31287==     in use at exit: 0 bytes in 0 blocks
-==31287==   total heap usage: 142,151 allocs, 142,151 frees, 4,443,560 bytes allocated
-==31287== 
-==31287== All heap blocks were freed -- no leaks are possible
-==31287== 
-==31287== For counts of detected and suppressed errors, rerun with: -v
-==31287== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29439== Memcheck, a memory error detector
+==29439== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29439== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29439== Command: ./cmake-build-debug/main_tests
+==29439== 
+==29439== 
+==29439== HEAP SUMMARY:
+==29439==     in use at exit: 0 bytes in 0 blocks
+==29439==   total heap usage: 135,966 allocs, 135,966 frees, 4,418,820 bytes allocated
+==29439== 
+==29439== All heap blocks were freed -- no leaks are possible
+==29439== 
+==29439== For counts of detected and suppressed errors, rerun with: -v
+==29439== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 80.txt
 
-==31293== Memcheck, a memory error detector
-==31293== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31293== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31293== Command: ./cmake-build-debug/main_tests
-==31293== 
-==31293== 
-==31293== HEAP SUMMARY:
-==31293==     in use at exit: 0 bytes in 0 blocks
-==31293==   total heap usage: 202,558 allocs, 202,558 frees, 6,273,308 bytes allocated
-==31293== 
-==31293== All heap blocks were freed -- no leaks are possible
-==31293== 
-==31293== For counts of detected and suppressed errors, rerun with: -v
-==31293== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29445== Memcheck, a memory error detector
+==29445== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29445== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29445== Command: ./cmake-build-debug/main_tests
+==29445== 
+==29445== 
+==29445== HEAP SUMMARY:
+==29445==     in use at exit: 0 bytes in 0 blocks
+==29445==   total heap usage: 193,876 allocs, 193,876 frees, 6,238,272 bytes allocated
+==29445== 
+==29445== All heap blocks were freed -- no leaks are possible
+==29445== 
+==29445== For counts of detected and suppressed errors, rerun with: -v
+==29445== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 81.txt
 
-==31299== Memcheck, a memory error detector
-==31299== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31299== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31299== Command: ./cmake-build-debug/main_tests
-==31299== 
-==31299== 
-==31299== HEAP SUMMARY:
-==31299==     in use at exit: 0 bytes in 0 blocks
-==31299==   total heap usage: 29,659 allocs, 29,659 frees, 905,580 bytes allocated
-==31299== 
-==31299== All heap blocks were freed -- no leaks are possible
-==31299== 
-==31299== For counts of detected and suppressed errors, rerun with: -v
-==31299== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29451== Memcheck, a memory error detector
+==29451== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29451== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29451== Command: ./cmake-build-debug/main_tests
+==29451== 
+==29451== 
+==29451== HEAP SUMMARY:
+==29451==     in use at exit: 0 bytes in 0 blocks
+==29451==   total heap usage: 28,673 allocs, 28,673 frees, 901,636 bytes allocated
+==29451== 
+==29451== All heap blocks were freed -- no leaks are possible
+==29451== 
+==29451== For counts of detected and suppressed errors, rerun with: -v
+==29451== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 82.txt
 
-==31306== Memcheck, a memory error detector
-==31306== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31306== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31306== Command: ./cmake-build-debug/main_tests
-==31306== 
-==31306== 
-==31306== HEAP SUMMARY:
-==31306==     in use at exit: 0 bytes in 0 blocks
-==31306==   total heap usage: 18,559 allocs, 18,559 frees, 610,316 bytes allocated
-==31306== 
-==31306== All heap blocks were freed -- no leaks are possible
-==31306== 
-==31306== For counts of detected and suppressed errors, rerun with: -v
-==31306== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29457== Memcheck, a memory error detector
+==29457== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29457== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29457== Command: ./cmake-build-debug/main_tests
+==29457== 
+==29457== 
+==29457== HEAP SUMMARY:
+==29457==     in use at exit: 0 bytes in 0 blocks
+==29457==   total heap usage: 18,002 allocs, 18,002 frees, 608,088 bytes allocated
+==29457== 
+==29457== All heap blocks were freed -- no leaks are possible
+==29457== 
+==29457== For counts of detected and suppressed errors, rerun with: -v
+==29457== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 83.txt
 
-==31312== Memcheck, a memory error detector
-==31312== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31312== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31312== Command: ./cmake-build-debug/main_tests
-==31312== 
-==31312== 
-==31312== HEAP SUMMARY:
-==31312==     in use at exit: 0 bytes in 0 blocks
-==31312==   total heap usage: 58,937 allocs, 58,937 frees, 1,787,384 bytes allocated
-==31312== 
-==31312== All heap blocks were freed -- no leaks are possible
-==31312== 
-==31312== For counts of detected and suppressed errors, rerun with: -v
-==31312== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29463== Memcheck, a memory error detector
+==29463== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29463== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29463== Command: ./cmake-build-debug/main_tests
+==29463== 
+==29463== 
+==29463== HEAP SUMMARY:
+==29463==     in use at exit: 0 bytes in 0 blocks
+==29463==   total heap usage: 55,946 allocs, 55,946 frees, 1,775,420 bytes allocated
+==29463== 
+==29463== All heap blocks were freed -- no leaks are possible
+==29463== 
+==29463== For counts of detected and suppressed errors, rerun with: -v
+==29463== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 84.txt
 
-==31318== Memcheck, a memory error detector
-==31318== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31318== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31318== Command: ./cmake-build-debug/main_tests
-==31318== 
-==31318== 
-==31318== HEAP SUMMARY:
-==31318==     in use at exit: 0 bytes in 0 blocks
-==31318==   total heap usage: 238,594 allocs, 238,594 frees, 8,047,976 bytes allocated
-==31318== 
-==31318== All heap blocks were freed -- no leaks are possible
-==31318== 
-==31318== For counts of detected and suppressed errors, rerun with: -v
-==31318== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29469== Memcheck, a memory error detector
+==29469== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29469== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29469== Command: ./cmake-build-debug/main_tests
+==29469== 
+==29469== 
+==29469== HEAP SUMMARY:
+==29469==     in use at exit: 0 bytes in 0 blocks
+==29469==   total heap usage: 228,650 allocs, 228,650 frees, 8,010,664 bytes allocated
+==29469== 
+==29469== All heap blocks were freed -- no leaks are possible
+==29469== 
+==29469== For counts of detected and suppressed errors, rerun with: -v
+==29469== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 85.txt
 
-==31324== Memcheck, a memory error detector
-==31324== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31324== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31324== Command: ./cmake-build-debug/main_tests
-==31324== 
-==31324== 
-==31324== HEAP SUMMARY:
-==31324==     in use at exit: 0 bytes in 0 blocks
-==31324==   total heap usage: 36,966 allocs, 36,966 frees, 1,096,156 bytes allocated
-==31324== 
-==31324== All heap blocks were freed -- no leaks are possible
-==31324== 
-==31324== For counts of detected and suppressed errors, rerun with: -v
-==31324== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29475== Memcheck, a memory error detector
+==29475== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29475== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29475== Command: ./cmake-build-debug/main_tests
+==29475== 
+==29475== 
+==29475== HEAP SUMMARY:
+==29475==     in use at exit: 0 bytes in 0 blocks
+==29475==   total heap usage: 35,597 allocs, 35,597 frees, 1,090,988 bytes allocated
+==29475== 
+==29475== All heap blocks were freed -- no leaks are possible
+==29475== 
+==29475== For counts of detected and suppressed errors, rerun with: -v
+==29475== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 86.txt
 
-==31330== Memcheck, a memory error detector
-==31330== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31330== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31330== Command: ./cmake-build-debug/main_tests
-==31330== 
-==31330== 
-==31330== HEAP SUMMARY:
-==31330==     in use at exit: 0 bytes in 0 blocks
-==31330==   total heap usage: 1,899 allocs, 1,899 frees, 136,256 bytes allocated
-==31330== 
-==31330== All heap blocks were freed -- no leaks are possible
-==31330== 
-==31330== For counts of detected and suppressed errors, rerun with: -v
-==31330== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29481== Memcheck, a memory error detector
+==29481== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29481== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29481== Command: ./cmake-build-debug/main_tests
+==29481== 
+==29481== 
+==29481== HEAP SUMMARY:
+==29481==     in use at exit: 0 bytes in 0 blocks
+==29481==   total heap usage: 1,899 allocs, 1,899 frees, 136,256 bytes allocated
+==29481== 
+==29481== All heap blocks were freed -- no leaks are possible
+==29481== 
+==29481== For counts of detected and suppressed errors, rerun with: -v
+==29481== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 87.txt
 
-==31336== Memcheck, a memory error detector
-==31336== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31336== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31336== Command: ./cmake-build-debug/main_tests
-==31336== 
-==31336== 
-==31336== HEAP SUMMARY:
-==31336==     in use at exit: 0 bytes in 0 blocks
-==31336==   total heap usage: 222,486 allocs, 222,486 frees, 7,300,580 bytes allocated
-==31336== 
-==31336== All heap blocks were freed -- no leaks are possible
-==31336== 
-==31336== For counts of detected and suppressed errors, rerun with: -v
-==31336== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29487== Memcheck, a memory error detector
+==29487== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29487== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29487== Command: ./cmake-build-debug/main_tests
+==29487== 
+==29487== 
+==29487== HEAP SUMMARY:
+==29487==     in use at exit: 0 bytes in 0 blocks
+==29487==   total heap usage: 212,367 allocs, 212,367 frees, 7,260,104 bytes allocated
+==29487== 
+==29487== All heap blocks were freed -- no leaks are possible
+==29487== 
+==29487== For counts of detected and suppressed errors, rerun with: -v
+==29487== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 88.txt
 
-==31342== Memcheck, a memory error detector
-==31342== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31342== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31342== Command: ./cmake-build-debug/main_tests
-==31342== 
-==31342== 
-==31342== HEAP SUMMARY:
-==31342==     in use at exit: 0 bytes in 0 blocks
-==31342==   total heap usage: 106,167 allocs, 106,167 frees, 3,283,660 bytes allocated
-==31342== 
-==31342== All heap blocks were freed -- no leaks are possible
-==31342== 
-==31342== For counts of detected and suppressed errors, rerun with: -v
-==31342== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29493== Memcheck, a memory error detector
+==29493== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29493== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29493== Command: ./cmake-build-debug/main_tests
+==29493== 
+==29493== 
+==29493== HEAP SUMMARY:
+==29493==     in use at exit: 0 bytes in 0 blocks
+==29493==   total heap usage: 101,389 allocs, 101,389 frees, 3,264,548 bytes allocated
+==29493== 
+==29493== All heap blocks were freed -- no leaks are possible
+==29493== 
+==29493== For counts of detected and suppressed errors, rerun with: -v
+==29493== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 89.txt
 
-==31348== Memcheck, a memory error detector
-==31348== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31348== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31348== Command: ./cmake-build-debug/main_tests
-==31348== 
-==31348== 
-==31348== HEAP SUMMARY:
-==31348==     in use at exit: 0 bytes in 0 blocks
-==31348==   total heap usage: 17,876 allocs, 17,876 frees, 618,496 bytes allocated
-==31348== 
-==31348== All heap blocks were freed -- no leaks are possible
-==31348== 
-==31348== For counts of detected and suppressed errors, rerun with: -v
-==31348== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29499== Memcheck, a memory error detector
+==29499== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29499== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29499== Command: ./cmake-build-debug/main_tests
+==29499== 
+==29499== 
+==29499== HEAP SUMMARY:
+==29499==     in use at exit: 0 bytes in 0 blocks
+==29499==   total heap usage: 17,518 allocs, 17,518 frees, 617,064 bytes allocated
+==29499== 
+==29499== All heap blocks were freed -- no leaks are possible
+==29499== 
+==29499== For counts of detected and suppressed errors, rerun with: -v
+==29499== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 9.txt
 
-==31354== Memcheck, a memory error detector
-==31354== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31354== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31354== Command: ./cmake-build-debug/main_tests
-==31354== 
-==31354== 
-==31354== HEAP SUMMARY:
-==31354==     in use at exit: 0 bytes in 0 blocks
-==31354==   total heap usage: 119,626 allocs, 119,626 frees, 3,731,268 bytes allocated
-==31354== 
-==31354== All heap blocks were freed -- no leaks are possible
-==31354== 
-==31354== For counts of detected and suppressed errors, rerun with: -v
-==31354== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29505== Memcheck, a memory error detector
+==29505== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29505== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29505== Command: ./cmake-build-debug/main_tests
+==29505== 
+==29505== 
+==29505== HEAP SUMMARY:
+==29505==     in use at exit: 0 bytes in 0 blocks
+==29505==   total heap usage: 113,944 allocs, 113,944 frees, 3,708,540 bytes allocated
+==29505== 
+==29505== All heap blocks were freed -- no leaks are possible
+==29505== 
+==29505== For counts of detected and suppressed errors, rerun with: -v
+==29505== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 90.txt
 
-==31361== Memcheck, a memory error detector
-==31361== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31361== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31361== Command: ./cmake-build-debug/main_tests
-==31361== 
-==31361== 
-==31361== HEAP SUMMARY:
-==31361==     in use at exit: 0 bytes in 0 blocks
-==31361==   total heap usage: 129,898 allocs, 129,898 frees, 3,941,840 bytes allocated
-==31361== 
-==31361== All heap blocks were freed -- no leaks are possible
-==31361== 
-==31361== For counts of detected and suppressed errors, rerun with: -v
-==31361== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29511== Memcheck, a memory error detector
+==29511== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29511== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29511== Command: ./cmake-build-debug/main_tests
+==29511== 
+==29511== 
+==29511== HEAP SUMMARY:
+==29511==     in use at exit: 0 bytes in 0 blocks
+==29511==   total heap usage: 124,351 allocs, 124,351 frees, 3,920,884 bytes allocated
+==29511== 
+==29511== All heap blocks were freed -- no leaks are possible
+==29511== 
+==29511== For counts of detected and suppressed errors, rerun with: -v
+==29511== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 91.txt
 
-==31367== Memcheck, a memory error detector
-==31367== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31367== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31367== Command: ./cmake-build-debug/main_tests
-==31367== 
-==31367== 
-==31367== HEAP SUMMARY:
-==31367==     in use at exit: 0 bytes in 0 blocks
-==31367==   total heap usage: 44,300 allocs, 44,300 frees, 1,245,336 bytes allocated
-==31367== 
-==31367== All heap blocks were freed -- no leaks are possible
-==31367== 
-==31367== For counts of detected and suppressed errors, rerun with: -v
-==31367== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29517== Memcheck, a memory error detector
+==29517== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29517== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29517== Command: ./cmake-build-debug/main_tests
+==29517== 
+==29517== 
+==29517== HEAP SUMMARY:
+==29517==     in use at exit: 0 bytes in 0 blocks
+==29517==   total heap usage: 42,237 allocs, 42,237 frees, 1,234,928 bytes allocated
+==29517== 
+==29517== All heap blocks were freed -- no leaks are possible
+==29517== 
+==29517== For counts of detected and suppressed errors, rerun with: -v
+==29517== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 92.txt
 
-==31373== Memcheck, a memory error detector
-==31373== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31373== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31373== Command: ./cmake-build-debug/main_tests
-==31373== 
-==31373== 
-==31373== HEAP SUMMARY:
-==31373==     in use at exit: 0 bytes in 0 blocks
-==31373==   total heap usage: 346,701 allocs, 346,701 frees, 12,435,536 bytes allocated
-==31373== 
-==31373== All heap blocks were freed -- no leaks are possible
-==31373== 
-==31373== For counts of detected and suppressed errors, rerun with: -v
-==31373== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29523== Memcheck, a memory error detector
+==29523== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29523== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29523== Command: ./cmake-build-debug/main_tests
+==29523== 
+==29523== 
+==29523== HEAP SUMMARY:
+==29523==     in use at exit: 0 bytes in 0 blocks
+==29523==   total heap usage: 330,392 allocs, 330,392 frees, 12,376,152 bytes allocated
+==29523== 
+==29523== All heap blocks were freed -- no leaks are possible
+==29523== 
+==29523== For counts of detected and suppressed errors, rerun with: -v
+==29523== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 93.txt
 
-==31379== Memcheck, a memory error detector
-==31379== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31379== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31379== Command: ./cmake-build-debug/main_tests
-==31379== 
-==31379== 
-==31379== HEAP SUMMARY:
-==31379==     in use at exit: 0 bytes in 0 blocks
-==31379==   total heap usage: 115,103 allocs, 115,103 frees, 3,564,980 bytes allocated
-==31379== 
-==31379== All heap blocks were freed -- no leaks are possible
-==31379== 
-==31379== For counts of detected and suppressed errors, rerun with: -v
-==31379== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29529== Memcheck, a memory error detector
+==29529== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29529== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29529== Command: ./cmake-build-debug/main_tests
+==29529== 
+==29529== 
+==29529== HEAP SUMMARY:
+==29529==     in use at exit: 0 bytes in 0 blocks
+==29529==   total heap usage: 110,570 allocs, 110,570 frees, 3,548,080 bytes allocated
+==29529== 
+==29529== All heap blocks were freed -- no leaks are possible
+==29529== 
+==29529== For counts of detected and suppressed errors, rerun with: -v
+==29529== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 94.txt
 
-==31385== Memcheck, a memory error detector
-==31385== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31385== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31385== Command: ./cmake-build-debug/main_tests
-==31385== 
-==31385== 
-==31385== HEAP SUMMARY:
-==31385==     in use at exit: 0 bytes in 0 blocks
-==31385==   total heap usage: 15,719 allocs, 15,719 frees, 534,012 bytes allocated
-==31385== 
-==31385== All heap blocks were freed -- no leaks are possible
-==31385== 
-==31385== For counts of detected and suppressed errors, rerun with: -v
-==31385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29535== Memcheck, a memory error detector
+==29535== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29535== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29535== Command: ./cmake-build-debug/main_tests
+==29535== 
+==29535== 
+==29535== HEAP SUMMARY:
+==29535==     in use at exit: 0 bytes in 0 blocks
+==29535==   total heap usage: 15,082 allocs, 15,082 frees, 531,464 bytes allocated
+==29535== 
+==29535== All heap blocks were freed -- no leaks are possible
+==29535== 
+==29535== For counts of detected and suppressed errors, rerun with: -v
+==29535== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 95.txt
 
-==31391== Memcheck, a memory error detector
-==31391== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31391== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31391== Command: ./cmake-build-debug/main_tests
-==31391== 
-==31391== 
-==31391== HEAP SUMMARY:
-==31391==     in use at exit: 0 bytes in 0 blocks
-==31391==   total heap usage: 6,947 allocs, 6,947 frees, 297,132 bytes allocated
-==31391== 
-==31391== All heap blocks were freed -- no leaks are possible
-==31391== 
-==31391== For counts of detected and suppressed errors, rerun with: -v
-==31391== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29541== Memcheck, a memory error detector
+==29541== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29541== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29541== Command: ./cmake-build-debug/main_tests
+==29541== 
+==29541== 
+==29541== HEAP SUMMARY:
+==29541==     in use at exit: 0 bytes in 0 blocks
+==29541==   total heap usage: 6,637 allocs, 6,637 frees, 295,892 bytes allocated
+==29541== 
+==29541== All heap blocks were freed -- no leaks are possible
+==29541== 
+==29541== For counts of detected and suppressed errors, rerun with: -v
+==29541== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 96.txt
 
-==31397== Memcheck, a memory error detector
-==31397== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31397== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31397== Command: ./cmake-build-debug/main_tests
-==31397== 
-==31397== 
-==31397== HEAP SUMMARY:
-==31397==     in use at exit: 0 bytes in 0 blocks
-==31397==   total heap usage: 104,117 allocs, 104,117 frees, 2,946,888 bytes allocated
-==31397== 
-==31397== All heap blocks were freed -- no leaks are possible
-==31397== 
-==31397== For counts of detected and suppressed errors, rerun with: -v
-==31397== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29547== Memcheck, a memory error detector
+==29547== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29547== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29547== Command: ./cmake-build-debug/main_tests
+==29547== 
+==29547== 
+==29547== HEAP SUMMARY:
+==29547==     in use at exit: 0 bytes in 0 blocks
+==29547==   total heap usage: 98,823 allocs, 98,823 frees, 2,925,712 bytes allocated
+==29547== 
+==29547== All heap blocks were freed -- no leaks are possible
+==29547== 
+==29547== For counts of detected and suppressed errors, rerun with: -v
+==29547== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 97.txt
 
-==31404== Memcheck, a memory error detector
-==31404== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31404== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31404== Command: ./cmake-build-debug/main_tests
-==31404== 
-==31404== 
-==31404== HEAP SUMMARY:
-==31404==     in use at exit: 0 bytes in 0 blocks
-==31404==   total heap usage: 337,775 allocs, 337,775 frees, 12,505,744 bytes allocated
-==31404== 
-==31404== All heap blocks were freed -- no leaks are possible
-==31404== 
-==31404== For counts of detected and suppressed errors, rerun with: -v
-==31404== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29553== Memcheck, a memory error detector
+==29553== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29553== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29553== Command: ./cmake-build-debug/main_tests
+==29553== 
+==29553== 
+==29553== HEAP SUMMARY:
+==29553==     in use at exit: 0 bytes in 0 blocks
+==29553==   total heap usage: 323,473 allocs, 323,473 frees, 12,454,080 bytes allocated
+==29553== 
+==29553== All heap blocks were freed -- no leaks are possible
+==29553== 
+==29553== For counts of detected and suppressed errors, rerun with: -v
+==29553== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 98.txt
 
-==31410== Memcheck, a memory error detector
-==31410== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31410== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31410== Command: ./cmake-build-debug/main_tests
-==31410== 
-==31410== 
-==31410== HEAP SUMMARY:
-==31410==     in use at exit: 0 bytes in 0 blocks
-==31410==   total heap usage: 177,446 allocs, 177,446 frees, 5,590,176 bytes allocated
-==31410== 
-==31410== All heap blocks were freed -- no leaks are possible
-==31410== 
-==31410== For counts of detected and suppressed errors, rerun with: -v
-==31410== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29559== Memcheck, a memory error detector
+==29559== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29559== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29559== Command: ./cmake-build-debug/main_tests
+==29559== 
+==29559== 
+==29559== HEAP SUMMARY:
+==29559==     in use at exit: 0 bytes in 0 blocks
+==29559==   total heap usage: 168,789 allocs, 168,789 frees, 5,555,548 bytes allocated
+==29559== 
+==29559== All heap blocks were freed -- no leaks are possible
+==29559== 
+==29559== For counts of detected and suppressed errors, rerun with: -v
+==29559== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 99.txt
 
-==31417== Memcheck, a memory error detector
-==31417== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31417== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==31417== Command: ./cmake-build-debug/main_tests
-==31417== 
-==31417== 
-==31417== HEAP SUMMARY:
-==31417==     in use at exit: 0 bytes in 0 blocks
-==31417==   total heap usage: 16,242 allocs, 16,242 frees, 551,592 bytes allocated
-==31417== 
-==31417== All heap blocks were freed -- no leaks are possible
-==31417== 
-==31417== For counts of detected and suppressed errors, rerun with: -v
-==31417== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==29565== Memcheck, a memory error detector
+==29565== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==29565== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==29565== Command: ./cmake-build-debug/main_tests
+==29565== 
+==29565== 
+==29565== HEAP SUMMARY:
+==29565==     in use at exit: 0 bytes in 0 blocks
+==29565==   total heap usage: 15,776 allocs, 15,776 frees, 549,728 bytes allocated
+==29565== 
+==29565== All heap blocks were freed -- no leaks are possible
+==29565== 
+==29565== For counts of detected and suppressed errors, rerun with: -v
+==29565== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
