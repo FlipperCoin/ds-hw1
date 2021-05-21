@@ -218,7 +218,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value,
         if (!(value < node->Indices[i])) {
             if (i == node->Sons-2) {
                 // definitely larger equals node->Indices[node->Sons-1])
-                found = find(value, node->Children[i+1]);
+                found = find(value, node->Children[i+1], updateOnPath);
             }
 
             // if not the last, continue in the loop
@@ -226,7 +226,7 @@ SharedPointer<TreeNode<DataType>> BTree23<DataType>::find(DataType value,
         };
 
         // value is in this part, try find and break
-        found = find(value, node->Children[i]);
+        found = find(value, node->Children[i], updateOnPath);
         break;
     }
 
